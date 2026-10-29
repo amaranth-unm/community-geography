@@ -7,11 +7,17 @@ layout: null
   {% assign separator = '' %}
   {% for page in pages_with_titles %}
     {% unless page.url contains '/assets/' or page.url contains '/search-index' or page.searchable == false %}
+    {% comment %} Events also match on date, presenter, and place; people pages on each person listed. {% endcomment %}
+    {% capture search_content %}
+      {{ page.content }}
+      {% if page.collection == 'events' %}{{ page.title }} {{ page.start_date }} {{ page.end_date }} {{ page.presenter }} {{ page.location }}{% endif %}
+      {% if page.people_group %}{% assign members = site.people | where: 'groups', page.people_group %}{% for person in members %} {{ person.name }} {{ person.role }} {{ person.affiliation }} {{ person.expertise }} {{ person.content }}{% endfor %}{% endif %}
+    {% endcapture %}
     {{ separator }}{
       "title": {{ page.title | jsonify }},
       "url": "{{ site.baseurl }}{{ page.url }}",
       "summary": {{ page.summary | default: "" | jsonify }},
-      "content": {{ page.search_content | default: page.content | strip_html | jsonify }},
+      "content": {{ search_content | strip_html | normalize_whitespace | jsonify }},
       "tags": {{ page.tags | default: "" | jsonify }},
       "date": {{ page.published_date | default: "" | jsonify }}
     }

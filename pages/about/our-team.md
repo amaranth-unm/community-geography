@@ -4,6 +4,7 @@ permalink: /about/our-team.html
 source_url: https://communitygeography.unm.edu/about/our-team.html
 section: About
 section_url: /about/index.html
+people_group: team
 ---
 
 # Our Team

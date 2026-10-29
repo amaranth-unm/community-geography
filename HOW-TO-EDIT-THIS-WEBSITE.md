@@ -77,7 +77,7 @@ A screen that looks like a code editor will open. This is "VS Code in the browse
 ### Checking that it worked
 
 1. On the GitHub page for the repository, click the **Actions** tab.
-2. Find your most recent entry named **Deploy Jekyll site to Pages**.
+2. Find your most recent entry named **pages build and deployment**.
 3. A **yellow circle** means it is still working. A **green check** means it is live. A **red X** means something went wrong (see [Troubleshooting](#11-troubleshooting)).
 4. It usually takes 2-5 minutes. Refresh the live website to see the change.
 
@@ -172,7 +172,7 @@ Keep the `{{ ... | relative_url }}` part exactly as shown.
 ```
 
 - Change the path (`/assets/images/news/...`) to match your file.
-- **Always fill in `alt`.** It is a short description for people who use screen readers. It is also required by the site's automatic checks.
+- **Always fill in `alt`.** It is a short description for people who use screen readers.
 
 > Some pages (events, news, projects) have special spots for pictures. Those are covered in Sections 5-7. Just give the file's path.
 
@@ -267,7 +267,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - `permalink` is the web address. Use `/news/` + the file name (without `.md`) + `.html`.
 - `published_date` is the date in `'YYYY-MM-DD'` form. **Keep the quote marks.**
 - If you only know the year, use `published_year: '2026'` instead of `published_date`.
-- The news page and the year page update by themselves. You do not need to edit any list.
+- The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - **Homepage list:** the homepage shows a hand-picked set of stories. To add yours, add `featured_order: 6` (a number nobody else is using). Ask the director before featuring a story. New stories are *not* shown on the homepage automatically.
 
@@ -302,7 +302,7 @@ how to register.
 **Notes**
 - **Keep the quote marks** around dates and times.
 - Use **24-hour time**: 2 p.m. is `'14:00'`, 9 a.m. is `'09:00'`.
-- The file must sit in the folder matching its start year, or the checks will fail.
+- Put the file in the folder matching its start year.
 - If you don't know the time, location, or presenter, **delete that line**. Don't guess.
 - **Flyer picture:** upload it to `assets/images/events/` (see Section 4) and add two lines at the top:
   ```
@@ -417,7 +417,7 @@ A short biography goes here.
 - **Nothing is live until it is committed and pushed.** The Actions tab shows progress.
 - **Check the live site after every change.** Open the page and make sure it looks right.
 - **Search updates itself.** New events, news, and people become searchable automatically.
-- **Two pages cannot have the same `permalink`.** The site's checks will stop publication if they do.
+- **Two pages cannot have the same `permalink`.** If they do, one silently replaces the other.
 - **Never delete the dashes (`---`) that surround the top block** of a page.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.
@@ -425,7 +425,7 @@ A short biography goes here.
 - **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. A more technical guide is in `scripts/README.md`.
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
-- **New year?** Create a new year folder in `_news/` and `_events/` (for example `_news/2027/`). The year pages are made automatically.
+- **New year?** Create a new year folder in `_news/` and `_events/` (for example `_news/2027/`). Then give the year its news page: copy `pages/news/2026.md`, name the copy `2027.md`, and change every `2026` inside it to `2027`.
 - **Backups:** GitHub stores every version of every file. You can look at the history of any file by right-clicking it and choosing **Open Timeline**.
 - **Handing over the site?** Add the new editor as a collaborator on the GitHub repository (Settings → Collaborators) and point them to this guide.
 
@@ -437,13 +437,11 @@ A short biography goes here.
 | --- | --- |
 | I saved but the website didn't change | You must **Commit & Push** in Source Control. Then wait a few minutes and refresh (Ctrl+F5). |
 | The Actions tab shows a red X | Click the failed run, then click **build**. Read the red lines for the file name and message. Fix that file in the browser, then Commit & Push again. The old website stays online meanwhile. |
-| Error mentions a date or time | Dates must look like `'2027-03-12'` and times like `'14:00'`, with quote marks. |
+| Error mentions "Liquid" | Something between `{% %}` or `{{ }}` is mistyped. Compare with a working file. |
+| Error mentions "comparison of" | A date is missing its quote marks. Dates must look like `'2027-03-12'` and times like `'14:00'`. |
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
-| Error mentions an image or "alt" | The image path is wrong, the file wasn't uploaded, or the `alt` text is missing. Check the spelling of the file name (capital letters matter). |
-| Error mentions a duplicate URL/permalink | Another page already uses that `permalink`. Make yours unique. |
-| Error about the year folder | An event or news file is in the wrong year folder. Move it to the folder that matches its date. |
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. |
-| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. |
+| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed each time anyone publishes a change, so a finished event can linger until then.) |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
 | Nothing works | Stop, don't delete anything, and ask for help. All past versions can be restored. |

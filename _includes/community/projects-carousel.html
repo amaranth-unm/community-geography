@@ -17,8 +17,8 @@
     - end_date:    the literal "Ongoing" marks a project as current
 {% endcomment %}
 
-{% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/' and p.title and p.thumbnail" %}
-{% assign past_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/' and p.name != 'index.md' and p.title and p.thumbnail" %}
+{% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
+{% assign past_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/'" | where_exp: "p", "p.name != 'index.md'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
 {% assign current_sorted = current_projects | sort: "start_date" | reverse %}
 {% assign past_sorted = past_projects | sort: "start_date" | reverse %}
 {% assign all_projects = current_sorted | concat: past_sorted %}

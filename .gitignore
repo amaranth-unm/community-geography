@@ -6,4 +6,3 @@ _site/
 /vendor/
 .DS_Store
 _config.local.yml
-_config.ci.yml

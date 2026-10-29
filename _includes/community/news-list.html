@@ -6,8 +6,10 @@
     include.featured - homepage widget: hand-picked stories in featured_order
     include.full     - render full article body instead of a teaser excerpt
 
+  Stories without a published_date give a published_year instead.
+
   Jekyll's `sort`/`where`/`group_by` filters resolve document properties
-  (sort_date, archived, archive_year) through a Liquid-drop property cache
+  through a Liquid-drop property cache
   (Jekyll::Filters#item_property) that has proven unreliable in production -
   it has caused both scrambled chronological order and broken year grouping.
   So, apart from the small hand-curated `featured` list below, everything
@@ -27,7 +29,7 @@
   {% assign keys = "" %}
   {% for story in all_stories %}
     {% assign story_date = story.published_date %}
-    {% unless story_date %}{% assign story_date = story.archive_year | append: "-00-00" %}{% endunless %}
+    {% unless story_date %}{% assign story_date = story.published_year | append: "-00-00" %}{% endunless %}
     {% assign idx = forloop.index0 | append: "" %}
     {% case idx.size %}
       {% when 1 %}{% assign idx = "00" | append: idx %}
@@ -57,7 +59,7 @@
   {% assign years_str = "" %}
   {% for story in stories %}
     {% assign story_year = story.published_date | date: '%Y' %}
-    {% if story_year == "" or story_year == nil %}{% assign story_year = story.archive_year %}{% endif %}
+    {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
     {% assign years_str_padded = "," | append: years_str | append: "," %}
     {% assign needle = "," | append: story_year | append: "," %}
     {% unless years_str_padded contains needle %}
@@ -79,7 +81,7 @@
       <h2 class="news-year-heading">{{ year }}</h2>
       {% for story in stories %}
         {% assign story_year = story.published_date | date: '%Y' %}
-        {% if story_year == "" or story_year == nil %}{% assign story_year = story.archive_year %}{% endif %}
+        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
         {% if story_year == year %}{% include community/news-row.html story=story full=include.full %}{% endif %}
       {% endfor %}
     </section>
@@ -88,7 +90,7 @@
     {% for story in stories %}
       {% if include.year %}
         {% assign story_year = story.published_date | date: '%Y' %}
-        {% if story_year == "" or story_year == nil %}{% assign story_year = story.archive_year %}{% endif %}
+        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
         {% if story_year == include.year %}{% include community/news-row.html story=story full=include.full %}{% endif %}
       {% else %}
         {% include community/news-row.html story=story full=include.full %}

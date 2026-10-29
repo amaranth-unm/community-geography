@@ -4,6 +4,7 @@ permalink: /about/affiliates.html
 source_url: https://communitygeography.unm.edu/about/affiliates.html
 section: About
 section_url: /about/index.html
+people_group: affiliates
 summary: "Faculty Affiliation Program\r\n\r\nThe Center for Community Geography seeks faculty affiliates willing to support\
   \ its mission in one or more of the following ways:\r\n\r\nIdentify potential partnerships and/or projects in the Albuquerque\
   \ area with a focus in human-environment relations.\r\nReview proposals for community-engaged research (for grad students)\
