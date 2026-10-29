@@ -15,7 +15,7 @@
 
 {% if include.images and include.images.size > 0 %}
   <div id="{{ carousel_id }}" class="splide xanthan-carousel xanthan-carousel--{{ carousel_class }}"
-    style="width: {{ include.width | default: '100%' }}; margin: 0 auto var(--spacing-lg);" aria-label="Image carousel">
+    {% if include.width %}style="width: {{ include.width }};" {% endif %}aria-label="Image carousel">
     <div class="splide__track">
       <ul class="splide__list">
         {% for image in include.images %}

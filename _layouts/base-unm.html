@@ -30,7 +30,7 @@
         {% unless page.home %}
         <nav class="center-breadcrumbs" aria-label="Breadcrumb">
           <a href="{{ '/' | relative_url }}">Home</a>
-          {% if page.section_url %}<span aria-hidden="true">/</span><a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>{% endif %}
+          {% if page.section_url and page.section_url != page.url %}<span aria-hidden="true">/</span><a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>{% endif %}
           <span aria-hidden="true">/</span><span aria-current="page">{{ page.title }}</span>
         </nav>
         {% endunless %}

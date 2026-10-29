@@ -1,0 +1,11 @@
+{% comment %}
+  Events marked `legacy_upcoming: true`, shown in full on the Upcoming Events
+  page under "Previous announcements", oldest first. The heading ids keep old
+  links to these announcements working.
+{% endcomment %}
+{% assign announcements = site.events | where: "legacy_upcoming", true | sort: "start_date" %}
+{% for event in announcements %}
+<h2 id="{{ event.heading_id }}"><a href="{{ event.url | relative_url }}">{{ event.title | escape }}</a></h2>
+{% include community/event-details.html event=event %}
+{{ event.content | markdownify }}
+{% endfor %}

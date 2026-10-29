@@ -1,9 +1,6 @@
 ---
 title: Community Engagement Symposium
-permalink: /events/symposium23.html
-source_url: https://communitygeography.unm.edu/events/symposium23.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/symposium23
 start_date: '2023-11-03'
 start_time: '13:00'
 end_date: '2023-11-03'

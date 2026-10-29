@@ -1,9 +1,5 @@
 ---
 title: Community-engaged information design (GEOG 2115, Spring 2023)
-permalink: "/projects/project/community-engaged-information-design-geog-2115-spring-2023.html"
-source_url: https://communitygeography.unm.edu/projects/project/community-engaged-information-design-geog-2115-spring-2023.html
-section: Projects
-section_url: "/projects/index.html"
 thumbnail: "/assets/images/projects/project/geog2115_sp22_sustexpo.jpg"
 start_date: 2023-01-24
 end_date: 2023-05-12
@@ -13,12 +9,6 @@ community_member:
   - Albuquerque City Nature Challenge (ABQ CNC)
 summary: In GEOG 2115, Dr. Yolanda C. Lin's students designed data-driven infographics for the Albuquerque City Nature Challenge, shared on social media and featured at two campus outreach booths.
 ---
-
-# Community-engaged information design (GEOG 2115, Spring 2023)
-
-<span id="photo-event"></span><img src="{{ '/assets/images/projects/project/geog2115_sp22_sustexpo.jpg' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Community-engaged information design (GEOG 2115, Spring 2023)" />
-
-{% include community/project-meta.html %}
 
 *Project completed by Yolanda C. Lin with funding from the Center for Community Geography. The following was written by Dr. Lin.*
 

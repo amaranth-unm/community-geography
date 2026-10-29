@@ -1,7 +1,6 @@
 ---
 title: 'Geography and Environmental Studies Colloquium Event: Pleistocene, Pottery, and Postcard: BIOdiversity in New Mexico'
-permalink: /geography-and-environmental-studies-colloquium-event-pleistocene-pottery-and-postcard-biodiversity-in-new-mexico.html
-source_url: https://communitygeography.unm.edu/geography-and-environmental-studies-colloquium-event-pleistocene-pottery-and-postcard-biodiversity-in-new-mexico.html
+permalink: /geography-and-environmental-studies-colloquium-event-pleistocene-pottery-and-postcard-biodiversity-in-new-mexico
 start_date: '2024-02-16'
 start_time: '15:00'
 end_date: '2024-02-16'
@@ -12,8 +11,6 @@ flyer: /assets/images/shared/subhankar-banerjee-flyer.png
 flyer_alt: 'Photo: Geography and Environmental Studies Colloquium Event: Pleistocene, Pottery, and Postcard: BIOdiversity
   in New Mexico'
 heading_id: geography-and-environmental-studies-colloquium-event-pleistocene-pottery-and-postcard-biodiversity-in-new-mexico
-section: Events
-section_url: /events/index2.html
 ---
 
 Pleistocene, Pottery, and Postcard: BIOdiversity in New Mexico

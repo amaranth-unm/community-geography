@@ -1,9 +1,6 @@
 ---
 title: GIS Day 2025
-permalink: /events/gis-day-2025.html
-source_url: https://communitygeography.unm.edu/events/gis-day-2025.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/gis-day-2025
 start_date: '2025-11-19'
 start_time: '10:00'
 end_date: '2025-11-19'

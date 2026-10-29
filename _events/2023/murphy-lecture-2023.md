@@ -1,9 +1,6 @@
 ---
 title: Murphy Lecture 2023
-permalink: /events/2023-murphy-lecture.html
-source_url: https://communitygeography.unm.edu/events/2023-murphy-lecture.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/2023-murphy-lecture
 start_date: '2023-11-17'
 start_time: '15:00'
 end_date: '2023-11-17'

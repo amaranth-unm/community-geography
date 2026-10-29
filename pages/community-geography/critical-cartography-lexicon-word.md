@@ -1,13 +1,22 @@
 ---
 title: Critical Cartography Lexicon Word
-permalink: "/community-geography/critical-cartography-lexicon-word.html"
-source_url: https://communitygeography.unm.edu/community-geography/critical-cartography-lexicon-word.html
-section: Community
-section_url: "/community-geography/index.html"
+permalink: /community-geography/critical-cartography-lexicon-word
+# The card on the Community Geography page
+lexicon_word: Critical Cartography
+lexicon_order: 7
+thumbnail: /assets/images/community-geography/signal-2023-05-02-172650_008.jpeg
+# The slideshow on this page
+slides:
+  - image: /assets/images/community-geography/signal-2023-05-02-172650_008.jpeg
+    alt: Critical cartography lexicon artwork, first panel.
+  - image: /assets/images/community-geography/signal-2023-05-02-172650_007.jpeg
+    alt: Critical cartography lexicon artwork, second panel.
+  - image: /assets/images/community-geography/signal-2023-05-02-172650_006.jpeg
+    alt: Critical cartography lexicon artwork, third panel.
+  - image: /assets/images/community-geography/signal-2023-05-02-172650_005.jpeg
+    alt: Critical cartography lexicon artwork, fourth panel.
 ---
 
 # Critical Cartography Lexicon Word
 
-{% assign images = '/assets/images/community-geography/signal-2023-05-02-172650_008.jpeg, /assets/images/community-geography/signal-2023-05-02-172650_007.jpeg, /assets/images/community-geography/signal-2023-05-02-172650_006.jpeg, /assets/images/community-geography/signal-2023-05-02-172650_005.jpeg' | split: ', ' %}
-{% assign alt_texts = 'Critical cartography lexicon artwork, first panel.||Critical cartography lexicon artwork, second panel.||Critical cartography lexicon artwork, third panel.||Critical cartography lexicon artwork, fourth panel.' | split: '||' %}
-{% include images/carousel.html id="critical-cartography-lexicon-carousel" images=images alt-texts=alt_texts %}
+{% include community/lexicon-slideshow.html %}

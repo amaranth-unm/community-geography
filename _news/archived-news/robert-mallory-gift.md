@@ -1,16 +1,13 @@
 ---
 archived: true
 title: The Center for Community Geography is Robert H. Mallory’s gift back to the department that transformed his life
-permalink: /december-22,-2020.html
-source_url: https://communitygeography.unm.edu/december-22,-2020.html
+permalink: /december-22,-2020
 heading_id: the-center-for-community-geography-is-robert-h-mallorys-gift-back-to-the-department-that-transformed-his-life
-section: News
-section_url: /news/index.html
 published_date: '2020-12-24'
-date_source: /news/2020.html
+date_source: /news/2020
 ---
 
-<img src="{{ '/assets/images/shared/rm.jpg' | relative_url }}" loading="lazy" decoding="async" width="640" height="360" alt="rm.jpg" />
+![rm.jpg]({{ site.baseurl }}/assets/images/shared/rm.jpg)
 
 The Center for Community Geography’s first benefactor wanted to help attract more students to the field of geography. Instead, his idea blossomed into something he believes is bigger and better – bringing geography directly to students and community members by addressing human-environment issues together.
 
@@ -18,7 +15,7 @@ Albuquerque native Robert H. Mallory has always appreciated the beauty and diver
 
  “I did not have an idea of what I wanted to do with the degree at the time,” Mallory mused thinking about how geography has informed his life, “but I quickly found that I use it every day.”  Today, Mallory is an acoustician who started his own firm in Albuquerque that provides design services throughout New Mexico. Beyond his professional work, he also sees geography awareness as part of being an informed citizen. A person who is skilled at finding connections and orienting the world is a powerful community member.
 
-<img src="{{ '/assets/images/shared/nopal-by-maria-lane.jpeg' | relative_url }}" loading="lazy" decoding="async" width="657" height="493" alt="nopal-by-maria-lane.jpeg" />
+![nopal-by-maria-lane.jpeg]({{ site.baseurl }}/assets/images/shared/nopal-by-maria-lane.jpeg){: width="657"}
 
 Mallory calls himself an “accidental geographer”, a term for students who stumbled across the field by scheduling fluke or other means. This not-so-small group benefited greatly from being empowered to think spatially or study human-environment connections. Mallory knows the feeling and recognizes that the Geography Department kept him in school while also expanding his world. He seeks to help more students discover geography with intention and anticipates his bequest will expand awareness of geographical thinking more than he could alone. “My knowledge \[of geography\] is constantly building, and it has been an incredible gift…Geography stole my heart and I want to provide that opportunity to others.”
 

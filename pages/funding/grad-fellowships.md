@@ -1,15 +1,12 @@
 ---
 title: R.H. Mallory Center for Community Geography 2024-2025 Applications for Community
   Geography Fellows Program
-permalink: "/funding/grad-fellowships.html"
-source_url: https://communitygeography.unm.edu/funding/grad-fellowships.html
-section: Funding
-section_url: "/funding/index.html"
+permalink: /funding/grad-fellowships
 ---
 
 # R.H. Mallory Center for Community Geography 2024-2025 Applications for Community Geography Fellows Program
 
- <img src="{{ '/assets/images/funding/ks_headshot_02.jpg' | relative_url }}" loading="lazy" decoding="async" width="565" height="616" alt="ks_headshot_02.jpg" />
+ ![ks_headshot_02.jpg]({{ site.baseurl }}/assets/images/funding/ks_headshot_02.jpg){: width="565"}
 
 As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributing to the advancement of community-engaged environmental mapping through her work with the New Mexico Backyard Refuge (NM BYR) Program. In collaboration with Laurel Ladwig, Katie is leading the development of a digital mapping component designed to strengthen public access to ecological data and program outcomes.
 
@@ -19,12 +16,12 @@ The resulting interactive web map will be publicly accessible, allowing communit
 
 “*Being a U.N.M. R.H. Mallory Center for Community Geography Fellow has allowed me to use my GIS skills to benefit the community, which is valuable and fulfilling*.” - Katie Slack
 
-<img src="{{ '/assets/images/funding/criticalcartographyshannonandmicheal' | relative_url }}" loading="lazy" decoding="async" width="572" height="430" alt="criticalcartographyshannonandmicheal" />
+![criticalcartographyshannonandmicheal]({{ site.baseurl }}/assets/images/funding/criticalcartographyshannonandmicheal){: width="572"}
 
 *2024-2025 Applications are now closed. *
 
 The program is open to both graduate and undergraduate students from Geography and related fields. Fellows will receive \$1500 per semester to pursue community-engaged projects in collaboration with the Center Director, staff, and affiliates. Applicants are welcome to propose potential projects in their application, but proposals are not required. Fellowship assignments are at the discretion of the Center Director and may not necessarily align with specific proposal text. The objective of these fellowships is to help students develop skills in centering community concerns in academic and professional work.
 
-[CLICK TO VIEW THE 2024-2025 STUDENT APPLICATION GUIDELINES]({{ '/assets/documents/funding/24-25-fellowship-app-guidelines.pdf' | relative_url }})
+[CLICK TO VIEW THE 2024-2025 STUDENT APPLICATION GUIDELINES]({{ site.baseurl }}/assets/documents/funding/24-25-fellowship-app-guidelines.pdf)
 
 For more information, contact the Center at <communitygeography@unm.edu>. 

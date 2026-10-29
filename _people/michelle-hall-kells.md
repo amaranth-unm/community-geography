@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 5
 anchor: dr-michelle-hall-kells
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/kells-bio-pix.jpg
 image_alt: kells-bio-pix.jpg
 ---

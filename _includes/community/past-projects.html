@@ -7,7 +7,9 @@
   drops the date-and-tags footer since past projects don't need an active date range.
 
   Usage:
-    {% include community/past-projects.html projects=past_projects %}
+    {% include community/past-projects.html %}
+
+  Lists every page in pages/projects/past-projects/ (except its index), by title.
 
   Front matter read from each project page:
     - title:             project name
@@ -15,10 +17,10 @@
     - summary:            a short one-to-three sentence description
 {% endcomment %}
 
-{% assign sorted_projects = include.projects | sort: "title" %}
+{% assign sorted_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/'" | where_exp: "p", "p.name != 'index.md'" | sort: "title" %}
 
 {::nomarkdown}
-{% if include.projects and sorted_projects.size > 0 %}
+{% if sorted_projects.size > 0 %}
   <div class="card-grid project-grid">
     {% for project in sorted_projects %}
     {% if project.title %}

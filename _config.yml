@@ -19,29 +19,68 @@ kramdown:
   hard_wrap: false
 plugins:
 - jekyll-sitemap
+- jekyll-redirect-from
 defaults:
+# Every page uses the Center's UNM layout unless a rule below says otherwise.
 - scope:
     path: ''
   values:
     layout: base-unm
+# Breadcrumbs: pages in each folder link back to their section's main page.
 - scope:
-    path: 'pages/projects/current-projects'
+    path: pages/about
+  values:
+    section: About
+    section_url: /about/
+- scope:
+    path: pages/community-geography
+  values:
+    section: Community
+    section_url: /community-geography/
+- scope:
+    path: pages/funding
+  values:
+    section: Funding
+    section_url: /funding/
+- scope:
+    path: pages/news
+  values:
+    section: News
+    section_url: /news/
+- scope:
+    path: pages/events
+  values:
+    section: Events
+    section_url: /events/archive
+- scope:
+    path: pages/projects
+  values:
+    section: Projects
+    section_url: /projects/
+- scope:
+    path: pages/projects/current-projects
   values:
     layout: project-unm
+    permalink: /projects/project/:basename
 - scope:
-    path: 'pages/projects/past-projects'
+    path: pages/projects/past-projects
   values:
     layout: project-unm
+    permalink: /projects/project/:basename
 - scope:
     path: ''
     type: events
   values:
     layout: event-unm
+    section: Events
+    section_url: /events/archive
 - scope:
     path: ''
     type: news
   values:
     layout: news-unm
+    section: News
+    section_url: /news/
 exclude:
 - README.md
 - HOW-TO-EDIT-THIS-WEBSITE.md
@@ -54,8 +93,10 @@ exclude:
 collections:
   events:
     output: true
+    permalink: /events/:title
   news:
     output: true
+    permalink: /news/:title
   people:
     output: false
 center_banner:

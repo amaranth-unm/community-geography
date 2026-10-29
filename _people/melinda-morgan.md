@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 7
 anchor: dr-melinda-morgan
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/headshot_zoom.jpg
 image_alt: headshot_zoom.jpg
 review_notes:

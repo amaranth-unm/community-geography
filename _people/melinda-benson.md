@@ -6,7 +6,6 @@ groups:
 - team
 display_order: 1
 anchor: director
-source_url: https://communitygeography.unm.edu/about/our-team.html
 image: /assets/images/about/morgan_24.jpg
 image_alt: Melinda Morgan Headshot
 review_notes:

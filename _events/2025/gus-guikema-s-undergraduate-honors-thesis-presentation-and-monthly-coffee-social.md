@@ -1,9 +1,6 @@
 ---
 title: Gus Guikema's Undergraduate Honors Thesis Presentation and Monthly Coffee Social
-permalink: /news/monthly-coffee-social1.html
-source_url: https://communitygeography.unm.edu/news/monthly-coffee-social1.html
-section: Events
-section_url: /events/index2.html
+permalink: /news/monthly-coffee-social1
 start_date: '2025-05-07'
 start_time: '12:00'
 end_date: '2025-05-07'
@@ -14,5 +11,4 @@ flyer_alt: 'Photo: Gus Guikema''s Undergraduate Honors Thesis Presentation and M
 heading_id: gus-guikemas-undergraduate-honors-thesis-presentation-and-monthly-coffee-social
 archive_anchor: gus-guikemas-undergraduate-honors-thesis-presentation-and-monthly-coffee-social
 ---
-
 

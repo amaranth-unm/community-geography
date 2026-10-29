@@ -281,6 +281,8 @@ is the one place UNM values are translated for the site.
   line-height: 1.5;
 }
 .welcome-cta { margin-top: var(--spacing-sm); }
+/* The arrow after "Explore the Center"; the empty alt keeps screen readers quiet. */
+.welcome-cta::after { content: "\2192"; content: "\2192" / ""; }
 .welcome-image {
   position: relative;
   margin: 0;
@@ -594,9 +596,7 @@ is the one place UNM values are translated for the site.
   margin: 0 auto clamp(1.25rem, 3vw, 2.25rem);
   text-wrap: balance;
 }
-.project-article > h1 + span[id="photo-event"] { display: none; }
-.project-article > h1 + span[id="photo-event"] + img,
-.project-article > h1 + img {
+.project-photo {
   display: block;
   width: 100%;
   max-width: none;
@@ -895,8 +895,7 @@ is the one place UNM values are translated for the site.
 @media (max-width: 767px) {
   .project-content { padding-inline: var(--spacing-md); }
   .project-article { padding-top: var(--spacing-md); }
-  .project-article > h1 + span[id="photo-event"] + img,
-  .project-article > h1 + img { height: auto; aspect-ratio: 4 / 3; }
+  .project-photo { height: auto; aspect-ratio: 4 / 3; }
 }
 
 

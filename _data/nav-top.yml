@@ -1,50 +1,50 @@
 ---
 - title: About
-  url: "/about/index.html"
+  url: "/about/"
   items:
   - title: Our History
-    url: "/about/index.html"
+    url: "/about/"
   - title: Mission
-    url: "/about/mission.html"
+    url: "/about/mission"
   - title: Our Team
-    url: "/about/our-team.html"
+    url: "/about/our-team"
   - title: Affiliates
-    url: "/about/affiliates.html"
+    url: "/about/affiliates"
   - title: Contact us
-    url: "/about/contact-us.html"
+    url: "/about/contact-us"
 - title: Community
-  url: "/community-geography/index.html"
+  url: "/community-geography/"
   items:
   - title: Community Geography
-    url: "/community-geography/index.html"
+    url: "/community-geography/"
   - title: Our Network
-    url: "/community-geography/our-network.html"
+    url: "/community-geography/our-network"
   - title: Partner with us
-    url: "/community-geography/partnership.html"
+    url: "/community-geography/partnership"
 - title: News
-  url: "/news/index.html"
+  url: "/news/"
   items:
   - title: News
-    url: "/news/index.html"
+    url: "/news/"
   - title: Events Archive
-    url: "/events/index2.html"
+    url: "/events/archive"
   - title: Upcoming Events
-    url: "/events/index1.html"
+    url: "/events/upcoming"
 - title: Funding
-  url: "/funding/index.html"
+  url: "/funding/"
   items:
   - title: Overview
-    url: "/funding/index.html"
+    url: "/funding/"
   - title: Fellowships
-    url: "/funding/grad-fellowships.html"
+    url: "/funding/grad-fellowships"
   - title: Classroom Fund
-    url: "/funding/seed-funding.html"
+    url: "/funding/seed-funding"
 - title: Projects
-  url: "/projects/index.html"
+  url: "/projects/"
   items:
   - title: Projects
-    url: "/projects/index.html"
+    url: "/projects/"
   - title: Past Projects
-    url: "/projects/past-projects/index.html"
+    url: "/projects/past-projects/"
 - title: Donate
-  url: "/donate/index.html"
+  url: "/donate/"

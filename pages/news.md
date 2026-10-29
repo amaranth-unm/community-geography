@@ -1,11 +1,9 @@
 ---
 title: News
-permalink: /news/index.html
-source_url: https://communitygeography.unm.edu/news/index.html
-section: News
-section_url: /news/index.html
+permalink: /news/
 ---
 
 # News
 
+{% comment %} Lists every story in _news/, newest first, grouped by year. {% endcomment %}
 {% include community/news-list.html %}

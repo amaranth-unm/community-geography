@@ -1,8 +1,15 @@
+{% comment %}
+  People directory for the Our Team and Affiliates pages. Lists everyone in
+  _people/ whose `groups` include the page's `people_group` (team or
+  affiliates), in `display_order`. The team list leads with each role; the
+  affiliates list leads with each name.
+{% endcomment %}
+{% assign group = page.people_group %}
 {% assign people = site.people | sort: 'display_order' %}
 {% for person in people %}
-{% if person.groups contains include.group %}
+{% if person.groups contains group %}
 <section class="record-person">
-  {% if include.group == 'team' %}
+  {% if group == 'team' %}
   <h2 id="{{ person.anchor }}">{{ person.role | escape }}</h2>
   <p><em>{{ person.name | escape }}, {{ person.affiliation | escape }}</em></p>
   {% else %}

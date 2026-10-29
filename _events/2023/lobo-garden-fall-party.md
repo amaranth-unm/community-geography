@@ -1,9 +1,6 @@
 ---
 title: Lobo Garden Fall Party
-permalink: /events/-display-name.html
-source_url: https://communitygeography.unm.edu/events/-display-name.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/-display-name
 start_date: '2023-10-19'
 start_time: '16:00'
 end_date: '2023-10-19'

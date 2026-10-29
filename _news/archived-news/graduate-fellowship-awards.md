@@ -1,16 +1,14 @@
 ---
 archived: true
 title: Congratulations Students! 2021-2022 Graduate Fellowships Announced
-permalink: /news/may-18,-2021.html
-source_url: https://communitygeography.unm.edu/news/may-18,-2021.html
-section: News
-section_url: /news/index.html
+permalink: /news/may-18,-2021
 heading_id: congratulations-students-2021-2022-graduate-fellowships-announced
 published_date: '2021-05-18'
-date_source: /news/2021.html
+date_source: /news/2021
 ---
 
-<img src="{{ '/assets/images/news/maria-sunset-.jpeg' | relative_url }}" class="img-left" loading="lazy" decoding="async" width="400" height="534" alt="maria-sunset-.jpeg" />The R.H. Mallory Center for Community Geography is pleased to announce the awardees for the Graduate Fellowship for Community Engagement for 2021-2022! We were impressed with the applications and delighted to learn about UNM’s students’ efforts at addressing New Mexico’s environmental challenges and their involvement and commitment to work with community partners to develop positive and relevant results. Below are the funded projects:
+![maria-sunset-.jpeg]({{ site.baseurl }}/assets/images/news/maria-sunset-.jpeg){: .img-left width="400"}
+The R.H. Mallory Center for Community Geography is pleased to announce the awardees for the Graduate Fellowship for Community Engagement for 2021-2022! We were impressed with the applications and delighted to learn about UNM’s students’ efforts at addressing New Mexico’s environmental challenges and their involvement and commitment to work with community partners to develop positive and relevant results. Below are the funded projects:
 
 Lia Griesser’s project **“Valley of the Mills”** will work with Visiones Collaborativas/The Mora Empowerment Project, to consider the viability of traditional land management practices along the upper Rio Mora, New Mexico, to equitably restore the soil through an agro-ecological framework that can regenerate bio-cultural and financial viability. 
 

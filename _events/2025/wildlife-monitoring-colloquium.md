@@ -1,9 +1,6 @@
 ---
 title: 'GES Colloquium: From Validation to Implementation: Remote Sensing/ Machine Learning Workflows for Wildlife Monitoring'
-permalink: /events/ges-colloquium1.html
-source_url: https://communitygeography.unm.edu/events/ges-colloquium1.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/ges-colloquium1
 start_date: '2025-04-18'
 start_time: '15:00'
 end_date: '2025-04-18'
@@ -15,5 +12,4 @@ flyer_alt: 'Photo: GES Colloquium: From Validation to Implementation: Remote Sen
   Monitoring'
 heading_id: ges-colloquium-from-validation-to-implementation-remote-sensing-machine-learning-workflows-for-wildlife-monitoring
 ---
-
 

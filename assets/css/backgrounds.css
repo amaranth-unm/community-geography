@@ -244,3 +244,6 @@ SIDE SCROLL
   }
 }
 
+/* Empty space after a long background (scrollybox/bg-multi-long-close.html),
+   so the last image stays in view while the final text box scrolls past. */
+.scrollstory-runout { height: 100vh; }

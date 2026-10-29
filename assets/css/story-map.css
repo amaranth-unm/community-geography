@@ -177,3 +177,7 @@ alignment variants have nothing left to align against.
     margin-right: var(--spacing-sm);
   }
 }
+
+/* Empty space after the last panel (maps/story-map-end.html), so the map
+   stays pinned until the reader has scrolled past the final passage. */
+.story-map-runout { height: 60vh; }

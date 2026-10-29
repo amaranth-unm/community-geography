@@ -110,6 +110,7 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | A current project | `pages/projects/current-projects/` |
 | A past project | `pages/projects/past-projects/` |
 | A person on the Team or Affiliates page | `_people/` |
+| A word in the Community Geography lexicon | `pages/community-geography/` (files ending in `-lexicon-word.md`) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
 | Pictures | `assets/images/` |
 | PDFs and flyers | `assets/documents/` |
@@ -147,13 +148,14 @@ Leave a **blank line** between paragraphs, or they will run together.
 [Visit the UNM website](https://www.unm.edu)
 ```
 
-To link to another page on this website, use its address starting with a slash:
+To link to another page on this website, start the address with `{{ site.baseurl }}` and then the page's address:
 
 ```
-[See our projects]({{ '/projects/index.html' | relative_url }})
+[See our projects]({{ site.baseurl }}/projects/)
+[Read about our mission]({{ site.baseurl }}/about/mission)
 ```
 
-Keep the `{{ ... | relative_url }}` part exactly as shown.
+Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the website's address. Page addresses have no `.html` on the end; a section's main page ends in `/`.
 
 ### Adding an image
 
@@ -165,14 +167,15 @@ Keep the `{{ ... | relative_url }}` part exactly as shown.
 1. In the Explorer, open the right folder under `assets/images/` (for example `assets/images/news/` for news pictures, `assets/images/events/` for event flyers, `assets/images/projects/project/` for project pictures).
 2. **Drag and drop** the image from your computer into that folder in the Explorer. (Or right-click the folder and choose **Upload**.)
 
-**Step 3: Show it on the page.** Put this in the page text where you want the picture:
+**Step 3: Show it on the page.** Put this on its own line where you want the picture:
 
 ```
-<img src="{{ '/assets/images/news/spring-workshop-flyer.jpg' | relative_url }}" alt="Flyer for the spring workshop" />
+![Flyer for the spring workshop]({{ site.baseurl }}/assets/images/news/spring-workshop-flyer.jpg)
 ```
 
+- The words in the square brackets are the **alt text**: a short description for people who use screen readers. **Always fill it in**, and describe the picture rather than giving its file name.
 - Change the path (`/assets/images/news/...`) to match your file.
-- **Always fill in `alt`.** It is a short description for people who use screen readers.
+- To float the picture beside the text, add `{: .img-left}` or `{: .img-right}` right after it. To show it smaller, add a width in pixels: `{: .img-left width="300"}`.
 
 > Some pages (events, news, projects) have special spots for pictures. Those are covered in Sections 5-7. Just give the file's path.
 
@@ -186,7 +189,7 @@ The site has an **Optimize Images** tool that shrinks large pictures. On GitHub 
 2. Link to it:
 
 ```
-[Download the flyer (PDF)]({{ '/assets/documents/news/my-flyer.pdf' | relative_url }})
+[Download the flyer (PDF)]({{ site.baseurl }}/assets/documents/news/my-flyer.pdf)
 ```
 
 ### Changing colors
@@ -224,10 +227,24 @@ Fonts are set in the same `unm.css` file under `--font-body` and `--font-heading
 - Sizes look like `1.125rem` or `clamp(2.25rem, 4vw, 3.5rem)`. A **bigger number = bigger text**. `1rem` is normal size. In a `clamp(...)`, the first number is the smallest size (phones) and the last is the largest (wide screens).
 - Change a number by small steps (for example, `1rem` to `1.1rem`).
 
-For one-off sizing inside a page you can wrap text in a tag:
+Sizes and colors belong in these files, not in a page, so the whole site stays consistent.
+
+### Leaving a note for the next editor
+
+To explain something in a page without it showing on the website, wrap the note in `{% comment %}` and `{% endcomment %}`:
 
 ```
-<span style="font-size: 1.5rem;">This text is larger.</span>
+{% comment %} The photos for this page are listed in _data/gis-day-gallery.yml. {% endcomment %}
+```
+
+These notes are removed when the site is built, so they never reach the published page. (An HTML comment, `<!-- like this -->`, also hides text, but it is still sent to every visitor and can be seen with "View source", so don't use it for notes.) In the front matter block at the top of a file, start a note line with `#` instead:
+
+```
+---
+title: Place Lexicon Word
+# The card on the Community Geography page
+lexicon_word: Place
+---
 ```
 
 ### Changing the top menu
@@ -250,7 +267,6 @@ Open `_config.yml`. Edit the `title`, `description`, or `email` lines. Do not ch
 ```
 ---
 title: New Fellows Announced
-permalink: /news/new-fellows-announced.html
 published_date: '2026-09-15'
 ---
 
@@ -264,14 +280,14 @@ You can add a [link](https://example.com), **bold text**, and pictures
 
 **Notes**
 - `title` is the headline.
-- `permalink` is the web address. Use `/news/` + the file name (without `.md`) + `.html`.
+- The web address comes from the file name: `new-fellows-announced.md` is published at `/news/new-fellows-announced`. Choose the file name carefully, because renaming the file later changes the address.
 - `published_date` is the date in `'YYYY-MM-DD'` form. **Keep the quote marks.**
 - If you only know the year, use `published_year: '2026'` instead of `published_date`.
 - The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - **Homepage list:** the homepage shows a hand-picked set of stories. To add yours, add `featured_order: 6` (a number nobody else is using). Ask the director before featuring a story. New stories are *not* shown on the homepage automatically.
 
-**Easiest way:** copy an existing news file (for example `_news/2026/michael-devivo-visit.md`), rename the copy, and replace the text. Remember to change the `permalink`, too. Two pages cannot share an address.
+**Easiest way:** copy an existing news file (for example `_news/2026/michael-devivo-visit.md`), rename the copy, and replace the text. If the file you copied has a `permalink` line, delete it from the copy. Older stories keep a `permalink` so that their addresses from the old website still work.
 
 ---
 
@@ -284,7 +300,6 @@ You can add a [link](https://example.com), **bold text**, and pictures
 ```
 ---
 title: Community Mapping Workshop
-permalink: /events/community-mapping-workshop.html
 start_date: '2027-03-12'
 end_date: '2027-03-12'
 start_time: '14:00'
@@ -303,16 +318,17 @@ how to register.
 - **Keep the quote marks** around dates and times.
 - Use **24-hour time**: 2 p.m. is `'14:00'`, 9 a.m. is `'09:00'`.
 - Put the file in the folder matching its start year.
+- The web address comes from the file name: `community-mapping-workshop.md` is published at `/events/community-mapping-workshop`.
 - If you don't know the time, location, or presenter, **delete that line**. Don't guess.
 - **Flyer picture:** upload it to `assets/images/events/` (see Section 4) and add two lines at the top:
   ```
   flyer: /assets/images/events/my-flyer.png
   flyer_alt: Flyer for the Community Mapping Workshop on March 12
   ```
-- **Upcoming Events** automatically lists events whose date hasn't passed yet. It refreshes every day, so old events move to the archive by themselves.
+- **Upcoming Events** automatically lists events whose date hasn't passed yet. The list is worked out each time the site is published, so a finished event drops off the next time anyone commits a change.
 - Events are never deleted. They stay in the **Events Archive**.
 
-**Easiest way:** copy an existing event (for example `_events/2026/devivo-public-talk.md`), rename the copy, and edit it. Remove lines you don't need (like `source_url`, `legacy_upcoming`, `date_review`, and `review_notes`).
+**Easiest way:** copy an existing event (for example `_events/2026/devivo-public-talk.md`), rename the copy, and edit it. Remove lines you don't need (like `permalink`, `heading_id`, `legacy_upcoming`, `date_review`, and `review_notes`).
 
 ---
 
@@ -323,7 +339,7 @@ Projects are pages in two folders:
 - `pages/projects/current-projects/` for projects happening now
 - `pages/projects/past-projects/` for finished projects
 
-A new project is added by creating one file. The cards on the Projects page are built for you.
+A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
 1. Upload the project's picture to `assets/images/projects/project/` (see Section 4).
 2. Open `pages/projects/current-projects/`, create a new file named like `my-new-project.md`.
@@ -332,10 +348,7 @@ A new project is added by creating one file. The cards on the Projects page are 
 ```
 ---
 title: My New Project
-permalink: "/projects/project/my-new-project.html"
-section: Projects
-section_url: "/projects/index.html"
-thumbnail: "/assets/images/projects/project/my-new-project.jpg"
+thumbnail: /assets/images/projects/project/my-new-project.jpg
 start_date: 2027-01-15
 end_date: Ongoing
 faculty:
@@ -345,19 +358,14 @@ community_member:
 summary: Two or three sentences that describe the project. This shows on the project card.
 ---
 
-# My New Project
-
-<img src="{{ '/assets/images/projects/project/my-new-project.jpg' | relative_url }}" class="img-thumbnail student-project-thumb" alt="Describe the picture" />
-
-{% include community/project-meta.html %}
-
 Write the full description of the project here.
 ```
 
 4. Save, then **Commit & Push**.
 
 **Notes**
-- Keep `{% include community/project-meta.html %}` exactly as is. It displays the faculty and partner names.
+- `thumbnail` is the project's picture. It appears on the project's card and at the top of its page.
+- The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
 - `start_date` is written `YYYY-MM-DD` (no quote marks needed here).
 - For a project that hasn't ended, write `end_date: Ongoing`.
 - Don't know the faculty or partner? Use `- TBD`.
@@ -377,7 +385,7 @@ When a project is finished:
 3. **Move the file** to the past-projects folder: in the Explorer, **drag the file** from `current-projects` onto the `past-projects` folder (or right-click the file → **Cut**, then right-click `past-projects` → **Paste**).
 4. Click **Source Control**, write a message like "Move X project to past projects", and **Commit & Push**.
 
-That's it. The project disappears from the **Projects** page and appears on the **Past Projects** page automatically. The project's web address (`permalink`) does not change, so existing links still work. **Do not edit the `permalink` line.**
+That's it. The project disappears from the **Projects** page and appears on the **Past Projects** page automatically. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
 
 To move a project back, drag it back the other way.
 
@@ -417,7 +425,7 @@ A short biography goes here.
 - **Nothing is live until it is committed and pushed.** The Actions tab shows progress.
 - **Check the live site after every change.** Open the page and make sure it looks right.
 - **Search updates itself.** New events, news, and people become searchable automatically.
-- **Two pages cannot have the same `permalink`.** If they do, one silently replaces the other.
+- **Two pages cannot have the same address.** If two files have the same name in the same kind of folder, or the same `permalink`, one silently replaces the other.
 - **Never delete the dashes (`---`) that surround the top block** of a page.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.

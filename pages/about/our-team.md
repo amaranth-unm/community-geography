@@ -1,15 +1,13 @@
 ---
 title: Our Team
-permalink: /about/our-team.html
-source_url: https://communitygeography.unm.edu/about/our-team.html
-section: About
-section_url: /about/index.html
+permalink: /about/our-team
 people_group: team
 ---
 
 # Our Team
 
-{% include community/people.html group="team" %}
+{% comment %} Lists everyone in _people/ whose groups include this page's people_group (above). {% endcomment %}
+{% include community/people.html %}
 
 ## Past Team Members
 

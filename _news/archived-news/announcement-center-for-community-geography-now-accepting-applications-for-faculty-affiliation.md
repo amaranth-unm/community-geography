@@ -1,10 +1,6 @@
 ---
 archived: true
 title: 'Announcement: Center for Community Geography Now Accepting Applications for Faculty Affiliation'
-permalink: /news/announcement-center-for-community-geography-now-accepting-applications-for-faculty-affiliation.html
-source_url: https://communitygeography.unm.edu/news/announcement-center-for-community-geography-now-accepting-applications-for-faculty-affiliation.html
-section: News
-section_url: /news/index.html
 summary: "The R.H. Center for Community Geography is excited to announce that it is now accepting applications for faculty\
   \ affiliation. Any UNM faculty member with an interest in community-engaged teaching, research, or mapping is encouraged\
   \ to review the affiliation criteria and apply.\r\n\r\n\"We're excited to create a formal affiliation program to make it\
@@ -32,7 +28,7 @@ summary: "The R.H. Center for Community Geography is excited to announce that it
   \ also directly supports community-based projects through collaborative mapping, place-based research, and events."
 heading_id: announcement-center-for-community-geography-now-accepting-applications-for-faculty-affiliation
 published_date: '2022-10-19'
-date_source: /news/2022.html
+date_source: /news/2022
 ---
 
 *October 19, 2022*

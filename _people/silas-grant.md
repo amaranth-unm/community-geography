@@ -8,7 +8,6 @@ groups:
 - affiliates
 display_order: 6
 anchor: dr-silas-grant
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/soni-taylorshead-july-2022.jpg
 image_alt: soni-taylorshead-july-2022.jpg
 ---

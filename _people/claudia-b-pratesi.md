@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 3
 anchor: dr-claudia-b-pratesi
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/shared/claudia
 image_alt: claudia
 ---

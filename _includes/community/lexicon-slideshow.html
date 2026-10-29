@@ -1,0 +1,10 @@
+{% comment %}
+  The image slideshow on a lexicon word page. Reads the page's `slides`
+  front matter: a list of images, each with an `image` path and `alt` text.
+{% endcomment %}
+{% assign slide_images = page.slides | map: "image" %}
+{% assign slide_alts = page.slides | map: "alt" %}
+{% include images/carousel.html
+   id="lexicon-slideshow"
+   images=slide_images
+   alt-texts=slide_alts %}

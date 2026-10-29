@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 2
 anchor: gwyneth-doland
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/gwyneth-doland.jpg
 image_alt: gwyneth-doland.jpg
 ---

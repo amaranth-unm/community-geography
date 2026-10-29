@@ -1,16 +1,14 @@
 ---
 archived: true
 title: Congratulations Faculty! 2021-2022 Seed Funding Awards for Community Engaged Classrooms Announced
-permalink: /news/july-12,-2021.html
-source_url: https://communitygeography.unm.edu/news/july-12,-2021.html
-section: News
-section_url: /news/index.html
+permalink: /news/july-12,-2021
 heading_id: congratulations-faculty-2021-2022-seed-funding-awards-for-community-engaged-classrooms-announced
 published_date: '2021-07-12'
-date_source: /news/2021.html
+date_source: /news/2021
 ---
 
-<img src="{{ '/assets/images/news/casa-san-ysidro-by-ramona-m.png' | relative_url }}" class="img-left" loading="lazy" decoding="async" width="539" height="406" alt="casa-san-ysidro-by-ramona-m." />The R.H. Mallory Center for Community Geography is pleased to announce two faculty awardees who will receive \$1,000 in Seed Funding for Community Engaged Classrooms in 2021-2022! Faculty were invited to submit proposals for projects to improve community engagement in classes addressing human-environment issues, and two projects were selected for funding in the Department of Geography & Environmental Studies.
+![casa-san-ysidro-by-ramona-m.]({{ site.baseurl }}/assets/images/news/casa-san-ysidro-by-ramona-m.png){: .img-left width="539"}
+The R.H. Mallory Center for Community Geography is pleased to announce two faculty awardees who will receive \$1,000 in Seed Funding for Community Engaged Classrooms in 2021-2022! Faculty were invited to submit proposals for projects to improve community engagement in classes addressing human-environment issues, and two projects were selected for funding in the Department of Geography & Environmental Studies.
 
 Dr. Yolanda C. Lin received a \$1,000 award for community engagement in **“Information Design for Science and Society”** (GEOG 2115), a new course at UNM in the university’s general education curriculum (communications area). Dr. Lin will use the award to collaborate with the City Nature Challenge Albuquerque team and help promote their annual spring citizen science event on the iNaturalist platform. In spring 2022, Dr. Lin’s classroom will design promotional infographics aimed at diverse audiences and organize an outreach event during the competition. This collaboration will support the City Nature Challenge’s priorities of promoting citizen science and documenting urban biodiversity by increasing participation in the 2022 Albuquerque City Nature Challenge.
 
