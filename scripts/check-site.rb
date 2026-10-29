@@ -50,10 +50,9 @@ begin
 rescue JSON::ParserError => e
   errors << "Invalid search index: #{e.message}"
 end
-if File.file?('migration/manifest.json')
-  JSON.parse(File.read('migration/manifest.json'))['pages'].each do |page|
-    errors << "Missing migrated page: #{page['permalink']}" unless File.file?(File.join(root, page['permalink'].sub(%r{^/}, '')))
-  end
+# Addresses from the old Cascade site that must keep working.
+JSON.parse(File.read(File.join(__dir__, 'preserved-urls.json'))).each do |permalink|
+  errors << "Missing preserved page: #{permalink}" unless File.file?(File.join(root, permalink.delete_prefix('/')))
 end
 abort errors.uniq.join("\n") unless errors.empty?
 puts "Checked #{documents.size} pages: internal links, images, fragments, landmarks, preserved URLs, and search JSON passed."

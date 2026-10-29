@@ -31,9 +31,6 @@
   <!-- juxtapose.js CSS for image comparison -->
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
 
-  <!-- littlefoot.js CSS for snappy footnotes -->
-  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
-
   <!-- Splide CSS for image carousels -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 
@@ -43,53 +40,27 @@
        they were written in, which is what keeps same-specificity rules
        resolving the way they always have. -->
   <link href="{{site.baseurl}}/assets/css/base.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/feature-grid.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/jumbotron.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/images.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/footer.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/buttons.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/cards.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/tags.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/gallery.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/toc.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/home.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/backgrounds.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/story-map.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/map.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/typography.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/nav.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/nav-left.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/nav-profile.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/workshop.css" rel="stylesheet">
 
-  <!--
-    Theme CSS loads after the base files above.
-    Set theme_css: canyon-wall in _config.yml to load
-    assets/css/themes/canyon-wall.css.
-
-    You can also uncomment one of these links for quick testing.
-  -->
-
+  <!-- Theme CSS loads after the base files above: theme_css in _config.yml
+       names a file in assets/css/themes/. -->
   {% if site.theme_css %}
   <link href="{{site.baseurl}}/assets/css/themes/{{ site.theme_css }}.css" rel="stylesheet">
   {% endif %}
 
-  <!-- <link href="{{site.baseurl}}/assets/css/themes/canyon-wall.css" rel="stylesheet"> -->
-  <!-- <link href="{{site.baseurl}}/assets/css/themes/dark-energy.css" rel="stylesheet"> -->
-  <!-- <link href="{{site.baseurl}}/assets/css/themes/terra-cotta.css" rel="stylesheet"> -->
-
-  <!-- scrollstory layout CSS 
+  <!-- scrollstory layout CSS
     To differentiate scrollstory pages from regular pages, we use a special layout value in the YAML front matter
     and load the scrollstory.css file.
   -->
 
   {% if page.layout == 'scrollstory' %}
   <link href="{{site.baseurl}}/assets/css/scrollstory.css" rel="stylesheet">
-  {% endif %}
-
-  <!-- docs CSS - consistent table column widths for /docs/ pages -->
-  {% if page.url contains '/docs/' %}
-  <link href="{{site.baseurl}}/assets/css/docs.css" rel="stylesheet">
   {% endif %}
 
   <!-- Page header CSS: loaded when page has a header image -->

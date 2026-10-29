@@ -5,14 +5,11 @@ The classic image-and-text card, in two shapes: `.v-card` (image above text,
 laid out by `.card-grid`) and `.h-card` (image beside text, stacked in a list).
 
 Loads:    every page
-Used by:  cards/card-grid.html, cards/card-stack.html, helpers/card-image.html
+Used by:  community/current-projects.html, community/past-projects.html,
+          helpers/card-image.html
 Needs:    base.css tokens (--card-bg, --card-border, --card-hover-border,
           --card-heading-color, --card-text-color)
-Not here: image-first tiles with the caption over the picture (gallery.css);
-          the table-of-contents rows that are the text-forward alternative to a
-          card (toc.css); the tag filter UI (tags.css). The `.card .tags` rules
-          below stay here rather than in tags.css, because they style tags
-          *inside* a card rather than the filter component.
+Not here: the Center's project-list overrides (community.css).
 *****************************************************/
 
 /*****************************************************
@@ -121,7 +118,7 @@ its image sits above the text or beside it belongs here, not in a variant.
 /*****************************************************
 VERTICAL CARD
 
-Image above text. Laid out by .card-grid; emitted by cards/card-grid.html.
+Image above text. Laid out by .card-grid; emitted by community/past-projects.html.
 *****************************************************/
 
 .v-card {
@@ -169,7 +166,7 @@ Image above text. Laid out by .card-grid; emitted by cards/card-grid.html.
 /*****************************************************
 HORIZONTAL CARD
 
-Image beside text, stacked in a list. Emitted by cards/card-stack.html.
+Image beside text, stacked in a list. Emitted by community/current-projects.html.
 Collapses to vertical under 768px — see the mobile block at the end.
 *****************************************************/
 
@@ -235,33 +232,6 @@ Collapses to vertical under 768px — see the mobile block at the end.
 }
 
 /* Tags in cards */
-/*****************************************************
-TAGS INSIDE A CARD
-
-Card-scoped, so it lives here rather than in tags.css, which owns the
-standalone tag filter UI.
-*****************************************************/
-
-.card .tags {
-  /* Display */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  
-  /* Box Model */
-  margin-top: 0.75rem;
-}
-
-.card .tags .badge {
-  /* Box Model */
-  padding: 0.35rem 0.65rem;
-  
-  /* Typography */
-  font-size: 0.85rem;
-  font-weight: normal;
-}
-
-/* Card grid layout using CSS Grid */
 /*****************************************************
 CARD GRID
 

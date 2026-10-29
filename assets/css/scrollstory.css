@@ -42,8 +42,8 @@ Not here: the background images themselves (backgrounds.css)
    Matched on :first-child rather than :first-of-type deliberately: it should
    be the lede only when it is the very first thing in the essay. A page that
    opens with a heading, as milton-snow does, has no lede to enlarge. The
-   consequence to know about is that putting anything above it — a scrollspy
-   table of contents, say — takes the styling away.
+   consequence to know about is that putting anything above it — an image or a
+   note, say — takes the styling away.
 
    Scoped to #main > .container, not .container alone: a scrollstory page has
    six to thirteen .container elements — every scrollybox opens one, and so

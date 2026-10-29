@@ -1,14 +1,14 @@
 /*****************************************************
 NAVIGATION
 
-The top navigation bar and breadcrumbs, including the dropdown behaviour and
-the variant that goes transparent over a hero page header.
+The top navigation bar, including the dropdown behaviour and the variant
+that goes transparent over a hero page header.
 
 Loads:    every page
-Used by:  nav/nav-top.html, nav/breadcrumbs.html
+Used by:  nav/nav-top.html
 Needs:    base.css tokens (--bg-nav, --text-on-photo, --spacing-*)
-Not here: the two sidebar navigations (nav-left.css, nav-profile.css) and the
-          search overlay the nav opens (search.css)
+Not here: the search overlay the nav opens (search.css), or the sticky
+          site-nav wrapper (community.css)
 *****************************************************/
 
 @media screen {
@@ -325,38 +325,6 @@ ul .top-nav-dropdown.show {
   position: relative;
 }
 
-
-/*****************************************************
-SIDENAV - See nav-left.css and nav-profile.css for sidebar styling
-*****************************************************/
-
-
-/*****************************************************
-BREADCRUMB NAVIGATION
-*****************************************************/
-.breadcrumb-nav-list {
-  /* Display */
-  display: flex;
-  list-style: none;
-  gap: 8px;
-
-  /* Box Model */
-  margin: 0 0 16px 0;
-  padding: 0;
-}
-
-.breadcrumb-nav-list-item a {
-  /* Typography */
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--info);
-}
-
-.breadcrumb-nav-list-item span {
-  /* Typography */
-  font-size: 1rem;
-  color: var(--text-muted);
-}
 
 
 } /* end media screen */

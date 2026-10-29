@@ -485,7 +485,9 @@ is the one place UNM values are translated for the site.
   transform: translateY(-2px);
 }
 .legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
+/* margin-top: auto keeps both footers at the bottom of short pages. */
 .center-footer {
+  margin-top: auto;
   background: var(--bg-section-alt);
   border-top: 4px solid var(--accent-primary);
 }
@@ -821,7 +823,7 @@ is the one place UNM values are translated for the site.
   line-height: 1.7;
 }
 /* News timeline: grouped-by-year, dated rows used by community/news-list.html
-   and community/news-row.html (pages/news/*, _includes/community/home-news.md). */
+   and community/news-row.html (pages/news/*). */
 .news-list { display: flex; flex-direction: column; gap: var(--spacing-lg); }
 .news-year-nav {
   display: flex;

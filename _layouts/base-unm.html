@@ -34,9 +34,14 @@
           <span aria-hidden="true">/</span><span aria-current="page">{{ page.title }}</span>
         </nav>
         {% endunless %}
+        {% comment %} Story layouts (scrollstory, map) set full_width so their content can span the window. {% endcomment %}
+        {% if layout.full_width %}
+        {{ content }}
+        {% else %}
         <div class="container center-content{% if page.home %} center-content--home{% endif %}">
           <div class="center-article">{{ content }}</div>
         </div>
+        {% endif %}
       </main>
       {% include unm/footer-site.html %}
       {% include unm/footer-unm.html %}
