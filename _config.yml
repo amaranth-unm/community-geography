@@ -5,9 +5,9 @@ description: Connecting University of New Mexico resources with community needs 
 lang: en
 timezone: America/Denver
 url: https://amaranth.unm.edu
-baseurl: /communitygeography-collections
-repository: amaranth-unm/communitygeography-collections
-repository_url: https://github.com/amaranth-unm/communitygeography-collections
+baseurl: /community-geography
+repository: amaranth-unm/community-geography
+repository_url: https://github.com/amaranth-unm/community-geography
 email: communitygeography@unm.edu
 theme_css: unm
 search: true
@@ -50,7 +50,6 @@ exclude:
 - Gemfile.lock
 - vendor/
 - scripts/
-- migration/
 - .bundle/
 collections:
   events:

@@ -46,7 +46,7 @@ Pick whichever is easiest:
 
 - **Easiest:** Open the repository on GitHub and press the **`.`** (period) key.
 - Or change `github.com` to `github.dev` in the web address.
-- Or use this link: <https://github.dev/amaranth-unm/communitygeography-collections>
+- Or use this link: <https://github.dev/amaranth-unm/community-geography>
 
 (If the repository has moved, use the address of wherever this repository lives now.)
 
@@ -422,7 +422,7 @@ A short biography goes here.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.
 - **Keep file names simple:** lowercase, dashes instead of spaces, no special characters.
-- **Folders starting with `_`, and the `scripts/`, `migration/`, and `.github/` folders:** leave them alone unless you know what you're doing. The `migration/` folder holds historical notes. A more technical guide is in `migration/collections-guide.md` and `scripts/README.md`.
+- **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. A more technical guide is in `scripts/README.md`.
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
 - **New year?** Create a new year folder in `_news/` and `_events/` (for example `_news/2027/`). The year pages are made automatically.
