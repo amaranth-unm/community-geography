@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
   {% include unm/page-header-unm.html %}
-  <body class="unm-site">
+  <body class="center-site">
     {% include nav/skip-link.html %}
     {% include unm/analytics.html %}
     <div class="page-wrap">
@@ -11,7 +11,7 @@
           <img src="{{ site.center_banner.image | relative_url }}" width="{{ site.center_banner.width }}" height="{{ site.center_banner.height }}" alt="{{ site.center_banner.alt | escape }}">
         </a>
       </header>
-      <div class="unm-site-nav">{% include nav/nav-top.html %}</div>
+      <div class="center-site-nav">{% include nav/nav-top.html %}</div>
       <main id="main">
         <nav class="center-breadcrumbs" aria-label="Breadcrumb">
           <a href="{{ '/' | relative_url }}">Home</a>

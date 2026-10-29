@@ -14,7 +14,7 @@
       <span class="news-row-year">{{ include.story.published_date | date: '%Y' }}</span>
     </time>
     {% else %}
-    <span class="news-row-year news-row-year--only">{{ include.story.archive_year }}</span>
+    <span class="news-row-year news-row-year--only">{{ include.story.published_year }}</span>
     {% endif %}
   </div>
   <div class="news-row-body">

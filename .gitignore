@@ -4,7 +4,5 @@ _site/
 .sass-cache/
 .bundle/
 /vendor/
-/migration/_work/
 .DS_Store
 _config.local.yml
-_config.ci.yml

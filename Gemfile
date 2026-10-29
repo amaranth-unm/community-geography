@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.4'
-gem 'jekyll-sitemap', '~> 1.4'
+# The Jekyll version and plugins GitHub Pages uses, for previewing the site
+# with `bundle exec jekyll serve`. GitHub Pages itself ignores this file.
+gem 'github-pages', group: :jekyll_plugins
 gem 'webrick', '~> 1.9'
-gem 'nokogiri', '~> 1.18'

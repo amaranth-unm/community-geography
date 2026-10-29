@@ -25,7 +25,7 @@ on:
 
 permissions:
   contents: write
-  actions: write
+  pages: write
 
 concurrency:
   group: optimize-images-${{ github.ref }}
@@ -37,7 +37,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Check out the site
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
 
@@ -85,9 +85,9 @@ jobs:
           git push
           echo 'changed=true' >> "$GITHUB_OUTPUT"
 
-      # GITHUB_TOKEN pushes do not trigger push workflows. Dispatch Pages explicitly.
+      # A push made with GITHUB_TOKEN may not start a Pages build, so request one.
       - name: Rebuild the published site
         if: steps.commit.outputs.changed == 'true' && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy-pages.yml --ref main
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

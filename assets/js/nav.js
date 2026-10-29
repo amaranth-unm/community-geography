@@ -5,7 +5,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     var toggler = document.querySelector('.top-nav-toggler');
     var collapse = document.querySelector('.top-nav-collapse');
-    var siteNav = document.querySelector('.unm-site-nav');
+    var siteNav = document.querySelector('.center-site-nav');
 
     if (siteNav) {
       var updateScrolledState = function () {

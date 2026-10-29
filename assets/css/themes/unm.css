@@ -2,8 +2,13 @@
 UNM THEME
 Modern UNM palette applied to Xanthan's semantic design tokens.
 Loads: every page through theme_css in _config.yml.
-Used by: Xanthan components and base-unm.html.
-Needs: base.css. Layout rules live in community.css.
+Used by: Xanthan components, community.css, and collections.css.
+Needs: base.css, and unm.css for --unm-shell-width and --unm-gutter.
+Layout rules live in community.css.
+
+This is the one place UNM values become site tokens. community.css and
+collections.css read only the semantic names defined here, never --unm-*
+tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
 *****************************************************/
 :root {
   /* Teal carries the site identity; cherry is reserved for actions and focus. */
@@ -14,6 +19,8 @@ Needs: base.css. Layout rules live in community.css.
   --interactive-hover-bg: #ba0c2f;
   --interactive-subtle: color-mix(in srgb, #007a86 12%, transparent);
   --interactive-subtle-hover: color-mix(in srgb, #ba0c2f 12%, transparent);
+  /* UNM gold, for highlights on dark or photographic backgrounds. */
+  --accent-highlight: #ffc600;
 
   --bg-page: #f8f8f6;
   --bg-card: #ffffff;
@@ -38,7 +45,7 @@ Needs: base.css. Layout rules live in community.css.
   --text-h5: #ba0c2f;
   --text-lede: #4e5356;
   --text-kicker: #ba0c2f;
-  --text-feature-band-link: #ffc600;
+  --text-feature-band-link: var(--accent-highlight);
   --text-feature-band-link-hover: #ffffff;
 
   --button-bg: #007a86;
@@ -58,7 +65,9 @@ Needs: base.css. Layout rules live in community.css.
   --font-heading: 'Vitesse A', 'Vitesse B', 'Vitesse', Georgia, serif;
   --font-serif: 'Vitesse A', 'Vitesse B', 'Vitesse', Georgia, serif;
   --font-mono: 'Gotham A', 'Gotham B', 'Gotham', Arial, sans-serif;
+  /* Site content lines up with the UNM header and footer shell. */
   --width-center: var(--unm-shell-width, 1170px);
+  --page-gutter: var(--unm-gutter, 15px);
   --width-reading: 54rem;
   --radius-sm: 3px;
   --radius-md: 6px;

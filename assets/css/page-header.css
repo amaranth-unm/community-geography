@@ -8,10 +8,9 @@ Three tiers:  hero (full screen), section (~60vh), banner (~22vh)
 Five filters: botanical, sketch, woodcut, etching, photo
 
 Loads:    only on pages with `header-image` in front matter
-Used by:  layout/page-header.html
+Used by:  layout/page-header.html, from the scrollstory layout
 Needs:    base.css tokens (--bg-page-header, --page-header-*)
-Not here: the home hero, which is placed in the page body and can carry
-          buttons (home.css)
+Not here: the Center's home hero (community.css)
 
 Editing guide:
   - Colors:   Edit the page-header variables in assets/css/base.css

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
   {% include unm/page-header-unm.html %}
-  <body class="unm-site">
+  <body class="center-site">
     {% include nav/skip-link.html %}
     {% include unm/analytics.html %}
     <div class="page-wrap">
@@ -25,7 +25,7 @@
         </a>
       </header>
       {% endif %}
-      <div class="unm-site-nav">{% include nav/nav-top.html %}</div>
+      <div class="center-site-nav">{% include nav/nav-top.html %}</div>
       <main id="main">
         {% unless page.home %}
         <nav class="center-breadcrumbs" aria-label="Breadcrumb">
@@ -34,9 +34,14 @@
           <span aria-hidden="true">/</span><span aria-current="page">{{ page.title }}</span>
         </nav>
         {% endunless %}
+        {% comment %} Story layouts (scrollstory, map) set full_width so their content can span the window. {% endcomment %}
+        {% if layout.full_width %}
+        {{ content }}
+        {% else %}
         <div class="container center-content{% if page.home %} center-content--home{% endif %}">
           <div class="center-article">{{ content }}</div>
         </div>
+        {% endif %}
       </main>
       {% include unm/footer-site.html %}
       {% include unm/footer-unm.html %}

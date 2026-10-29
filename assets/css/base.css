@@ -19,9 +19,7 @@ Loads:    every page, first
 Used by:  every layout and every other stylesheet
 Needs:    nothing
 Not here: prose and headings (typography.css), which read as "base" but are
-          not; buttons (buttons.css); the footer (footer.css); figures and the
-          carousel (images.css); the jumbotron (jumbotron.css); the feature
-          grid (feature-grid.css)
+          not; figures and the carousel (images.css)
 *****************************************************/
 
 /* Font imports - all fonts used throughout the site */
