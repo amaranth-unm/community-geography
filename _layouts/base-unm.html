@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
   {% include unm/page-header-unm.html %}
-  <body class="unm-site">
+  <body class="center-site">
     {% include nav/skip-link.html %}
     {% include unm/analytics.html %}
     <div class="page-wrap">
@@ -25,7 +25,7 @@
         </a>
       </header>
       {% endif %}
-      <div class="unm-site-nav">{% include nav/nav-top.html %}</div>
+      <div class="center-site-nav">{% include nav/nav-top.html %}</div>
       <main id="main">
         {% unless page.home %}
         <nav class="center-breadcrumbs" aria-label="Breadcrumb">
