@@ -10,7 +10,7 @@ For editing content, use the [editing guide](../HOW-TO-EDIT-THIS-WEBSITE.md).
 
 | Workflow in the Actions tab | When it runs | What it does |
 | --- | --- | --- |
-| [Deploy Jekyll site to Pages](../.github/workflows/deploy-pages.yml) | Changes reach `main`, or someone selects **Run workflow**. | Installs the required software on GitHub, sets the published address, builds with both plugins, runs the site and collection checks, and publishes only after those steps succeed. Upcoming events are recalculated on every build, so rebuild with **Run workflow** if the list needs refreshing without a content change. |
+| [Deploy Jekyll site to Pages](../.github/workflows/deploy-pages.yml) | Changes reach `main`, a pull request into `main` is opened or updated, or someone selects **Run workflow**. | Installs the required software on GitHub, sets the published address, builds with both plugins, runs the site and collection checks, and publishes only after those steps succeed. Pull requests get the same build and checks but are never published. Upcoming events are recalculated on every build, so rebuild with **Run workflow** if the list needs refreshing without a content change. |
 | [Optimize Images](../.github/workflows/optimize-images.yml) | Only when someone selects **Run workflow**. | Tests the optimizer, then measures potential savings or applies smaller images. Applying changes commits them to the selected branch. If that branch is `main`, it also starts the publishing workflow. |
 
 Repository setup: under **Settings → Pages → Build and deployment**, the source must be **GitHub Actions**. This custom build supports the site's Ruby plugins. Pages hosts the generated website; the plugins run during the build.
@@ -19,7 +19,7 @@ Repository setup: under **Settings → Pages → Build and deployment**, the sou
 
 1. Open the [browser editor](https://github.dev/amaranth-unm/community-geography) and edit or add your content files.
 2. Open **Source Control**, stage the changed files, enter a short description, and choose **Commit & Push**. Saving an editor tab alone does not send changes to GitHub.
-3. Changes committed directly to `main` start publishing. If you work on another branch, create a pull request and merge it into `main` when ready. The current workflows do not automatically check pull requests or publish branch previews.
+3. Changes committed directly to `main` start publishing. If you work on another branch, create a pull request and merge it into `main` when ready. The pull request shows the result of the build and checks, so problems appear before you merge. Branch previews are not published.
 4. Open [Actions](https://github.com/amaranth-unm/community-geography/actions), select **Deploy Jekyll site to Pages**, and open the run for your change.
 5. After both **build** and **deploy** succeed, open the published site using the deployment link.
 
