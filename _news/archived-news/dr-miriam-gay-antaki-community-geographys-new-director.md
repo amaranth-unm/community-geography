@@ -3,7 +3,6 @@ archived: true
 title: Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director
 heading_id: dr-miriam-gay-antaki--community-geographys-new-director
 published_date: '2024-12-06'
-featured_order: 5
 image: /assets/images/about/miriam-profile-picture-.jpg
 image_alt: Miriam Gay-Antaki
 ---

@@ -3,7 +3,6 @@ archived: true
 title: 'Featured Spring 2025 Fellow: Hope Smith'
 heading_id: null
 published_date: '2025-04-04'
-featured_order: 1
 image: /assets/images/news/hopesmith.jpg
 image_alt: Hope Smith
 ---

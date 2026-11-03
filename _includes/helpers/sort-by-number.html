@@ -1,0 +1,51 @@
+{% comment %}
+  Sort by number — internal helper for the Our Team and Affiliates pages and
+  the lexicon cards.
+
+  Puts `items` in order of a number in their front matter (display_order,
+  lexicon_order) and leaves the result in `sorted_by_number`
+  for the include that called it.
+
+  Why not Jekyll's own `sort` filter: editors may write a number with or
+  without quote marks (display_order: 5 or display_order: '5'). Jekyll reads
+  the first as a number and the second as text, and `sort` stops the whole
+  site from building when a list mixes them. This helper reads every value as
+  a number first, so either way works.
+
+  Parameters:
+    items: the list to sort (required)
+    field: the front matter number to sort on, such as display_order (required)
+
+  Smaller numbers come first, and decimals work (2.5 goes between 2 and 3).
+  Items with no number, or with a word instead of a number, go at the end.
+  Items with the same number keep the order they arrive in (the order of
+  their file names).
+{% endcomment %}
+{% assign sort_items = include.items %}
+{% assign sort_keys = "" | split: "" %}
+{% for sort_item in sort_items %}
+  {% comment %}
+    Read the value as text, then as a number in thousandths, so 5, '5' and
+    5.0 all become 5000 and 2.5 becomes 2500. A blank or a word comes out
+    as 0; unless it really was 0, send it to the end.
+  {% endcomment %}
+  {% assign sort_value = sort_item[include.field] | append: "" | strip %}
+  {% assign sort_number = sort_value | times: 1000 | round %}
+  {% if sort_number == 0 and sort_value != "0" %}{% assign sort_number = 999999999 %}{% endif %}
+  {% comment %}
+    The key is that number padded to nine digits, so that sorting the keys
+    as text puts 2 (000002000) before 10 (000010000), then the item's
+    position, padded to four digits, which breaks ties and finds the item
+    again below.
+  {% endcomment %}
+  {% assign sort_number = sort_number | at_least: 0 | at_most: 999999999 | prepend: "000000000" | slice: -9, 9 %}
+  {% assign sort_position = forloop.index0 | prepend: "0000" | slice: -4, 4 %}
+  {% assign sort_key = sort_number | append: "_" | append: sort_position %}
+  {% assign sort_keys = sort_keys | push: sort_key %}
+{% endfor %}
+{% assign sort_keys = sort_keys | sort %}
+{% assign sorted_by_number = "" | split: "" %}
+{% for sort_key in sort_keys %}
+  {% assign sort_position = sort_key | slice: -4, 4 | plus: 0 %}
+  {% assign sorted_by_number = sorted_by_number | push: sort_items[sort_position] %}
+{% endfor %}

@@ -7,8 +7,12 @@
     - lexicon_order: the card's position (1 = first)
     - thumbnail:     the card image
   To add a word, copy an existing *-lexicon-word.md page and change those.
+  helpers/sort-by-number.html puts the cards in order, so lexicon_order works
+  with or without quote marks.
 {% endcomment %}
-{% assign words = site.pages | where_exp: "p", "p.lexicon_word" | sort: "lexicon_order" %}
+{% assign words = site.pages | where_exp: "p", "p.lexicon_word" %}
+{% include helpers/sort-by-number.html items=words field="lexicon_order" %}
+{% assign words = sorted_by_number %}
 <section class="community-lexicon" aria-label="Community geography lexicon">
   {% for word in words %}
   <a class="community-lexicon-card" href="{{ word.url | relative_url }}">

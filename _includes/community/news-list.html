@@ -3,7 +3,8 @@
 
   Params:
     include.year     - restrict to a single year (e.g. "2024")
-    include.featured - homepage widget: hand-picked stories in featured_order
+    include.limit    - show only this many of the newest stories, as one flat
+                       list (the homepage's Recent News)
     include.full     - render full article body instead of a teaser excerpt
 
   Stories without a published_date give a published_year instead. Dates and
@@ -12,21 +13,17 @@
   (`append: ""`), because a year written without quote marks is a number and
   would never match the text "2026".
 {% endcomment %}
-{% if include.featured %}
-  {% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}
-{% else %}
-  {% include helpers/sort-by-date.html items=site.news field="published_date" fallback="published_year" order="newest" %}
-  {% assign stories = sorted_by_date %}
-{% endif %}
+{% include helpers/sort-by-date.html items=site.news field="published_date" fallback="published_year" order="newest" %}
+{% assign stories = sorted_by_date %}
 
 {% comment %}
-  A single already-filtered year, or a hand-picked featured list, reads fine as
-  one flat chronological list. Everything else (the merged News index) is
+  A single already-filtered year, or the few newest stories, reads fine as one
+  flat chronological list. Everything else (the merged News index) is
   grouped under a year heading so the page reads as a dated timeline rather
   than an undifferentiated stack of links.
 {% endcomment %}
 {% assign group_by_year = true %}
-{% if include.year or include.featured %}{% assign group_by_year = false %}{% endif %}
+{% if include.year or include.limit %}{% assign group_by_year = false %}{% endif %}
 
 {% if group_by_year %}
   {% assign years_str = "" %}
@@ -60,7 +57,7 @@
     </section>
     {% endfor %}
   {% else %}
-    {% for story in stories %}
+    {% for story in stories limit: include.limit %}
       {% if include.year %}
         {% assign story_year = story.published_date | date: '%Y' %}
         {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year | append: "" %}{% endif %}
