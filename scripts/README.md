@@ -6,6 +6,8 @@ For editing content, use the [editing guide](../HOW-TO-EDIT-THIS-WEBSITE.md).
 
 GitHub Pages builds the site straight from the `main` branch (**Settings → Pages → Build and deployment → Deploy from a branch**, `main`, `/ (root)`). Every commit to `main` starts a run named **pages build and deployment** in the [Actions tab](https://github.com/amaranth-unm/community-geography/actions). If a build fails, the previous version stays online; open the failed run, read the error, fix the named file, and commit again.
 
+The **Daily Rebuild** workflow ([daily-rebuild.yml](../.github/workflows/daily-rebuild.yml)) asks GitHub Pages for a rebuild every morning, so Upcoming Events drops finished events even when nobody edits the site. It changes no files. In a public repository, GitHub pauses scheduled workflows after 60 days without any commits; if that happens, open **Actions → Daily Rebuild** and click **Enable workflow**.
+
 The site uses only Liquid templates and the plugins GitHub Pages supports, so there is nothing to install or configure. To preview locally, run `bundle install` and then `bundle exec jekyll serve`. The [Gemfile](../Gemfile) installs the same Jekyll version that GitHub Pages uses.
 
 Old file addresses from the Cascade site, such as `/news/some-flyer.pdf`, are listed in [legacy-assets.json](../_data/legacy-assets.json). The [404 page](../404.md) sends anyone who follows one of those addresses to the file's new home in `assets/`.

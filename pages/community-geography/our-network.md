@@ -1,9 +1,6 @@
 ---
 title: Our Network
-permalink: "/community-geography/our-network.html"
-source_url: https://communitygeography.unm.edu/community-geography/our-network.html
-section: Community
-section_url: "/community-geography/index.html"
+permalink: /community-geography/our-network
 ---
 
 # Our Network

@@ -1,9 +1,6 @@
 ---
 title: City Nature Challenge
-permalink: /events/city-nature-challenge.html
-source_url: https://communitygeography.unm.edu/events/city-nature-challenge.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/city-nature-challenge
 start_date: '2024-04-26'
 start_time: '00:00'
 end_date: '2024-05-05'
@@ -14,7 +11,7 @@ flyer_alt: 'Photo: City Nature Challenge'
 heading_id: city-nature-challenge
 ---
 
-The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2024 City Nature Challenge takes place from Friday, April 26 to Sunday, May 5, 2023.
+The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2024 City Nature Challenge takes place from Friday, April 26 to Sunday, May 5, 2023.
 
 **The observation period will be from April 26-29, 2024 and the identification period will run from April 30-May 5, 2024.** 
 
@@ -25,7 +22,7 @@ You don’t have to be an expert to contribute! Simply take photos of any plants
 - Watch this video: [Finding Observations for iNaturalist in Your Neighborhood](https://youtu.be/MzcF_GhPrEw) (8 min)
 - Watch [recorded iNaturalist tutorial](https://youtu.be/M7qX807Cmx4) (YouTube, 1h 20min)
 
-After the observation period ends, expert naturalists and scientists will use iNaturalist to review all the photographs and ID all the species. **You can help identify species in the photographs taken if you have knowledge of local plants and animals!**
+After the observation period ends, expert naturalists and scientists will use iNaturalist to review all the photographs and ID all the species. **You can help identify species in the photographs taken if you have knowledge of local plants and animals!**
 
 ***How do I Join a Team?***
 
@@ -37,12 +34,12 @@ All UNM students, staff, and faculty are invited to join the challenge on one of
         - [Team BIO](https://www.inaturalist.org/projects/unm-biology-city-nature-challenge-abq-2024)
         - [UNM Team Competition](https://www.inaturalist.org/projects/cnc-abq-unm-teams-2024)
         - [CNC ABQ Team Competition](https://www.inaturalist.org/projects/city-nature-challenge-abq-teams-2024)
-3.  [](https://www.inaturalist.org/projects/city-nature-challenge-abq-teams-2024)From **April 26-29**, make as many observations as possible in Bernalillo, Sandoval, or Valencia Counties. You don’t even have to know what you’re observing. Just take a photo and then the naturalists and scientists using iNaturalist will figure out what it is during the identification period from April 30-May 5.
+3.  [](https://www.inaturalist.org/projects/city-nature-challenge-abq-teams-2024)From **April 26-29**, make as many observations as possible in Bernalillo, Sandoval, or Valencia Counties. You don’t even have to know what you’re observing. Just take a photo and then the naturalists and scientists using iNaturalist will figure out what it is during the identification period from April 30-May 5.
 4.   
 
-***Special event on**** **Friday, April 26***
+***Special event on*** ***Friday, April 26***
 
-You are invited to stop by **Bandelier East on Friday, April 26 from 9am-1pm**, where representatives from the R.H. Mallory Center for Community Geography and the ABQ Backyard Refuge Program will have** **an information table set up outside to encourage UNM students to participate. We will also have **guided campus walks at 10am and 11:30am so we can show people how to collect observations!**
+You are invited to stop by **Bandelier East on Friday, April 26 from 9am-1pm**, where representatives from the R.H. Mallory Center for Community Geography and the ABQ Backyard Refuge Program will have an information table set up outside to encourage UNM students to participate. We will also have **guided campus walks at 10am and 11:30am so we can show people how to collect observations!**
 
 ***What happens after the City Nature Challenge?***
 
@@ -51,6 +48,6 @@ After the observation period ends, expert naturalists and scientists will use iN
 **For updates:**
 
 - Follow R.H. Mallory Center for Community Geography on [**Instagram**](https://www.instagram.com/nmcommunitygeog/)
-- Learn more at [**communitygeography.unm.edu**]({{ '/index.html' | relative_url }})
-- Follow City Nature Challenge on [**Facebook**](https://www.facebook.com/abqcitynaturechallenge)**,  **[**Twitter**](https://twitter.com/ABQcitynature)**, **[**Instagram**](https://www.instagram.com/abqcitynaturechallenge/)
+- Learn more at [**communitygeography.unm.edu**]({{ site.baseurl }}/)
+- Follow City Nature Challenge on [**Facebook**](https://www.facebook.com/abqcitynaturechallenge)**,** [**Twitter**](https://twitter.com/ABQcitynature)**,** [**Instagram**](https://www.instagram.com/abqcitynaturechallenge/)
 - Learn more at [**abqcitynature.org**](http://abqcitynature.org/) and [**citynaturechallenge.org**](http://citynaturechallenge.org/)

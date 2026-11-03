@@ -1,9 +1,5 @@
 ---
 title: 'Gila Centennial: Looking to the Mountain: Sacred Lands, Healing Cultures'
-permalink: /events/gila-centennial-looking-to-the-mountain-sacred-lands-healing-cultures.html
-source_url: https://communitygeography.unm.edu/events/gila-centennial-looking-to-the-mountain-sacred-lands-healing-cultures.html
-section: Events
-section_url: /events/index2.html
 start_date: '2024-03-08'
 start_time: '12:00'
 end_date: '2024-03-08'

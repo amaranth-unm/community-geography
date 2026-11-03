@@ -133,6 +133,8 @@ Uses Splide.js — see _includes/images/carousel.html
 
 /* Carousel wrapper — height is set via fixedHeight in Splide options */
 .xanthan-carousel {
+  width: 100%;
+  margin: 0 auto var(--spacing-lg);
   /* Visual */
   border-radius: var(--radius-sm);
   overflow: hidden;

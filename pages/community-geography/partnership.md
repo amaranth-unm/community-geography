@@ -1,9 +1,6 @@
 ---
 title: Partnership
-permalink: "/community-geography/partnership.html"
-source_url: https://communitygeography.unm.edu/community-geography/partnership.html
-section: Community
-section_url: "/community-geography/index.html"
+permalink: /community-geography/partnership
 ---
 
 # Partnership
@@ -18,4 +15,4 @@ The Center coordinates and funds community-engaged research and learning activ
 
 Once someone contacts us with a community request, our first step is to coordinate a “matchmaking” process to link a specific class, student, research team, or faculty member to the project. Our second step is to help develop an agreement for how UNM and community personnel will work together on an agreed timeline to achieve project goals. All partnership agreements must be mutually beneficial and satisfactory to all parties before they begin. 
 
-[**For a detailed overview of our projects and initiatives visit our Projects Page by clicking here! **]({{ '/projects/index.html' | relative_url }})
+[**For a detailed overview of our projects and initiatives visit our Projects Page by clicking here!** ]({{ site.baseurl }}/projects/)

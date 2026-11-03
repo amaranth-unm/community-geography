@@ -6,7 +6,6 @@ groups:
 - team
 display_order: 3
 anchor: graduate-assistant
-source_url: https://communitygeography.unm.edu/about/our-team.html
 image: /assets/images/about/desiree-photo.jpeg
 image_alt: 'Desiree Loggins Headshot '
 ---

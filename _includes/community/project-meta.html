@@ -2,9 +2,8 @@
   Project Meta (detail page)
 
   Renders a project's Start Date / End Date and Faculty / Community Member
-  front matter as a compact meta block. Drop this into a project page's body
-  directly after its photo — where these facts used to be typed out as plain
-  paragraphs — so editing a project only means editing its front matter.
+  front matter as a compact meta block, below the photo. Used by the
+  project-unm layout, so project pages never call it themselves.
 
   Reads from the current page's front matter:
     - start_date, end_date (end_date may be the literal "Ongoing")
@@ -12,7 +11,6 @@
 {% endcomment %}
 {% assign faculty = page.faculty | join: ", " %}
 {% assign community_member = page.community_member | join: ", " %}
-{::nomarkdown}
 <dl class="project-meta project-meta--detail">
   {% if page.start_date %}
   <div class="project-meta-row">
@@ -33,4 +31,3 @@
     <dd>{{ community_member | default: "TBD" }}</dd>
   </div>
 </dl>
-{:/nomarkdown}

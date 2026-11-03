@@ -22,10 +22,13 @@
 {% assign thumb_pos = include.card.thumbnail-position | default: 'center' %}
 {% assign thumb_zoom = include.card.thumbnail-zoom %}
 
+{% comment %} A style attribute only when a page asks for a non-default position or zoom; cards.css centers images otherwise. {% endcomment %}
 <div class="{{ include.class }}">
   <img
     src="{{ card_image_url | strip }}"
     alt="{{ include.card.title | escape }}"
+    {%- if include.card.thumbnail-position or thumb_zoom %}
     style="object-position: {{ thumb_pos }};{% if thumb_zoom %} transform: scale({{ thumb_zoom }}); transform-origin: {{ thumb_pos }};{% endif %}"
+    {%- endif %}
   >
 </div>

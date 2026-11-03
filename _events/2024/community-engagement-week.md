@@ -1,9 +1,5 @@
 ---
 title: Community Engagement Week
-permalink: /events/community-engagement-week.html
-source_url: https://communitygeography.unm.edu/events/community-engagement-week.html
-section: Events
-section_url: /events/index2.html
 start_date: '2024-04-01'
 start_time: '08:00'
 end_date: '2024-04-05'

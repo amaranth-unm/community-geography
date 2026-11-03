@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 4
 anchor: dr-thomas-de-pree
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/thomas-de-pree
 image_alt: thomas-de-pree
 ---

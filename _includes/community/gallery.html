@@ -1,3 +1,18 @@
+{% comment %}
+  Photo gallery: a grid of photos that each open at full size.
+
+  Parameters:
+    photos:  list of photos, each with an `image` path and `alt` description;
+             usually a file in _data/, such as site.data.gis-day-gallery
+    summary: (optional) a sentence shown above the photos
+{% endcomment %}
+{% if include.summary %}
+<div class="gallery-intro">
+  <p class="gallery-intro__eyebrow">Community Geography</p>
+  <p class="gallery-intro__summary">{{ include.summary }}</p>
+  <p class="gallery-intro__details">{{ include.photos.size }} photographs &middot; Select any image to view it at full size.</p>
+</div>
+{% endif %}
 <div class="record-gallery" role="list">
 {% for photo in include.photos %}
   <figure class="record-gallery__item" role="listitem">

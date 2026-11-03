@@ -1,9 +1,6 @@
 ---
 title: Grad, Staff, and Faculty Social
-permalink: /events/9.27-grad-staff-and-faculty-social.html
-source_url: https://communitygeography.unm.edu/events/9.27-grad-staff-and-faculty-social.html
-section: Events
-section_url: /events/index2.html
+redirect_from: /events/9.27-grad-staff-and-faculty-social.html
 start_date: '2024-09-27'
 start_time: '12:00'
 end_date: '2024-09-27'

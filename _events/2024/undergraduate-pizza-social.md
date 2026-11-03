@@ -1,9 +1,6 @@
 ---
 title: Undergraduate Pizza Social
-permalink: /events/9.18-undergraduate-pizza-social.html
-source_url: https://communitygeography.unm.edu/events/9.18-undergraduate-pizza-social.html
-section: Events
-section_url: /events/index2.html
+redirect_from: /events/9.18-undergraduate-pizza-social.html
 start_date: '2024-09-18'
 start_time: '12:00'
 end_date: '2024-09-18'

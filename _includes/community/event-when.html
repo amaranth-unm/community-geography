@@ -1,0 +1,20 @@
+{% comment %}
+  One "Start" or "End" row of community/event-details.html.
+
+  Parameters:
+    label: Start or End
+    day:   the event's date, with or without quote marks
+    time:  (optional) the time as written: 2:00 pm, 9:30 am, or '14:00'
+
+  A time written as text has a colon or "am"/"pm" in it. A 24-hour time typed
+  without quote marks (14:00) reaches the site as a number instead, and would
+  show as 12:00 AM, so it shows as "time to be confirmed" until it is fixed.
+{% endcomment %}
+{%- assign when_time = include.time | append: "" -%}
+{%- assign when_day = include.day | date: "%Y-%m-%d" -%}
+{%- if when_time contains ":" or when_time contains "m" or when_time contains "M" -%}
+{%- capture when_moment %}{{ when_day }} {{ when_time }}{% endcapture -%}
+<dt>{{ include.label }}</dt><dd><time datetime="{{ when_moment | date: '%Y-%m-%dT%H:%M' }}">{{ include.day | date: '%B %d, %Y' }} · {{ when_moment | date: '%I:%M %p' }}</time></dd>
+{%- else -%}
+<dt>{{ include.label }}</dt><dd><time datetime="{{ when_day }}">{{ include.day | date: '%B %d, %Y' }}</time>{% if when_time != "" %} · time to be confirmed{% endif %}</dd>
+{%- endif -%}

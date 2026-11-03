@@ -8,7 +8,6 @@ groups:
 - affiliates
 display_order: 1
 anchor: joe-garcia
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/joegarcia.jpg
 image_alt: joegarcia.jpg
 ---

@@ -1,9 +1,6 @@
 ---
 title: 2023 Annual Leopold Lecture - Robin Wall Kimmerer
-permalink: /events/2023-annual-leopold-lecture---robin-wall-kimmerer.html
-source_url: https://communitygeography.unm.edu/events/2023-annual-leopold-lecture---robin-wall-kimmerer.html
-section: Events
-section_url: /events/index2.html
+permalink: /events/2023-annual-leopold-lecture---robin-wall-kimmerer
 start_date: '2023-04-22'
 start_time: '17:30'
 end_date: '2023-04-22'
@@ -15,7 +12,7 @@ flyer_alt: 'Photo: 2023 Annual Leopold Lecture - Robin Wall Kimmerer'
 heading_id: 2023-annual-leopold-lecture---robin-wall-kimmerer
 ---
 
-<span id="photo-event"></span><img src="{{ '/assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg' | relative_url }}" loading="lazy" decoding="async" alt="Photo: 2023 Annual Leopold Lecture - Robin Wall Kimmerer" />
+![Photo: 2023 Annual Leopold Lecture - Robin Wall Kimmerer]({{ site.baseurl }}/assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg)
 
 The Center for Community Geography is proud to be a sponsor of the 2023 Annual Leopold Lecture organized by the Leopold Writing Program. This year the Lecture will be given by Robin Wall Kimmerer, Powatami scientist and storyteller, decorated professor and author of *Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants* and *Gathering Moss: A Natural and Cultural History of Mosses*.
 

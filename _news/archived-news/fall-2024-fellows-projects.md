@@ -1,13 +1,10 @@
 ---
 archived: true
 title: Fall 2024 Community Geography Fellows' Projects
-permalink: /fall-2024-fellows-projects.html
-source_url: https://communitygeography.unm.edu/fall-2024-fellows-projects.html
+permalink: /fall-2024-fellows-projects
 heading_id: fall-2024-fellows-projects
 published_date: '2024-12-06'
 featured_order: 4
-section: News
-section_url: /news/index.html
 ---
 
 Augustus (Gus) Guikema is a senior studying economics and geography at the University of New Mexico.Though his community geography fellowship, Gus is assisting the UNM School of Law’s “Just Transition Challenge” group in producing a GIS database of oil and gas facilities in New Mexico that are potentially exceeding their Clean Air Act permits. From this work, Gus hopes to gain relationships and knowledge that will continue to grow outside of the program and experience in utilizing academic resources to help meet community needs.

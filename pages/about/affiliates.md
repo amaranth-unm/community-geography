@@ -1,9 +1,6 @@
 ---
 title: Faculty Affiliates at UNM
-permalink: /about/affiliates.html
-source_url: https://communitygeography.unm.edu/about/affiliates.html
-section: About
-section_url: /about/index.html
+permalink: /about/affiliates
 people_group: affiliates
 summary: "Faculty Affiliation Program\r\n\r\nThe Center for Community Geography seeks faculty affiliates willing to support\
   \ its mission in one or more of the following ways:\r\n\r\nIdentify potential partnerships and/or projects in the Albuquerque\
@@ -22,8 +19,9 @@ summary: "Faculty Affiliation Program\r\n\r\nThe Center for Community Geography 
 
 # Faculty Affiliates at UNM
 
-{% include community/people.html group="affiliates" %}
+{% comment %} Lists everyone in _people/ whose groups include this page's people_group (above). {% endcomment %}
+{% include community/people.html %}
 
 **Faculty Affiliation Program**
 
-**Applications for faculty affiliation for the Center for Community Geography are now closed, check back for application dates and deadlines in the Spring. **
+**Applications for faculty affiliation for the Center for Community Geography are now closed, check back for application dates and deadlines in the Spring.** 

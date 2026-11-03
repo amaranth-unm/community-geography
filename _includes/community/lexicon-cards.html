@@ -1,0 +1,19 @@
+{% comment %}
+  Lexicon cards on the "What is Community Geography?" page: one card per
+  lexicon word page, linking to its slideshow.
+
+  Each word page provides, in its front matter:
+    - lexicon_word:  the word shown on the card
+    - lexicon_order: the card's position (1 = first)
+    - thumbnail:     the card image
+  To add a word, copy an existing *-lexicon-word.md page and change those.
+{% endcomment %}
+{% assign words = site.pages | where_exp: "p", "p.lexicon_word" | sort: "lexicon_order" %}
+<section class="community-lexicon" aria-label="Community geography lexicon">
+  {% for word in words %}
+  <a class="community-lexicon-card" href="{{ word.url | relative_url }}">
+    <img src="{{ word.thumbnail | relative_url }}" loading="lazy" alt="Illustration representing {{ word.lexicon_word | downcase }}.">
+    <span>{{ word.lexicon_word }}</span>
+  </a>
+  {% endfor %}
+</section>

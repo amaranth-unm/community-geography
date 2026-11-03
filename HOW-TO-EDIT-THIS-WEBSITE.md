@@ -93,7 +93,7 @@ Many files start with a block between two lines of three dashes:
 ```
 ---
 title: Community mapping workshop
-start_date: '2027-03-12'
+start_date: 2027-03-12
 ---
 ```
 
@@ -105,11 +105,13 @@ This is "front matter." It is information the website uses (title, dates, pictur
 
 | I want to change... | Go to this folder |
 | --- | --- |
+| Start a new story, event, project, or person | `_templates/` (files to copy; never shown on the website) |
 | A news story | `_news/` (inside a year folder, like `_news/2026/`) |
 | An event | `_events/` (inside a year folder, like `_events/2026/`) |
 | A current project | `pages/projects/current-projects/` |
 | A past project | `pages/projects/past-projects/` |
 | A person on the Team or Affiliates page | `_people/` |
+| A word in the Community Geography lexicon | `pages/community-geography/` (files ending in `-lexicon-word.md`) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
 | Pictures | `assets/images/` |
 | PDFs and flyers | `assets/documents/` |
@@ -147,13 +149,14 @@ Leave a **blank line** between paragraphs, or they will run together.
 [Visit the UNM website](https://www.unm.edu)
 ```
 
-To link to another page on this website, use its address starting with a slash:
+To link to another page on this website, start the address with `{{ site.baseurl }}` and then the page's address:
 
 ```
-[See our projects]({{ '/projects/index.html' | relative_url }})
+[See our projects]({{ site.baseurl }}/projects/)
+[Read about our mission]({{ site.baseurl }}/about/mission)
 ```
 
-Keep the `{{ ... | relative_url }}` part exactly as shown.
+Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the website's address. Page addresses have no `.html` on the end; a section's main page ends in `/`.
 
 ### Adding an image
 
@@ -165,14 +168,15 @@ Keep the `{{ ... | relative_url }}` part exactly as shown.
 1. In the Explorer, open the right folder under `assets/images/` (for example `assets/images/news/` for news pictures, `assets/images/events/` for event flyers, `assets/images/projects/project/` for project pictures).
 2. **Drag and drop** the image from your computer into that folder in the Explorer. (Or right-click the folder and choose **Upload**.)
 
-**Step 3: Show it on the page.** Put this in the page text where you want the picture:
+**Step 3: Show it on the page.** Put this on its own line where you want the picture:
 
 ```
-<img src="{{ '/assets/images/news/spring-workshop-flyer.jpg' | relative_url }}" alt="Flyer for the spring workshop" />
+![Flyer for the spring workshop]({{ site.baseurl }}/assets/images/news/spring-workshop-flyer.jpg)
 ```
 
+- The words in the square brackets are the **alt text**: a short description for people who use screen readers. **Always fill it in**, and describe the picture rather than giving its file name.
 - Change the path (`/assets/images/news/...`) to match your file.
-- **Always fill in `alt`.** It is a short description for people who use screen readers.
+- To float the picture beside the text, add `{: .img-left}` or `{: .img-right}` right after it. To show it smaller, add a width in pixels: `{: .img-left width="300"}`.
 
 > Some pages (events, news, projects) have special spots for pictures. Those are covered in Sections 5-7. Just give the file's path.
 
@@ -186,7 +190,7 @@ The site has an **Optimize Images** tool that shrinks large pictures. On GitHub 
 2. Link to it:
 
 ```
-[Download the flyer (PDF)]({{ '/assets/documents/news/my-flyer.pdf' | relative_url }})
+[Download the flyer (PDF)]({{ site.baseurl }}/assets/documents/news/my-flyer.pdf)
 ```
 
 ### Changing colors
@@ -207,7 +211,7 @@ The part after the colon (like `#007a86`) is a **color code**. Replace it with a
 | `--interactive-hover` | Cherry red (hover and focus color) |
 | `--bg-page` | Page background |
 | `--bg-nav` | Top menu background |
-| `--bg-footer` | Footer background |
+| `--bg-footer` | Background of the Center footer (the band with the address) |
 | `--text-body` | Main text color |
 | `--text-h1`, `--text-h2`, `--text-h3` | Heading colors |
 
@@ -224,10 +228,24 @@ Fonts are set in the same `unm.css` file under `--font-body` and `--font-heading
 - Sizes look like `1.125rem` or `clamp(2.25rem, 4vw, 3.5rem)`. A **bigger number = bigger text**. `1rem` is normal size. In a `clamp(...)`, the first number is the smallest size (phones) and the last is the largest (wide screens).
 - Change a number by small steps (for example, `1rem` to `1.1rem`).
 
-For one-off sizing inside a page you can wrap text in a tag:
+Sizes and colors belong in these files, not in a page, so the whole site stays consistent.
+
+### Leaving a note for the next editor
+
+To explain something in a page without it showing on the website, wrap the note in `{% comment %}` and `{% endcomment %}`:
 
 ```
-<span style="font-size: 1.5rem;">This text is larger.</span>
+{% comment %} The photos for this page are listed in _data/gis-day-gallery.yml. {% endcomment %}
+```
+
+These notes are removed when the site is built, so they never reach the published page. (An HTML comment, `<!-- like this -->`, also hides text, but it is still sent to every visitor and can be seen with "View source", so don't use it for notes.) In the front matter block at the top of a file, start a note line with `#` instead:
+
+```
+---
+title: Place Lexicon Word
+# The card on the Community Geography page
+lexicon_word: Place
+---
 ```
 
 ### Changing the top menu
@@ -250,8 +268,7 @@ Open `_config.yml`. Edit the `title`, `description`, or `email` lines. Do not ch
 ```
 ---
 title: New Fellows Announced
-permalink: /news/new-fellows-announced.html
-published_date: '2026-09-15'
+published_date: 2026-09-15
 ---
 
 Write your story here. Leave a blank line between paragraphs.
@@ -264,14 +281,14 @@ You can add a [link](https://example.com), **bold text**, and pictures
 
 **Notes**
 - `title` is the headline.
-- `permalink` is the web address. Use `/news/` + the file name (without `.md`) + `.html`.
-- `published_date` is the date in `'YYYY-MM-DD'` form. **Keep the quote marks.**
-- If you only know the year, use `published_year: '2026'` instead of `published_date`.
+- The web address comes from the file name: `new-fellows-announced.md` is published at `/news/new-fellows-announced`. Choose the file name carefully, because renaming the file later changes the address.
+- `published_date` is the date written `YYYY-MM-DD`.
+- If you only know the year, use `published_year: 2026` instead of `published_date`.
 - The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - **Homepage list:** the homepage shows a hand-picked set of stories. To add yours, add `featured_order: 6` (a number nobody else is using). Ask the director before featuring a story. New stories are *not* shown on the homepage automatically.
 
-**Easiest way:** copy an existing news file (for example `_news/2026/michael-devivo-visit.md`), rename the copy, and replace the text. Remember to change the `permalink`, too. Two pages cannot share an address.
+**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
 
 ---
 
@@ -284,11 +301,10 @@ You can add a [link](https://example.com), **bold text**, and pictures
 ```
 ---
 title: Community Mapping Workshop
-permalink: /events/community-mapping-workshop.html
-start_date: '2027-03-12'
-end_date: '2027-03-12'
-start_time: '14:00'
-end_time: '16:00'
+start_date: 2027-03-12
+end_date: 2027-03-12
+start_time: 2:00 pm
+end_time: 4:00 pm
 location: UNM Bandelier East 105
 presenter: Jane Doe
 ---
@@ -300,19 +316,20 @@ how to register.
 4. Save, then **Commit & Push**.
 
 **Notes**
-- **Keep the quote marks** around dates and times.
-- Use **24-hour time**: 2 p.m. is `'14:00'`, 9 a.m. is `'09:00'`.
+- Dates are written `YYYY-MM-DD`. For a one-day event, `start_date` and `end_date` are the same day.
+- Write times the usual way: `2:00 pm`, `9:30 am`. (Older events write times like `'14:00'`, in quote marks; that works too. Without the quote marks, `14:00` shows as "time to be confirmed".)
 - Put the file in the folder matching its start year.
+- The web address comes from the file name: `community-mapping-workshop.md` is published at `/events/community-mapping-workshop`.
 - If you don't know the time, location, or presenter, **delete that line**. Don't guess.
 - **Flyer picture:** upload it to `assets/images/events/` (see Section 4) and add two lines at the top:
   ```
   flyer: /assets/images/events/my-flyer.png
   flyer_alt: Flyer for the Community Mapping Workshop on March 12
   ```
-- **Upcoming Events** automatically lists events whose date hasn't passed yet. It refreshes every day, so old events move to the archive by themselves.
+- **Upcoming Events** automatically lists events whose date hasn't passed yet. The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay in the **Events Archive**.
 
-**Easiest way:** copy an existing event (for example `_events/2026/devivo-public-talk.md`), rename the copy, and edit it. Remove lines you don't need (like `source_url`, `legacy_upcoming`, `date_review`, and `review_notes`).
+**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
 
 ---
 
@@ -323,7 +340,7 @@ Projects are pages in two folders:
 - `pages/projects/current-projects/` for projects happening now
 - `pages/projects/past-projects/` for finished projects
 
-A new project is added by creating one file. The cards on the Projects page are built for you.
+A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
 1. Upload the project's picture to `assets/images/projects/project/` (see Section 4).
 2. Open `pages/projects/current-projects/`, create a new file named like `my-new-project.md`.
@@ -332,10 +349,7 @@ A new project is added by creating one file. The cards on the Projects page are 
 ```
 ---
 title: My New Project
-permalink: "/projects/project/my-new-project.html"
-section: Projects
-section_url: "/projects/index.html"
-thumbnail: "/assets/images/projects/project/my-new-project.jpg"
+thumbnail: /assets/images/projects/project/my-new-project.jpg
 start_date: 2027-01-15
 end_date: Ongoing
 faculty:
@@ -345,26 +359,21 @@ community_member:
 summary: Two or three sentences that describe the project. This shows on the project card.
 ---
 
-# My New Project
-
-<img src="{{ '/assets/images/projects/project/my-new-project.jpg' | relative_url }}" class="img-thumbnail student-project-thumb" alt="Describe the picture" />
-
-{% include community/project-meta.html %}
-
 Write the full description of the project here.
 ```
 
 4. Save, then **Commit & Push**.
 
 **Notes**
-- Keep `{% include community/project-meta.html %}` exactly as is. It displays the faculty and partner names.
-- `start_date` is written `YYYY-MM-DD` (no quote marks needed here).
+- `thumbnail` is the project's picture. It appears on the project's card and at the top of its page.
+- The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
+- `start_date` is written `YYYY-MM-DD`.
 - For a project that hasn't ended, write `end_date: Ongoing`.
 - Don't know the faculty or partner? Use `- TBD`.
 - The Projects page sorts current projects with the newest start date first.
 - Past projects are sorted alphabetically by title.
 
-**Easiest way:** copy a similar project file, rename it, and replace the information.
+**Easiest way:** copy `_templates/project.md` into `pages/projects/current-projects/`, rename it, and replace the information.
 
 ---
 
@@ -377,7 +386,7 @@ When a project is finished:
 3. **Move the file** to the past-projects folder: in the Explorer, **drag the file** from `current-projects` onto the `past-projects` folder (or right-click the file → **Cut**, then right-click `past-projects` → **Paste**).
 4. Click **Source Control**, write a message like "Move X project to past projects", and **Commit & Push**.
 
-That's it. The project disappears from the **Projects** page and appears on the **Past Projects** page automatically. The project's web address (`permalink`) does not change, so existing links still work. **Do not edit the `permalink` line.**
+That's it. The project disappears from the **Projects** page and appears on the **Past Projects** page automatically. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
 
 To move a project back, drag it back the other way.
 
@@ -410,6 +419,8 @@ A short biography goes here.
 - The photo is optional. Upload it to `assets/images/about/`.
 - To remove someone, delete their file (right-click it → **Delete**).
 
+**Easiest way:** copy `_templates/person.md` into `_people/`, name the copy after the person (for example `jane-doe.md`), and fill it in.
+
 ---
 
 ## 10. Other things to know
@@ -417,7 +428,7 @@ A short biography goes here.
 - **Nothing is live until it is committed and pushed.** The Actions tab shows progress.
 - **Check the live site after every change.** Open the page and make sure it looks right.
 - **Search updates itself.** New events, news, and people become searchable automatically.
-- **Two pages cannot have the same `permalink`.** If they do, one silently replaces the other.
+- **Two pages cannot have the same address.** If two files have the same name in the same kind of folder, or the same `permalink`, one silently replaces the other.
 - **Never delete the dashes (`---`) that surround the top block** of a page.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.
@@ -438,10 +449,11 @@ A short biography goes here.
 | I saved but the website didn't change | You must **Commit & Push** in Source Control. Then wait a few minutes and refresh (Ctrl+F5). |
 | The Actions tab shows a red X | Click the failed run, then click **build**. Read the red lines for the file name and message. Fix that file in the browser, then Commit & Push again. The old website stays online meanwhile. |
 | Error mentions "Liquid" | Something between `{% %}` or `{{ }}` is mistyped. Compare with a working file. |
-| Error mentions "comparison of" | A date is missing its quote marks. Dates must look like `'2027-03-12'` and times like `'14:00'`. |
+| Error mentions "comparison of" | A number such as `display_order` or `featured_order` has quote marks in one file and not in others. Remove the quote marks: `display_order: 20`. |
+| An event says "time to be confirmed" | Its time is written like `14:00` without quote marks. Write it as `2:00 pm`. |
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. |
-| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed each time anyone publishes a change, so a finished event can linger until then.) |
+| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
 | Nothing works | Stop, don't delete anything, and ask for help. All past versions can be restored. |
@@ -457,6 +469,7 @@ A short biography goes here.
 | Save a file | Ctrl+S (Cmd+S) |
 | Publish my changes | Source Control → message → **Commit & Push** |
 | Check if it's live | GitHub → **Actions** tab → green check |
+| Start a new page | Copy a file from `_templates/` |
 | Add news | New file in `_news/YEAR/` |
 | Add an event | New file in `_events/YEAR/` |
 | Add a project | New file in `pages/projects/current-projects/` |
@@ -466,4 +479,4 @@ A short biography goes here.
 | Change colors | `assets/css/themes/unm.css` |
 | Change the menu | `_data/nav-top.yml` |
 
-*Last updated: October 2026. If something in this guide is out of date, please fix it. This file is `HOW-TO-EDIT-THIS-WEBSITE.md` in the main folder of the repository.*
+*Last updated: November 2026. If something in this guide is out of date, please fix it. This file is `HOW-TO-EDIT-THIS-WEBSITE.md` in the main folder of the repository.*

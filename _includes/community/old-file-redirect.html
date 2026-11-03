@@ -1,0 +1,17 @@
+{% comment %}
+  Used by the 404 page. Images and documents from the old Cascade site moved
+  into assets/. When someone follows an old file address, this sends them to
+  the file's new address. The list of moves is _data/legacy-assets.json.
+{% endcomment %}
+<script>
+  (function () {
+    var moves = {{ site.data['legacy-assets'] | jsonify }};
+    var prefix = {{ site.baseurl | append: '/' | jsonify }};
+    var path = decodeURIComponent(location.pathname);
+    if (path.indexOf(prefix) !== 0) return;
+    path = path.slice(prefix.length);
+    for (var i = 0; i < moves.length; i++) {
+      if (moves[i].from === path) { location.replace(prefix + moves[i].to); return; }
+    }
+  })();
+</script>

@@ -1,9 +1,5 @@
 ---
 title: Final Spring Colloquium
-permalink: /events/final-spring-colloquium.html
-source_url: https://communitygeography.unm.edu/events/final-spring-colloquium.html
-section: Events
-section_url: /events/index2.html
 start_date: '2024-05-09'
 start_time: '15:00'
 end_date: '2024-05-09'

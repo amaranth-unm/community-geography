@@ -1,16 +1,12 @@
 ---
 archived: true
 title: 'New Spring 2024 Field Course at UNM! GEOG 499: Environmental Justice in Greater Chaco'
-permalink: /news/geog-499.html
-source_url: https://communitygeography.unm.edu/news/geog-499.html
-section: News
-section_url: /news/index.html
 heading_id: new-spring-2024-field-course-at-unm-geog-499-environmental-justice-in-greater-chaco
 published_date: '2023-10-23'
-date_source: /news/2023.html
+date_source: /news/2023
 ---
 
-<img src="{{ '/assets/images/news/oil-and-gas-leasing-protest.jpeg' | relative_url }}" loading="lazy" decoding="async" width="822" height="548" alt="oil and gas leasing protest" />
+![oil and gas leasing protest]({{ site.baseurl }}/assets/images/news/oil-and-gas-leasing-protest.jpeg){: width="822"}
 
   (*Greater Chaco Coalition protesting an oil and gas lease sale in March 2018)*
 
@@ -18,7 +14,7 @@ The department of Geography and Environmental Studies has announced a new field 
 
 The course will focus on the complex histories and lived realities of extraction, climate change, and fights for environmental justice in the Greater Chaco Landscape. This class will pay special attention to the environmental, social, and spatial dimensions of oil and gas extraction, which has surged in New Mexico in the last decade.
 
- <img src="{{ '/assets/images/news/well-greater-chaco.jpg' | relative_url }}" class="img-left" loading="lazy" decoding="async" width="568" height="426" alt="well greater chaco" />
+ ![well greater chaco]({{ site.baseurl }}/assets/images/news/well-greater-chaco.jpg){: .img-left width="568"}
 
 Students taking this class can expect to gain hands-on experience in field methods and community geography:
 
@@ -36,7 +32,7 @@ The course schedule is unique and offers flexibility for students: 
 
 The course is open to both graduates and undergraduates.
 
-See the course [flyer]({{ '/assets/images/news/hiresgeog499flyer.png' | relative_url }}) or the more detailed GES [course information sheet]({{ '/assets/documents/news/geog-499-detailed-info.pdf' | relative_url }}) for more information! 
+See the course [flyer]({{ site.baseurl }}/assets/images/news/hiresgeog499flyer.png) or the more detailed GES [course information sheet]({{ site.baseurl }}/assets/documents/news/geog-499-detailed-info.pdf) for more information! 
 
 Instructor permission is required to register for this course. To obtain permission, [please fill out this form](https://forms.gle/XH5Znj6qLyRors7Q8). If you have additional questions, contact Silas at <silasporellegrant@gmail.com> 
 

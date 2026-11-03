@@ -1,10 +1,7 @@
 ---
 title: 'Guest Speaker Visit: Dr. Michael DeVivo'
-permalink: /news/michael-devivo-visit.html
-source_url: https://communitygeography.unm.edu/news/2026.html
 published_year: '2026'
-section: News
-section_url: /news/2026.html
+section_url: /news/2026
 review_notes:
 - Publication day is not supplied. Event dates in the article are not publication dates. Related public-talk event conflicts
   between 2025 and 2026.
@@ -22,4 +19,4 @@ The highlight of the visit will take place on April 10, when Dr. DeVivo will del
 
 Please reach out to Dr. Miriam Gay-Antaki <mgayantaki@unm.edu> for questions.
 
-[View the Dr. Michael DeVivo talk flyer (PDF)]({{ '/assets/documents/news/april10_drdevivo_talk_flyer.pdf' | relative_url }})
+[View the Dr. Michael DeVivo talk flyer (PDF)]({{ site.baseurl }}/assets/documents/news/april10_drdevivo_talk_flyer.pdf)

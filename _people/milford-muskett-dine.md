@@ -7,7 +7,6 @@ groups:
 - affiliates
 display_order: 10
 anchor: dr-milford-muskett-dine
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/milfordmuskett.jpg
 image_alt: MilfordMuskett
 ---

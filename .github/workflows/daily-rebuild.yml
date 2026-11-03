@@ -1,0 +1,22 @@
+name: Daily Rebuild
+
+# GitHub Pages rebuilds the site only when something is committed. This asks
+# for a rebuild every morning, so Upcoming Events drops events that have ended
+# even when nobody has edited the site. It changes no files.
+on:
+  schedule:
+    - cron: '0 12 * * *'   # 12:00 UTC, which is 5 or 6 a.m. in Albuquerque
+  workflow_dispatch:
+
+permissions:
+  pages: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ask GitHub Pages to rebuild the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

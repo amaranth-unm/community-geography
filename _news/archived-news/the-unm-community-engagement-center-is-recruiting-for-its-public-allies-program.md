@@ -1,20 +1,16 @@
 ---
 archived: true
 title: The UNM Community Engagement Center is recruiting for its Public Allies program!
-permalink: /news/the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program.html
-source_url: https://communitygeography.unm.edu/news/the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program.html
-section: News
-section_url: /news/index.html
 heading_id: the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program
 published_date: '2024-04-17'
-date_source: /news/2024.html
+date_source: /news/2024
 ---
 
-<img src="{{ '/assets/images/shared/publicallies.png' | relative_url }}" loading="lazy" decoding="async" width="624" height="377" alt="publicallies.png" />
+![publicallies.png]({{ site.baseurl }}/assets/images/shared/publicallies.png)
 
 Public Allies is a social justice organization committed to changing the face and practice of leadership by recruiting and training talented emerging leaders, with a passion for social impact, to create meaningful change in our community. Our Allies are diverse, equity-centered, innovative problem solvers, dedicated to mobilizing community assets to develop solutions to local challenges. In partnership with nonprofit partners, we deliver our nationally recognized, values-driven, results-led apprenticeship to advance our mission to create a just and equitable society and the diverse leadership to sustain it.
 
-Public Allies New Mexico is a program of [University of New Mexico’s Community Engagement Center](http://communityengagement.unm.edu/). Our work is made possible through funding from <a href="https://www.nationalservice.gov/" rel="noopener noreferrer" target="_blank">AmeriCorps</a>.
+Public Allies New Mexico is a program of [University of New Mexico’s Community Engagement Center](http://communityengagement.unm.edu/). Our work is made possible through funding from [AmeriCorps](https://www.nationalservice.gov/).
 
 Visit the [NM Public Allies website](https://publicallies.org/newmexico/) for more information and for application instructions. 
 
@@ -22,7 +18,7 @@ Visit the [NM Public Allies website](https://publicallies.org/newmexico/) for mo
 
 You believe it is time to create a future by and for everyone and that begins with you shaping the future of your community.
 
-When you join Public Allies, you join a national network of emerging leaders dedicated to creating a future by and for everyone. You’ll learn, grow, and lead in diverse and challenging environments to address real issues in your community. As you do, you will be supported by Public Allies staff and guided by our <a href="https://publicallies.org/core-values/" rel="noopener noreferrer" target="_blank">six core values</a> of Diversity/Inclusion, Collaboration, Continuous Learning, Integrity, Building on Assets, and Innovation.
+When you join Public Allies, you join a national network of emerging leaders dedicated to creating a future by and for everyone. You’ll learn, grow, and lead in diverse and challenging environments to address real issues in your community. As you do, you will be supported by Public Allies staff and guided by our [six core values](https://publicallies.org/core-values/) of Diversity/Inclusion, Collaboration, Continuous Learning, Integrity, Building on Assets, and Innovation.
 
 ## WHO CAN APPLY?
 

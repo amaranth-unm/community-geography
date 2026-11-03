@@ -6,44 +6,17 @@
     include.featured - homepage widget: hand-picked stories in featured_order
     include.full     - render full article body instead of a teaser excerpt
 
-  Stories without a published_date give a published_year instead.
-
-  Jekyll's `sort`/`where`/`group_by` filters resolve document properties
-  through a Liquid-drop property cache
-  (Jekyll::Filters#item_property) that has proven unreliable in production -
-  it has caused both scrambled chronological order and broken year grouping.
-  So, apart from the small hand-curated `featured` list below, everything
-  here is ordered and grouped with plain Liquid (string ops, bracket
-  indexing, and `sort`/`push` with no property argument), none of which
-  touch that cache.
+  Stories without a published_date give a published_year instead. Dates and
+  years work with or without quote marks: the list is put in date order by
+  helpers/sort-by-date.html, and each story's year is compared as text
+  (`append: ""`), because a year written without quote marks is a number and
+  would never match the text "2026".
 {% endcomment %}
 {% if include.featured %}
   {% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}
 {% else %}
-  {% comment %}
-    Build a "date_index" sort key per story (zero-padded index as a
-    tiebreaker/pointer back into the original array), sort those keys as
-    plain strings (newest first), then rebuild `stories` in that order.
-  {% endcomment %}
-  {% assign all_stories = site.news %}
-  {% assign keys = "" %}
-  {% for story in all_stories %}
-    {% assign story_date = story.published_date %}
-    {% unless story_date %}{% assign story_date = story.published_year | append: "-00-00" %}{% endunless %}
-    {% assign idx = forloop.index0 | append: "" %}
-    {% case idx.size %}
-      {% when 1 %}{% assign idx = "00" | append: idx %}
-      {% when 2 %}{% assign idx = "0" | append: idx %}
-    {% endcase %}
-    {% assign key = story_date | append: "_" | append: idx %}
-    {% if keys == "" %}{% assign keys = key %}{% else %}{% assign keys = keys | append: "," | append: key %}{% endif %}
-  {% endfor %}
-  {% assign sorted_keys = keys | split: "," | sort | reverse %}
-  {% assign stories = "" | split: "," %}
-  {% for key in sorted_keys %}
-    {% assign idx = key | slice: -3, 3 | plus: 0 %}
-    {% assign stories = stories | push: all_stories[idx] %}
-  {% endfor %}
+  {% include helpers/sort-by-date.html items=site.news field="published_date" fallback="published_year" order="newest" %}
+  {% assign stories = sorted_by_date %}
 {% endif %}
 
 {% comment %}
@@ -59,7 +32,7 @@
   {% assign years_str = "" %}
   {% for story in stories %}
     {% assign story_year = story.published_date | date: '%Y' %}
-    {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
+    {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year | append: "" %}{% endif %}
     {% assign years_str_padded = "," | append: years_str | append: "," %}
     {% assign needle = "," | append: story_year | append: "," %}
     {% unless years_str_padded contains needle %}
@@ -81,7 +54,7 @@
       <h2 class="news-year-heading">{{ year }}</h2>
       {% for story in stories %}
         {% assign story_year = story.published_date | date: '%Y' %}
-        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
+        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year | append: "" %}{% endif %}
         {% if story_year == year %}{% include community/news-row.html story=story full=include.full %}{% endif %}
       {% endfor %}
     </section>
@@ -90,7 +63,7 @@
     {% for story in stories %}
       {% if include.year %}
         {% assign story_year = story.published_date | date: '%Y' %}
-        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year %}{% endif %}
+        {% if story_year == "" or story_year == nil %}{% assign story_year = story.published_year | append: "" %}{% endif %}
         {% if story_year == include.year %}{% include community/news-row.html story=story full=include.full %}{% endif %}
       {% else %}
         {% include community/news-row.html story=story full=include.full %}

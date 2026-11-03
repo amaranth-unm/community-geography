@@ -1,9 +1,5 @@
 ---
 title: City Nature Challenge Observation Walks
-permalink: /events/city-nature-challenge-observation-walks.html
-source_url: https://communitygeography.unm.edu/events/city-nature-challenge-observation-walks.html
-section: Events
-section_url: /events/index2.html
 start_date: '2024-04-26'
 start_time: '09:00'
 end_date: '2024-04-26'

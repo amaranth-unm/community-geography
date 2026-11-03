@@ -6,7 +6,6 @@ groups:
 - team
 display_order: 2
 anchor: associate-director
-source_url: https://communitygeography.unm.edu/about/our-team.html
 image: /assets/images/about/gibbs-photo.jpg
 image_alt: Fred Gibbs Headshot
 ---

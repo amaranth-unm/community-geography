@@ -1,18 +1,14 @@
 ---
 archived: true
 title: Recap of Fall 2023 Center for Community Geography Events and Plans for Spring 2024
-permalink: /news/fall-2023-recap.html
-source_url: https://communitygeography.unm.edu/news/fall-2023-recap.html
-section: News
-section_url: /news/index.html
 heading_id: recap-of-fall-2023-center-for-community-geography-events-and-plans-for-spring-2024
 published_date: '2023-01-19'
-date_source: /news/2023.html
+date_source: /news/2023
 review_notes:
 - Archive displays January 19, 2023 for a fall-2023 recap and spring-2024 plans. Date retained pending review.
 ---
 
-## <img src="{{ '/assets/images/news/rghsgroupphoto.jpg' | relative_url }}" loading="lazy" decoding="async" width="822" height="565" alt="rghsgroupphoto.jpg" />
+## ![rghsgroupphoto.jpg]({{ site.baseurl }}/assets/images/news/rghsgroupphoto.jpg){: width="822"}
 
 *Rio Grande High School Students outside Popejoy Hall on GIS Day- November 15, 2023*
 

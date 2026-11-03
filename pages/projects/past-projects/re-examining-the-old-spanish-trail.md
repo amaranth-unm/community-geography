@@ -1,10 +1,6 @@
 ---
 title: Re-Examining the Old Spanish Trail, storymap and class project in Critical
   Cartography 
-permalink: "/projects/project/re-examining-the-old-spanish-trail.html"
-source_url: https://communitygeography.unm.edu/projects/project/re-examining-the-old-spanish-trail.html
-section: Projects
-section_url: "/projects/index.html"
 thumbnail: "/assets/images/projects/project/oldspanishtrail.png"
 start_date: 2023-01-16
 end_date: 2023-05-13
@@ -15,12 +11,6 @@ community_member:
   - Bernalillo County
 summary: Students in Dr. Maria Lane's Critical Cartography course created StoryMaps surfacing missing Indigenous histories along the Old Spanish Trail, partnering with NPS-National Trails and Bernalillo County.
 ---
-
-# Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography 
-
-<span id="photo-event"></span><img src="{{ '/assets/images/projects/project/oldspanishtrail.png' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography " />
-
-{% include community/project-meta.html %}
 
 The department of Geography & Environmental Studies offers a class in Critical Cartography (GEOG 413/513) that is taught by Maria Lane. In this course, students learn about participatory mapping, countermapping, data sovereignty, and more. Critical cartography is a set of mapping practices and analytical approaches grounded in critical theory. Critical cartographers merge humanistic and scientific questions in their work, recognizing maps as expressions of power and knowledge.
 

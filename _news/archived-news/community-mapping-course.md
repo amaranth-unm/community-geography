@@ -1,18 +1,15 @@
 ---
 archived: true
 title: New course to focus on community mapping
-permalink: /news/october-1-2020.html
-source_url: https://communitygeography.unm.edu/news/october-1-2020.html
-section: News
-section_url: /news/index.html
+permalink: /news/october-1-2020
 heading_id: new-course-to-focus-on-community-mapping
 published_date: '2020-10-01'
-date_source: /news/2020.html
+date_source: /news/2020
 ---
 
 *October 1, 2020*
 
-<img src="{{ '/assets/images/news/critcartography-poster4866.jpg' | relative_url }}" loading="lazy" decoding="async" width="718" height="929" alt="critcartography-poster4866.jpg" />
+![critcartography-poster4866.jpg]({{ site.baseurl }}/assets/images/news/critcartography-poster4866.jpg){: width="718"}
 
 The Center for Community Geography is excited to announce support for a new UNM course in spring 2021. The Department of Geography & Environmental Studies will offer “Critical Cartography” for upper-level undergraduates and graduate students for the first time this spring.
 
@@ -26,21 +23,21 @@ The course will be offered partly in-person and partly through UNM’s remote le
 
 ## Recent News
 
-**[Featured Spring 2025 Fellow: Hope Smith]({{ '/news/featured-fellow-hope-smith.html' | relative_url }})**
+**[Featured Spring 2025 Fellow: Hope Smith]({{ site.baseurl }}/news/featured-fellow-hope-smith)**
 
 *April 04, 2025*
 
-[**Featured Spring 2025 Fellow: Juna Keehn**]({{ '/news/featured-fellow-juna-keehn.html' | relative_url }})
+[**Featured Spring 2025 Fellow: Juna Keehn**]({{ site.baseurl }}/news/featured-fellow-juna-keehn)
 
 *March 12, 2025*
 
-[**We are happy to welcome Laurel Ladwig as the Center's new Associate Director!**]({{ '/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director.html' | relative_url }})  
+[**We are happy to welcome Laurel Ladwig as the Center's new Associate Director!**]({{ site.baseurl }}/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director)  
 *February 17, 2025*
 
-[**Fall 2024 Community Geography Fellows' Projects**]({{ '/fall-2024-fellows-projects.html' | relative_url }})
+[**Fall 2024 Community Geography Fellows' Projects**]({{ site.baseurl }}/fall-2024-fellows-projects)
 
 *December 06, 2024*
 
-[**Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director**]({{ '/news/dr-miriam-gay-antaki-community-geographys-new-director.html' | relative_url }})  
+[**Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director**]({{ site.baseurl }}/news/dr-miriam-gay-antaki-community-geographys-new-director)  
 
 *December 06, 2024*

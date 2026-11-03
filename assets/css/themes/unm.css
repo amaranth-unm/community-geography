@@ -25,7 +25,7 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --bg-page: #f8f8f6;
   --bg-card: #ffffff;
   --bg-nav: #303335;
-  --bg-footer: #303335;
+  --bg-footer: #edf4f3; /* The Center footer with the address; UNM's own footer below it keeps UNM's colors. */
   --bg-footer-bottom: #242628;
   --bg-section-alt: #edf4f3;
   --bg-section-alt-flat: #edf4f3;

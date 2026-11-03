@@ -1,7 +1,6 @@
 ---
 title: Our History
-permalink: "/about/index.html"
-source_url: https://communitygeography.unm.edu/about/index.html
+permalink: /about/
 summary: The R.H. Mallory Center for Community Geography is affiliated with the Department
   of Geography & Environmental Studies (GES) at the University of New Mexico. It supports
   community-engaged research and learning in human-environment dynamics. It engages
@@ -25,4 +24,5 @@ Wanting to give back as much as he received, Mallory joined the advisory board o
 
 Through helping start the Center, he sought to help more students discover geography with intention and anticipates his bequest will expand awareness of geographical thinking more than he could alone. When talking to Center staff about this project, he said, “My knowledge \[of geography\] is constantly building, and it has been an incredible gift…Geography stole my heart and I want to provide that opportunity to others.”
 
-<img src="{{ '/assets/images/about/full-group-pajarito-acequia-sp2022' | relative_url }}" loading="lazy" decoding="async" width="541" height="406" alt="full-group-pajarito-acequia-sp2022" />Students from Dr. Lane's Critical Cartography course with community partner, Jorge Garcia, at the Pajarito Acequia. Photo by Desiree Loggins.
+![full-group-pajarito-acequia-sp2022]({{ site.baseurl }}/assets/images/about/full-group-pajarito-acequia-sp2022){: width="541"}
+Students from Dr. Lane's Critical Cartography course with community partner, Jorge Garcia, at the Pajarito Acequia. Photo by Desiree Loggins.

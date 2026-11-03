@@ -1,16 +1,13 @@
 ---
 archived: true
 title: GES challenges Biology Department in 2021 City Nature Challenge
-permalink: /news/april-22,-2021.html
-source_url: https://communitygeography.unm.edu/news/april-22,-2021.html
-section: News
-section_url: /news/index.html
+permalink: /news/april-22,-2021
 heading_id: ges-challenges-biology-department-in-2021-city-nature-challenge
 published_date: '2021-04-22'
-date_source: /news/2021.html
+date_source: /news/2021
 ---
 
-[<img src="{{ '/assets/images/news/cnc2021-gesvbio.jpg' | relative_url }}" class="img-left" loading="lazy" decoding="async" width="398" height="515" alt="cnc2021-gesvbio.jpg" />]({{ '/assets/documents/news/cnc2021-gesvbio.pdf' | relative_url }})BREAKING: Two key departments at UNM have formed teams to compete in the 2021 City Nature Challenge. On Thursday, April 22, the Department of Geography & Environmental Studies (GES) challenged the Department of Biology to see which team can get the most participation and document the most wildlife observations between April 30 – May 3.  
+[![cnc2021-gesvbio.jpg]({{ site.baseurl }}/assets/images/news/cnc2021-gesvbio.jpg){: .img-left width="398"}]({{ site.baseurl }}/assets/documents/news/cnc2021-gesvbio.pdf)BREAKING: Two key departments at UNM have formed teams to compete in the 2021 City Nature Challenge. On Thursday, April 22, the Department of Geography & Environmental Studies (GES) challenged the Department of Biology to see which team can get the most participation and document the most wildlife observations between April 30 – May 3.  
 
 “We thought a ‘GES vs BIO Showdown’ would be a fun way to recruit participants for citizen science,” said Geography Professor Maria Lane. “Biology has a bigger department than we do, but we think we have a good chance to win if all our students and alumni join our team.” 
 
@@ -24,13 +21,11 @@ The City Nature Challenge is a worldwide citizen science event focused on docu
 
 Albuquerque has been competing in CNC since 2019 and this year is facing a direct challenge from Phoenix and Tucson. UNM students are encouraged to join Team BIO or Team GES to help our city come out on top! Whatever the outcome of the challenge, we’ll all be contributing to citizen science and providing data about biodiversity in the Middle Rio Grande region.  
 
-***How **do I** Join a Team**?*** 
+***How do I join a team?***
 
 All UNM students are invited to join the challenge on one of the two teams. Follow these easy steps to get set up: 
 
 1.  Download the [iNaturalist](https://www.inaturalist.org/) app to your phone.  
-
-<!-- -->
 
 1.  Join a team at UNM to make sure your observations are counted: 
 

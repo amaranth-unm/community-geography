@@ -1,13 +1,10 @@
 ---
 archived: true
 title: Center for Community Geography adds staff member
-permalink: /news/august-30,-2020.html
-source_url: https://communitygeography.unm.edu/news/august-30,-2020.html
-section: News
-section_url: /news/index.html
+permalink: /news/august-30,-2020
 heading_id: center-for-community-geography-adds-staff-member
 published_date: '2020-08-30'
-date_source: /news/2020.html
+date_source: /news/2020
 ---
 
 *August 30, 2020*
@@ -24,21 +21,21 @@ Prior to grad school, Desiree worked for six years at the National Audubon Socie
 
 ## Recent News
 
-**[Featured Spring 2025 Fellow: Hope Smith]({{ '/news/featured-fellow-hope-smith.html' | relative_url }})**
+**[Featured Spring 2025 Fellow: Hope Smith]({{ site.baseurl }}/news/featured-fellow-hope-smith)**
 
 *April 04, 2025*
 
-[**Featured Spring 2025 Fellow: Juna Keehn**]({{ '/news/featured-fellow-juna-keehn.html' | relative_url }})
+[**Featured Spring 2025 Fellow: Juna Keehn**]({{ site.baseurl }}/news/featured-fellow-juna-keehn)
 
 *March 12, 2025*
 
-[**We are happy to welcome Laurel Ladwig as the Center's new Associate Director!**]({{ '/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director.html' | relative_url }})  
+[**We are happy to welcome Laurel Ladwig as the Center's new Associate Director!**]({{ site.baseurl }}/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director)  
 *February 17, 2025*
 
-[**Fall 2024 Community Geography Fellows' Projects**]({{ '/fall-2024-fellows-projects.html' | relative_url }})
+[**Fall 2024 Community Geography Fellows' Projects**]({{ site.baseurl }}/fall-2024-fellows-projects)
 
 *December 06, 2024*
 
-[**Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director**]({{ '/news/dr-miriam-gay-antaki-community-geographys-new-director.html' | relative_url }})  
+[**Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director**]({{ site.baseurl }}/news/dr-miriam-gay-antaki-community-geographys-new-director)  
 
 *December 06, 2024*

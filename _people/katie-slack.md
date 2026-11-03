@@ -6,7 +6,6 @@ groups:
 - team
 display_order: 4
 anchor: graduate-fellows
-source_url: https://communitygeography.unm.edu/about/our-team.html
 image: /assets/images/about/ks_headshot.png
 image_alt: ks_headshot.png
 review_notes:

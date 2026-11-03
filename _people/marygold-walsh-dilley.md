@@ -8,7 +8,6 @@ groups:
 - affiliates
 display_order: 8
 anchor: dr-marygold-walsh-dilley
-source_url: https://communitygeography.unm.edu/about/affiliates.html
 image: /assets/images/about/marygold.webp
 image_alt: marygold.webp
 ---
