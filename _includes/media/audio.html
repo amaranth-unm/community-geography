@@ -6,7 +6,9 @@
 {% endcomment %}
 
 {% if include.src %}
-  <audio controls src="{{ include.src }}">
+  {% comment %} Local fix, not yet in Xanthan: resolve src with helpers/image-path.html, so src="/assets/audio/interview.mp3" works on a site with a baseurl. {% endcomment %}
+  {% capture audio_src %}{% include helpers/image-path.html image-path=include.src %}{% endcapture %}
+  <audio controls src="{{ audio_src | strip }}">
     Your browser does not support the audio element.
   </audio>
 {% else %}
