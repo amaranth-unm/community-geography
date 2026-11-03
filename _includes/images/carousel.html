@@ -8,12 +8,22 @@
     - width:     CSS width (default: 100%)
     - class:     left | center | right — alignment (default: center)
     - id:        unique ID if you have multiple carousels on one page
+
+  The first carousel on a page also loads Splide, the slideshow library, so
+  pages without a carousel never download it. Liquid shares one set of
+  variables between a page and its includes, so the splide_loaded flag set
+  below is still set when a second carousel on the same page reaches it.
 {% endcomment %}
 
 {% assign carousel_id = include.id | default: 'splide-carousel' %}
 {% assign carousel_class = include.class | default: 'center' %}
 
 {% if include.images and include.images.size > 0 %}
+  {% unless splide_loaded %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+  {% assign splide_loaded = true %}
+  {% endunless %}
   <div id="{{ carousel_id }}" class="splide xanthan-carousel xanthan-carousel--{{ carousel_class }}"
     {% if include.width %}style="width: {{ include.width }};" {% endif %}aria-label="Image carousel">
     <div class="splide__track">

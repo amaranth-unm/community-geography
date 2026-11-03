@@ -1,11 +1,11 @@
 /*****************************************************
 TYPOGRAPHY
 
-Everything that styles running prose and the things embedded in it. Fonts are
-imported in base.css.
+Everything that styles running prose and the things embedded in it. The fonts
+themselves are named in themes/unm.css.
 
-Sections, in order: body type and headings, tables, code blocks, syntax
-highlighting, footnotes, blockquotes, pullquotes, alerts.
+Sections, in order: body type and headings, tables, code blocks, blockquotes,
+pullquotes, alerts.
 
 Loads:    every page
 Used by:  typography/alert.html, typography/pullquote.html, and every page of
@@ -374,57 +374,6 @@ pre code,
   line-height: 1.6;
   color: var(--text-code-block);
 }
-
-/*****************************************************
-SYNTAX HIGHLIGHTING
-*****************************************************/
-/* Rouge emits these classes for any fence that declares a language
-   (```yaml, ```liquid, ```css …). A fence with no language still gets the
-   dark block, just no colour — so adding a language to a fence is what turns
-   highlighting on.
-   👉 Recolour by editing --code-* in base.css, not the rules below. */
-
-/* Keys and tags: YAML keys, HTML tags, Liquid tag names — the labels */
-.highlight .na, .highlight .nt, .highlight .py, .highlight .nl,
-.highlight .nc, .highlight .nf { color: var(--code-key); }
-
-/* Strings */
-.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb,
-.highlight .sc, .highlight .sd, .highlight .se, .highlight .sh,
-.highlight .si, .highlight .sx, .highlight .ss, .highlight .sr {
-  color: var(--code-string);
-}
-
-/* Names, variables, namespaces */
-.highlight .n, .highlight .nv, .highlight .nn, .highlight .nb,
-.highlight .no, .highlight .nd { color: var(--code-name); }
-
-/* Numbers, keywords, booleans */
-.highlight .m, .highlight .mi, .highlight .mf, .highlight .k,
-.highlight .kc, .highlight .kd, .highlight .kn, .highlight .kt,
-.highlight .kr, .highlight .kp { color: var(--code-literal); }
-
-/* Punctuation and operators recede */
-.highlight .p, .highlight .pi, .highlight .o, .highlight .ow {
-  color: var(--code-quiet);
-}
-
-/* Comments recede furthest */
-.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs,
-.highlight .cp { color: var(--code-quiet); font-style: italic; }
-
-/* Rouge marks unlexed fragments .err — common in Liquid examples. Do not
-   paint those red; a false alarm in a teaching snippet is worse than none. */
-.highlight .err { color: var(--text-code-block); background: transparent; }
-
-.highlight .w { color: inherit; }
-
-/* Generic tokens, mostly from ```markdown samples */
-.highlight .gh, .highlight .gu { color: var(--code-key); font-weight: 600; }
-.highlight .gs { font-weight: 600; }
-.highlight .ge { font-style: italic; }
-.highlight .gt, .highlight .gd { color: var(--code-literal); }
-
 
 /*****************************************************
 BLOCKQUOTE
