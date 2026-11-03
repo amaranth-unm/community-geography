@@ -45,13 +45,13 @@
       {% for project in all_projects %}
       <li class="projects-carousel-slide">
         <a class="projects-carousel-card" href="{{ project.url | relative_url }}">
-          <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
-          {% if project.end_date == "Ongoing" or project.end_date == nil %}
-            <span class="projects-carousel-card-tag">Current</span>
-          {% endif %}
-          <span class="projects-carousel-card-overlay">
-            <span class="projects-carousel-card-title">{{ project.title }}</span>
+          <span class="projects-carousel-card-image">
+            <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+            {% if project.end_date == "Ongoing" or project.end_date == nil %}
+              <span class="projects-carousel-card-tag">Current</span>
+            {% endif %}
           </span>
+          <span class="projects-carousel-card-title">{{ project.title }}</span>
         </a>
       </li>
       {% endfor %}

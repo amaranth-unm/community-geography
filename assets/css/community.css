@@ -327,12 +327,17 @@ is the one place UNM values are translated for the site.
   max-width: 44rem;
   margin: var(--spacing-sm) 0 0;
 }
+/* The projects band is charcoal, the color of the nav bar, so the project
+   pictures stand out and the band reads differently from the pale ones
+   around it. Its text takes the same light colors as the teal Follow band. */
 .projects-carousel-section {
   margin: 0 calc(var(--page-gutter) * -1);
-  padding: clamp(2rem, 4vw, 3.5rem) var(--page-gutter);
-  background: var(--bg-section-alt);
-  border-block: 1px solid var(--border-light);
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--page-gutter);
+  background: var(--bg-nav);
+  color: var(--text-on-dark);
 }
+.projects-carousel-kicker { color: var(--text-feature-band-link); }
+.projects-carousel-section h2 { color: var(--text-on-dark); }
 .projects-carousel-header,
 .home-news-header {
   display: flex;
@@ -360,6 +365,11 @@ is the one place UNM values are translated for the site.
 .projects-carousel-link:focus-visible,
 .home-news-link:hover,
 .home-news-link:focus-visible { color: var(--interactive-hover); }
+/* On the charcoal band: gold, turning white on hover. */
+.projects-carousel-link,
+.projects-carousel-link:visited { color: var(--text-feature-band-link); }
+.projects-carousel-link:hover,
+.projects-carousel-link:focus-visible { color: var(--text-on-dark); }
 
 /* Recent News on the home page: the News page's rows (see "News timeline"
    below), under a header like the projects carousel's. */
@@ -381,11 +391,14 @@ is the one place UNM values are translated for the site.
   max-width: calc(var(--width-center) + 5rem);
   margin: 0 auto;
 }
+/* Cards are 30% of the row (about three and a third in view), between 14rem
+   and 20rem wide. A minmax() here would leave every card at its minimum,
+   because a row of many cards never has room to spare. */
 .projects-carousel-track {
   display: grid;
-  grid-auto-columns: minmax(10rem, 15rem);
+  grid-auto-columns: clamp(14rem, 30%, 20rem);
   grid-auto-flow: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   margin: 0;
   padding: .25rem;
   list-style: none;
@@ -397,12 +410,13 @@ is the one place UNM values are translated for the site.
 }
 .projects-carousel-track::-webkit-scrollbar { display: none; }
 .projects-carousel-slide { scroll-snap-align: start; }
+/* Each card is the picture, uncovered, with the project name below it. */
 .projects-carousel-card {
-  position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
-  background: var(--bg-page);
+  background: var(--bg-card);
   border: 0;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-sm);
@@ -413,6 +427,13 @@ is the one place UNM values are translated for the site.
   box-shadow: var(--shadow-hover);
   transform: translateY(-3px);
 }
+.projects-carousel-card-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-page);
+}
 .projects-carousel-card img {
   width: 100%;
   height: 100%;
@@ -422,15 +443,6 @@ is the one place UNM values are translated for the site.
 }
 .projects-carousel-card:hover img,
 .projects-carousel-card:focus-visible img { transform: scale(1.04); }
-.projects-carousel-card-overlay {
-  position: absolute;
-  inset: auto 0 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-  padding: var(--spacing-sm) .7rem .6rem;
-  background: linear-gradient(to top, color-mix(in srgb, var(--bg-nav) 82%, transparent), transparent);
-}
 .projects-carousel-card-tag {
   position: absolute;
   top: .55rem;
@@ -449,20 +461,23 @@ is the one place UNM values are translated for the site.
 .projects-carousel-card-title {
   display: -webkit-box;
   overflow: hidden;
-  color: var(--text-on-dark);
-  font-size: var(--center-size-md);
+  margin: .75rem .9rem .9rem;
+  color: var(--text-h2);
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.3;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.projects-carousel-card:hover .projects-carousel-card-title,
+.projects-carousel-card:focus-visible .projects-carousel-card-title { color: var(--interactive-hover); }
 .projects-carousel-control {
   width: 2.25rem;
   height: 2.25rem;
   padding: 0;
-  color: var(--accent-primary);
+  color: var(--text-on-dark);
   background: transparent;
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--text-feature-band-muted);
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.1rem;
@@ -471,9 +486,9 @@ is the one place UNM values are translated for the site.
 }
 .projects-carousel-control:hover,
 .projects-carousel-control:focus-visible {
-  color: var(--text-on-dark);
-  background: var(--accent-primary);
-  border-color: var(--accent-primary);
+  color: var(--text-body);
+  background: var(--text-feature-band-link);
+  border-color: var(--text-feature-band-link);
 }
 .community-follow {
   margin: 0 calc(var(--page-gutter) * -1);
@@ -576,7 +591,7 @@ is the one place UNM values are translated for the site.
   .projects-carousel-header, .home-news-header { align-items: flex-start; flex-direction: column; }
   .projects-carousel { grid-template-columns: minmax(0, 1fr); }
   .projects-carousel-control { display: none; }
-  .projects-carousel-track { grid-auto-columns: minmax(11rem, 66vw); }
+  .projects-carousel-track { grid-auto-columns: clamp(11rem, 75%, 20rem); }
 }
 
 .community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
