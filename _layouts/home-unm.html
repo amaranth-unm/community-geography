@@ -26,8 +26,8 @@ layout: base-unm
 
 {% include community/projects-carousel.html %}
 
-{% comment %} The newest stories; home_news_count in _config.yml sets how many, and 0 hides the section. {% endcomment %}
-{% assign home_news_count = site.home_news_count | plus: 0 %}
+{% comment %} The newest stories. home_news_count in _config.yml sets how many (3 if the line is missing); 0 hides the section. {% endcomment %}
+{% assign home_news_count = site.home_news_count | default: 3 | plus: 0 %}
 {% if home_news_count > 0 %}
 <section class="home-news" aria-labelledby="home-news-title">
   <div class="home-news-header">
