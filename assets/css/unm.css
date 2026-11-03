@@ -1,7 +1,7 @@
 /*****************************************************
 UNM BRANDING
 The university utility bar, hanging wordmark, and official footer.
-Loads: pages using unm/page-header-unm.html.
+Loads: every page, from html/html-head.html, after community.css.
 Used by: unm/nav-unm.html, unm/search-unm.html, unm/footer-unm.html.
 Needs: packaged assets/unm/ images; UNM fonts with Arial fallback.
 Not here: anything belonging to the Center's site, such as the masthead, hero,
@@ -75,6 +75,8 @@ The default 1170px shell and 235 × 70px logo match unm.edu's desktop header.
 .unm-footer p { margin: var(--unm-space-sm) 0 0; font-size: inherit; line-height: 1.5; }
 .unm-footer-social { display: flex; flex-wrap: wrap; gap: var(--unm-space-md); }
 .unm-footer-social a { display: inline-flex; min-height: 24px; align-items: center; }
+/* Social icons: drawn in a 2.5em x 2em box, the size Font Awesome's fa-2x gave them. */
+.unm-footer-icon { display: block; width: 2.5em; height: 2em; fill: currentColor; }
 .unm-footer-legal { display: flex; flex-wrap: wrap; column-gap: var(--unm-space-md); row-gap: var(--unm-space-xs); margin-top: var(--unm-space-md); }
 @media (max-width: 991px) {
   .unm-utility-links { gap: var(--unm-space-md); }

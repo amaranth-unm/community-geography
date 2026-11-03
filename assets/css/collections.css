@@ -2,7 +2,7 @@
 COLLECTIONS
 Small, reusable content patterns for migrated records: event details,
 flyers, profiles, and image galleries.
-Loads: pages using unm/page-header-unm.html, after community.css.
+Loads: every page, from html/html-head.html, last (after unm.css).
 Needs: themes/unm.css tokens and the --center-* sizes from community.css.
 Not here: UNM chrome (unm.css) or page layout (community.css).
 *****************************************************/

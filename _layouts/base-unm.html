@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
-  {% include unm/page-header-unm.html %}
+  {% include html/html-head.html %}
   <body class="center-site">
     {% include nav/skip-link.html %}
     {% include unm/analytics.html %}
@@ -47,8 +47,6 @@
       {% include unm/footer-unm.html %}
       {% include nav/search.html %}
     </div>
-    {% include google_analytics.html %}
     {% include html/html-js.html %}
-    <script src="{{ '/assets/js/unm.js' | relative_url }}" defer></script>
   </body>
 </html>

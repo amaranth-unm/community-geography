@@ -1,12 +1,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>{% if page.title %}{{ page.title | escape }} // {{ site.title | escape }}{% else %}{{ site.title | escape }} // {{ site.tagline | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} // {% endif %}{{ site.title | escape }}</title>
 
   <meta name="description" content="{{ page.summary | default: site.description | escape }}">
-  <meta name="author" content="">
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
   {%- comment -%}
     site.url is the host only; the project path lives in site.baseurl. Omitting
@@ -17,11 +15,10 @@
   {%- endcomment -%}
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 
-  <!-- Open Graph for social sharing -->
+  {% comment %} Open Graph: the title, text, and picture shown when someone shares a link to this page. {% endcomment %}
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page.summary | default: site.description | escape }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  {% comment %} The picture shown when someone shares a link to this page. {% endcomment %}
   {% assign share_image = page.thumbnail | default: page.header-image %}
   {% if share_image %}
   {% capture share_image %}{% include helpers/image-path.html image-path=share_image %}{% endcapture %}
@@ -29,20 +26,14 @@
   <meta property="og:image" content="{% unless share_image contains '://' %}{{ site.url }}{% endunless %}{{ share_image }}">
   {% endif %}
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-
-  <!-- juxtapose.js CSS for image comparison -->
-  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/1.2.5/css/juxtapose.css">
-
-  <!-- Splide CSS for image carousels -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
-  <!-- Base CSS -->
-  <!-- Load order matters: base.css defines the tokens and the container grid
-       everything else builds on, so it comes first. The rest follow the order
-       they were written in, which is what keeps same-specificity rules
-       resolving the way they always have. -->
+  {% comment %}
+    Stylesheets. Load order matters: base.css defines the tokens and the
+    container grid everything else builds on, so it comes first. The rest
+    follow the order they were written in, which is what keeps
+    same-specificity rules resolving the way they always have. Libraries that
+    only some pages need (Splide for carousels, Juxtapose for before/after
+    sliders, Leaflet for maps) are loaded by the includes that use them.
+  {% endcomment %}
   <link href="{{site.baseurl}}/assets/css/base.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/images.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/cards.css" rel="stylesheet">
@@ -52,38 +43,36 @@
   <link href="{{site.baseurl}}/assets/css/typography.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/nav.css" rel="stylesheet">
 
-  <!-- Theme CSS loads after the base files above: theme_css in _config.yml
-       names a file in assets/css/themes/. -->
+  {% comment %} The theme (theme_css in _config.yml names a file in assets/css/themes/) loads after the files above. {% endcomment %}
   {% if site.theme_css %}
   <link href="{{site.baseurl}}/assets/css/themes/{{ site.theme_css }}.css" rel="stylesheet">
   {% endif %}
-
-  <!-- scrollstory layout CSS
-    To differentiate scrollstory pages from regular pages, we use a special layout value in the YAML front matter
-    and load the scrollstory.css file.
-  -->
 
   {% if page.layout == 'scrollstory' %}
   <link href="{{site.baseurl}}/assets/css/scrollstory.css" rel="stylesheet">
   {% endif %}
 
-  <!-- Page header CSS: loaded when page has a header image -->
   {% if page.header-image %}
   <link href="{{site.baseurl}}/assets/css/page-header.css" rel="stylesheet">
   {% endif %}
 
-  <!-- Search CSS (loaded when search is enabled in _config.yml) -->
   {% if site.search %}
   <link href="{{site.baseurl}}/assets/css/search.css" rel="stylesheet">
   {% endif %}
 
-  <!-- page specific CSS -->
-  <!-- individual pages can specify a css file in the YAML header with
-    css: my_styles.css
-  -->
+  {% comment %} A page can add a stylesheet of its own with `css: my_styles.css` in its front matter. {% endcomment %}
   {% if page.css %}
   <link href="{{site.baseurl}}/assets/css/{{page.css}}" rel="stylesheet">
   {% endif %}
-  
+
   <link rel="stylesheet" href="{{ '/assets/css/community.css' | relative_url }}">
+
+  {% comment %}
+    UNM's fonts and the UNM header and footer styles load last. Only UNM's font
+    stylesheet is shared with unm.edu; its Bootstrap and homepage CSS must not
+    be imported.
+  {% endcomment %}
+  <link rel="stylesheet" href="https://webcore.unm.edu/v2/fonts/unm-fonts.css">
+  <link rel="stylesheet" href="{{ '/assets/css/unm.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/collections.css' | relative_url }}">
 </head>
