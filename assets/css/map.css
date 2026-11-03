@@ -33,7 +33,8 @@ THE MAP ITSELF
 }
 
 /* A map is not prose and has no reading measure to respect, so it can take the
-   wider block a text column would deny it.
+   wider block a text column would deny it. Matches .gallery-grid--wide and
+   .wide-header, which is what keeps their left edges in agreement.
    👉 Pass class="map-wrap--wide" to the include. */
 .container > .map-wrap--wide {
   grid-column: full;

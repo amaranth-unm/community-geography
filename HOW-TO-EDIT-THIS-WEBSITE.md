@@ -10,7 +10,7 @@ Everything is done in your web browser. You do not need to install anything.
 1. [The 5-minute version](#1-the-5-minute-version)
 2. [Editing with GitHub and VS Code in your browser](#2-editing-with-github-and-vs-code-in-your-browser)
 3. [Where things live (a map of the website files)](#3-where-things-live)
-4. [General edits: text, links, images, colors, sizes](#4-general-edits)
+4. [General edits: text, links, images, page elements, colors, sizes](#4-general-edits)
 5. [Add a news story](#5-add-a-news-story)
 6. [Add an event](#6-add-an-event)
 7. [Add a project](#7-add-a-project)
@@ -176,7 +176,7 @@ Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the we
 
 - The words in the square brackets are the **alt text**: a short description for people who use screen readers. **Always fill it in**, and describe the picture rather than giving its file name.
 - Change the path (`/assets/images/news/...`) to match your file.
-- To float the picture beside the text, add `{: .img-left}` or `{: .img-right}` right after it. To show it smaller, add a width in pixels: `{: .img-left width="300"}`.
+- To add a caption, set the picture's width, or put it beside the text, use Xanthan's image elements instead: copy the example under [Standalone Image](https://xanthan-web.github.io/docs/reference/component-library#standalone-image) or [Image + Text](https://xanthan-web.github.io/docs/reference/component-library#image--text-figure-wrap) (see [Adding other page elements](#adding-other-page-elements)). Older pages float pictures with `{: .img-left}` or `{: .img-right}` on the line after the picture. That still works, but use Xanthan's elements on new pages.
 
 > Some pages (events, news, projects) have special spots for pictures. Those are covered in Sections 5-7. Just give the file's path.
 
@@ -193,9 +193,34 @@ The site has an **Optimize Images** tool that shrinks large pictures. On GitHub 
 [Download the flyer (PDF)]({{ site.baseurl }}/assets/documents/news/my-flyer.pdf)
 ```
 
+### Adding other page elements
+
+The website is built on [Xanthan](https://amaranth.unm.edu/public-scholarship/xanthan), and Xanthan's documentation shows each page element with an example you can copy. To add a box, a quote, a band of color, a map, or a photo story:
+
+1. Find the element in Xanthan's [Component Library](https://xanthan-web.github.io/docs/reference/component-library), or in [Typography](https://xanthan-web.github.io/docs/reference/typography#editorial-rhythm) for text styles such as a lede paragraph or a field note.
+2. Copy its example into your page where you want the element.
+3. Change the words, and change any file paths to your own files. **Inside these elements, start paths with `/assets/...` and leave out `{{ site.baseurl }}`.** The element adds the first part of the address itself, so `{{ site.baseurl }}` would add it twice and the picture wouldn't show.
+4. Commit and push, then check the page.
+
+The site has these elements from the Component Library:
+
+- **Pictures:** [Standalone Image](https://xanthan-web.github.io/docs/reference/component-library#standalone-image), [Image + Text](https://xanthan-web.github.io/docs/reference/component-library#image--text-figure-wrap), [Jumbotron](https://xanthan-web.github.io/docs/reference/component-library#jumbotron) (a full-width picture with a heading), [Before/After Slider](https://xanthan-web.github.io/docs/reference/component-library#beforeafter-slider), [Image Carousel](https://xanthan-web.github.io/docs/reference/component-library#image-carousel)
+- **Text:** [Alert Box](https://xanthan-web.github.io/docs/reference/component-library#alert-box), [Pull Quote](https://xanthan-web.github.io/docs/reference/component-library#pull-quote), and the styles under [Editorial Rhythm](https://xanthan-web.github.io/docs/reference/typography#editorial-rhythm) in Typography
+- **Page sections:** [Section Band](https://xanthan-web.github.io/docs/reference/component-library#section-band) (a band of color behind part of a page), [Feature Grid](https://xanthan-web.github.io/docs/reference/component-library#feature-grid), [Feature Row](https://xanthan-web.github.io/docs/reference/component-library#feature-row) (a short pitch with a button)
+- **Maps:** [Interactive Map](https://xanthan-web.github.io/docs/reference/component-library#interactive-map), [Historic Map](https://xanthan-web.github.io/docs/reference/component-library#historic-map), [Story Map](https://xanthan-web.github.io/docs/reference/component-library#story-map)
+- **Stories and sound:** [ScrollStory Sequence](https://xanthan-web.github.io/docs/reference/component-library#scrollstory-sequence) (a photo story told as the reader scrolls), the [ScrollStory backgrounds](https://xanthan-web.github.io/docs/scrollstories/), [Audio Player](https://xanthan-web.github.io/docs/reference/component-library#audio-player)
+
+The other elements on those pages (cards, the gallery grid, breadcrumbs, the table of contents, the homepage sections, and the museum pieces) are not part of this site. A page that uses one won't build (see [Troubleshooting](#11-troubleshooting)). If you need one, ask whoever looks after the site's code; `README.md` explains how to add it.
+
+A few things work differently here than Xanthan's guides say:
+
+- Where a guide says `layout: default`, that gives this site's normal page.
+- Header images (the Component Library's **Page Header**) work only on pages with `layout: scrollstory`.
+- [Footnotes](https://xanthan-web.github.io/docs/reference/typography#footnotes) appear as a numbered list at the bottom of the page instead of as pop-ups.
+
 ### Changing colors
 
-All the website's colors are in one file: `assets/css/themes/unm.css`. Near the top you will see lines like:
+Xanthan's [Colors & Fonts](https://xanthan-web.github.io/docs/reference/colors-and-fonts) guide explains how the color names work and has a color picker to try them out. That guide says to edit `base.css`, but on this website make the change in `assets/css/themes/unm.css` instead: its UNM colors replace the ones in `base.css`. Near the top of `unm.css` you will see lines like:
 
 ```
 --accent-primary: #007a86;
@@ -221,7 +246,7 @@ The part after the colon (like `#007a86`) is a **color code**. Replace it with a
 
 ### Changing text size or fonts
 
-Fonts are set in the same `unm.css` file under `--font-body` and `--font-heading`. For text size in particular:
+Fonts are set in the same `unm.css` file under `--font-body` and `--font-heading`. They are UNM's Gotham and Vitesse, which load from UNM's servers, so skip the part of Xanthan's guide about adding Google Fonts. For text size in particular:
 
 - **Page titles, home page section titles, and small text** (labels, buttons, dates) are set by the `--center-size-...` lines at the top of `assets/css/community.css`. Each line controls that size everywhere on the site.
 - **Headings inside a page's text** (the `##` and `###` headings) and normal body text are in `assets/css/typography.css`.
@@ -433,7 +458,7 @@ A short biography goes here.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.
 - **Keep file names simple:** lowercase, dashes instead of spaces, no special characters.
-- **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. A more technical guide is in `scripts/README.md`.
+- **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. The technical notes are in `README.md` (how the site uses Xanthan) and `scripts/README.md` (the image tools).
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
 - **New year?** Create a new year folder in `_news/` and `_events/` (for example `_news/2027/`). Then give the year its news page: copy `pages/news/2026.md`, name the copy `2027.md`, and change every `2026` inside it to `2027`.
@@ -451,7 +476,8 @@ A short biography goes here.
 | Error mentions "Liquid" | Something between `{% %}` or `{{ }}` is mistyped. Compare with a working file. |
 | An event says "time to be confirmed" | Its time is written like `14:00` without quote marks. Write it as `2:00 pm`. |
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
-| My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. |
+| My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. In a Xanthan element (an `{% include ... %}` line), start the path with `/assets/...` and leave out `{{ site.baseurl }}`. |
+| Error says "Could not locate the included file" | The page uses an element this site doesn't have, or the name after `include` is mistyped. Compare it with the list in [Adding other page elements](#adding-other-page-elements). |
 | My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
@@ -475,6 +501,7 @@ A short biography goes here.
 | Finish a project | Set `end_date`, drag file to `pages/projects/past-projects/` |
 | Add a person | New file in `_people/` |
 | Add a picture | Drag into `assets/images/...`, then reference its path |
+| Add a box, quote, band, map, or photo story | Copy its example from Xanthan's [Component Library](https://xanthan-web.github.io/docs/reference/component-library) |
 | Change colors | `assets/css/themes/unm.css` |
 | Change the menu | `_data/nav-top.yml` |
 

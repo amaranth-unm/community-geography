@@ -16,6 +16,7 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --accent-primary-dark: #005d66;
   --accent-border: #d6a461;
   --interactive-hover: #ba0c2f;
+  --interactive-hover-bg: #ba0c2f;
   /* UNM gold, for highlights on dark or photographic backgrounds. */
   --accent-highlight: #ffc600;
 
@@ -29,6 +30,8 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --bg-feature-band: #007a86;
   --bg-page-header: #303335;
   --bg-editorial-note: #edf4f3;
+  /* Behind text laid over a photograph (the jumbotron's image mode). */
+  --bg-scrim: #303335;
 
   --text-body: #303335;
   --text-muted: #63666a;
@@ -51,6 +54,10 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --border-section-alt: color-mix(in srgb, #007a86 20%, transparent);
   --border-section-cool: color-mix(in srgb, #007a86 24%, transparent);
   --border-section-warm: #d6a461;
+  --button-bg: #007a86;
+  --button-hover-bg: #ba0c2f;
+  --button-text: #ffffff;
+  --button-hover-text: #ffffff;
 
   --font-body: 'Gotham A', 'Gotham B', 'Gotham', Arial, sans-serif;
   --font-heading: 'Vitesse A', 'Vitesse B', 'Vitesse', Georgia, serif;
@@ -60,6 +67,10 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --width-center: var(--unm-shell-width, 1170px);
   --page-gutter: var(--unm-gutter, 15px);
   --width-reading: 54rem;
+  /* Xanthan's width for wide elements (photo stories, story-map headings).
+     Xanthan sets it in home.css, which this site doesn't use; here it matches
+     the UNM shell, so they line up with the breadcrumbs and homepage bands. */
+  --home-measure: calc(var(--width-center) - 2 * var(--page-gutter));
   --radius-sm: 3px;
   --radius-md: 6px;
   --radius-lg: 10px;
