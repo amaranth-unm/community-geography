@@ -118,6 +118,125 @@ p:has(+ ol) {
   margin-bottom: var(--spacing-xs);
 }
 
+/* Editorial utilities: simple classes for stronger page rhythm */
+/* No max-width of its own: the lede sits in the container's content column
+   like everything else, so its right edge lines up with the body copy. The
+   larger type already shortens the measure in characters — capping the width
+   as well made it noticeably narrower than the text around it. */
+.lede,
+.lead {
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--text-lede);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.55;
+
+  /* Justified to both margins. hyphens is not optional here: without it the
+     browser can only stretch the word spaces to reach the right edge, which
+     opens rivers of white down a paragraph set this large. Hyphenation lets
+     it break words instead and keeps the spacing even. */
+  text-align: justify;
+  hyphens: auto;
+}
+
+.section-intro {
+  max-width: 42rem;
+  margin: 0 0 var(--spacing-lg) 0;
+  padding-left: var(--spacing-md);
+  border-left: 4px solid var(--accent-border);
+  color: var(--text-muted);
+  font-size: 1.12rem;
+  line-height: 1.65;
+  text-align: left;
+}
+
+/* Editorial vocabulary you apply in Markdown with {: .class}. Not used by any
+   include, which is the point — these are for authors, not components. The
+   documented siblings are .lede, .field-note, .metadata-strip and
+   .section-intro in docs/reference/typography.md; .editorial-label and
+   .evidence-note work the same way and are not yet written up there. */
+.editorial-label,
+.kicker {
+  margin: var(--spacing-lg) 0 var(--spacing-xs);
+  color: var(--text-kicker);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.metadata-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs) var(--spacing-md);
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  padding: var(--spacing-xs) 0;
+  border-top: 1px solid var(--metadata-border);
+  border-bottom: 1px solid var(--metadata-border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.field-note,
+.evidence-note {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--bg-editorial-note);
+  border-left: 4px solid var(--border-editorial-note);
+  border-radius: var(--radius-sm);
+  color: var(--text-body);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.field-note p,
+.evidence-note p {
+  margin-bottom: var(--spacing-xs);
+  text-align: left;
+}
+
+.field-note p:last-child,
+.evidence-note p:last-child {
+  margin-bottom: 0;
+}
+
+.feature-band {
+  grid-column: full;
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) max(var(--spacing-sm), calc(50% - 24rem));
+  background: var(--bg-feature-band);
+  color: var(--text-feature-band);
+}
+
+.feature-band h2,
+.feature-band h3,
+.feature-band h4,
+.feature-band p,
+.feature-band li {
+  color: var(--text-feature-band);
+}
+
+.feature-band p,
+.feature-band li {
+  color: var(--text-feature-band-muted);
+  text-align: left;
+}
+
+.feature-band a,
+.feature-band a:visited {
+  color: var(--text-feature-band-link);
+  border-bottom-color: var(--text-feature-band-link);
+}
+
+.feature-band a:hover {
+  color: var(--text-feature-band-link-hover);
+  border-bottom-color: var(--text-feature-band-link-hover);
+}
+
 ul, ol {
   /* Box Model */
   margin-top: 0;

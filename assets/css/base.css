@@ -2,8 +2,9 @@
 BASE
 
 The bottom of the stack: the colour palette, the semantic token layer every
-other stylesheet builds on, the reset, the `.container` grid, the small-screen
-rules for the text column, and the accessibility utilities.
+other stylesheet builds on, the reset, the `.container` grid, the section
+bands, the small-screen rules for the text column, and the accessibility
+utilities.
 
 Everything a theme can change, it changes from here. Nothing in this file is a
 component — components have their own stylesheets, named for what they style.
@@ -51,6 +52,8 @@ editing guide lists, so changing one of them here shows no change on the site.
   /* Warm neutrals */
   --warm-white: #f5f3f0;   /* Warm off-white */
   --warm-light: #e8e4df;   /* Light warm tone for cards */
+  --golden-wash: color-mix(in srgb, var(--golden-clay) 18%, var(--bg-page));  /* Clay-tinted wash for special sections */
+
 
   /* Accent colors */
   --golden-clay: #b8956a;  /* Warm clay */
@@ -62,6 +65,7 @@ editing guide lists, so changing one of them here shows no change on the site.
   /* Backgrounds */
   --bg-page: var(--warm-white);
   --bg-card: var(--warm-light);
+  --bg-accent: var(--golden-wash);
   --bg-code: var(--sage-pale);
 
   /* Fenced code blocks are dark; inline code stays light inside prose */
@@ -69,16 +73,35 @@ editing guide lists, so changing one of them here shows no change on the site.
   --text-code-block: var(--warm-white);
   --bg-nav: var(--sage-deep);
   --bg-section-alt: var(--bg-card);
+  --border-section-alt: color-mix(in srgb, var(--accent-primary) 16%, transparent);
+  --shadow-section-alt: inset 0 1px 0 var(--border-section-alt), inset 0 -1px 0 var(--border-section-alt);
+  --text-section-alt-heading: var(--text-h2);
+  --text-section-cool-heading: var(--text-h2);
+  --bg-section-cool: color-mix(in srgb, var(--accent-primary) 10%, var(--bg-page));
+  --border-section-cool: color-mix(in srgb, var(--accent-primary) 20%, transparent);
+  --shadow-section-cool: inset 0 1px 0 var(--border-section-cool), inset 0 -1px 0 var(--border-section-cool);
+  --bg-section-warm: var(--bg-accent);
+  --text-section-warm: var(--text-body);
+  --text-section-warm-heading: var(--text-h2);
+  --text-section-warm-link: var(--accent-primary);
+  --text-section-warm-link-hover: var(--interactive-hover);
+  --border-section-warm: var(--accent-border);
+  --border-section-accent: var(--accent-primary);
   --card-bg: var(--bg-card);
   --card-border: var(--border-light);
   --card-hover-border: var(--interactive-hover);
   --card-heading-color: var(--text-body);
   --card-text-color: var(--text-muted);
   --bg-feature-band: var(--sage-deep);
+  --text-feature-band: var(--text-on-dark);
   --text-feature-band-muted: color-mix(in srgb, var(--text-on-dark) 74%, transparent);
   --text-feature-band-link: var(--sage-pale);
+  --text-feature-band-link-hover: var(--white);
+  --bg-editorial-note: color-mix(in srgb, var(--accent-primary) 9%, var(--bg-page));
+  --border-editorial-note: var(--accent-border);
   --text-lede: color-mix(in srgb, var(--text-body) 82%, var(--accent-primary));
   --text-kicker: var(--accent-primary-dark);
+  --metadata-border: color-mix(in srgb, var(--accent-primary) 28%, transparent);
 
   /* Text */
   --text-body: var(--sage-dark);
@@ -221,6 +244,98 @@ html, body {
   font-size: 0.85rem;
 }
 
+
+/*****************************************************
+SECTION BACKGROUNDS - Subtle visual rhythm
+*****************************************************/
+
+/* Alternating section backgrounds for visual hierarchy - full width */
+.section-alt {
+  grid-column: full;
+  background: var(--bg-section-alt);
+  padding: var(--spacing-xl) max(var(--spacing-sm), calc(50% - 24rem));
+  box-shadow: var(--shadow-section-alt);
+}
+
+.section-alt h2:first-child {
+  margin-top: 0;
+}
+
+/* Headings on a tinted band take a colour from that band's own family. The
+   default heading colour is tuned for the page background, and repeating it
+   on a coloured field reads flat. */
+.section-alt h2 {
+  color: var(--text-section-alt-heading);
+}
+
+/* A second tinted band, distinct from .section-alt, so two banded sections on
+   one page do not read as the same interruption twice. */
+.section-cool {
+  grid-column: full;
+  background: var(--bg-section-cool);
+  padding: var(--spacing-xl) max(var(--spacing-sm), calc(50% - 24rem));
+  box-shadow: var(--shadow-section-cool);
+}
+
+.section-cool h2:first-child {
+  margin-top: 0;
+}
+
+.section-cool h2 {
+  color: var(--text-section-cool-heading);
+}
+
+/* Themed section background - for special emphasis moments */
+.section-warm {
+  grid-column: full;
+  background-color: var(--bg-section-warm);
+  border-top: 2px solid var(--border-section-warm);
+  border-bottom: 2px solid var(--border-section-warm);
+  padding: var(--spacing-lg) max(var(--spacing-sm), calc(50% - 24rem));
+}
+
+.section-warm h2:first-child {
+  margin-top: 0;
+}
+
+/* A band that wraps its own .container would otherwise indent twice — its own
+   padding plus the container's gutter — leaving banded sections ~1rem inside
+   the rest of the page. Let the inner container do the centering instead. */
+.section-alt:has(> .container),
+.section-cool:has(> .container),
+.section-warm:has(> .container) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section-warm {
+  color: var(--text-section-warm);
+}
+
+.section-warm h2 {
+  color: var(--text-section-warm-heading);
+}
+
+.section-warm a,
+.section-warm a:visited {
+  color: var(--text-section-warm-link);
+  border-bottom-color: var(--text-section-warm-link);
+}
+
+.section-warm a:hover {
+  color: var(--text-section-warm-link-hover);
+  border-bottom-color: var(--text-section-warm-link-hover);
+}
+
+/* Accent border on left side - modern touch */
+.section-accent {
+  border-left: 4px solid var(--border-section-accent);
+  padding-left: var(--spacing-lg);
+  margin-left: var(--spacing-md);
+}
+
+
+
 } /* end media screen */
 
 
@@ -251,7 +366,13 @@ html, body {
   .container ol,
   .container blockquote,
   .container .pullquote,
-  .container .alert {
+  .container .alert,
+  .container .lede,
+  .container .lead,
+  .container .section-intro,
+  .container .metadata-strip,
+  .container .field-note,
+  .container .evidence-note {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
   }
