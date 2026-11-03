@@ -58,8 +58,7 @@ Not here: the background images themselves (backgrounds.css)
   margin-top: clamp(2.5rem, 7vh, 5rem);
   margin-bottom: var(--spacing-lg);
 
-  /* Typography — the same measure as .lede in typography.css, so a scrollstory
-     opens at the same size as every other page on the site. */
+  /* Typography — a larger opening paragraph in the lede color. */
   font-size: clamp(1.2rem, 2vw, 1.45rem);
   line-height: 1.5;
   color: var(--text-lede);

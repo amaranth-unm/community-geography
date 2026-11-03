@@ -91,15 +91,6 @@ FIGURE WRAP — two-column image + text layout
   order: 2;
 }
 
-.figure-wrap--right /* A lede set beside an image has roughly half the measure it was designed for,
-   and justification opens rivers of white at that width even with hyphenation
-   doing its best. Ragged right is the lesser evil in a narrow column. */
-.figure-wrap-text .lede,
-.figure-wrap-text .lead {
-  text-align: left;
-  hyphens: manual;
-}
-
 .figure-wrap-text {
   order: 1;
 }

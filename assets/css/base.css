@@ -2,9 +2,8 @@
 BASE
 
 The bottom of the stack: the colour palette, the semantic token layer every
-other stylesheet builds on, the reset, the `.container` grid, the section
-bands, the small-screen rules for the text column, and the accessibility
-utilities.
+other stylesheet builds on, the reset, the `.container` grid, the small-screen
+rules for the text column, and the accessibility utilities.
 
 Everything a theme can change, it changes from here. Nothing in this file is a
 component — components have their own stylesheets, named for what they style.
@@ -22,12 +21,8 @@ Not here: prose and headings (typography.css), which read as "base" but are
           not; figures and the carousel (images.css)
 *****************************************************/
 
-/* Font imports - all fonts used throughout the site */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+/* Fonts: UNM's Gotham and Vitesse, loaded from webcore.unm.edu by
+   html/html-head.html and named in themes/unm.css. */
 
 @media screen {
 /*****************************************************
@@ -56,14 +51,6 @@ editing guide lists, so changing one of them here shows no change on the site.
   /* Warm neutrals */
   --warm-white: #f5f3f0;   /* Warm off-white */
   --warm-light: #e8e4df;   /* Light warm tone for cards */
-  --golden-wash: color-mix(in srgb, var(--golden-clay) 18%, var(--bg-page));  /* Clay-tinted wash for special sections */
-
-  /* Syntax highlighting tints — legible on a dark code block */
-  --syntax-sand: #dcc89c;
-  --syntax-mint: #a9caa1;
-  --syntax-sky: #9ec0d6;
-  --syntax-coral: #dfa084;
-  --syntax-quiet: #93a89a;
 
   /* Accent colors */
   --golden-clay: #b8956a;  /* Warm clay */
@@ -75,78 +62,23 @@ editing guide lists, so changing one of them here shows no change on the site.
   /* Backgrounds */
   --bg-page: var(--warm-white);
   --bg-card: var(--warm-light);
-  --bg-accent: var(--golden-wash);
   --bg-code: var(--sage-pale);
 
   /* Fenced code blocks are dark; inline code stays light inside prose */
   --bg-code-block: var(--sage-dark);
   --text-code-block: var(--warm-white);
-  --code-key: var(--syntax-sand);
-  --code-string: var(--syntax-mint);
-  --code-name: var(--syntax-sky);
-  --code-literal: var(--syntax-coral);
-  --code-quiet: var(--syntax-quiet);
   --bg-nav: var(--sage-deep);
   --bg-section-alt: var(--bg-card);
-  /* A flat stand-in for the alt band, for components that need a colour rather
-     than a background — a gradient cannot be a colour stop inside another
-     gradient. Themes whose alt band is a gradient must override this with a
-     representative solid. */
-  --bg-section-alt-flat: var(--bg-card);
-  --border-section-alt: color-mix(in srgb, var(--accent-primary) 16%, transparent);
-  --shadow-section-alt: inset 0 1px 0 var(--border-section-alt), inset 0 -1px 0 var(--border-section-alt);
-  --text-section-alt-heading: var(--text-h2);
-  --text-section-cool-heading: var(--text-h2);
-  --bg-section-cool: color-mix(in srgb, var(--accent-primary) 10%, var(--bg-page));
-  --border-section-cool: color-mix(in srgb, var(--accent-primary) 20%, transparent);
-  --shadow-section-cool: inset 0 1px 0 var(--border-section-cool), inset 0 -1px 0 var(--border-section-cool);
-  --bg-section-warm: var(--bg-accent);
-  --text-section-warm: var(--text-body);
-  --text-section-warm-heading: var(--text-h2);
-  --text-section-warm-link: var(--accent-primary);
-  --text-section-warm-link-hover: var(--interactive-hover);
-  --border-section-warm: var(--accent-border);
-  --border-section-accent: var(--accent-primary);
-  --hero-tagline-color: var(--text-muted);
-  --button-bg: var(--accent-primary);
-  --button-hover-bg: var(--interactive-hover-bg);
-  --button-text: var(--text-on-dark);
-  --button-hover-text: var(--text-on-dark);
-  --tag-bg: var(--accent-primary);
-  --tag-hover-bg: var(--interactive-hover-bg);
-  --tag-text: var(--text-on-dark);
   --card-bg: var(--bg-card);
   --card-border: var(--border-light);
   --card-hover-border: var(--interactive-hover);
   --card-heading-color: var(--text-body);
   --card-text-color: var(--text-muted);
-  --bg-feature-card: var(--bg-card);
-  --text-feature-card: var(--text-body);
-  --text-feature-card-muted: var(--text-muted);
-  --border-feature-card: var(--border-light);
-  --border-feature-card-hover: var(--interactive-hover);
   --bg-feature-band: var(--sage-deep);
-  /* The dark laid over a photograph so light text stays readable on top of it.
-     Kept separate from --overlay-dark, which is neutral black; this one takes
-     the theme's own darkest tone so scrims sit in the same family as the page. */
-  --bg-scrim: var(--sage-dark);
-  /* Surface behind an image tile — visible while the image loads, and around it
-     if the image does not fill the tile. Darker than the band tiles sit on, so
-     a tile still reads as a tile before its picture arrives. */
-  --bg-tile: var(--sage-dark);
-  /* Translucent scrim for text laid directly over a photograph, as in a
-     jumbotron in image mode. Dark enough to carry light text, sheer enough
-     that the picture still reads through it. */
-  --bg-scrim-sheer: color-mix(in srgb, var(--bg-scrim) 72%, transparent);
-  --text-feature-band: var(--text-on-dark);
   --text-feature-band-muted: color-mix(in srgb, var(--text-on-dark) 74%, transparent);
   --text-feature-band-link: var(--sage-pale);
-  --text-feature-band-link-hover: var(--white);
-  --bg-editorial-note: color-mix(in srgb, var(--accent-primary) 9%, var(--bg-page));
-  --border-editorial-note: var(--accent-border);
   --text-lede: color-mix(in srgb, var(--text-body) 82%, var(--accent-primary));
   --text-kicker: var(--accent-primary-dark);
-  --metadata-border: color-mix(in srgb, var(--accent-primary) 28%, transparent);
 
   /* Text */
   --text-body: var(--sage-dark);
@@ -157,9 +89,6 @@ editing guide lists, so changing one of them here shows no change on the site.
   --accent-primary: var(--sage);
   --accent-border: var(--golden-clay);
   --interactive-hover: var(--amber);
-  --interactive-hover-bg: var(--interactive-hover);
-  --interactive-subtle: color-mix(in srgb, var(--accent-primary) 18%, transparent);
-  --interactive-subtle-hover: color-mix(in srgb, var(--interactive-hover) 18%, transparent);
 
   /* Status colors */
   --success: #28a745;
@@ -177,8 +106,6 @@ editing guide lists, so changing one of them here shows no change on the site.
 
   /* Utility */
   --overlay-dark: rgba(0, 0, 0, 0.8);
-  --gallery-caption-rest: color-mix(in srgb, var(--overlay-dark) 82%, transparent);
-  --gallery-caption-active: color-mix(in srgb, var(--overlay-dark) 94%, transparent);
   --white: #ffffff;
   /* Pure white, not the warm off-white of --text-on-dark. For text sitting on a
      photograph or a near-black overlay, where the extra contrast is doing real
@@ -231,9 +158,6 @@ editing guide lists, so changing one of them here shows no change on the site.
 
   /* Footer */
   --bg-footer: var(--sage);
-  --bg-footer-bottom: var(--sage-deep);
-  --text-footer-link: var(--warm-white);
-  --text-footer-bottom: var(--sage-pale);
 
   /* Page headers */
   --bg-page-header: #161618;
@@ -297,118 +221,6 @@ html, body {
   font-size: 0.85rem;
 }
 
-
-/*****************************************************
-SECTION BACKGROUNDS - Subtle visual rhythm
-*****************************************************/
-
-/* Alternating section backgrounds for visual hierarchy - full width */
-.section-alt {
-  grid-column: full;
-  background: var(--bg-section-alt);
-  padding: var(--spacing-xl) max(var(--spacing-sm), calc(50% - 24rem));
-  box-shadow: var(--shadow-section-alt);
-}
-
-.section-alt h2:first-child {
-  margin-top: 0;
-}
-
-/* Headings on a tinted band take a colour from that band's own family. The
-   default heading colour is tuned for the page background, and repeating it
-   on a coloured field reads flat. */
-.section-alt h2 {
-  color: var(--text-section-alt-heading);
-}
-
-/* A second tinted band, distinct from .section-alt, so two banded sections on
-   one page do not read as the same interruption twice. */
-.section-cool {
-  grid-column: full;
-  background: var(--bg-section-cool);
-  padding: var(--spacing-xl) max(var(--spacing-sm), calc(50% - 24rem));
-  box-shadow: var(--shadow-section-cool);
-}
-
-.section-cool h2:first-child {
-  margin-top: 0;
-}
-
-.section-cool h2 {
-  color: var(--text-section-cool-heading);
-}
-
-/* Themed section background - for special emphasis moments */
-.section-warm {
-  grid-column: full;
-  background-color: var(--bg-section-warm);
-  border-top: 2px solid var(--border-section-warm);
-  border-bottom: 2px solid var(--border-section-warm);
-  padding: var(--spacing-lg) max(var(--spacing-sm), calc(50% - 24rem));
-}
-
-.section-warm h2:first-child {
-  margin-top: 0;
-}
-
-/* A band that wraps its own .container would otherwise indent twice — its own
-   padding plus the container's gutter — leaving banded sections ~1rem inside
-   the rest of the page. Let the inner container do the centering instead. */
-.section-alt:has(> .container),
-.section-cool:has(> .container),
-.section-warm:has(> .container) {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.section-warm {
-  color: var(--text-section-warm);
-}
-
-.section-warm h2 {
-  color: var(--text-section-warm-heading);
-}
-
-.section-warm a,
-.section-warm a:visited {
-  color: var(--text-section-warm-link);
-  border-bottom-color: var(--text-section-warm-link);
-}
-
-.section-warm a:hover {
-  color: var(--text-section-warm-link-hover);
-  border-bottom-color: var(--text-section-warm-link-hover);
-}
-
-/* Accent border on left side - modern touch */
-.section-accent {
-  border-left: 4px solid var(--border-section-accent);
-  padding-left: var(--spacing-lg);
-  margin-left: var(--spacing-md);
-}
-
-/* Two-column layout utility. Applied by an author in Markdown with
-   {: .two-columns} on a list; no include emits it. */
-.two-columns {
-  column-count: 2;
-  column-gap: var(--spacing-lg);
-  list-style: none;
-  padding-left: 0;
-  margin-top: var(--spacing-lg);
-}
-
-.two-columns li {
-  break-inside: avoid;
-  margin-bottom: var(--spacing-sm);
-}
-
-@media (max-width: 768px) {
-  .two-columns {
-    column-count: 1;
-  }
-}
-
-
 } /* end media screen */
 
 
@@ -439,13 +251,7 @@ SECTION BACKGROUNDS - Subtle visual rhythm
   .container ol,
   .container blockquote,
   .container .pullquote,
-  .container .alert,
-  .container .lede,
-  .container .lead,
-  .container .section-intro,
-  .container .metadata-strip,
-  .container .field-note,
-  .container .evidence-note {
+  .container .alert {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
   }
