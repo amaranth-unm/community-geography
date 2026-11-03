@@ -414,7 +414,7 @@ A short biography goes here.
 ```
 
 - Use `groups: [team]` for staff or `groups: [affiliates]` for affiliates.
-- `display_order` is a number that decides the order on the page. Smaller numbers come first.
+- `display_order` is a number that decides the order on the page. Smaller numbers come first. To fit someone between 2 and 3, use 2.5. People with the same number appear in file-name order, and someone with no number goes at the end.
 - `anchor` must be unique. Use the person's name with dashes.
 - The photo is optional. Upload it to `assets/images/about/`.
 - To remove someone, delete their file (right-click it → **Delete**).
@@ -449,7 +449,6 @@ A short biography goes here.
 | I saved but the website didn't change | You must **Commit & Push** in Source Control. Then wait a few minutes and refresh (Ctrl+F5). |
 | The Actions tab shows a red X | Click the failed run, then click **build**. Read the red lines for the file name and message. Fix that file in the browser, then Commit & Push again. The old website stays online meanwhile. |
 | Error mentions "Liquid" | Something between `{% %}` or `{{ }}` is mistyped. Compare with a working file. |
-| Error mentions "comparison of" | A number such as `display_order` or `featured_order` has quote marks in one file and not in others. Remove the quote marks: `display_order: 20`. |
 | An event says "time to be confirmed" | Its time is written like `14:00` without quote marks. Write it as `2:00 pm`. |
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. |

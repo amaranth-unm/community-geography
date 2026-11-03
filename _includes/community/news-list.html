@@ -10,10 +10,14 @@
   years work with or without quote marks: the list is put in date order by
   helpers/sort-by-date.html, and each story's year is compared as text
   (`append: ""`), because a year written without quote marks is a number and
-  would never match the text "2026".
+  would never match the text "2026". Featured stories are put in
+  featured_order by helpers/sort-by-number.html, which likewise works with or
+  without quote marks.
 {% endcomment %}
 {% if include.featured %}
-  {% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}
+  {% assign stories = site.news | where_exp: 'story', 'story.featured_order' %}
+  {% include helpers/sort-by-number.html items=stories field="featured_order" %}
+  {% assign stories = sorted_by_number %}
 {% else %}
   {% include helpers/sort-by-date.html items=site.news field="published_date" fallback="published_year" order="newest" %}
   {% assign stories = sorted_by_date %}

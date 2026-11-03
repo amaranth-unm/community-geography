@@ -2,10 +2,12 @@
   People directory for the Our Team and Affiliates pages. Lists everyone in
   _people/ whose `groups` include the page's `people_group` (team or
   affiliates), in `display_order`. The team list leads with each role; the
-  affiliates list leads with each name.
+  affiliates list leads with each name. helpers/sort-by-number.html does the
+  ordering, so display_order works with or without quote marks.
 {% endcomment %}
 {% assign group = page.people_group %}
-{% assign people = site.people | sort: 'display_order' %}
+{% include helpers/sort-by-number.html items=site.people field="display_order" %}
+{% assign people = sorted_by_number %}
 {% for person in people %}
 {% if person.groups contains group %}
 <section class="record-person">
