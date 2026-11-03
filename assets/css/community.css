@@ -203,10 +203,39 @@ is the one place UNM values are translated for the site.
 .center-content table { display: block; max-width: 100%; overflow-x: auto; }
 .center-content a { overflow-wrap: anywhere; }
 .center-content::after { content: ''; display: block; clear: both; }
-.center-article { min-width: 0; display: flow-root; }
-.center-article h2, .center-article h3, .center-article hr { clear: both; }
-.center-article .img-left { float: left; max-width: 35%; margin: 0 var(--spacing-md) var(--spacing-md) 0; }
-.center-article .img-right { float: right; max-width: 45%; margin: 0 0 var(--spacing-md) var(--spacing-lg); }
+/* Page text sits in .center-article, a plain block rather than Xanthan's grid,
+   so a picture floated with {: .img-left} wraps across several paragraphs.
+   A Xanthan section band (layout/section.html) closes it and reopens a plain
+   .container after the band; that .container gets the same treatment. */
+:is(.center-article, :where(.center-content) > .container) { min-width: 0; display: flow-root; }
+:is(.center-article, :where(.center-content) > .container) :is(h2, h3, hr) { clear: both; }
+:is(.center-article, :where(.center-content) > .container) .img-left { float: left; max-width: 35%; margin: 0 var(--spacing-md) var(--spacing-md) 0; }
+:is(.center-article, :where(.center-content) > .container) .img-right { float: right; max-width: 45%; margin: 0 0 var(--spacing-md) var(--spacing-lg); }
+
+/* Xanthan's full-width elements, inside that text. Xanthan widens them with
+   its grid (grid-column: full), which a plain block ignores, so here they
+   reach to the window's edges this way instead. overflow-x: clip keeps a
+   desktop scrollbar's width from adding a sideways scroll, without breaking
+   the photo story's pinned pictures the way overflow: hidden would. */
+.page-wrap { overflow-x: clip; }
+:is(.center-article, :where(.center-content) > .container) > :is(.jumbotron, .feature-band, .story-sequence) {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+/* Xanthan sets their side padding as a percentage, which counts from the parent:
+   the whole page in its grid, but only the text column here. The same
+   calculations, counted from the window instead: */
+:is(.center-article, :where(.center-content) > .container) > .jumbotron { padding-inline: max(var(--spacing-lg), calc(50vw - 36rem)); }
+/* (and the feature band's text lines up with the page text) */
+:is(.center-article, :where(.center-content) > .container) > .feature-band { padding-inline: max(var(--spacing-sm), calc(50vw - var(--width-reading) / 2)); }
+/* .center-content img (above) keeps pictures at their natural height; the
+   photo story's pictures fill the screen instead. */
+.center-content :is(.story-sequence-layer, .story-sequence-image img) { height: 100%; object-fit: cover; }
+/* Text inside section bands lines up with the page text: the site's reading
+   width (--width-reading) instead of Xanthan's 48rem column. */
+.center-content > :is(.section-alt, .section-cool, .section-warm) > .container {
+  grid-template-columns: [full-start] minmax(0, 1fr) [content-start] minmax(0, var(--width-reading)) [content-end] minmax(0, 1fr) [full-end];
+}
 .community-lexicon {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));

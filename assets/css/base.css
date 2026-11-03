@@ -87,12 +87,25 @@ editing guide lists, so changing one of them here shows no change on the site.
   --text-section-warm-link-hover: var(--interactive-hover);
   --border-section-warm: var(--accent-border);
   --border-section-accent: var(--accent-primary);
+  --hero-tagline-color: var(--text-muted);
+  --button-bg: var(--accent-primary);
+  --button-hover-bg: var(--interactive-hover-bg);
+  --button-text: var(--text-on-dark);
+  --button-hover-text: var(--text-on-dark);
   --card-bg: var(--bg-card);
   --card-border: var(--border-light);
   --card-hover-border: var(--interactive-hover);
   --card-heading-color: var(--text-body);
   --card-text-color: var(--text-muted);
   --bg-feature-band: var(--sage-deep);
+  /* The dark laid over a photograph so light text stays readable on top of it.
+     Kept separate from --overlay-dark, which is neutral black; this one takes
+     the theme's own darkest tone so scrims sit in the same family as the page. */
+  --bg-scrim: var(--sage-dark);
+  /* Translucent scrim for text laid directly over a photograph, as in a
+     jumbotron in image mode. Dark enough to carry light text, sheer enough
+     that the picture still reads through it. */
+  --bg-scrim-sheer: color-mix(in srgb, var(--bg-scrim) 72%, transparent);
   --text-feature-band: var(--text-on-dark);
   --text-feature-band-muted: color-mix(in srgb, var(--text-on-dark) 74%, transparent);
   --text-feature-band-link: var(--sage-pale);
@@ -112,6 +125,7 @@ editing guide lists, so changing one of them here shows no change on the site.
   --accent-primary: var(--sage);
   --accent-border: var(--golden-clay);
   --interactive-hover: var(--amber);
+  --interactive-hover-bg: var(--interactive-hover);
 
   /* Status colors */
   --success: #28a745;
@@ -161,6 +175,9 @@ editing guide lists, so changing one of them here shows no change on the site.
   --font-body: 'Source Sans 3', sans-serif;
   --font-serif: 'Lora', serif;
   --font-mono: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+
+  /* Visual story pacing */
+  --story-sequence-view-height: 100vh;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
