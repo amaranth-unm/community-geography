@@ -21,7 +21,9 @@
     - summary:            a short two-to-three sentence description
 {% endcomment %}
 
-{% assign sorted_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/'" | sort: "start_date" | reverse %}
+{% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/'" %}
+{% include helpers/sort-by-date.html items=current_projects field="start_date" order="newest" %}
+{% assign sorted_projects = sorted_by_date %}
 
 {::nomarkdown}
 {% if sorted_projects.size > 0 %}
@@ -63,8 +65,6 @@
     {% endfor %}
   </div>
 {% else %}
-  <div class="xanthan-warning">
-    community/current-projects.html needs a projects collection.
-  </div>
+  <p>There are no current projects right now. See our <a href="{{ '/projects/past-projects/' | relative_url }}">past projects</a>.</p>
 {% endif %}
 {:/nomarkdown}

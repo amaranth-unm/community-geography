@@ -83,7 +83,10 @@ is the one place UNM values are translated for the site.
 .center-masthead { background: var(--bg-page); border-bottom: 1px solid var(--border-light); }
 .center-masthead a { display: block; max-width: 120rem; margin: 0 auto; border: 0; }
 .center-masthead img { width: 100%; height: auto; display: block; }
-/* Home hero: slides crossfade in turn; each is visible for 6s of a (count x 6s) loop. */
+/* Home hero: slides crossfade in turn; each is visible for 6s of a (count x 6s) loop.
+   The keyframe percentages below (6%, 25%, 31%) are set for exactly four
+   images in _config.yml (home_hero). For N images they become 24/N %,
+   100/N %, and 124/N %. */
 .center-hero {
   --hero-slide-seconds: 6s;
   position: relative;
@@ -490,7 +493,7 @@ is the one place UNM values are translated for the site.
 /* margin-top: auto keeps both footers at the bottom of short pages. */
 .center-footer {
   margin-top: auto;
-  background: var(--bg-section-alt);
+  background: var(--bg-footer);
   border-top: 4px solid var(--accent-primary);
 }
 .center-footer-inner {

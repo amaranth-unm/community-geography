@@ -93,7 +93,7 @@ Many files start with a block between two lines of three dashes:
 ```
 ---
 title: Community mapping workshop
-start_date: '2027-03-12'
+start_date: 2027-03-12
 ---
 ```
 
@@ -105,6 +105,7 @@ This is "front matter." It is information the website uses (title, dates, pictur
 
 | I want to change... | Go to this folder |
 | --- | --- |
+| Start a new story, event, project, or person | `_templates/` (files to copy; never shown on the website) |
 | A news story | `_news/` (inside a year folder, like `_news/2026/`) |
 | An event | `_events/` (inside a year folder, like `_events/2026/`) |
 | A current project | `pages/projects/current-projects/` |
@@ -210,7 +211,7 @@ The part after the colon (like `#007a86`) is a **color code**. Replace it with a
 | `--interactive-hover` | Cherry red (hover and focus color) |
 | `--bg-page` | Page background |
 | `--bg-nav` | Top menu background |
-| `--bg-footer` | Footer background |
+| `--bg-footer` | Background of the Center footer (the band with the address) |
 | `--text-body` | Main text color |
 | `--text-h1`, `--text-h2`, `--text-h3` | Heading colors |
 
@@ -267,7 +268,7 @@ Open `_config.yml`. Edit the `title`, `description`, or `email` lines. Do not ch
 ```
 ---
 title: New Fellows Announced
-published_date: '2026-09-15'
+published_date: 2026-09-15
 ---
 
 Write your story here. Leave a blank line between paragraphs.
@@ -281,13 +282,13 @@ You can add a [link](https://example.com), **bold text**, and pictures
 **Notes**
 - `title` is the headline.
 - The web address comes from the file name: `new-fellows-announced.md` is published at `/news/new-fellows-announced`. Choose the file name carefully, because renaming the file later changes the address.
-- `published_date` is the date in `'YYYY-MM-DD'` form. **Keep the quote marks.**
-- If you only know the year, use `published_year: '2026'` instead of `published_date`.
+- `published_date` is the date written `YYYY-MM-DD`.
+- If you only know the year, use `published_year: 2026` instead of `published_date`.
 - The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - **Homepage list:** the homepage shows a hand-picked set of stories. To add yours, add `featured_order: 6` (a number nobody else is using). Ask the director before featuring a story. New stories are *not* shown on the homepage automatically.
 
-**Easiest way:** copy an existing news file (for example `_news/2026/michael-devivo-visit.md`), rename the copy, and replace the text. If the file you copied has a `permalink` line, delete it from the copy. Older stories keep a `permalink` so that their addresses from the old website still work.
+**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
 
 ---
 
@@ -300,10 +301,10 @@ You can add a [link](https://example.com), **bold text**, and pictures
 ```
 ---
 title: Community Mapping Workshop
-start_date: '2027-03-12'
-end_date: '2027-03-12'
-start_time: '14:00'
-end_time: '16:00'
+start_date: 2027-03-12
+end_date: 2027-03-12
+start_time: 2:00 pm
+end_time: 4:00 pm
 location: UNM Bandelier East 105
 presenter: Jane Doe
 ---
@@ -315,8 +316,8 @@ how to register.
 4. Save, then **Commit & Push**.
 
 **Notes**
-- **Keep the quote marks** around dates and times.
-- Use **24-hour time**: 2 p.m. is `'14:00'`, 9 a.m. is `'09:00'`.
+- Dates are written `YYYY-MM-DD`. For a one-day event, `start_date` and `end_date` are the same day.
+- Write times the usual way: `2:00 pm`, `9:30 am`. (Older events write times like `'14:00'`, in quote marks; that works too. Without the quote marks, `14:00` shows as "time to be confirmed".)
 - Put the file in the folder matching its start year.
 - The web address comes from the file name: `community-mapping-workshop.md` is published at `/events/community-mapping-workshop`.
 - If you don't know the time, location, or presenter, **delete that line**. Don't guess.
@@ -325,10 +326,10 @@ how to register.
   flyer: /assets/images/events/my-flyer.png
   flyer_alt: Flyer for the Community Mapping Workshop on March 12
   ```
-- **Upcoming Events** automatically lists events whose date hasn't passed yet. The list is worked out each time the site is published, so a finished event drops off the next time anyone commits a change.
+- **Upcoming Events** automatically lists events whose date hasn't passed yet. The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay in the **Events Archive**.
 
-**Easiest way:** copy an existing event (for example `_events/2026/devivo-public-talk.md`), rename the copy, and edit it. Remove lines you don't need (like `permalink`, `heading_id`, `legacy_upcoming`, `date_review`, and `review_notes`).
+**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
 
 ---
 
@@ -366,13 +367,13 @@ Write the full description of the project here.
 **Notes**
 - `thumbnail` is the project's picture. It appears on the project's card and at the top of its page.
 - The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
-- `start_date` is written `YYYY-MM-DD` (no quote marks needed here).
+- `start_date` is written `YYYY-MM-DD`.
 - For a project that hasn't ended, write `end_date: Ongoing`.
 - Don't know the faculty or partner? Use `- TBD`.
 - The Projects page sorts current projects with the newest start date first.
 - Past projects are sorted alphabetically by title.
 
-**Easiest way:** copy a similar project file, rename it, and replace the information.
+**Easiest way:** copy `_templates/project.md` into `pages/projects/current-projects/`, rename it, and replace the information.
 
 ---
 
@@ -418,6 +419,8 @@ A short biography goes here.
 - The photo is optional. Upload it to `assets/images/about/`.
 - To remove someone, delete their file (right-click it → **Delete**).
 
+**Easiest way:** copy `_templates/person.md` into `_people/`, name the copy after the person (for example `jane-doe.md`), and fill it in.
+
 ---
 
 ## 10. Other things to know
@@ -446,10 +449,11 @@ A short biography goes here.
 | I saved but the website didn't change | You must **Commit & Push** in Source Control. Then wait a few minutes and refresh (Ctrl+F5). |
 | The Actions tab shows a red X | Click the failed run, then click **build**. Read the red lines for the file name and message. Fix that file in the browser, then Commit & Push again. The old website stays online meanwhile. |
 | Error mentions "Liquid" | Something between `{% %}` or `{{ }}` is mistyped. Compare with a working file. |
-| Error mentions "comparison of" | A date is missing its quote marks. Dates must look like `'2027-03-12'` and times like `'14:00'`. |
+| Error mentions "comparison of" | A number such as `display_order` or `featured_order` has quote marks in one file and not in others. Remove the quote marks: `display_order: 20`. |
+| An event says "time to be confirmed" | Its time is written like `14:00` without quote marks. Write it as `2:00 pm`. |
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. |
-| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed each time anyone publishes a change, so a finished event can linger until then.) |
+| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
 | Nothing works | Stop, don't delete anything, and ask for help. All past versions can be restored. |
@@ -465,6 +469,7 @@ A short biography goes here.
 | Save a file | Ctrl+S (Cmd+S) |
 | Publish my changes | Source Control → message → **Commit & Push** |
 | Check if it's live | GitHub → **Actions** tab → green check |
+| Start a new page | Copy a file from `_templates/` |
 | Add news | New file in `_news/YEAR/` |
 | Add an event | New file in `_events/YEAR/` |
 | Add a project | New file in `pages/projects/current-projects/` |
@@ -474,4 +479,4 @@ A short biography goes here.
 | Change colors | `assets/css/themes/unm.css` |
 | Change the menu | `_data/nav-top.yml` |
 
-*Last updated: October 2026. If something in this guide is out of date, please fix it. This file is `HOW-TO-EDIT-THIS-WEBSITE.md` in the main folder of the repository.*
+*Last updated: November 2026. If something in this guide is out of date, please fix it. This file is `HOW-TO-EDIT-THIS-WEBSITE.md` in the main folder of the repository.*

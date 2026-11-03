@@ -1,4 +1,6 @@
-{% assign events = site.events | sort: 'start_date' | reverse %}
+{% comment %} Every event, newest first. {% endcomment %}
+{% include helpers/sort-by-date.html items=site.events field="start_date" order="newest" %}
+{% assign events = sorted_by_date %}
 {% for item in events %}
   <article class="record-event-summary">
     {% assign archive_id = item.archive_anchor %}{% unless archive_id %}{% assign archive_id = item.title | slugify %}{% endunless %}

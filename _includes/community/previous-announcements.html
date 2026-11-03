@@ -3,7 +3,9 @@
   page under "Previous announcements", oldest first. The heading ids keep old
   links to these announcements working.
 {% endcomment %}
-{% assign announcements = site.events | where: "legacy_upcoming", true | sort: "start_date" %}
+{% assign announcements = site.events | where: "legacy_upcoming", true %}
+{% include helpers/sort-by-date.html items=announcements field="start_date" %}
+{% assign announcements = sorted_by_date %}
 {% for event in announcements %}
 <h2 id="{{ event.heading_id }}"><a href="{{ event.url | relative_url }}">{{ event.title | escape }}</a></h2>
 {% include community/event-details.html event=event %}

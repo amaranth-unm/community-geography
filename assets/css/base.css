@@ -31,11 +31,11 @@ Not here: prose and headings (typography.css), which read as "base" but are
 
 @media screen {
 /*****************************************************
-PAGE SETUP & CUSTOMIZATION
+PAGE SETUP
 
-👉 Want to customize your site's colors?
-   See guides/customizing-colors.md for quick changes
-   See guides/using-themes.md to create a complete theme
+To change this site's colors or fonts, edit assets/css/themes/unm.css, not
+this file. The theme replaces the values below for every color and font the
+editing guide lists, so changing one of them here shows no change on the site.
 *****************************************************/
 
 /* --- Reset & Base --- */

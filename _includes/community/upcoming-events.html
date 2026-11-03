@@ -5,7 +5,8 @@
 {% endcomment %}
 {% assign today = site.time | date: '%Y-%m-%d' %}
 {% assign upcoming_events = '' | split: '' %}
-{% assign events_by_start = site.events | sort: 'start_date' %}
+{% include helpers/sort-by-date.html items=site.events field="start_date" %}
+{% assign events_by_start = sorted_by_date %}
 {% for event in events_by_start %}
   {% assign last_day = event.end_date | default: event.start_date | date: '%Y-%m-%d' %}
   {% if last_day >= today %}{% unless event.date_review %}{% assign upcoming_events = upcoming_events | push: event %}{% endunless %}{% endif %}

@@ -1,0 +1,55 @@
+{% comment %}
+  Sort by date — internal helper for the news, event, and project lists.
+
+  Puts `items` in date order and leaves the result in `sorted_by_date` for the
+  include that called it.
+
+  Why not Jekyll's own `sort` filter: editors may write a date with or without
+  quote marks ('2027-03-12' or 2027-03-12). The two reach Jekyll as different
+  kinds of value, and `sort` stops the whole site from building when a list
+  mixes them. This helper turns every date into the same text, YYYY-MM-DD,
+  and sorts that text instead, so either way of writing a date works.
+
+  Parameters:
+    items:    the list to sort (required)
+    field:    the front matter date to sort on, such as start_date (required)
+    fallback: (optional) a year to use when `field` is missing, such as
+              published_year; those items sort after the dated items of the
+              same year
+    order:    "newest" for newest first; anything else is oldest first
+
+  Items with no date at all sort as the oldest. Items with the same date keep
+  the order they arrive in (for events and news, the order of their file
+  names), whichever way the list runs.
+{% endcomment %}
+{% assign sort_items = include.items %}
+{% assign sort_keys = "" | split: "" %}
+{% for sort_item in sort_items %}
+  {% assign sort_date = sort_item[include.field] | date: "%Y-%m-%d" %}
+  {% if sort_date == nil or sort_date == "" %}
+    {% if include.fallback and sort_item[include.fallback] %}
+      {% assign sort_date = sort_item[include.fallback] | append: "-00-00" %}
+    {% else %}
+      {% assign sort_date = "0000-00-00" %}
+    {% endif %}
+  {% endif %}
+  {% comment %}
+    The key is the date plus the item's position, padded to four digits, which
+    breaks ties and finds the item again below. A newest-first list is sorted
+    and then reversed, so its positions count down (9999 - position) to keep
+    same-day items in their original order after the reversal.
+  {% endcomment %}
+  {% assign sort_position = forloop.index0 %}
+  {% if include.order == "newest" %}{% assign sort_position = 9999 | minus: sort_position %}{% endif %}
+  {% assign sort_position = sort_position | prepend: "0000" | slice: -4, 4 %}
+  {% assign sort_key = sort_date | append: "_" | append: sort_position %}
+  {% assign sort_keys = sort_keys | push: sort_key %}
+{% endfor %}
+{% assign sort_keys = sort_keys | sort %}
+{% if include.order == "newest" %}{% assign sort_keys = sort_keys | reverse %}{% endif %}
+{% assign sorted_by_date = "" | split: "" %}
+{% for sort_key in sort_keys %}
+  {% assign sort_position = sort_key | slice: -4, 4 | plus: 0 %}
+  {% if include.order == "newest" %}{% assign sort_position = 9999 | minus: sort_position %}{% endif %}
+  {% assign sorted_by_date = sorted_by_date | push: sort_items[sort_position] %}
+{% endfor %}

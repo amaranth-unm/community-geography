@@ -104,6 +104,9 @@ center_banner:
   width: 1920
   height: 300
   alt: R.H. Mallory Center for Community Geography, University of New Mexico
+# Home page photos, shown in turn behind the Center's logo. Keep exactly four:
+# the fade timing in assets/css/community.css (.center-hero) is set for four.
+# To change a photo, replace one line with the path of the new picture.
 home_hero:
   logo: /assets/images/hero/center-logo-text-transparent.png
   images:

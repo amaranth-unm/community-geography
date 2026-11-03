@@ -19,8 +19,10 @@
 
 {% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
 {% assign past_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/'" | where_exp: "p", "p.name != 'index.md'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
-{% assign current_sorted = current_projects | sort: "start_date" | reverse %}
-{% assign past_sorted = past_projects | sort: "start_date" | reverse %}
+{% include helpers/sort-by-date.html items=current_projects field="start_date" order="newest" %}
+{% assign current_sorted = sorted_by_date %}
+{% include helpers/sort-by-date.html items=past_projects field="start_date" order="newest" %}
+{% assign past_sorted = sorted_by_date %}
 {% assign all_projects = current_sorted | concat: past_sorted %}
 
 {% if all_projects.size > 0 %}
