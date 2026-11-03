@@ -1,6 +1,7 @@
 ---
 title: Mapping tool for the Albuquerque Backyard Refuge Program
-permalink: /projects/project/test-project-3
+# Address used by the old website; visitors there are sent to this page.
+redirect_from: /projects/project/test-project-3
 thumbnail: "/assets/images/projects/project/backyard-refuge-program.jpg"
 start_date: 2021-04-06
 end_date: 2021-11-09

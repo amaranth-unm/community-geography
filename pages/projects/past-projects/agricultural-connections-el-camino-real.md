@@ -1,6 +1,7 @@
 ---
 title: 'StoryMap: Agricultural Connections Along the El Camino Real'
-permalink: /projects/project/test-project-1
+# Address used by the old website; visitors there are sent to this page.
+redirect_from: /projects/project/test-project-1
 thumbnail: "/assets/images/projects/project/boxed-apples.jpg"
 start_date: 2021-01-15
 end_date: 2021-05-15
