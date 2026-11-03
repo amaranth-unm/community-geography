@@ -114,3 +114,6 @@ home_hero:
   - /assets/images/hero/hero-organ-mountains.jpg
   - /assets/images/hero/hero-sandia-bosque.jpg
   - /assets/images/hero/hero-lava-field.jpg
+# Recent News on the home page: how many of the newest stories to show.
+# Use 0 to hide the section.
+home_news_count: 3

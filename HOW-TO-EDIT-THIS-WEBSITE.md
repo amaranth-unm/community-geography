@@ -286,7 +286,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - If you only know the year, use `published_year: 2026` instead of `published_date`.
 - The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
-- **Homepage list:** the homepage shows a hand-picked set of stories. To add yours, add `featured_order: 6` (a number nobody else is using). Ask the director before featuring a story. New stories are *not* shown on the homepage automatically.
+- **Homepage:** the three newest stories appear under **Recent news** on the homepage by themselves. To show more or fewer, change `home_news_count: 3` in `_config.yml`; `0` hides the section.
 
 **Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
 
