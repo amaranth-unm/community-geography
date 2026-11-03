@@ -196,7 +196,16 @@ is the one place UNM values are translated for the site.
   color: var(--text-muted);
 }
 .center-breadcrumbs a { color: var(--accent-primary); border-bottom: 0; }
-.center-content { padding-block: var(--spacing-lg) var(--spacing-xl); grid-template-columns: [full-start] minmax(0, 1fr) [content-start] minmax(0, var(--width-reading)) [content-end] minmax(0, 1fr) [full-end]; }
+/* The text column: --width-reading wide and centred. Between phone and
+   desktop widths it keeps a gutter at each side; on phones base.css pads the
+   text instead, so pictures can run edge to edge. */
+.center-content {
+  --center-gutter: 0px;
+  --center-columns: [full-start] minmax(var(--center-gutter), 1fr) [content-start] minmax(0, var(--width-reading)) [content-end] minmax(var(--center-gutter), 1fr) [full-end];
+  padding-block: var(--spacing-lg) var(--spacing-xl);
+  grid-template-columns: var(--center-columns);
+}
+@media (min-width: 769px) { .center-content { --center-gutter: var(--page-gutter); } }
 .center-content h1 { font-size: var(--center-size-title); margin-top: 0; line-height: 1.08; }
 .center-content img { max-width: 100%; height: auto; object-fit: contain; }
 .center-content iframe { max-width: 100%; }
@@ -234,7 +243,7 @@ is the one place UNM values are translated for the site.
 /* Text inside section bands lines up with the page text: the site's reading
    width (--width-reading) instead of Xanthan's 48rem column. */
 .center-content > :is(.section-alt, .section-cool, .section-warm) > .container {
-  grid-template-columns: [full-start] minmax(0, 1fr) [content-start] minmax(0, var(--width-reading)) [content-end] minmax(0, 1fr) [full-end];
+  grid-template-columns: var(--center-columns);
 }
 .community-lexicon {
   display: grid;
