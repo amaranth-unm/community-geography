@@ -29,7 +29,6 @@ is the one place UNM values are translated for the site.
 /* Shared patterns: the kicker label, section title, and button-style link
    used by the home bands and the site footer. Each component below only
    overrides what differs. */
-.welcome-kicker,
 .community-geography-intro-kicker,
 .projects-carousel-kicker,
 .community-follow-kicker,
@@ -255,8 +254,7 @@ is the one place UNM values are translated for the site.
 .community-lexicon-card:hover img,
 .community-lexicon-card:focus-visible img { transform: scale(1.04); }
 .community-lexicon-card:focus-visible { outline: 3px solid var(--interactive-hover); outline-offset: 3px; }
-.center-content--home, .center-content:has(.community-projects) { display: block; width: 100%; max-width: var(--width-center); margin-inline: auto; padding-inline: var(--page-gutter); }
-.center-content--home { padding-block: 0; }
+.center-content--home { display: block; width: 100%; max-width: var(--width-center); margin-inline: auto; padding-block: 0; padding-inline: var(--page-gutter); }
 .welcome-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .95fr);
@@ -269,7 +267,6 @@ is the one place UNM values are translated for the site.
   border-bottom: 0.35rem solid var(--accent-primary);
 }
 .welcome-copy { max-width: 39rem; }
-.welcome-kicker { margin-bottom: var(--spacing-sm); }
 .welcome-copy h1 {
   margin: 0 0 var(--spacing-md);
   color: var(--text-h2);
@@ -489,7 +486,6 @@ is the one place UNM values are translated for the site.
   border-color: var(--text-feature-band-link);
   transform: translateY(-2px);
 }
-.legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
 /* margin-top: auto keeps both footers at the bottom of short pages. */
 .center-footer {
   margin-top: auto;
@@ -558,28 +554,6 @@ is the one place UNM values are translated for the site.
   .projects-carousel-control { display: none; }
   .projects-carousel-track { grid-auto-columns: minmax(11rem, 66vw); }
 }
-
-.community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.community-project {
-  overflow: hidden;
-  background: var(--bg-card);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
-}
-.community-project:hover {
-  border-color: var(--accent-primary);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
-}
-.community-project > a { display: block; border: 0; }
-.community-project img { width: 100%; height: 13rem; object-fit: cover; display: block; background: var(--bg-page); }
-.community-project-body { padding: var(--spacing-md); }
-.community-project h2 { font-size: 1.35rem; margin: 0 0 var(--spacing-sm); }
-.community-project p { font-size: var(--center-size-sm); margin-bottom: var(--spacing-xs); }
-@media (max-width: 991px) { .community-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .community-projects { grid-template-columns: 1fr; } }
 
 /* Shared project-detail presentation for pages/projects/project. */
 .project-content {

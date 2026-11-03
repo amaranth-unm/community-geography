@@ -2,7 +2,7 @@
 COLLECTIONS
 Small, reusable content patterns for migrated records: event details,
 flyers, profiles, and image galleries.
-Loads: pages using unm/page-header-unm.html, after community.css.
+Loads: every page, from html/html-head.html, last (after unm.css).
 Needs: themes/unm.css tokens and the --center-* sizes from community.css.
 Not here: UNM chrome (unm.css) or page layout (community.css).
 *****************************************************/
@@ -13,7 +13,6 @@ Not here: UNM chrome (unm.css) or page layout (community.css).
 .record-flyer img { display: block; width: 100%; height: auto; }
 .record-flyer figcaption { margin-top: .5rem; }
 .record-event-summary { margin-block: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-medium); }
-.record-event-thumbnail { display: block; width: min(100%, 18rem); height: auto; }
 .record-profile { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .record-profile--text { grid-template-columns: minmax(0, 1fr); }
 .record-profile .record-portrait { display: block; width: 100%; height: auto; margin: 0; float: none; }

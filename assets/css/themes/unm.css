@@ -16,9 +16,6 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --accent-primary-dark: #005d66;
   --accent-border: #d6a461;
   --interactive-hover: #ba0c2f;
-  --interactive-hover-bg: #ba0c2f;
-  --interactive-subtle: color-mix(in srgb, #007a86 12%, transparent);
-  --interactive-subtle-hover: color-mix(in srgb, #ba0c2f 12%, transparent);
   /* UNM gold, for highlights on dark or photographic backgrounds. */
   --accent-highlight: #ffc600;
 
@@ -26,9 +23,7 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --bg-card: #ffffff;
   --bg-nav: #303335;
   --bg-footer: #edf4f3; /* The Center footer with the address; UNM's own footer below it keeps UNM's colors. */
-  --bg-footer-bottom: #242628;
   --bg-section-alt: #edf4f3;
-  --bg-section-alt-flat: #edf4f3;
   --bg-section-cool: #e5f0ef;
   --bg-section-warm: #fff7df;
   --bg-feature-band: #007a86;
@@ -48,10 +43,6 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --text-feature-band-link: var(--accent-highlight);
   --text-feature-band-link-hover: #ffffff;
 
-  --button-bg: #007a86;
-  --button-hover-bg: #ba0c2f;
-  --button-text: #ffffff;
-  --button-hover-text: #ffffff;
   --card-bg: #ffffff;
   --card-border: color-mix(in srgb, #63666a 22%, transparent);
   --card-hover-border: #007a86;

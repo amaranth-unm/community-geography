@@ -9,6 +9,11 @@
     - alt-text-left:     accessibility description for the left image (optional)
     - alt-text-right:    accessibility description for the right image (optional)
     - class:             CSS class for the caption (optional)
+
+  The first slider on a page also loads Juxtapose, so pages without one never
+  download it. The script is deferred because Juxtapose looks for every
+  .juxtapose element the moment it runs; deferring it until the page has been
+  read lets it find sliders further down the page too.
 {% endcomment %}
 
 {% capture img1_url %}
@@ -21,6 +26,11 @@
 {% assign img2_url = img2_url | strip %}
 
 {% if img1_url and img2_url %}
+  {% unless juxtapose_loaded %}
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/1.2.5/css/juxtapose.css">
+  <script src="https://cdn.knightlab.com/libs/juxtapose/1.2.5/js/juxtapose.min.js" defer></script>
+  {% assign juxtapose_loaded = true %}
+  {% endunless %}
   <figure>
     <div id="juxtapose-wrapper" class="juxtapose" data-startingposition="{{ include.starting-position | default: '50%' }}"
       data-label="{{ include.data-label }}" data-credit="{{ include.data-credit }}" data-showlabels="false"

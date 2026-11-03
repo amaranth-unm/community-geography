@@ -72,30 +72,6 @@ its image sits above the text or beside it belongs here, not in a variant.
   text-align: left;
 }
 
-/* Attribution lines. A collaborative site has to be able to say who made a
-   thing — the single field the bespoke gallery sites all added to their own
-   card markup. Both are optional and collapse to nothing when unset. */
-.card-kicker {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.card-byline {
-  margin: calc(var(--spacing-xs) * -0.5) 0 var(--spacing-xs);
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  font-style: italic;
-}
-
-/* With a kicker above it the title no longer needs its own top margin */
-.card-kicker + h3 {
-  margin-top: var(--spacing-xs);
-}
-
 .card h3 {
   /* Box Model */
   margin: var(--spacing-xs) 0 var(--spacing-sm) 0;
