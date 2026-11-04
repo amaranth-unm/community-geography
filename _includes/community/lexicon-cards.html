@@ -1,11 +1,12 @@
 {% comment %}
   Lexicon cards on the "What is Community Geography?" page: one card per
-  word in _lexicon/, linking to its slideshow.
+  word in _lexicon/, showing the word and its definition and linking to the
+  word's page.
 
   Each word file provides, in its front matter:
     - word:          the word shown on the card
+    - definition:    one or two sentences shown under the word
     - display_order: the card's position (1 = first)
-    - image:         the card image
   To add a word, copy an existing file in _lexicon/ and change those.
   helpers/sort-by-number.html puts the cards in order, so display_order works
   with or without quote marks.
@@ -15,8 +16,9 @@
 <section class="community-lexicon" aria-label="Community geography lexicon">
   {% for entry in words %}
   <a class="community-lexicon-card" href="{{ entry.url | relative_url }}">
-    <img src="{{ entry.image | relative_url }}" loading="lazy" alt="Illustration representing {{ entry.word | downcase }}.">
-    <span>{{ entry.word }}</span>
+    <span class="community-lexicon-word">{{ entry.word }}</span>
+    {% if entry.definition %}<span class="community-lexicon-definition">{{ entry.definition }}</span>{% endif %}
+    <span class="community-lexicon-more">Read more <span aria-hidden="true">→</span></span>
   </a>
   {% endfor %}
 </section>

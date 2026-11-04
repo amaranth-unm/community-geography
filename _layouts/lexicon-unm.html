@@ -2,9 +2,64 @@
 layout: base-unm
 ---
 {% comment %}
-  Lexicon word pages (_lexicon/). The heading and the slideshow both come from
-  the word's front matter, so a word's file needs no text below it.
+  Lexicon word pages (_lexicon/). Everything above the text comes from the
+  word's front matter:
+    - word:          the page heading
+    - definition:    the opening sentence or two
+    - terms_heading: the heading over the list of related ideas
+                     (default: "<word> engages…")
+    - terms:         related ideas, one per line
+    - slides:        the original Instagram posts (image and alt for each)
+  The text below the front matter follows: quotes, explanations, references.
+  A quote is written as a Markdown blockquote (lines starting with >), with
+  its source on its own last line, starting with an em dash (—).
+
+  A word with no text yet shows its Instagram posts as a slideshow instead.
 {% endcomment %}
-<h1 id="{{ page.title | slugify }}">{{ page.title | escape }}</h1>
-{% include community/lexicon-slideshow.html %}
-{{ content }}
+{% assign body = content | strip %}
+<article class="lexicon-entry">
+  <p class="lexicon-kicker"><a href="{{ '/community-geography/#community-geography-lexicon' | relative_url }}">Community Geography Lexicon</a></p>
+  <h1 id="{{ page.title | slugify }}">{{ page.word | default: page.title | escape }}</h1>
+  {% if page.definition %}<p class="lexicon-definition">{{ page.definition }}</p>{% endif %}
+
+  {% if body == "" %}
+    {% include community/lexicon-slideshow.html %}
+  {% else %}
+    {% if page.terms %}
+    <section class="lexicon-terms" aria-labelledby="lexicon-terms-heading">
+      <h2 id="lexicon-terms-heading">{% if page.terms_heading %}{{ page.terms_heading }}{% else %}{{ page.word }} engages…{% endif %}</h2>
+      <ul>
+        {% for term in page.terms %}<li>{{ term }}</li>{% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <div class="lexicon-body">{{ content }}</div>
+
+    {% if page.slides %}
+    <section class="lexicon-posts" aria-labelledby="lexicon-posts-heading">
+      <h2 id="lexicon-posts-heading">As posted on Instagram</h2>
+      <ul>
+        {% for slide in page.slides %}
+        <li><a href="{{ slide.image | relative_url }}"><img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | escape }}" loading="lazy" decoding="async"></a></li>
+        {% endfor %}
+      </ul>
+      <p>See more on <a href="https://www.instagram.com/nmcommunitygeog/">the Center's Instagram</a>.</p>
+    </section>
+    {% endif %}
+  {% endif %}
+
+  {% comment %} Previous and next words, in card order. {% endcomment %}
+  {% include helpers/sort-by-number.html items=site.lexicon field="display_order" %}
+  {% for entry in sorted_by_number %}
+    {% if entry.url == page.url %}
+      {% assign prev_index = forloop.index0 | minus: 1 %}
+      {% assign next_index = forloop.index0 | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <nav class="lexicon-pager" aria-label="Other lexicon words">
+    {% if prev_index >= 0 %}{% assign prev_word = sorted_by_number[prev_index] %}<a class="lexicon-pager-prev" href="{{ prev_word.url | relative_url }}"><span aria-hidden="true">←</span> {{ prev_word.word }}</a>{% endif %}
+    {% assign next_word = sorted_by_number[next_index] %}
+    {% if next_word %}<a class="lexicon-pager-next" href="{{ next_word.url | relative_url }}">{{ next_word.word }} <span aria-hidden="true">→</span></a>{% endif %}
+  </nav>
+</article>

@@ -18,7 +18,7 @@ This subfield of geography recognizes that community residents generate meaningf
 
 ## Community Geography Lexicon
 
-Explore the words that guide our work. Select a card to view its image story.
+Explore the words that guide our work. Select a word to read more about it.
 
 {% comment %} One card for each word in _lexicon/, ordered by display_order. {% endcomment %}
 {% include community/lexicon-cards.html %}
