@@ -28,6 +28,8 @@
     url: "/news/"
   - title: Events Archive
     url: "/events/archive"
+  - title: Event Flyers
+    url: "/events/flyers"
   - title: Upcoming Events
     url: "/events/upcoming"
 - title: Funding

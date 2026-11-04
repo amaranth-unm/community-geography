@@ -1,0 +1,32 @@
+{% comment %}
+  Event flyers: every event in _events/ that has a flyer (`image`), as a wall
+  of flyers grouped by year, newest first. Each flyer links to its event's
+  page. Pointing at a flyer (or tabbing to it) shows the event's date and
+  title; on phones and tablets they show under the flyer.
+
+  Usage:
+    {% include community/event-flyers.html %}
+
+  Front matter read from each event: title, start_date, image.
+{% endcomment %}
+{% assign flyer_events = site.events | where_exp: "e", "e.image" %}
+{% include helpers/sort-by-date.html items=flyer_events field="start_date" order="newest" %}
+{% assign flyer_years = sorted_by_date | group_by_exp: "e", "e.start_date | date: '%Y'" %}
+{% for year in flyer_years %}
+<section class="event-flyers-year" aria-labelledby="flyers-{{ year.name }}">
+  <h2 id="flyers-{{ year.name }}">{{ year.name }}</h2>
+  <ul class="event-flyers">
+    {% for event in year.items %}
+    <li>
+      <a class="event-flyer" href="{{ event.url | relative_url }}">
+        <img src="{{ event.image | relative_url }}" alt="" loading="lazy" decoding="async">
+        <span class="event-flyer-caption">
+          <span class="event-flyer-date">{{ event.start_date | date: "%B %-d, %Y" }}</span>
+          <span class="event-flyer-title">{{ event.title }}</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
