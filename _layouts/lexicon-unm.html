@@ -2,29 +2,41 @@
 layout: base-unm
 ---
 {% comment %}
-  Lexicon word pages (_lexicon/). Everything above the text comes from the
-  word's front matter:
-    - word:          the page heading
-    - definition:    the opening sentence or two
-    - terms_heading: the heading over the list of related ideas
-                     (default: "<word> engages…")
-    - terms:         related ideas, one per line
-    - slides:        the original Instagram posts (image and alt for each)
-  The text below the front matter follows: quotes, explanations, references.
-  A quote is written as a Markdown blockquote (lines starting with >), with
-  its source on its own last line, starting with an em dash (—).
+  Lexicon word pages (_lexicon/). The page is built from the word's front
+  matter, top to bottom:
+    - word, definition:  the heading and the sentence or two under it
+    - image, image_alt, image_caption:
+                         a wide photo across the window
+    - terms_heading, terms:
+                         related ideas in a band (heading default:
+                         "<word> engages…")
+    - quotes:            each with text and source, and optionally a photo
+                         beside it (photo, photo_alt, photo_caption); photos
+                         alternate sides
+  Any text below the front matter follows the quotes: explanations,
+  questions, references.
 
-  A word with no text yet shows its Instagram posts as a slideshow instead.
+  A word with no quotes or text yet shows its old Instagram posts (slides)
+  as a slideshow instead.
 {% endcomment %}
 {% assign body = content | strip %}
 <article class="lexicon-entry">
-  <p class="lexicon-kicker"><a href="{{ '/community-geography/#community-geography-lexicon' | relative_url }}">Community Geography Lexicon</a></p>
-  <h1 id="{{ page.title | slugify }}">{{ page.word | default: page.title | escape }}</h1>
-  {% if page.definition %}<p class="lexicon-definition">{{ page.definition }}</p>{% endif %}
+  <header class="lexicon-head">
+    <p class="lexicon-kicker"><a href="{{ '/community-geography/#community-geography-lexicon' | relative_url }}">Community Geography Lexicon</a></p>
+    <h1 id="{{ page.title | slugify }}">{{ page.word | default: page.title | escape }}</h1>
+    {% if page.definition %}<p class="lexicon-definition">{{ page.definition }}</p>{% endif %}
+  </header>
 
-  {% if body == "" %}
+  {% if page.quotes == nil and body == "" %}
     {% include community/lexicon-slideshow.html %}
   {% else %}
+    {% if page.image %}
+    <figure class="lexicon-photo">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
+      {% if page.image_caption %}<figcaption>{{ page.image_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+
     {% if page.terms %}
     <section class="lexicon-terms" aria-labelledby="lexicon-terms-heading">
       <h2 id="lexicon-terms-heading">{% if page.terms_heading %}{{ page.terms_heading }}{% else %}{{ page.word }} engages…{% endif %}</h2>
@@ -34,19 +46,24 @@ layout: base-unm
     </section>
     {% endif %}
 
-    <div class="lexicon-body">{{ content }}</div>
+    {% assign photo_count = 0 %}
+    {% for quote in page.quotes %}
+      {% if quote.photo %}{% assign photo_count = photo_count | plus: 1 %}{% assign flip = photo_count | modulo: 2 %}{% endif %}
+      <div class="lexicon-beat{% if quote.photo %} lexicon-beat--photo{% if flip == 0 %} lexicon-beat--flip{% endif %}{% endif %}">
+        {% if quote.photo %}
+        <figure class="lexicon-beat-photo">
+          <img src="{{ quote.photo | relative_url }}" alt="{{ quote.photo_alt | escape }}" loading="lazy" decoding="async">
+          {% if quote.photo_caption %}<figcaption>{{ quote.photo_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+        </figure>
+        {% endif %}
+        <blockquote class="lexicon-quote">
+          {{ quote.text | markdownify }}
+          {% if quote.source %}<footer>{{ quote.source | markdownify | remove: '<p>' | remove: '</p>' | strip }}</footer>{% endif %}
+        </blockquote>
+      </div>
+    {% endfor %}
 
-    {% if page.slides %}
-    <section class="lexicon-posts" aria-labelledby="lexicon-posts-heading">
-      <h2 id="lexicon-posts-heading">As posted on Instagram</h2>
-      <ul>
-        {% for slide in page.slides %}
-        <li><a href="{{ slide.image | relative_url }}"><img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | escape }}" loading="lazy" decoding="async"></a></li>
-        {% endfor %}
-      </ul>
-      <p>See more on <a href="https://www.instagram.com/nmcommunitygeog/">the Center's Instagram</a>.</p>
-    </section>
-    {% endif %}
+    {% if body != "" %}<div class="lexicon-body">{{ content }}</div>{% endif %}
   {% endif %}
 
   {% comment %} Previous and next words, in card order. {% endcomment %}
@@ -58,8 +75,8 @@ layout: base-unm
     {% endif %}
   {% endfor %}
   <nav class="lexicon-pager" aria-label="Other lexicon words">
-    {% if prev_index >= 0 %}{% assign prev_word = sorted_by_number[prev_index] %}<a class="lexicon-pager-prev" href="{{ prev_word.url | relative_url }}"><span aria-hidden="true">←</span> {{ prev_word.word }}</a>{% endif %}
+    {% if prev_index >= 0 %}{% assign prev_word = sorted_by_number[prev_index] %}<a class="lexicon-pager-prev" href="{{ prev_word.url | relative_url }}"><span>Previous word</span>{{ prev_word.word }}</a>{% endif %}
     {% assign next_word = sorted_by_number[next_index] %}
-    {% if next_word %}<a class="lexicon-pager-next" href="{{ next_word.url | relative_url }}">{{ next_word.word }} <span aria-hidden="true">→</span></a>{% endif %}
+    {% if next_word %}<a class="lexicon-pager-next" href="{{ next_word.url | relative_url }}"><span>Next word</span>{{ next_word.word }}</a>{% endif %}
   </nav>
 </article>
