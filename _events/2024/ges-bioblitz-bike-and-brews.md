@@ -8,7 +8,6 @@ end_time: '16:00'
 location: Rio Grande Nature Center State Park,
 flyer: /assets/images/shared/ges_bioblitzbikeride.jpg
 flyer_alt: 'Photo: GES BioBlitz Bike and Brews'
-heading_id: ges-bioblitz-bike-and-brews
 ---
 
 You’re invited! 

@@ -1,10 +1,7 @@
 ---
-archived: true
 title: 'Rethinking Fountainbridge: Honoring the Past and Greening the Future in an Edinburgh Neighborhood'
 permalink: /news/fall-colloquium
-heading_id: rethinking-fountainbridge-honoring-the-past-and-greening-the-future-in-an-edinburgh-neighborhood
 published_date: '2021-10-21'
-date_source: /news/2021
 ---
 
 ![jeffbuckleytalkposter]({{ site.baseurl }}/assets/images/news/jeffbuckleytalkposter){: .img-left width="457"}

@@ -8,6 +8,5 @@ presenter: Dr. Lillian Gorman
 location: Ortega Hall 335
 flyer: /assets/images/events/gorman_unm-book-talk_final.png
 flyer_alt: 'Photo: Book Talk: Zones of Encuentro: Language and Identities in Northern New Mexico'
-heading_id: book-talk-zones-of-encuentro-language-and-identities-in-northern-new-mexico
 ---
 

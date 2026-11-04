@@ -8,6 +8,5 @@ presenter: Andrew Curley, PhD
 location: Hibben Center Room 105
 flyer: /assets/images/events/andrew-curley-lecture.jpg
 flyer_alt: 'Photo: Dialogue with Dr. Andrew Curley: Colonial Becoming: An Unfolding Story of the Colorado River '
-heading_id: dialogue-with-dr-andrew-curley-colonial-becoming-an-unfolding-story-of-the-colorado-river
 ---
 

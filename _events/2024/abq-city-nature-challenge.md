@@ -8,7 +8,6 @@ end_time: '00:00'
 location: Albuquerque, NM
 flyer: /assets/images/events/cnc-ges-group.png
 flyer_alt: 'Photo: City Nature Challenge'
-heading_id: city-nature-challenge
 ---
 
 The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2024 City Nature Challenge takes place from Friday, April 26 to Sunday, May 5, 2023.

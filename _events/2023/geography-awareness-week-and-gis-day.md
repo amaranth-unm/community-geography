@@ -7,7 +7,6 @@ end_time: '17:00'
 location: SUB Atrium/ Fiesta A and B
 flyer: /assets/images/events/gisday2023
 flyer_alt: 'Photo: Geography Awareness Week and GIS Day'
-heading_id: geography-awareness-week-and-gis-day
 ---
 
 November 13-17 is Geography Awareness Week!

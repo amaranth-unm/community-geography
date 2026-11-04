@@ -1,5 +1,4 @@
 ---
-archived: true
 title: 'Featured Spring 2025 Fellow: Hope Smith'
 heading_id: null
 published_date: '2025-04-04'

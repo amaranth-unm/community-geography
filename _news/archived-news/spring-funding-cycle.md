@@ -1,10 +1,7 @@
 ---
-archived: true
 title: The Center for Community Geography Spring Funding Cycle is Open!
 permalink: /news/funding-announcement
-heading_id: the-center-for-community-geography-spring-funding-cycle-is-open
 published_date: '2022-03-07'
-date_source: /news/2022
 ---
 
 The R.H. Mallory Center for Community Geography is pleased to announce our [**2022 Grants for both Faculty and Graduate Students!**]({{ site.baseurl }}/funding/)  For more information, contact Miriam Gay-Antaki <mgayantaki@unm.edu>.

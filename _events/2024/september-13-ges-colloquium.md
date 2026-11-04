@@ -9,7 +9,6 @@ presenter: Dr. Christopher Lippitt
 location: Bandelier East 105
 flyer: /assets/images/events/fall2024gescolloquium_lippitt.png
 flyer_alt: 'Photo: GES Colloquium'
-heading_id: ges-colloquium
 date_review: true
 review_notes:
 - Published end precedes start; retained verbatim in structured fields. Excluded from automated upcoming dates until reviewed.

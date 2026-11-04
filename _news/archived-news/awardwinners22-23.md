@@ -1,9 +1,7 @@
 ---
-archived: true
 title: Congratulations Award Winners! 2022-2023 Graduate Fellowships & Seed Funding Awardees
 heading_id: congratulations-award-winners-2022-2023-graduate-fellowships--seed-funding-awardees
 published_date: '2022-11-02'
-date_source: /news/2022
 ---
 
 ![daffodils_unm]({{ site.baseurl }}/assets/images/shared/daffodils_unm){: .img-left width="426"}

@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Congratulations Students! 2021-2022 Graduate Fellowships Announced
 permalink: /news/may-18,-2021
-heading_id: congratulations-students-2021-2022-graduate-fellowships-announced
 published_date: '2021-05-18'
-date_source: /news/2021
 ---
 
 ![maria-sunset-.jpeg]({{ site.baseurl }}/assets/images/news/maria-sunset-.jpeg){: .img-left width="400"}

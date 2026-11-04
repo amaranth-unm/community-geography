@@ -8,7 +8,6 @@ presenter: Roseanne Rosenthal (Tewa & Apache ‘iyanet’eesh Ch’ogaat), Unive
 location: ABQ BioPark Botanic Gaden 2601 Central Ave NW Albuquerque, NM 87104
 flyer: /assets/images/events/rosenthal
 flyer_alt: 'Photo: Gila Centennial: Looking to the Mountain: Sacred Lands, Healing Cultures'
-heading_id: gila-centennial-looking-to-the-mountain-sacred-lands-healing-cultures
 ---
 
 The year 2024 marks the 100th Anniversary of the designation Gila Wilderness by Aldo Leopold, representing a landmark opportunity to re-affirm and re-imagine our relationships to New Mexico and these remarkable landscapes.

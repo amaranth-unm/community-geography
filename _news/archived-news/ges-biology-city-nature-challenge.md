@@ -1,10 +1,7 @@
 ---
-archived: true
 title: GES challenges Biology Department in 2021 City Nature Challenge
 permalink: /news/april-22,-2021
-heading_id: ges-challenges-biology-department-in-2021-city-nature-challenge
 published_date: '2021-04-22'
-date_source: /news/2021
 ---
 
 [![cnc2021-gesvbio.jpg]({{ site.baseurl }}/assets/images/news/cnc2021-gesvbio.jpg){: .img-left width="398"}]({{ site.baseurl }}/assets/documents/news/cnc2021-gesvbio.pdf)BREAKING: Two key departments at UNM have formed teams to compete in the 2021 City Nature Challenge. On Thursday, April 22, the Department of Geography & Environmental Studies (GES) challenged the Department of Biology to see which team can get the most participation and document the most wildlife observations between April 30 – May 3.  

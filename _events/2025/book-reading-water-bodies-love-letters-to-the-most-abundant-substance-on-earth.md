@@ -8,6 +8,5 @@ presenter: Laura Paskus, Dr. Maria Lane, Desiree Loggins, Michelle Otero, Leeann
 location: Hodgin Hall Bobo Room
 flyer: /assets/images/shared/20250408-water-bodies-readings-2025.jpg
 flyer_alt: 'Photo: Book Reading: Water Bodies: Love Letters to the Most Abundant Substance on Earth '
-heading_id: book-reading-water-bodies-love-letters-to-the-most-abundant-substance-on-earth
 ---
 

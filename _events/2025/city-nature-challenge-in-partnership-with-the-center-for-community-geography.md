@@ -9,7 +9,6 @@ location: Smith Plaza South of Zimmerman Library, International District Library
   (3700 San Mateo Dr. NE)
 flyer: /assets/images/events/ccg_cnc2025_.png
 flyer_alt: 'Photo: City Nature Challenge In Partnership with the Center for Community Geography'
-heading_id: city-nature-challenge-in-partnership-with-the-center-for-community-geography
 ---
 
 ## **Friday, April 25th:** 

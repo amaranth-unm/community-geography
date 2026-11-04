@@ -1,9 +1,6 @@
 ---
-archived: true
 title: The Center for Community Geography Spring Funding Cycle is Now Open!
-heading_id: the-center-for-community-geography-spring-funding-cycle-is-now-open
 published_date: '2024-04-01'
-date_source: /news/2024
 ---
 
 The R.H. Mallory Center for Community Geography is pleased to announce our 2024-2025 [Community Geography Fellows Program for students](https://cascade.unm.edu/entity/open.act?type=page&id=cca197b80a65a0e76fdb25e00ab3cb38&confId=9bfd9afa0a65a0e7098ca60311213cb1), and our [Classroom Fund for Community Geography for faculty](https://cascade.unm.edu/entity/open.act?type=page&id=ccadc1810a65a0e76fdb25e0bfea9d55&confId=9bfeb0810a65a0e7098ca60304ced7c6)! For more information, please visit our [funding page]({{ site.baseurl }}/funding/) or email us at <communitygeography@unm.edu>.

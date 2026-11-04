@@ -8,7 +8,6 @@ presenter: Multiple
 location: TBD
 flyer: /assets/images/events/spring-colloquium-series_updated.png
 flyer_alt: 'Photo: Spring 2024 GES Colloquium Series'
-heading_id: spring-2024-ges-colloquium-series
 ---
 
 Check out our lineup of speakers for colloquium events this semester! 

@@ -1,10 +1,7 @@
 ---
-archived: true
 title: New course to focus on community mapping
 permalink: /news/october-1-2020
-heading_id: new-course-to-focus-on-community-mapping
 published_date: '2020-10-01'
-date_source: /news/2020
 ---
 
 *October 1, 2020*

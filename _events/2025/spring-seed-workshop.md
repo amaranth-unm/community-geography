@@ -8,6 +8,5 @@ presenter: Center for Community Geography, ABQ Backyard Refuge Program, Rio Gran
 location: Casa San Ysidro (973 Old Church Rd. Corrales, NM)
 flyer: /assets/images/events/seed-workshop-flyer-1-1.png
 flyer_alt: 'Photo: Spring Seed Workshop'
-heading_id: spring-seed-workshop
 ---
 

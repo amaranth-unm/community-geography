@@ -10,7 +10,6 @@ location: Mitchell Hall 102
 flyer: /assets/images/shared/subhankar-banerjee-flyer.png
 flyer_alt: 'Photo: Geography and Environmental Studies Colloquium Event: Pleistocene, Pottery, and Postcard: BIOdiversity
   in New Mexico'
-heading_id: geography-and-environmental-studies-colloquium-event-pleistocene-pottery-and-postcard-biodiversity-in-new-mexico
 ---
 
 Pleistocene, Pottery, and Postcard: BIOdiversity in New Mexico

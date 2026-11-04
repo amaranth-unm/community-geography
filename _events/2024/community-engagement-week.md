@@ -7,7 +7,6 @@ end_time: '17:00'
 location: Student Union Building
 flyer: /assets/images/events/ctlconference2024.png
 flyer_alt: 'Photo: Community Engagement Week '
-heading_id: community-engagement-week
 ---
 
 #  

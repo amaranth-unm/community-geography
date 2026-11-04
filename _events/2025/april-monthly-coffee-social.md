@@ -8,6 +8,5 @@ end_time: '13:00'
 location: BAND W 106
 flyer: /assets/images/news/ccg_social.png
 flyer_alt: 'Photo: Monthly Coffee Social'
-heading_id: monthly-coffee-social
 ---
 

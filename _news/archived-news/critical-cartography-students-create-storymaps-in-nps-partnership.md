@@ -1,9 +1,6 @@
 ---
-archived: true
 title: Critical Cartography StoryMaps Connect Community Members to El Camino Real de Tierra Adentro National Historic Trail
-heading_id: critical-cartography-storymaps-connect-community-members-to-el-camino-real-de-tierra-adentro-national-historic-trail
 published_date: '2022-02-02'
-date_source: /news/2022
 ---
 
 ![pajarito-open-space-shannon.jpg]({{ site.baseurl }}/assets/images/news/pajarito-open-space-shannon.jpg){: .img-left width="484"}

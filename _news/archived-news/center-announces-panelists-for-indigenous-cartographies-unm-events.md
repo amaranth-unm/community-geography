@@ -1,9 +1,7 @@
 ---
-archived: true
 title: Center Announces Panelists for Indigenous Cartographies @ UNM Events
 heading_id: center-announces-panelists-for-indigenous-cartographies--unm-events
 published_date: '2023-02-14'
-date_source: /news/2023
 ---
 
 The R.H. Mallory Center for Community Geography just announced a slate of panelists who will visit UNM for Indigenous Cartographies @UNM events on February 27th and 28th. The five panelists bring a mix of technical and conceptual expertise, academic and applied interests, and Indigenous and ally perspectives. They also have a broad range of regional expertise and interests. Center Director Maria Lane said, “I am so excited to bring this diverse group to UNM to spur our thinking about mapping as storytelling, as activism, and as justice work.”

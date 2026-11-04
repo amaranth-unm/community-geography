@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Welcome Associate Director Dr. Miriam Gay-Antaki to the Center for Community Geography Team!
 permalink: /news/march-28,-2021
-heading_id: welcome-associate-director-dr-miriam-gay-antaki-to-the-center-for-community-geography-team
 published_date: '2021-03-28'
-date_source: /news/2021
 ---
 
 ![miriam-profile-picture-.jpg]({{ site.baseurl }}/assets/images/about/miriam-profile-picture-.jpg){: .img-left width="410"}

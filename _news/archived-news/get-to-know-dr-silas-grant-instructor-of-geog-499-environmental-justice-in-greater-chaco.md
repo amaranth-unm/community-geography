@@ -1,9 +1,6 @@
 ---
-archived: true
 title: 'Get to know Dr. Silas Grant, Instructor of GEOG 499: Environmental Justice in Greater Chaco!'
-heading_id: get-to-know-dr-silas-grant-instructor-of-geog-499-environmental-justice-in-greater-chaco
 published_date: '2023-11-07'
-date_source: /news/2023
 ---
 
 ![thumbnail_20230702_dsc1266_small.jpg]({{ site.baseurl }}/assets/images/news/thumbnail_20230702_dsc1266_small.jpg){: width="1388"}

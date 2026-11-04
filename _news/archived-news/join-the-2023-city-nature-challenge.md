@@ -1,9 +1,6 @@
 ---
-archived: true
 title: Join the 2023 City Nature Challenge!
-heading_id: join-the-2023-city-nature-challenge
 published_date: '2023-04-18'
-date_source: /news/2023
 ---
 
 *The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2023 City Nature Challenge takes place from Friday, April 28 to Monday, May 1, 2023.*

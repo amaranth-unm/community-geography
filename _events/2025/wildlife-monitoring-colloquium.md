@@ -10,6 +10,5 @@ location: Bandelier East 105
 flyer: /assets/images/events/04-18-25-rowan-converse-ges-colloquium.png
 flyer_alt: 'Photo: GES Colloquium: From Validation to Implementation: Remote Sensing/ Machine Learning Workflows for Wildlife
   Monitoring'
-heading_id: ges-colloquium-from-validation-to-implementation-remote-sensing-machine-learning-workflows-for-wildlife-monitoring
 ---
 

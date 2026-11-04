@@ -1,5 +1,4 @@
 ---
-archived: true
 title: 'Featured Spring 2025 Fellow: Juna Keehn'
 heading_id: featured-fellow-juna-keehn
 published_date: '2025-03-12'
