@@ -6,8 +6,8 @@ end_date: '2024-04-04'
 end_time: '17:00'
 presenter: Dr. Nicole Webster
 location: UNM Student Union Building
-flyer: /assets/images/events/ctlconference2024.png
-flyer_alt: 'Photo: UNM Spring Teaching Conference'
+image: /assets/images/events/ctlconference2024.png
+image_alt: 'Photo: UNM Spring Teaching Conference'
 ---
 
 The Center for Teaching and Learning, in collaboration with the Community Engaged Faculty Advisory Board, the Community Engagement Center, and R. H. Mallory Center for Community Geography invites members of the UNM community and community partners to attend UNM’s Annual Spring Teaching Conference. This year’s conference is titled ***Community-Engaged Teaching & Learning.*** The conference builds on the work of Presidential Teaching Fellow, Dr. Maria Lane (Interim Dean of Graduate Studies and Director, R.H. Center for Community Geography). The keynote address will be delivered by Dr. Nicole Webster, a leader in community-engaged teaching and learning in higher education. Dr. Webster is Associate Dean for Diversity, Equity, and Inclusion, and Faculty Affairs in the College of Health and Human Development at Pennsylvania State University.

@@ -6,8 +6,8 @@ start_time: '12:00'
 end_date: '2024-09-27'
 end_time: '13:00'
 location: Bandelier West 106
-flyer: /assets/images/events/ccg_monthlysocial9.27.png
-flyer_alt: 'Photo: Grad, Staff, and Faculty Social '
+image: /assets/images/events/ccg_monthlysocial9.27.png
+image_alt: 'Photo: Grad, Staff, and Faculty Social '
 ---
 
 Please save the date and join us for our first monthly coffee social hosted by the Center for Community Geography. Come meet and chat with new friends an old.  Baked goods encouraged!

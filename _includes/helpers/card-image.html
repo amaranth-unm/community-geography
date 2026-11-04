@@ -2,14 +2,17 @@
   Card Image - internal helper for community/current-projects.html and
   community/past-projects.html
 
-  This include is not meant to be used directly in a page. It keeps thumbnail
-  rendering consistent across the public card components.
+  This include is not meant to be used directly in a page. It keeps card
+  image rendering consistent across the public card components.
 
   Parameters:
-    - card:  the project (supplies .thumbnail, .thumbnail-position, .thumbnail-zoom, .dir, .title)
+    - card:  the project (supplies .image, .image_alt, .thumbnail-position, .thumbnail-zoom, .dir, .title)
 
   Front matter keys read from the card page:
-    - thumbnail:          path to image (required for image to appear)
+    - image:              path to image (required for image to appear). This
+                          site names it `image`; Xanthan core's `thumbnail`
+                          still works as a fallback.
+    - image_alt:          description of the image (default: the title)
     - thumbnail-position: CSS object-position, e.g. "top", "center 30%" (default: center)
     - thumbnail-zoom:     scale multiplier, e.g. "1.5" — zooms in while card window stays fixed (default: none)
 
@@ -18,7 +21,8 @@
   transform: scale() is clipped by the wrapper's overflow: hidden.
 {% endcomment %}
 
-{% capture card_image_url %}{% include helpers/image-path.html image-path=include.card.thumbnail page-dir=include.card.dir %}{% endcapture %}
+{% assign card_image = include.card.image | default: include.card.thumbnail %}
+{% capture card_image_url %}{% include helpers/image-path.html image-path=card_image page-dir=include.card.dir %}{% endcapture %}
 {% assign thumb_pos = include.card.thumbnail-position | default: 'center' %}
 {% assign thumb_zoom = include.card.thumbnail-zoom %}
 
@@ -26,7 +30,7 @@
 <div class="project-card-image">
   <img
     src="{{ card_image_url | strip }}"
-    alt="{{ include.card.title | escape }}"
+    alt="{{ include.card.image_alt | default: include.card.title | escape }}"
     {%- if include.card.thumbnail-position or thumb_zoom %}
     style="object-position: {{ thumb_pos }};{% if thumb_zoom %} transform: scale({{ thumb_zoom }}); transform-origin: {{ thumb_pos }};{% endif %}"
     {%- endif %}

@@ -10,8 +10,8 @@ end_time: 4:00 pm
 location: UNM Bandelier East 105
 presenter: Jane Doe
 # Optional flyer: upload it to assets/images/events/, then remove the # from both lines.
-# flyer: /assets/images/events/my-flyer.png
-# flyer_alt: Flyer for the Community Mapping Workshop on March 12
+# image: /assets/images/events/my-flyer.png
+# image_alt: Flyer for the Community Mapping Workshop on March 12
 ---
 
 Describe the event here. Include who it is for, what will happen, and

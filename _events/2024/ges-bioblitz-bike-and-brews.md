@@ -6,8 +6,8 @@ start_time: '13:00'
 end_date: '2024-04-28'
 end_time: '16:00'
 location: Rio Grande Nature Center State Park,
-flyer: /assets/images/shared/ges_bioblitzbikeride.jpg
-flyer_alt: 'Photo: GES BioBlitz Bike and Brews'
+image: /assets/images/shared/ges_bioblitzbikeride.jpg
+image_alt: 'Photo: GES BioBlitz Bike and Brews'
 ---
 
 You’re invited! 

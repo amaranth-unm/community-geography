@@ -6,7 +6,7 @@ end_date: '2025-04-08'
 end_time: '19:30'
 presenter: Laura Paskus, Dr. Maria Lane, Desiree Loggins, Michelle Otero, Leeanna Torres
 location: Hodgin Hall Bobo Room
-flyer: /assets/images/shared/20250408-water-bodies-readings-2025.jpg
-flyer_alt: 'Photo: Book Reading: Water Bodies: Love Letters to the Most Abundant Substance on Earth '
+image: /assets/images/shared/20250408-water-bodies-readings-2025.jpg
+image_alt: 'Photo: Book Reading: Water Bodies: Love Letters to the Most Abundant Substance on Earth '
 ---
 

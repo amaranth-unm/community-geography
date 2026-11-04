@@ -3,15 +3,15 @@ layout: base-unm
 full_width: true
 ---
 {% comment %}
-  Project pages. The title, photo (thumbnail), and the dates/faculty/partners
+  Project pages. The title, photo (image), and the dates/faculty/partners
   box all come from the page's front matter, so a project's Markdown file only
   needs its description.
 {% endcomment %}
 <div class="container center-content project-content">
   <article class="project-article">
     <h1>{{ page.title }}</h1>
-    {% if page.thumbnail %}
-    <img class="project-photo" src="{{ page.thumbnail | relative_url }}" alt="{{ page.title | escape }}">
+    {% if page.image %}
+    <img class="project-photo" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
     {% endif %}
     {% include community/project-meta.html %}
     {{ content }}

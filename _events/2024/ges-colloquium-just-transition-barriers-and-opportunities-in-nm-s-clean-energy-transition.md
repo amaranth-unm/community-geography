@@ -7,8 +7,8 @@ end_date: '2024-04-05'
 end_time: '16:00'
 presenter: Gabe Pacyinak, Professor of Law at UNM and Shannon Sanchez-Youngman, Assistant Professor of COPH at UNM
 location: Mitchell Hall 102
-flyer: /assets/images/shared/ges-april-5th-colloquium.png
-flyer_alt: 'Photo: GES Colloquium- Just Transition: Barriers and Opportunities in NM''s Clean Energy Transition'
+image: /assets/images/shared/ges-april-5th-colloquium.png
+image_alt: 'Photo: GES Colloquium- Just Transition: Barriers and Opportunities in NM''s Clean Energy Transition'
 heading_id: ges-colloquium--just-transition-barriers-and-opportunities-in-nms-clean-energy-transition
 ---
 

@@ -110,7 +110,7 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | An event | `_events/` (inside a year folder, like `_events/2026/`) |
 | A project, current or past | `_projects/` |
 | A person on the Team or Affiliates page | `_people/` |
-| A word in the Community Geography lexicon | `pages/community-geography/` (files ending in `-lexicon-word.md`) |
+| A word in the Community Geography lexicon | `_lexicon/` (one file per word) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
 | Pictures | `assets/images/` |
 | PDFs and flyers | `assets/documents/` |
@@ -167,15 +167,24 @@ Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the we
 1. In the Explorer, open the right folder under `assets/images/` (for example `assets/images/news/` for news pictures, `assets/images/events/` for event flyers, `assets/images/projects/project/` for project pictures).
 2. **Drag and drop** the image from your computer into that folder in the Explorer. (Or right-click the folder and choose **Upload**.)
 
-**Step 3: Show it on the page.** Put this on its own line where you want the picture:
+**Step 3: Show it on the page.** Every picture on the site uses the same block. Put it where you want the picture, with a blank line above and below:
 
 ```
-![Flyer for the spring workshop]({{ site.baseurl }}/assets/images/news/spring-workshop-flyer.jpg)
+{% include images/figure.html
+  image-path="/assets/images/news/spring-workshop-flyer.jpg"
+  image-width="50%"
+  alt-text="Flyer for the spring workshop on March 12"
+%}
 ```
 
-- The words in the square brackets are the **alt text**: a short description for people who use screen readers. **Always fill it in**, and describe the picture rather than giving its file name.
-- Change the path (`/assets/images/news/...`) to match your file.
-- To add a caption, set the picture's width, or put it beside the text, use Xanthan's image elements instead: copy the example under [Standalone Image](https://xanthan-web.github.io/docs/reference/component-library#standalone-image) or [Image + Text](https://xanthan-web.github.io/docs/reference/component-library#image--text-figure-wrap) (see [Adding other page elements](#adding-other-page-elements)). Older pages float pictures with `{: .img-left}` or `{: .img-right}` on the line after the picture. That still works, but use Xanthan's elements on new pages.
+- `image-path` is your file's path. Write it starting with `/assets/`; don't add `{{ site.baseurl }}` here.
+- `image-width` is how much of the text column the picture fills: `100%` for full width, `50%` for half.
+- `alt-text` is a short description for people who use screen readers. **Always fill it in**, and describe the picture rather than giving its file name.
+- Optional lines you can add:
+  - `caption="Photo by Jane Doe"` shows a caption under the picture. Without `alt-text`, the caption is used as the description too.
+  - `image-position="left"` or `image-position="right"` puts the picture to one side so the paragraphs after it wrap around it. Leave it out to center the picture. A picture on the left can be up to `35%` wide, on the right up to `45%`. On phones, pictures always fill the screen width.
+  - `link="https://example.com"` makes clicking the picture open that page. Without it, clicking opens the full-size picture.
+- To set a picture beside one block of text in two neat columns, use [Image + Text](https://xanthan-web.github.io/docs/reference/component-library#image--text-figure-wrap) instead (see [Adding other page elements](#adding-other-page-elements)).
 
 > Some pages (events, news, projects) have special spots for pictures. Those are covered in Sections 5-7. Just give the file's path.
 
@@ -268,7 +277,7 @@ These notes are removed when the site is built, so they never reach the publishe
 ---
 title: Place Lexicon Word
 # The card on the Community Geography page
-lexicon_word: Place
+word: Place
 ---
 ```
 
@@ -347,8 +356,8 @@ how to register.
 - If you don't know the time, location, or presenter, **delete that line**. Don't guess.
 - **Flyer picture:** upload it to `assets/images/events/` (see Section 4) and add two lines at the top:
   ```
-  flyer: /assets/images/events/my-flyer.png
-  flyer_alt: Flyer for the Community Mapping Workshop on March 12
+  image: /assets/images/events/my-flyer.png
+  image_alt: Flyer for the Community Mapping Workshop on March 12
   ```
 - **Upcoming Events** automatically lists events whose date hasn't passed yet. The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay in the **Events Archive**.
@@ -370,7 +379,7 @@ A new project is added by creating one file. The cards on the Projects page, and
 ```
 ---
 title: My New Project
-thumbnail: /assets/images/projects/project/my-new-project.jpg
+image: /assets/images/projects/project/my-new-project.jpg
 start_date: 2027-01-15
 end_date: Ongoing
 faculty:
@@ -386,7 +395,7 @@ Write the full description of the project here.
 4. Save, then **Commit & Push**.
 
 **Notes**
-- `thumbnail` is the project's picture. It appears on the project's card and at the top of its page.
+- `image` is the project's picture. It appears on the project's card and at the top of its page. To describe it for screen readers, add `image_alt: A short description` (without it, the project title is used).
 - The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
 - `start_date` is written `YYYY-MM-DD`.
 - For a project that hasn't ended, write `end_date: Ongoing`. When it ends, change that to the end date (see [Section 8](#8-when-a-project-ends)).

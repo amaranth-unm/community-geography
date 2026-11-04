@@ -7,8 +7,8 @@ end_date: '2025-04-18'
 end_time: '16:00'
 presenter: Dr. Rowan Converse
 location: Bandelier East 105
-flyer: /assets/images/events/04-18-25-rowan-converse-ges-colloquium.png
-flyer_alt: 'Photo: GES Colloquium: From Validation to Implementation: Remote Sensing/ Machine Learning Workflows for Wildlife
+image: /assets/images/events/04-18-25-rowan-converse-ges-colloquium.png
+image_alt: 'Photo: GES Colloquium: From Validation to Implementation: Remote Sensing/ Machine Learning Workflows for Wildlife
   Monitoring'
 ---
 

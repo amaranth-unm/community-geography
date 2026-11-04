@@ -3,8 +3,11 @@ title: 'Get to know Dr. Silas Grant, Instructor of GEOG 499: Environmental Justi
 published_date: '2023-11-07'
 ---
 
-![thumbnail_20230702_dsc1266_small.jpg]({{ site.baseurl }}/assets/images/news/thumbnail_20230702_dsc1266_small.jpg){: width="1388"}
-* (Photo: Dr. Silas Grant)*
+{% include images/figure.html
+  image-path="/assets/images/news/thumbnail_20230702_dsc1266_small.jpg"
+  image-width="100%"
+  caption="Photo: Dr. Silas Grant"
+%}
 
 Dr. Silas Grant is a Campaigner with the Climate Law Institute at the Center for Biological Diversity and an Assistant Professor in the Department of Geography and Environmental Studies at UNM. More broadly, Dr. Grant is an organizer, educator, and researcher working on climate change and just transition in New Mexico. As a cultural anthropologist and geographer, they are interested in questions of jurisdiction, knowledge production, coloniality, and affect. Grant's current research projects focus on understanding and addressing the impacts of fracking across the Greater Chaco Landscape of northwestern New Mexico, and on examining the intersections of struggles for environmental justice and queer and trans liberation.
 
@@ -18,8 +21,11 @@ A: The single biggest contributor to the climate crisis in New Mexico is our sta
 
 A: The people I organize and do research with in the Greater Chaco Landscape taught me about the Jemez Principles of Democratic Organizing, which are principles for working across difference to achieve environmental and economic justice. I’ve learned a lot by iteratively working with others to put variations of these principles into practice, and one that stands out is “Let People Speak for Themselves”, which is the idea that people directly impacted by environmental injustice ought to be the spokespersons for that issue. At face value this may not seem like a profound concept, but it’s so important and I think inherently challenging to power, especially in a place in like the Greater Chaco region where a long legacy of extractive colonialism has radically altered the landscape and power relations to suit the interests of both settlement and capital.
 
-![kendra-pinto-earthworks.jpg]({{ site.baseurl }}/assets/images/news/kendra-pinto-earthworks.jpg){: width="1388"}
-*(Photo: Kendra Pinto, Four Corners Indigenous Community Field Advocate with Earthworks, frontline community member in Eastern Navajo Agency, and community instructor for GEOG 499. During the course, Kendra will lead a field trip and teach participants about using optical gas imaging technology to make invisible pollution visible. Photo courtesy of Earthworks.) *
+{% include images/figure.html
+  image-path="/assets/images/news/kendra-pinto-earthworks.jpg"
+  image-width="100%"
+  caption="Photo: Kendra Pinto, Four Corners Indigenous Community Field Advocate with Earthworks, frontline community member in Eastern Navajo Agency, and community instructor for GEOG 499. During the course, Kendra will lead a field trip and teach participants about using optical gas imaging technology to make invisible pollution visible. Photo courtesy of Earthworks."
+%}
 
 ***Q: What got you interested in community geography?***
 

@@ -7,8 +7,8 @@ end_time: '14:30'
 presenter: Laurel Ladwig
 location: Smith Plaza South of Zimmerman Library, International District Library (7601 Central Ave. NE), Erna Fergusson Library
   (3700 San Mateo Dr. NE)
-flyer: /assets/images/events/ccg_cnc2025_.png
-flyer_alt: 'Photo: City Nature Challenge In Partnership with the Center for Community Geography'
+image: /assets/images/events/ccg_cnc2025_.png
+image_alt: 'Photo: City Nature Challenge In Partnership with the Center for Community Geography'
 ---
 
 ## **Friday, April 25th:** 

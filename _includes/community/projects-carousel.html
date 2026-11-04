@@ -11,15 +11,15 @@
 
   Front matter read from each project page:
     - title:      project name
-    - thumbnail:   image path (required for the card to appear)
+    - image:       image path (required for the card to appear)
     - start_date:  used to order projects, most recent first
     - end_date:    current projects (see helpers/split-projects.html) come
                    first and are tagged "Current"
 {% endcomment %}
 
 {% include helpers/split-projects.html %}
-{% assign current_projects = current_projects | where_exp: "p", "p.thumbnail" %}
-{% assign past_projects = past_projects | where_exp: "p", "p.thumbnail" %}
+{% assign current_projects = current_projects | where_exp: "p", "p.image" %}
+{% assign past_projects = past_projects | where_exp: "p", "p.image" %}
 {% include helpers/sort-by-date.html items=current_projects field="start_date" order="newest" %}
 {% assign current_sorted = sorted_by_date %}
 {% include helpers/sort-by-date.html items=past_projects field="start_date" order="newest" %}
@@ -47,7 +47,7 @@
       <li class="projects-carousel-slide">
         <a class="projects-carousel-card" href="{{ project.url | relative_url }}">
           <span class="projects-carousel-card-image">
-            <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+            <img src="{{ project.image | relative_url }}" alt="" loading="lazy" decoding="async">
             {% if forloop.index <= current_sorted.size %}
               <span class="projects-carousel-card-tag">Current</span>
             {% endif %}

@@ -6,7 +6,14 @@ heading_id: registration-now-open-for-dr-jamie-mcevoys-public-lecture-and-qa-mar
 published_date: '2021-03-11'
 ---
 
-[![march-29-2021-event.jpg]({{ site.baseurl }}/assets/images/events/march-29-2021-event.jpg){: .img-left width="456"}]({{ site.baseurl }}/assets/images/events/march-29-2021-event.jpg)UNM’s R.H. Mallory Center for Community Geography is pleased to announce its first public event for 2021. Montana State University scholar Jamie McEvoy will virtually visit UNM to deliver a public lecture and engage in Q&A with individuals and groups interested in community-based drought planning. All are welcome to **[attend this virtual event ](https://unm.zoom.us/meeting/register/tJYuf-qvqz0uGNHlZeAW9CiBbTV-zmye8iso)**at 5:30pm on Monday, March 29.
+{% include images/figure.html
+  image-path="/assets/images/events/march-29-2021-event.jpg"
+  image-position="left"
+  image-width="35%"
+  alt-text="march-29-2021-event.jpg"
+%}
+
+UNM’s R.H. Mallory Center for Community Geography is pleased to announce its first public event for 2021. Montana State University scholar Jamie McEvoy will virtually visit UNM to deliver a public lecture and engage in Q&A with individuals and groups interested in community-based drought planning. All are welcome to **[attend this virtual event ](https://unm.zoom.us/meeting/register/tJYuf-qvqz0uGNHlZeAW9CiBbTV-zmye8iso)**at 5:30pm on Monday, March 29.
 
 Maria Lane, director of the Center for Community Geography, said she hopes many community members throughout New Mexico will take advantage of this opportunity to learn about drought planning and adaptation strategies in another western state. “I am just delighted that we can bring this top-notch scholar to campus to talk about such a timely and relevant topic,” she said. “Dr. McEvoy’s partnership-based research in Montana does a great job prioritizing equitable approaches to climate change adaptation, and it shows how creative thinking will help us rise to the challenges of addressing drought in snowmelt-driven watersheds.”
 

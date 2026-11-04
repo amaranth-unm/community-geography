@@ -5,7 +5,7 @@ start_time: '12:00'
 end_date: '2025-02-14'
 end_time: '13:00'
 location: Bandelier West 106
-flyer: /assets/images/events/valentines-pizza-social1.png
-flyer_alt: 'Photo: Pizza Lunch'
+image: /assets/images/events/valentines-pizza-social1.png
+image_alt: 'Photo: Pizza Lunch'
 ---
 

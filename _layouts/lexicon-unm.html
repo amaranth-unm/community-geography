@@ -1,0 +1,10 @@
+---
+layout: base-unm
+---
+{% comment %}
+  Lexicon word pages (_lexicon/). The heading and the slideshow both come from
+  the word's front matter, so a word's file needs no text below it.
+{% endcomment %}
+<h1 id="{{ page.title | slugify }}">{{ page.title | escape }}</h1>
+{% include community/lexicon-slideshow.html %}
+{{ content }}

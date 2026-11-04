@@ -2,7 +2,7 @@
 title: 'StoryMap: Agricultural Connections Along the El Camino Real'
 # Address used by the old website; visitors there are sent to this page.
 redirect_from: /projects/project/test-project-1
-thumbnail: "/assets/images/projects/project/boxed-apples.jpg"
+image: "/assets/images/projects/project/boxed-apples.jpg"
 start_date: 2021-01-15
 end_date: 2021-05-15
 faculty:
@@ -22,4 +22,9 @@ By using agriculture as a lens, we can understand the impact and history of Indi
 
 [**View the StoryMap here!** ](https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df)
 
-[![agricultural-connections-along-el-camino-real.png]({{ site.baseurl }}/assets/images/projects/project/agricultural-connections-along-el-camino-real.png)](https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df)
+{% include images/figure.html
+  image-path="/assets/images/projects/project/agricultural-connections-along-el-camino-real.png"
+  image-width="55%"
+  alt-text="agricultural-connections-along-el-camino-real.png"
+  link="https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df"
+%}

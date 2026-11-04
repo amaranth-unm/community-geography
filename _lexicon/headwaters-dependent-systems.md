@@ -1,10 +1,9 @@
 ---
 title: Headwaters Dependent Systems Lexicon Word
-permalink: /community-geography/headwaters-dependent-systems-lexicon-word
 # The card on the Community Geography page
-lexicon_word: Headwaters Dependent Systems
-lexicon_order: 8
-thumbnail: /assets/images/community-geography/hds-1.png
+word: Headwaters Dependent Systems
+display_order: 8
+image: /assets/images/community-geography/hds-1.png
 # The slideshow on this page
 slides:
   - image: /assets/images/community-geography/hds-1.png
@@ -16,7 +15,3 @@ slides:
   - image: /assets/images/community-geography/hds-4.png
     alt: Headwaters dependent systems lexicon artwork, fourth panel.
 ---
-
-# Headwaters Dependent Systems Lexicon Word
-
-{% include community/lexicon-slideshow.html %}

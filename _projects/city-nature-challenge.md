@@ -1,6 +1,6 @@
 ---
 title: Campus coordinator for the 2021 City Nature Challenge
-thumbnail: "/assets/images/events/city-nature-challenge-log.png"
+image: "/assets/images/events/city-nature-challenge-log.png"
 start_date: 2021-04-30
 end_date: 2021-05-03
 faculty:

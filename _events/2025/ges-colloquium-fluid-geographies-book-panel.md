@@ -6,7 +6,7 @@ end_date: '2025-03-07'
 end_time: '16:00'
 presenter: Dr. Maria Lane, Dr. Eric Perramond, Dr. Myrriah Gomez, Laura Paskus
 location: Zimmerman 105 / Frank Waters Room
-flyer: /assets/images/events/fluid-geographies-book-panel-flyer.png
-flyer_alt: 'Photo: GES Colloquium: Fluid Geographies Book Panel'
+image: /assets/images/events/fluid-geographies-book-panel-flyer.png
+image_alt: 'Photo: GES Colloquium: Fluid Geographies Book Panel'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Geospatial data aggregator and visualizer for Albuquerque
-thumbnail: "/assets/images/projects/project/satellite-image-abq-cropped.jpg"
+image: "/assets/images/projects/project/satellite-image-abq-cropped.jpg"
 start_date: 2022-05-02
 end_date: 2022-12-16
 faculty:

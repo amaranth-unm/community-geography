@@ -4,7 +4,15 @@ permalink: /news/april-22,-2021
 published_date: '2021-04-22'
 ---
 
-[![cnc2021-gesvbio.jpg]({{ site.baseurl }}/assets/images/news/cnc2021-gesvbio.jpg){: .img-left width="398"}]({{ site.baseurl }}/assets/documents/news/cnc2021-gesvbio.pdf)BREAKING: Two key departments at UNM have formed teams to compete in the 2021 City Nature Challenge. On Thursday, April 22, the Department of Geography & Environmental Studies (GES) challenged the Department of Biology to see which team can get the most participation and document the most wildlife observations between April 30 – May 3.  
+{% include images/figure.html
+  image-path="/assets/images/news/cnc2021-gesvbio.jpg"
+  image-position="left"
+  image-width="35%"
+  alt-text="cnc2021-gesvbio.jpg"
+  link="/assets/documents/news/cnc2021-gesvbio.pdf"
+%}
+
+BREAKING: Two key departments at UNM have formed teams to compete in the 2021 City Nature Challenge. On Thursday, April 22, the Department of Geography & Environmental Studies (GES) challenged the Department of Biology to see which team can get the most participation and document the most wildlife observations between April 30 – May 3.  
 
 “We thought a ‘GES vs BIO Showdown’ would be a fun way to recruit participants for citizen science,” said Geography Professor Maria Lane. “Biology has a bigger department than we do, but we think we have a good chance to win if all our students and alumni join our team.” 
 

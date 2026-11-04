@@ -77,6 +77,13 @@ defaults:
     layout: news-unm
     section: News
     section_url: /news/
+- scope:
+    path: ''
+    type: lexicon
+  values:
+    layout: lexicon-unm
+    section: Community
+    section_url: /community-geography/
 exclude:
 - README.md
 - HOW-TO-EDIT-THIS-WEBSITE.md
@@ -100,6 +107,11 @@ collections:
   projects:
     output: true
     permalink: /projects/project/:name
+  # The Community Geography lexicon: one file per word, shown as a card on the
+  # Community Geography page and as a slideshow page of its own.
+  lexicon:
+    output: true
+    permalink: /community-geography/:name-lexicon-word
 center_banner:
   image: /assets/images/shared/center-logo-.png
   width: 1920

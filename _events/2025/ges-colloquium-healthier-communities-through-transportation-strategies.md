@@ -7,7 +7,7 @@ end_date: '2025-04-04'
 end_time: '16:00'
 presenter: Dr. Lisa Losada-Rojas
 location: Bandelier East 105
-flyer: /assets/images/events/04-04-25-lisa-losada-rojas-ges-colloquium.png
-flyer_alt: 'Photo: GES Colloquium: Healthier Communities Through Transportation Strategies'
+image: /assets/images/events/04-04-25-lisa-losada-rojas-ges-colloquium.png
+image_alt: 'Photo: GES Colloquium: Healthier Communities Through Transportation Strategies'
 ---
 

@@ -13,7 +13,7 @@
 
   Front matter read from each project page:
     - title:             project name
-    - thumbnail:          image path (required for the image to appear)
+    - image:              image path (required for the image to appear)
     - start_date:         date the project began (required for the date line)
     - end_date:           date the project ended, or the literal "Ongoing"
     - faculty:            faculty involved (string or list)
@@ -35,7 +35,7 @@
       {% assign community_member = project.community_member | join: ", " %}
       <article class="project-card">
         <a class="project-card-link" href="{{ project.url | relative_url }}">
-          {% if project.thumbnail %}
+          {% if project.image %}
             {% include helpers/card-image.html card=project %}
           {% endif %}
           <div class="project-card-body">

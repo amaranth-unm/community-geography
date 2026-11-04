@@ -6,7 +6,11 @@ published_date: '2020-10-01'
 
 *October 1, 2020*
 
-![critcartography-poster4866.jpg]({{ site.baseurl }}/assets/images/news/critcartography-poster4866.jpg){: width="718"}
+{% include images/figure.html
+  image-path="/assets/images/news/critcartography-poster4866.jpg"
+  image-width="75%"
+  alt-text="critcartography-poster4866.jpg"
+%}
 
 The Center for Community Geography is excited to announce support for a new UNM course in spring 2021. The Department of Geography & Environmental Studies will offer “Critical Cartography” for upper-level undergraduates and graduate students for the first time this spring.
 

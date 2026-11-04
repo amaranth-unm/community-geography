@@ -6,8 +6,8 @@ start_time: '20:30'
 end_date: '2024-05-03'
 end_time: '15:30'
 location: Bobo Room at Hodgin Hall
-flyer: /assets/images/shared/watersymposium24
-flyer_alt: 'Photo: Water & Climate Change Across the Americas: Interdisciplinary Symposium'
+image: /assets/images/shared/watersymposium24
+image_alt: 'Photo: Water & Climate Change Across the Americas: Interdisciplinary Symposium'
 heading_id: water--climate-change-across-the-americas-interdisciplinary-symposium
 ---
 

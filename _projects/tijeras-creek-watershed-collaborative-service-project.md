@@ -1,6 +1,6 @@
 ---
 title: Service project for the Tijeras Creek Watershed Collaborative
-thumbnail: "/assets/images/projects/tcwc-logo.png"
+image: "/assets/images/projects/tcwc-logo.png"
 start_date: 2021-02-02
 end_date: 2022-02-02
 faculty:

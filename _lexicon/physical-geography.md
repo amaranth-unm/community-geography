@@ -1,10 +1,9 @@
 ---
 title: Physical Geography Lexicon Word
-permalink: /community-geography/physical-geography-lexicon-word
 # The card on the Community Geography page
-lexicon_word: Physical Geography
-lexicon_order: 5
-thumbnail: /assets/images/community-geography/physical-geography-1.png
+word: Physical Geography
+display_order: 5
+image: /assets/images/community-geography/physical-geography-1.png
 # The slideshow on this page
 slides:
   - image: /assets/images/community-geography/physical-geography-1.png
@@ -14,7 +13,3 @@ slides:
   - image: /assets/images/community-geography/physical-geography-3.png
     alt: Physical geography lexicon artwork, third panel.
 ---
-
-# Physical Geography Lexicon Word
-
-{% include community/lexicon-slideshow.html %}

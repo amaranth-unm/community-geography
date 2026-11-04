@@ -19,7 +19,7 @@
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page.summary | default: site.description | escape }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  {% assign share_image = page.thumbnail | default: page.header-image %}
+  {% assign share_image = page.image | default: page.thumbnail | default: page.header-image %}
   {% if share_image %}
   {% capture share_image %}{% include helpers/image-path.html image-path=share_image %}{% endcapture %}
   {% assign share_image = share_image | strip %}

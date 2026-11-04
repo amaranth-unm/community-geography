@@ -3,7 +3,11 @@ title: The UNM Community Engagement Center is recruiting for its Public Allies p
 published_date: '2024-04-17'
 ---
 
-![publicallies.png]({{ site.baseurl }}/assets/images/shared/publicallies.png)
+{% include images/figure.html
+  image-path="/assets/images/shared/publicallies.png"
+  image-width="65%"
+  alt-text="publicallies.png"
+%}
 
 Public Allies is a social justice organization committed to changing the face and practice of leadership by recruiting and training talented emerging leaders, with a passion for social impact, to create meaningful change in our community. Our Allies are diverse, equity-centered, innovative problem solvers, dedicated to mobilizing community assets to develop solutions to local challenges. In partnership with nonprofit partners, we deliver our nationally recognized, values-driven, results-led apprenticeship to advance our mission to create a just and equitable society and the diverse leadership to sustain it.
 

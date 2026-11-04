@@ -31,6 +31,7 @@ Xanthan has more elements than these. Not here: cards (and the tag pages built f
 The files above match Xanthan's `main` branch of 26 October 2026 (commit `69921a0`), except for:
 
 - `_includes/layout/feature-row.html`, `_includes/media/audio.html`, and `assets/css/story-sequence.css`: fixes marked "Local fix", not yet in Xanthan.
+- `_includes/images/figure.html`: adds `image-position` (left or right floats the picture so the text wraps around it) and `link`. Every picture in the site's text uses this element.
 - `_includes/images/carousel.html` and `juxtapose.html`: each loads its library only on pages that use it.
 - `_includes/maps/map-assets.html` and `_includes/nav/map.html`: Leaflet pinned to version 1.9.4.
 - The shared stylesheets (`base.css`, `typography.css`, `images.css`, `nav.css`), the page head, the menu, and the layouts, which are trimmed or adapted for the Center's UNM design.

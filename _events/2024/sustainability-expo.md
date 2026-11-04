@@ -6,8 +6,8 @@ start_time: '10:30'
 end_date: '2024-04-25'
 end_time: '02:30'
 location: Cornell Mall
-flyer: /assets/images/shared/expo2024.png
-flyer_alt: 'Photo: Sustainability Expo'
+image: /assets/images/shared/expo2024.png
+image_alt: 'Photo: Sustainability Expo'
 date_review: true
 review_notes:
 - Published end precedes start; retained verbatim in structured fields. Excluded from automated upcoming dates until reviewed.

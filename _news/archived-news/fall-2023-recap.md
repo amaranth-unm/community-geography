@@ -5,9 +5,11 @@ review_notes:
 - Archive displays January 19, 2023 for a fall-2023 recap and spring-2024 plans. Date retained pending review.
 ---
 
-## ![rghsgroupphoto.jpg]({{ site.baseurl }}/assets/images/news/rghsgroupphoto.jpg){: width="822"}
-
-*Rio Grande High School Students outside Popejoy Hall on GIS Day- November 15, 2023*
+{% include images/figure.html
+  image-path="/assets/images/news/rghsgroupphoto.jpg"
+  image-width="85%"
+  caption="Rio Grande High School Students outside Popejoy Hall on GIS Day, November 15, 2023"
+%}
 
 ***Fall 2023 Recap:***  
   

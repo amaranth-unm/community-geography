@@ -14,7 +14,7 @@
 
   Front matter read from each project page:
     - title:             project name
-    - thumbnail:          image path (required for the image to appear)
+    - image:              image path (required for the image to appear)
     - summary:            a short one-to-three sentence description
 {% endcomment %}
 
@@ -28,7 +28,7 @@
     {% if project.title %}
       <article class="project-card">
         <a class="project-card-link" href="{{ project.url | relative_url }}">
-          {% if project.thumbnail %}
+          {% if project.image %}
             {% include helpers/card-image.html card=project %}
           {% endif %}
           <div class="project-card-body">

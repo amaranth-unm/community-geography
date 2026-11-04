@@ -1,6 +1,6 @@
 ---
 title: Community-engaged information design (GEOG 2115, Spring 2023)
-thumbnail: "/assets/images/projects/project/geog2115_sp22_sustexpo.jpg"
+image: "/assets/images/projects/project/geog2115_sp22_sustexpo.jpg"
 start_date: 2023-01-24
 end_date: 2023-05-12
 faculty:
