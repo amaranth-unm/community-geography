@@ -33,8 +33,8 @@ The files above match Xanthan's `main` branch of 26 October 2026 (commit `69921a
 - `_includes/layout/feature-row.html`, `_includes/media/audio.html`, and `assets/css/story-sequence.css`: fixes marked "Local fix", not yet in Xanthan.
 - `_includes/images/carousel.html` and `juxtapose.html`: each loads its library only on pages that use it.
 - `_includes/maps/map-assets.html` and `_includes/nav/map.html`: Leaflet pinned to version 1.9.4.
-- The shared stylesheets (`base.css`, `typography.css`, `cards.css`, `images.css`, `nav.css`), the page head, the menu, and the layouts, which are trimmed or adapted for the Center's UNM design.
+- The shared stylesheets (`base.css`, `typography.css`, `images.css`, `nav.css`), the page head, the menu, and the layouts, which are trimmed or adapted for the Center's UNM design.
 
 To take a newer version of an element, copy its files from Xanthan over these and reapply the changes listed. Comments in Xanthan's files sometimes mention Xanthan files this site doesn't have, such as `home.css`.
 
-The Center's own design is in `assets/css/community.css`, `assets/css/themes/unm.css`, `assets/css/unm.css`, and `assets/css/collections.css`. `community.css` also holds the few rules that fit Xanthan's full-width elements (jumbotron, feature band, section bands, ScrollStory sequence) into the Center's page layout. Maps stay the width of the text column on ordinary pages, including a map given `class="map-wrap--wide"` and the story map; on `layout: scrollstory` pages the story map spans the window.
+The Center's own design is in three files: `assets/css/themes/unm.css` (UNM's colors and fonts), `assets/css/community.css` (everything the Center's pages add), and `assets/css/unm-header-footer.css` (UNM's header and footer). `community.css` also holds the few rules that fit Xanthan's full-width elements (jumbotron, feature band, section bands, ScrollStory sequence) into the Center's page layout. Maps stay the width of the text column on ordinary pages, including a map given `class="map-wrap--wide"` and the story map; on `layout: scrollstory` pages the story map spans the window.

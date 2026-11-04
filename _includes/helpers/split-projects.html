@@ -1,0 +1,25 @@
+{% comment %}
+  Split projects — internal helper for the project lists and the homepage
+  carousel.
+
+  Sorts every file in _projects/ into `current_projects` and
+  `past_projects` for the include that called it. A project becomes past
+  once its end_date has gone by. "Ongoing", a blank end_date, or a date
+  still to come keeps it current. "Today" is the day the site was last
+  built, and the daily rebuild keeps that fresh.
+
+  Dates work with or without quote marks: each end_date is turned into
+  YYYY-MM-DD text and compared with today's date as text. A word such as
+  Ongoing stays a word, and words always count as later than a date.
+{% endcomment %}
+{% assign split_today = site.time | date: "%Y-%m-%d" %}
+{% assign current_projects = "" | split: "" %}
+{% assign past_projects = "" | split: "" %}
+{% for split_project in site.projects %}
+  {% assign split_end = split_project.end_date | date: "%Y-%m-%d" | append: "" | strip %}
+  {% if split_end != "" and split_end < split_today %}
+    {% assign past_projects = past_projects | push: split_project %}
+  {% else %}
+    {% assign current_projects = current_projects | push: split_project %}
+  {% endif %}
+{% endfor %}

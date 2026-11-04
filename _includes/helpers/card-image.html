@@ -6,24 +6,24 @@
   rendering consistent across the public card components.
 
   Parameters:
-    - card:  the page/card object (supplies .thumbnail, .thumbnail-position, .thumbnail-zoom, .dir, .title)
-    - class: CSS class for the wrapper div — "card-img-top" (grid) or "card-img-left" (stack)
+    - card:  the project (supplies .thumbnail, .thumbnail-position, .thumbnail-zoom, .dir, .title)
 
   Front matter keys read from the card page:
     - thumbnail:          path to image (required for image to appear)
     - thumbnail-position: CSS object-position, e.g. "top", "center 30%" (default: center)
     - thumbnail-zoom:     scale multiplier, e.g. "1.5" — zooms in while card window stays fixed (default: none)
 
-  The wrapper div carries the class (and thus the fixed dimensions from cards.css).
-  The img inside fills the wrapper 100%, so transform: scale() is clipped by the wrapper's overflow: hidden.
+  The wrapper div (.project-card-image) gets its size from the project list or
+  grid it sits in (community.css). The img inside fills the wrapper 100%, so
+  transform: scale() is clipped by the wrapper's overflow: hidden.
 {% endcomment %}
 
 {% capture card_image_url %}{% include helpers/image-path.html image-path=include.card.thumbnail page-dir=include.card.dir %}{% endcapture %}
 {% assign thumb_pos = include.card.thumbnail-position | default: 'center' %}
 {% assign thumb_zoom = include.card.thumbnail-zoom %}
 
-{% comment %} A style attribute only when a page asks for a non-default position or zoom; cards.css centers images otherwise. {% endcomment %}
-<div class="{{ include.class }}">
+{% comment %} A style attribute only when a page asks for a non-default position or zoom; images are centered otherwise. {% endcomment %}
+<div class="project-card-image">
   <img
     src="{{ card_image_url | strip }}"
     alt="{{ include.card.title | escape }}"
