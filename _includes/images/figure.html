@@ -1,11 +1,16 @@
 {% comment %}
-  Standalone Image — a single centered image with caption
+  Standalone Image — a single image with caption
   Parameters:
-    - image-path:  path to image (required)
-    - image-width: CSS width of the image (default: 40%)
-    - caption:     caption below the image (optional; markdown supported)
-    - alt-text:    accessibility description (optional; falls back to caption)
-  For an image beside text, use images/figure-wrap.html instead.
+    - image-path:     path to image (required)
+    - image-width:    CSS width of the image (default: 40%)
+    - image-position: center | left | right (default: center). On this site,
+                      left and right float the picture so the paragraphs after
+                      it wrap around it (community.css).
+    - caption:        caption below the image (optional; markdown supported)
+    - alt-text:       accessibility description (optional; falls back to caption)
+    - link:           where clicking the image goes (optional; default: the
+                      full-size image)
+  For an image beside one block of text, use images/figure-wrap.html instead.
 {% endcomment %}
 
 {% capture img_url %}
@@ -15,9 +20,14 @@
 {% assign img_url = img_url | strip %}
 
 {% if img_url %}
-  <figure class="center" style="width: {{ include.image-width | default: '40%' }}">
+  {% assign img_link = img_url %}
+  {% if include.link %}
+    {% assign link_start = include.link | slice: 0, 1 %}
+    {% if link_start == '/' %}{% assign img_link = include.link | relative_url %}{% else %}{% assign img_link = include.link %}{% endif %}
+  {% endif %}
+  <figure class="{{ include.image-position | default: 'center' }}" style="width: {{ include.image-width | default: '40%' }}">
 
-    <a class="image" href="{{ img_url }}"><img src="{{ img_url }}" alt="{{ include.alt-text | default: include.caption | default: '' }}" width="100%"></a>
+    <a class="image" href="{{ img_link }}"><img src="{{ img_url }}" alt="{{ include.alt-text | default: include.caption | default: '' }}" width="100%"></a>
 
     {% if include.caption %}
       <figcaption>

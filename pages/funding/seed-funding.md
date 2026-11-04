@@ -5,7 +5,11 @@ permalink: /funding/seed-funding
 
 # R.H. Mallory Center for Community Geography Classroom Fund for Community Engagement
 
-![crticialcartographystudents2021]({{ site.baseurl }}/assets/images/funding/crticialcartographystudents2021){: width="384"}
+{% include images/figure.html
+  image-path="/assets/images/funding/crticialcartographystudents2021"
+  image-width="40%"
+  alt-text="crticialcartographystudents2021"
+%}
 
 *2024-2025 Applications are now closed.*
 

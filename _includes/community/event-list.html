@@ -6,6 +6,6 @@
     {% assign archive_id = item.archive_anchor %}{% unless archive_id %}{% assign archive_id = item.title | slugify %}{% endunless %}
     <h3 id="{{ archive_id | escape }}"><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h3>
     {% include community/event-details.html event=item %}
-    <p><a href="{{ item.url | relative_url }}">Event details{% if item.flyer %} and flyer{% endif %} →</a></p>
+    <p><a href="{{ item.url | relative_url }}">Event details{% if item.image %} and flyer{% endif %} →</a></p>
   </article>
 {% endfor %}

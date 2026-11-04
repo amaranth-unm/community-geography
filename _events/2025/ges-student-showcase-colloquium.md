@@ -6,7 +6,7 @@ end_date: '2025-05-02'
 end_time: '17:00'
 presenter: Center for Community Geography Fellows, GES Undergraduate and Graduate Students
 location: Bandelier East 105
-flyer: /assets/images/events/05-02-25-ges-student-showcase-ges-colloquium.png
-flyer_alt: 'Photo: GES Student Showcase Colloquium'
+image: /assets/images/events/05-02-25-ges-student-showcase-ges-colloquium.png
+image_alt: 'Photo: GES Student Showcase Colloquium'
 ---
 

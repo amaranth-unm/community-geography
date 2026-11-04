@@ -1,6 +1,6 @@
 ---
 title: New Mexico Roots Migration Survey
-thumbnail: "/assets/images/projects/project/migration-survey_2.png"
+image: "/assets/images/projects/project/migration-survey_2.png"
 start_date: 2025-01-21
 end_date: Ongoing
 faculty:

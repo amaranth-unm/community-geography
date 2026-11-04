@@ -1,6 +1,6 @@
 ---
 title: Story Collection Proposal for the Rio Grande Water Fund
-thumbnail: "/assets/images/projects/project/kelsey-project-2.jpeg"
+image: "/assets/images/projects/project/kelsey-project-2.jpeg"
 start_date: 2021-01-15
 end_date: 2021-05-15
 faculty:

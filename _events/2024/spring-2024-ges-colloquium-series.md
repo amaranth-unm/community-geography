@@ -6,8 +6,8 @@ end_date: '2024-05-09'
 end_time: '16:00'
 presenter: Multiple
 location: TBD
-flyer: /assets/images/events/spring-colloquium-series_updated.png
-flyer_alt: 'Photo: Spring 2024 GES Colloquium Series'
+image: /assets/images/events/spring-colloquium-series_updated.png
+image_alt: 'Photo: Spring 2024 GES Colloquium Series'
 ---
 
 Check out our lineup of speakers for colloquium events this semester! 

@@ -4,7 +4,13 @@ permalink: /news/march-22,-2021
 published_date: '2021-03-22'
 ---
 
-![city-nature-challenge-log.png]({{ site.baseurl }}/assets/images/events/city-nature-challenge-log.png){: .img-right}
+{% include images/figure.html
+  image-path="/assets/images/events/city-nature-challenge-log.png"
+  image-position="right"
+  image-width="35%"
+  alt-text="city-nature-challenge-log.png"
+%}
+
 Would you like to participate in a citizen science project? With just your phone, you can join other UNM students in the 2021 Albuquerque City Nature Challenge. Help us collect data about wild plants and animals right here in UNM’s backyard!
 
 The City Nature Challenge is a worldwide event, and Albuquerque will be competing against other cities to identify as many species as possible from April 30 to May 3. Let’s make sure Albuquerque comes out on top! It’s easy to help out. Follow these steps.
@@ -14,7 +20,13 @@ The City Nature Challenge is a worldwide event, and Albuquerque will be competin
 3.  Start taking pictures of plant and critters wherever you see them. You don’t even have to know what you’re observing. Just take a photo and then the naturalists and scientists using iNaturalist will figure out what it is.
 4.  For more information on how to use iNaturalist, we’re hosting a special training for UNM students. (This is optional.)
 
-![inatualist-.png]({{ site.baseurl }}/assets/images/news/inatualist-.png){: .img-left width="212"}
+{% include images/figure.html
+  image-path="/assets/images/news/inatualist-.png"
+  image-position="left"
+  image-width="20%"
+  alt-text="inatualist-.png"
+%}
+
 Monday, Apr 5, 2021 4:00 PM Mountain Time  
 <https://unm.zoom.us/j/97430263902>  
 Passcode: nature.

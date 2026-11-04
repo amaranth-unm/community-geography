@@ -222,6 +222,14 @@ is the one place UNM values are translated for the site.
 :is(.center-article, :where(.center-content) > .container) :is(h2, h3, hr) { clear: both; }
 :is(.center-article, :where(.center-content) > .container) .img-left { float: left; max-width: 35%; margin: 0 var(--spacing-md) var(--spacing-md) 0; }
 :is(.center-article, :where(.center-content) > .container) .img-right { float: right; max-width: 45%; margin: 0 0 var(--spacing-md) var(--spacing-lg); }
+/* The figure include (images/figure.html) in that same text: Xanthan centers
+   and aligns figures with its grid, so here margins and floats do it instead.
+   image-position="left" or "right" floats like .img-left and .img-right. */
+:is(.center-article, :where(.center-content) > .container) figure.center { margin-inline: auto; }
+:is(.center-article, :where(.center-content) > .container) figure.left { float: left; max-width: 35%; margin: 0 var(--spacing-md) var(--spacing-md) 0; }
+:is(.center-article, :where(.center-content) > .container) figure.right { float: right; max-width: 45%; margin: 0 0 var(--spacing-md) var(--spacing-lg); }
+/* Each figure's picture is a link, so keep Xanthan's dotted link underline off it. */
+figure a.image { border-bottom: 0; }
 
 /* Xanthan's full-width elements, inside that text. Xanthan widens them with
    its grid (grid-column: full), which a plain block ignores, so here they
@@ -614,6 +622,7 @@ is the one place UNM values are translated for the site.
   .center-content { padding-top: var(--spacing-md); }
   .center-content img[align], .center-content .img-right, .center-content .img-left { float: none; margin: var(--spacing-md) 0; }
   .center-content .img-left, .center-content .img-right { max-width: 100%; }
+  .center-content :is(figure.left, figure.right) { float: none; margin: var(--spacing-md) 0; }
   .center-content--home { padding-inline: var(--page-gutter); }
   .center-content--home :is(p, h1, h2, h3, ul, ol) { padding-inline: 0; }
   .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-md) var(--spacing-xl); }

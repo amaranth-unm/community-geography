@@ -1,7 +1,7 @@
 ---
 title: Re-Examining the Old Spanish Trail, storymap and class project in Critical
   Cartography 
-thumbnail: "/assets/images/projects/project/oldspanishtrail.png"
+image: "/assets/images/projects/project/oldspanishtrail.png"
 start_date: 2023-01-16
 end_date: 2023-05-13
 faculty:

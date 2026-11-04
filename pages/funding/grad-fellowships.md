@@ -6,7 +6,11 @@ permalink: /funding/grad-fellowships
 
 # R.H. Mallory Center for Community Geography 2024-2025 Applications for Community Geography Fellows Program
 
- ![ks_headshot_02.jpg]({{ site.baseurl }}/assets/images/funding/ks_headshot_02.jpg){: width="565"}
+{% include images/figure.html
+  image-path="/assets/images/funding/ks_headshot_02.jpg"
+  image-width="60%"
+  alt-text="ks_headshot_02.jpg"
+%}
 
 As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributing to the advancement of community-engaged environmental mapping through her work with the New Mexico Backyard Refuge (NM BYR) Program. In collaboration with Laurel Ladwig, Katie is leading the development of a digital mapping component designed to strengthen public access to ecological data and program outcomes.
 
@@ -16,7 +20,11 @@ The resulting interactive web map will be publicly accessible, allowing communit
 
 “*Being a U.N.M. R.H. Mallory Center for Community Geography Fellow has allowed me to use my GIS skills to benefit the community, which is valuable and fulfilling*.” - Katie Slack
 
-![criticalcartographyshannonandmicheal]({{ site.baseurl }}/assets/images/funding/criticalcartographyshannonandmicheal){: width="572"}
+{% include images/figure.html
+  image-path="/assets/images/funding/criticalcartographyshannonandmicheal"
+  image-width="60%"
+  alt-text="criticalcartographyshannonandmicheal"
+%}
 
 *2024-2025 Applications are now closed. *
 

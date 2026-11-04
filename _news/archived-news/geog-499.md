@@ -3,7 +3,11 @@ title: 'New Spring 2024 Field Course at UNM! GEOG 499: Environmental Justice in 
 published_date: '2023-10-23'
 ---
 
-![oil and gas leasing protest]({{ site.baseurl }}/assets/images/news/oil-and-gas-leasing-protest.jpeg){: width="822"}
+{% include images/figure.html
+  image-path="/assets/images/news/oil-and-gas-leasing-protest.jpeg"
+  image-width="85%"
+  alt-text="oil and gas leasing protest"
+%}
 
   (*Greater Chaco Coalition protesting an oil and gas lease sale in March 2018)*
 
@@ -11,7 +15,12 @@ The department of Geography and Environmental Studies has announced a new field 
 
 The course will focus on the complex histories and lived realities of extraction, climate change, and fights for environmental justice in the Greater Chaco Landscape. This class will pay special attention to the environmental, social, and spatial dimensions of oil and gas extraction, which has surged in New Mexico in the last decade.
 
- ![well greater chaco]({{ site.baseurl }}/assets/images/news/well-greater-chaco.jpg){: .img-left width="568"}
+{% include images/figure.html
+  image-path="/assets/images/news/well-greater-chaco.jpg"
+  image-position="left"
+  image-width="35%"
+  alt-text="well greater chaco"
+%}
 
 Students taking this class can expect to gain hands-on experience in field methods and community geography:
 

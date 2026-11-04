@@ -6,7 +6,7 @@ start_time: '12:00'
 end_date: '2025-04-23'
 end_time: '13:00'
 location: BAND W 106
-flyer: /assets/images/news/ccg_social.png
-flyer_alt: 'Photo: Monthly Coffee Social'
+image: /assets/images/news/ccg_social.png
+image_alt: 'Photo: Monthly Coffee Social'
 ---
 

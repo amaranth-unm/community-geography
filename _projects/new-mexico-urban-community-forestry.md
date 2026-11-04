@@ -2,7 +2,7 @@
 title: New Mexico Urban Community Forestry Model
 # Address used by the old website; visitors there are sent to this page.
 redirect_from: /projects/project/test-project-4
-thumbnail: "/assets/images/projects/project/new-forest.jpg"
+image: "/assets/images/projects/project/new-forest.jpg"
 start_date: 2021-01-15
 end_date: 2021-08-15
 faculty:

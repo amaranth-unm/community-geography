@@ -6,8 +6,8 @@ end_date: '2024-05-09'
 end_time: '16:00'
 presenter: Dr. Ana De Luca, Professor, Faculty of Sciences, Universidad Autonoma de Baja California
 location: Bandelier West 104
-flyer: /assets/images/shared/ges-may-9-colloquium.png
-flyer_alt: 'Photo: Final Spring Colloquium'
+image: /assets/images/shared/ges-may-9-colloquium.png
+image_alt: 'Photo: Final Spring Colloquium'
 ---
 
 A Feminist and Global South Perspective on the Overpopulation Discourse: Origins and Contemporary Implications

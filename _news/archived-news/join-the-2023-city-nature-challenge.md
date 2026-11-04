@@ -9,7 +9,12 @@ published_date: '2023-04-18'
 
 Three departments and schools at the University of New Mexico (UNM) will be going head to head in a community science competition this month. The [**Department of Geography & Environmental Studies (GES)**](https://geography.unm.edu/) , [**Department of Biology (BIO)**](https://biology.unm.edu/) and the [**School of Architecture and Planning (SA+P)**](https://saap.unm.edu/) are forming teams to participate in the [2023 City Nature Challenge](http://www.abqcitynature.org/), and you can **join us to be a part of this unique community science initiative!**
 
-![abq-city-nature-challenge---updated-logo.png]({{ site.baseurl }}/assets/images/news/abq-city-nature-challenge---updated-logo.png){: .img-right width="358"}
+{% include images/figure.html
+  image-path="/assets/images/news/abq-city-nature-challenge---updated-logo.png"
+  image-position="right"
+  image-width="40%"
+  alt-text="abq-city-nature-challenge---updated-logo.png"
+%}
 
 UNM students, faculty, and staff are encouraged to join one of the three teams, even if they come from a different department. If you would like to form your own team, though, follow the instructions [here](https://abqcitynature.org/).
 

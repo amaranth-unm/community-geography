@@ -7,8 +7,8 @@ end_date: '2024-09-12'
 end_time: '16:00'
 presenter: Dr. Christopher Lippitt
 location: Bandelier East 105
-flyer: /assets/images/events/fall2024gescolloquium_lippitt.png
-flyer_alt: 'Photo: GES Colloquium'
+image: /assets/images/events/fall2024gescolloquium_lippitt.png
+image_alt: 'Photo: GES Colloquium'
 date_review: true
 review_notes:
 - Published end precedes start; retained verbatim in structured fields. Excluded from automated upcoming dates until reviewed.

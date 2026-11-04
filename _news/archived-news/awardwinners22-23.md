@@ -4,7 +4,13 @@ heading_id: congratulations-award-winners-2022-2023-graduate-fellowships--seed-f
 published_date: '2022-11-02'
 ---
 
-![daffodils_unm]({{ site.baseurl }}/assets/images/shared/daffodils_unm){: .img-left width="426"}
+{% include images/figure.html
+  image-path="/assets/images/shared/daffodils_unm"
+  image-position="left"
+  image-width="35%"
+  alt-text="daffodils_unm"
+%}
+
 The R.H. Mallory Center for Community Geography is pleased to announce the awardees for the Graduate Fellowship for Community Engagement and Seed Funding for Community Engaged Classrooms for 2022-2023. Each year our Center awards funding to students and faculty to explore community-engaged research and teaching. Our awardees will use their \$1,000 awards for the following projects:
 
 Joshua Driscol's "**Albuquerque Overlap Map**" project is focused on creating a web-based data aggregator for Albuquerque, New Mexico and the surrounding region. He hopes that the site can serve as a communal resource for data, but also as a place where people can make maps and explore different datasets. Joshua’s project operates from the premise that spatial questions are better answered when paired with a visual component. His goal is to host as many open-source datasets in JSON format as possible (converting from GeoTIFF, KMZ, SHP, etc) so that community members can use the map to visualize community characteristics intuitively. Joshua is a master's student in the Department of Geography and Environmental Studies.

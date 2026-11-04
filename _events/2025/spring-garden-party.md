@@ -5,8 +5,8 @@ start_time: '16:00'
 end_date: '2025-04-29'
 end_time: '17:30'
 location: Lobo Red Garden
-flyer: /assets/images/events/outlook-jv033xwt.png
-flyer_alt: 'Photo: Spring Garden Party'
+image: /assets/images/events/outlook-jv033xwt.png
+image_alt: 'Photo: Spring Garden Party'
 heading_id: null
 ---
 

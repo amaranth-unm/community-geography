@@ -1,10 +1,9 @@
 ---
 title: Human Geography Lexicon Word
-permalink: /community-geography/human-geography-lexicon-word
 # The card on the Community Geography page
-lexicon_word: Human Geography
-lexicon_order: 4
-thumbnail: /assets/images/community-geography/human-geography-1.png
+word: Human Geography
+display_order: 4
+image: /assets/images/community-geography/human-geography-1.png
 # The slideshow on this page
 slides:
   - image: /assets/images/community-geography/human-geography-1.png
@@ -14,7 +13,3 @@ slides:
   - image: /assets/images/community-geography/human-geography-3.png
     alt: Human geography lexicon artwork, third panel.
 ---
-
-# Human Geography Lexicon Word
-
-{% include community/lexicon-slideshow.html %}

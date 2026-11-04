@@ -5,8 +5,8 @@ start_time: '08:00'
 end_date: '2024-04-05'
 end_time: '17:00'
 location: Student Union Building
-flyer: /assets/images/events/ctlconference2024.png
-flyer_alt: 'Photo: Community Engagement Week '
+image: /assets/images/events/ctlconference2024.png
+image_alt: 'Photo: Community Engagement Week '
 ---
 
 #  

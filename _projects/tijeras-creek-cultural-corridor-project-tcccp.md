@@ -1,6 +1,6 @@
 ---
 title: Tijeras Creek Cultural Corridor Project (TCCCP)
-thumbnail: "/assets/images/projects/project/tijeras_pueblo_archeological_site,_tijeras_nm.jpg"
+image: "/assets/images/projects/project/tijeras_pueblo_archeological_site,_tijeras_nm.jpg"
 start_date: 2022-08-22
 end_date: 2023-08-22
 faculty:
