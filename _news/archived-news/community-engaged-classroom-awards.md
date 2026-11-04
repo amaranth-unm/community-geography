@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Congratulations Faculty! 2021-2022 Seed Funding Awards for Community Engaged Classrooms Announced
 permalink: /news/july-12,-2021
-heading_id: congratulations-faculty-2021-2022-seed-funding-awards-for-community-engaged-classrooms-announced
 published_date: '2021-07-12'
-date_source: /news/2021
 ---
 
 ![casa-san-ysidro-by-ramona-m.]({{ site.baseurl }}/assets/images/news/casa-san-ysidro-by-ramona-m.png){: .img-left width="539"}

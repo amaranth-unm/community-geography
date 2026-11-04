@@ -1,9 +1,6 @@
 ---
-archived: true
 title: The UNM Community Engagement Center is recruiting for its Public Allies program!
-heading_id: the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program
 published_date: '2024-04-17'
-date_source: /news/2024
 ---
 
 ![publicallies.png]({{ site.baseurl }}/assets/images/shared/publicallies.png)

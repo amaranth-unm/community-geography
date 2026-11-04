@@ -1,9 +1,7 @@
 ---
-archived: true
 title: Center Proud to Sponsor Annual Leopold Lecture - Robin Wall Kimmerer
 heading_id: center-proud-to-sponsor-annual-leopold-lecture---robin-wall-kimmerer
 published_date: '2023-03-14'
-date_source: /news/2023
 ---
 
 ![robin-wall-kimmerer-2023-lecture_orig.jpeg]({{ site.baseurl }}/assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg){: .img-left width="225"}

@@ -8,7 +8,5 @@ location: Lobo Red Garden
 flyer: /assets/images/events/outlook-jv033xwt.png
 flyer_alt: 'Photo: Spring Garden Party'
 heading_id: null
-original_title: The Center for Community Geography
-title_source: /events/archive
 ---
 

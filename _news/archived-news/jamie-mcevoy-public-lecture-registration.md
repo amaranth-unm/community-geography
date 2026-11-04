@@ -1,11 +1,9 @@
 ---
-archived: true
 title: Registration now open for Dr. Jamie McEvoy's public lecture and Q&A March 29th
 permalink: /news/march-29,-2021
 summary: Public Presentation community perspectives on drought planning and adaptation in a more-than-human world
 heading_id: registration-now-open-for-dr-jamie-mcevoys-public-lecture-and-qa-march-29th
 published_date: '2021-03-11'
-date_source: /news/2021
 ---
 
 [![march-29-2021-event.jpg]({{ site.baseurl }}/assets/images/events/march-29-2021-event.jpg){: .img-left width="456"}]({{ site.baseurl }}/assets/images/events/march-29-2021-event.jpg)UNM’s R.H. Mallory Center for Community Geography is pleased to announce its first public event for 2021. Montana State University scholar Jamie McEvoy will virtually visit UNM to deliver a public lecture and engage in Q&A with individuals and groups interested in community-based drought planning. All are welcome to **[attend this virtual event ](https://unm.zoom.us/meeting/register/tJYuf-qvqz0uGNHlZeAW9CiBbTV-zmye8iso)**at 5:30pm on Monday, March 29.

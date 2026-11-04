@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Department Launches New Center Focused on Community Geography
 permalink: /news/august-10-2020
-heading_id: department-launches-new-center-focused-on-community-geography
 published_date: '2020-08-10'
-date_source: /news/2020
 ---
 
 The Department of Geography & Environmental Studies (GES) is excited to announce the launch of a new center at UNM. The R.H. Mallory Center for Community Geography will begin operating this fall with the mission of bringing UNM and its communities together to address critical human-environment issues. 

@@ -10,6 +10,5 @@ location: Virtual
 flyer: /assets/images/shared/gila_christina_castro
 flyer_alt: 'Photo: UNM Department of Chicana and Chicano Studies Co-Sponsored Zoom Lecture Series: Earth Healing and Indigenous
   Wisdom'
-heading_id: unm-department-of-chicana-and-chicano-studies-co-sponsored-zoom-lecture-series-earth-healing-and-indigenous-wisdom
 ---
 

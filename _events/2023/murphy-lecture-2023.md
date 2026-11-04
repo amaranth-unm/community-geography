@@ -9,7 +9,6 @@ presenter: Dr. Lesley-Ann Dupigny-Giroux
 location: KIVA Lecture Hall
 flyer: /assets/images/events/murphy-lecture_2023_dupigny-giroux-1.png
 flyer_alt: 'Photo: Murphy Lecture 2023'
-heading_id: murphy-lecture-2023
 ---
 
 The Department of Geography and Environmental Studies will be hosting Dr. Lesley-Ann Dupigny-Giroux as the 2023 Murphy Lecturer. Dr. Dupigny-Giroux is a professor of Geography at the University of Vermont and also serves as the Vermont State Climatologist. 

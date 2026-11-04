@@ -2,7 +2,7 @@
 layout: null
 ---
 [
-  {% assign search_documents = site.pages | concat: site.events | concat: site.news %}
+  {% assign search_documents = site.pages | concat: site.projects | concat: site.events | concat: site.news %}
   {% assign pages_with_titles = search_documents | where_exp: "p", "p.title" %}
   {% assign separator = '' %}
   {% for page in pages_with_titles %}

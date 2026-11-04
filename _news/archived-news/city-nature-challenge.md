@@ -1,11 +1,8 @@
 ---
-archived: true
 title: Join the 2022 City Nature Challenge!
 permalink: /news/april-11-2022
 summary: 2022 City Nature Challenge
-heading_id: join-the-2022-city-nature-challenge
 published_date: '2022-04-11'
-date_source: /news/2022
 ---
 
 *The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2022 City Nature Challenge takes place from April 29 to May 2, 2022.*

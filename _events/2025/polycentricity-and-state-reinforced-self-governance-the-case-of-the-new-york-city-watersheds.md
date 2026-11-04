@@ -9,6 +9,5 @@ presenter: Dr. Edella Schlager
 location: PAIS 2120
 flyer: /assets/images/shared/schlager-talk-4.7.25-pols-arid.png
 flyer_alt: 'Photo: Polycentricity and "State" Reinforced Self Governance: The Case of the New York City Watersheds'
-heading_id: polycentricity-and-state-reinforced-self-governance-the-case-of-the-new-york-city-watersheds
 ---
 

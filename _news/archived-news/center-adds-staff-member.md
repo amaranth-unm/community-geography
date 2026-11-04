@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Center for Community Geography adds staff member
 permalink: /news/august-30,-2020
-heading_id: center-for-community-geography-adds-staff-member
 published_date: '2020-08-30'
-date_source: /news/2020
 ---
 
 *August 30, 2020*

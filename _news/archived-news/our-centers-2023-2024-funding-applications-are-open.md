@@ -1,9 +1,7 @@
 ---
-archived: true
 title: Our Center's 2023-2024 Funding Applications are Open
 heading_id: our-centers-2023-2024-funding-applications-are-open
 published_date: '2023-04-04'
-date_source: /news/2023
 ---
 
 The R.H. Mallory Center for Community Geography is pleased to announce our 2023-2024 **[Community Geography Fellows Program for students]({{ site.baseurl }}/funding/grad-fellowships)**, and our **[Classroom Fund for Community Geography for faculty]({{ site.baseurl }}/funding/seed-funding)**! For more information, please visit our "[Funding]({{ site.baseurl }}/funding/)" page or email us at <communitygeography@unm.edu>.

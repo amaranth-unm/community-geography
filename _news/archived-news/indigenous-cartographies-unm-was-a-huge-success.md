@@ -1,9 +1,7 @@
 ---
-archived: true
 title: Indigenous Cartographies @ UNM was a huge success!
 heading_id: indigenous-cartographies--unm-was-a-huge-success
 published_date: '2023-03-14'
-date_source: /news/2023
 ---
 
 ![img-7673.jpg]({{ site.baseurl }}/assets/images/news/img-7673.jpg){: .img-left width="400"}

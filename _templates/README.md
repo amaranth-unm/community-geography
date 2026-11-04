@@ -6,7 +6,7 @@ Start a new page by copying one of these files. Nothing in this folder appears o
 | --- | --- | --- |
 | A news story | `news-story.md` | `_news/` and the year it is published, such as `_news/2026/` |
 | An event | `event.md` | `_events/` and the year it starts, such as `_events/2027/` |
-| A project | `project.md` | `pages/projects/current-projects/` |
+| A project | `project.md` | `_projects/` |
 | A person | `person.md` | `_people/` |
 
 Rename the copy with lowercase words and dashes, such as `spring-seed-workshop.md`. For news, events, and projects, the file name becomes the page's web address.

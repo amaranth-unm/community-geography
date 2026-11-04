@@ -10,6 +10,5 @@ location: BAND E 105
 flyer: /assets/images/shared/02-14-25-molly-miranker-ges-colloquium.jpg
 flyer_alt: 'Photo: GES Colloquium: Towards Humanitarian Geographic Information Science: Migrant Deaths at the Texas-Mexico
   Border'
-heading_id: ges-colloquium-towards-humanitarian-geographic-information-science-migrant-deaths-at-the-texas-mexico-border
 ---
 

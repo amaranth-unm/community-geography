@@ -1,9 +1,6 @@
 ---
-archived: true
 title: Center adds five new team members for Spring 2023
-heading_id: center-adds-five-new-team-members-for-spring-2023
 published_date: '2023-02-03'
-date_source: /news/2023
 ---
 
 *February 3, 2023*

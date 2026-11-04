@@ -1,9 +1,6 @@
 ---
-archived: true
 title: 'New Spring 2024 Field Course at UNM! GEOG 499: Environmental Justice in Greater Chaco'
-heading_id: new-spring-2024-field-course-at-unm-geog-499-environmental-justice-in-greater-chaco
 published_date: '2023-10-23'
-date_source: /news/2023
 ---
 
 ![oil and gas leasing protest]({{ site.baseurl }}/assets/images/news/oil-and-gas-leasing-protest.jpeg){: width="822"}

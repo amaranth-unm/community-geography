@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Center for Community Geography adds three new staff members for Fall 2022
 permalink: /news/september-20-2022
-heading_id: center-for-community-geography-adds-three-new-staff-members-for-fall-2022
 published_date: '2022-09-20'
-date_source: /news/2022
 ---
 
 *September 20, 2022*

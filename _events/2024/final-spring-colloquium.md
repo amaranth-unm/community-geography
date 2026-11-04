@@ -8,7 +8,6 @@ presenter: Dr. Ana De Luca, Professor, Faculty of Sciences, Universidad Autonoma
 location: Bandelier West 104
 flyer: /assets/images/shared/ges-may-9-colloquium.png
 flyer_alt: 'Photo: Final Spring Colloquium'
-heading_id: final-spring-colloquium
 ---
 
 A Feminist and Global South Perspective on the Overpopulation Discourse: Origins and Contemporary Implications

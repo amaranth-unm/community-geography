@@ -3,13 +3,14 @@
 
   A generic, data-driven card grid for completed projects. Reads each project
   page's front matter so that adding a project only requires a new Markdown
-  file — no hand-built card markup. Uses the .card-grid layout from cards.css but
-  drops the date-and-tags footer since past projects don't need an active date range.
+  file — no hand-built card markup. Shown as tiles, picture above the text;
+  the styles are under "Project cards" in assets/css/community.css.
 
   Usage:
     {% include community/past-projects.html %}
 
-  Lists every page in pages/projects/past-projects/ (except its index), by title.
+  Lists every project in _projects/ whose end_date has gone by (see
+  helpers/split-projects.html), by title.
 
   Front matter read from each project page:
     - title:             project name
@@ -17,21 +18,22 @@
     - summary:            a short one-to-three sentence description
 {% endcomment %}
 
-{% assign sorted_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/'" | where_exp: "p", "p.name != 'index.md'" | sort: "title" %}
+{% include helpers/split-projects.html %}
+{% assign sorted_projects = past_projects | sort: "title" %}
 
 {::nomarkdown}
 {% if sorted_projects.size > 0 %}
-  <div class="card-grid project-grid">
+  <div class="project-grid">
     {% for project in sorted_projects %}
     {% if project.title %}
-      <article class="card v-card project-card project-card--past">
-        <a class="card-link" href="{{ project.url | relative_url }}">
+      <article class="project-card">
+        <a class="project-card-link" href="{{ project.url | relative_url }}">
           {% if project.thumbnail %}
-            {% include helpers/card-image.html card=project class="card-img-top" %}
+            {% include helpers/card-image.html card=project %}
           {% endif %}
-          <div class="card-body">
+          <div class="project-card-body">
             <h3>{{ project.title }}</h3>
-            <p class="card-text">{{ project.summary }}</p>
+            <p class="project-card-summary">{{ project.summary }}</p>
             <span class="project-card-cta">View project <span class="project-card-cta-arrow" aria-hidden="true">&rarr;</span></span>
           </div>
         </a>

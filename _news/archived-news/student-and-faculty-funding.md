@@ -1,10 +1,7 @@
 ---
-archived: true
 title: 'Apply Now: Funding opportunities for UNM students and faculty'
 permalink: /news/april-12,-2021
-heading_id: apply-now-funding-opportunities-for-unm-students-and-faculty
 published_date: '2021-04-16'
-date_source: /news/2021
 ---
 
 ![criticalcartographylospoblanos]({{ site.baseurl }}/assets/images/news/criticalcartographylospoblanos){: .img-left width="486"} After successful pilot projects in the spring 2021 semester, the R.H. Mallory Center for Community Geography is happy to announce its first-ever funding competitions for UNM faculty and students. Up to \$7,000 will be awarded for community-engaged work in 2021-2022. “Through this funding, we invite both faculty and students to work with us on our mission to build partnerships between UNM and its surrounding communities that are effective in addressing critical human-environment issues,” said Center Director and GES Professor Maria Lane.  

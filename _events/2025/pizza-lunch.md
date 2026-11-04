@@ -7,6 +7,5 @@ end_time: '13:00'
 location: Bandelier West 106
 flyer: /assets/images/events/valentines-pizza-social1.png
 flyer_alt: 'Photo: Pizza Lunch'
-heading_id: pizza-lunch
 ---
 

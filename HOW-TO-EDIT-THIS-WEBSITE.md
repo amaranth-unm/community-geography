@@ -14,7 +14,7 @@ Everything is done in your web browser. You do not need to install anything.
 5. [Add a news story](#5-add-a-news-story)
 6. [Add an event](#6-add-an-event)
 7. [Add a project](#7-add-a-project)
-8. [Move a project from current to past](#8-move-a-project-from-current-to-past)
+8. [When a project ends](#8-when-a-project-ends)
 9. [Add or edit a person](#9-add-or-edit-a-person)
 10. [Other things to know](#10-other-things-to-know)
 11. [Troubleshooting](#11-troubleshooting)
@@ -108,8 +108,7 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | Start a new story, event, project, or person | `_templates/` (files to copy; never shown on the website) |
 | A news story | `_news/` (inside a year folder, like `_news/2026/`) |
 | An event | `_events/` (inside a year folder, like `_events/2026/`) |
-| A current project | `pages/projects/current-projects/` |
-| A past project | `pages/projects/past-projects/` |
+| A project, current or past | `_projects/` |
 | A person on the Team or Affiliates page | `_people/` |
 | A word in the Community Geography lexicon | `pages/community-geography/` (files ending in `-lexicon-word.md`) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
@@ -246,7 +245,7 @@ The part after the colon (like `#007a86`) is a **color code**. Replace it with a
 
 ### Changing text size or fonts
 
-Fonts are set in the same `unm.css` file under `--font-body` and `--font-heading`. They are UNM's Gotham and Vitesse, which load from UNM's servers, so skip the part of Xanthan's guide about adding Google Fonts. For text size in particular:
+Fonts are set in the same file, `assets/css/themes/unm.css`, under `--font-body` and `--font-heading`. They are UNM's Gotham and Vitesse, which load from UNM's servers, so skip the part of Xanthan's guide about adding Google Fonts. For text size in particular:
 
 - **Page titles, home page section titles, and small text** (labels, buttons, dates) are set by the `--center-size-...` lines at the top of `assets/css/community.css`. Each line controls that size everywhere on the site.
 - **Headings inside a page's text** (the `##` and `###` headings) and normal body text are in `assets/css/typography.css`.
@@ -309,7 +308,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - The web address comes from the file name: `new-fellows-announced.md` is published at `/news/new-fellows-announced`. Choose the file name carefully, because renaming the file later changes the address.
 - `published_date` is the date written `YYYY-MM-DD`.
 - If you only know the year, use `published_year: 2026` instead of `published_date`.
-- The news page and the year page update by themselves. You do not need to edit any list. (The first story of a new year needs a year page; see [Section 10](#10-other-things-to-know).)
+- The news page updates by itself. You do not need to edit any list.
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - **Homepage:** the three newest stories appear under **Recent news** on the homepage by themselves. To show more or fewer, change `home_news_count: 3` in `_config.yml`; `0` hides the section.
 
@@ -360,15 +359,12 @@ how to register.
 
 ## 7. Add a project
 
-Projects are pages in two folders:
-
-- `pages/projects/current-projects/` for projects happening now
-- `pages/projects/past-projects/` for finished projects
+Every project, current or past, is one file in `_projects/`. A project is listed on the **Projects** page until its `end_date` has passed, then moves to the **Past Projects** page by itself.
 
 A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
 1. Upload the project's picture to `assets/images/projects/project/` (see Section 4).
-2. Open `pages/projects/current-projects/`, create a new file named like `my-new-project.md`.
+2. Open `_projects/`, create a new file named like `my-new-project.md`.
 3. Paste and fill in this template:
 
 ```
@@ -393,27 +389,24 @@ Write the full description of the project here.
 - `thumbnail` is the project's picture. It appears on the project's card and at the top of its page.
 - The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
 - `start_date` is written `YYYY-MM-DD`.
-- For a project that hasn't ended, write `end_date: Ongoing`.
+- For a project that hasn't ended, write `end_date: Ongoing`. When it ends, change that to the end date (see [Section 8](#8-when-a-project-ends)).
 - Don't know the faculty or partner? Use `- TBD`.
 - The Projects page sorts current projects with the newest start date first.
 - Past projects are sorted alphabetically by title.
 
-**Easiest way:** copy `_templates/project.md` into `pages/projects/current-projects/`, rename it, and replace the information.
+**Easiest way:** copy `_templates/project.md` into `_projects/`, rename it, and replace the information.
 
 ---
 
-## 8. Move a project from current to past
+## 8. When a project ends
 
-When a project is finished:
-
-1. Open the project's file in `pages/projects/current-projects/`.
+1. Open the project's file in `_projects/`.
 2. Change `end_date: Ongoing` to the real end date, such as `end_date: 2027-05-15`.
-3. **Move the file** to the past-projects folder: in the Explorer, **drag the file** from `current-projects` onto the `past-projects` folder (or right-click the file → **Cut**, then right-click `past-projects` → **Paste**).
-4. Click **Source Control**, write a message like "Move X project to past projects", and **Commit & Push**.
+3. **Commit & Push**.
 
-That's it. The project disappears from the **Projects** page and appears on the **Past Projects** page automatically. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
+That's it. The project leaves the **Projects** page and appears on the **Past Projects** page by itself. If you give a date that hasn't come yet, it moves over the morning after that date. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
 
-To move a project back, drag it back the other way.
+To move a project back, change its `end_date` back to `Ongoing`.
 
 ---
 
@@ -461,7 +454,7 @@ A short biography goes here.
 - **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. The technical notes are in `README.md` (how the site uses Xanthan) and `scripts/README.md` (the image tools).
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
-- **New year?** Create a new year folder in `_news/` and `_events/` (for example `_news/2027/`). Then give the year its news page: copy `pages/news/2026.md`, name the copy `2027.md`, and change every `2026` inside it to `2027`.
+- **New year?** Start a new year folder in `_news/` and `_events/` (for example `_news/2027/`) to keep the files tidy. The folders don't change anything on the website, and nothing else needs setting up for a new year.
 - **Backups:** GitHub stores every version of every file. You can look at the history of any file by right-clicking it and choosing **Open Timeline**.
 - **Handing over the site?** Add the new editor as a collaborator on the GitHub repository (Settings → Collaborators) and point them to this guide.
 
@@ -497,8 +490,8 @@ A short biography goes here.
 | Start a new page | Copy a file from `_templates/` |
 | Add news | New file in `_news/YEAR/` |
 | Add an event | New file in `_events/YEAR/` |
-| Add a project | New file in `pages/projects/current-projects/` |
-| Finish a project | Set `end_date`, drag file to `pages/projects/past-projects/` |
+| Add a project | New file in `_projects/` |
+| Finish a project | Change its `end_date` from `Ongoing` to the end date |
 | Add a person | New file in `_people/` |
 | Add a picture | Drag into `assets/images/...`, then reference its path |
 | Add a box, quote, band, map, or photo story | Copy its example from Xanthan's [Component Library](https://xanthan-web.github.io/docs/reference/component-library) |

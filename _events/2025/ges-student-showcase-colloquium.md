@@ -8,6 +8,5 @@ presenter: Center for Community Geography Fellows, GES Undergraduate and Graduat
 location: Bandelier East 105
 flyer: /assets/images/events/05-02-25-ges-student-showcase-ges-colloquium.png
 flyer_alt: 'Photo: GES Student Showcase Colloquium'
-heading_id: ges-student-showcase-colloquium
 ---
 

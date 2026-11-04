@@ -2,10 +2,9 @@
   Projects Carousel
 
   An unobtrusive, auto-rotating horizontal carousel of current and past
-  projects for the home page. Reads each project page's front matter, so
-  adding or retiring a project only requires editing the Markdown file in
-  pages/projects/current-projects or pages/projects/past-projects — no
-  hand-built list to maintain here.
+  projects for the home page. Reads each project's front matter in
+  _projects/, so adding or finishing a project only requires editing its
+  Markdown file — no hand-built list to maintain here.
 
   Usage:
     {% include community/projects-carousel.html %}
@@ -14,11 +13,13 @@
     - title:      project name
     - thumbnail:   image path (required for the card to appear)
     - start_date:  used to order projects, most recent first
-    - end_date:    the literal "Ongoing" marks a project as current
+    - end_date:    current projects (see helpers/split-projects.html) come
+                   first and are tagged "Current"
 {% endcomment %}
 
-{% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
-{% assign past_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/'" | where_exp: "p", "p.name != 'index.md'" | where_exp: "p", "p.title" | where_exp: "p", "p.thumbnail" %}
+{% include helpers/split-projects.html %}
+{% assign current_projects = current_projects | where_exp: "p", "p.thumbnail" %}
+{% assign past_projects = past_projects | where_exp: "p", "p.thumbnail" %}
 {% include helpers/sort-by-date.html items=current_projects field="start_date" order="newest" %}
 {% assign current_sorted = sorted_by_date %}
 {% include helpers/sort-by-date.html items=past_projects field="start_date" order="newest" %}
@@ -47,7 +48,7 @@
         <a class="projects-carousel-card" href="{{ project.url | relative_url }}">
           <span class="projects-carousel-card-image">
             <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
-            {% if project.end_date == "Ongoing" or project.end_date == nil %}
+            {% if forloop.index <= current_sorted.size %}
               <span class="projects-carousel-card-tag">Current</span>
             {% endif %}
           </span>

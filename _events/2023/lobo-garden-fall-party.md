@@ -9,7 +9,6 @@ presenter: Maggie Siebert
 location: Lobo Garden
 flyer: /assets/images/events/lobo-garden-party-flyer.png
 flyer_alt: 'Photo: Lobo Garden Fall Party'
-heading_id: lobo-garden-fall-party
 ---
 
 We will be hosting a fall party in partnership with UNM Sustainability Studies and The Department of Geography and Environmental Studies, at the Lobo Garden on Thursday, October, 19th, 2023.  

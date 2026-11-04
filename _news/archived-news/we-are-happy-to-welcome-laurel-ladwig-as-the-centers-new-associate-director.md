@@ -1,5 +1,4 @@
 ---
-archived: true
 title: We are happy to welcome Laurel Ladwig as the Center's new Associate Director!
 heading_id: we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director
 published_date: '2025-02-17'

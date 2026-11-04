@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Help us do citizen science! ABQ City Nature Challenge 2021
 permalink: /news/march-22,-2021
-heading_id: help-us-do-citizen-science-abq-city-nature-challenge-2021
 published_date: '2021-03-22'
-date_source: /news/2021
 ---
 
 ![city-nature-challenge-log.png]({{ site.baseurl }}/assets/images/events/city-nature-challenge-log.png){: .img-right}

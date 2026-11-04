@@ -8,7 +8,6 @@ end_time: '02:30'
 location: Cornell Mall
 flyer: /assets/images/shared/expo2024.png
 flyer_alt: 'Photo: Sustainability Expo'
-heading_id: sustainability-expo
 date_review: true
 review_notes:
 - Published end precedes start; retained verbatim in structured fields. Excluded from automated upcoming dates until reviewed.

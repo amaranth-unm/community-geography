@@ -1,5 +1,4 @@
 ---
-archived: true
 title: 'Announcement: Our Center''s Affiliate Applications are Now Open!'
 permalink: /news/announcement-2023-affiliates-application-now-open1
 summary: The R.H. Center for Community Geography is excited to announce that it is now accepting applications for faculty
@@ -7,7 +6,6 @@ summary: The R.H. Center for Community Geography is excited to announce that it 
   review the affiliation criteria and apply.
 heading_id: announcement-our-centers-affiliate-applications-are-now-open
 published_date: '2023-10-10'
-date_source: /news/2023
 ---
 
 

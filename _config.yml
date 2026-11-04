@@ -57,15 +57,12 @@ defaults:
     section: Projects
     section_url: /projects/
 - scope:
-    path: pages/projects/current-projects
+    path: ''
+    type: projects
   values:
     layout: project-unm
-    permalink: /projects/project/:basename
-- scope:
-    path: pages/projects/past-projects
-  values:
-    layout: project-unm
-    permalink: /projects/project/:basename
+    section: Projects
+    section_url: /projects/
 - scope:
     path: ''
     type: events
@@ -98,6 +95,11 @@ collections:
     permalink: /news/:title
   people:
     output: false
+  # Every project, current and past. A project counts as past once its
+  # end_date has gone by (see _includes/helpers/split-projects.html).
+  projects:
+    output: true
+    permalink: /projects/project/:name
 center_banner:
   image: /assets/images/shared/center-logo-.png
   width: 1920

@@ -9,7 +9,6 @@ presenter: Center for Community Geography, Student Association of Geography and 
 location: 'UNM SUB: (3rd Floor) Navajo Lounge and Lobo A/B'
 flyer: /assets/images/events/gis-day.png
 flyer_alt: 'Photo: GIS Day 2025'
-heading_id: gis-day-2025
 review_notes:
 - Original Geography Showcase time says 11:15 PM–1:15 PM within a 10am–2pm event; preserved pending editorial review.
 ---

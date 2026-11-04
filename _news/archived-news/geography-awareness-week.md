@@ -1,10 +1,7 @@
 ---
-archived: true
 title: Geography Awareness Week
 permalink: /news/november-1-2020
-heading_id: geography-awareness-week
 published_date: '2020-11-01'
-date_source: /news/2020
 ---
 
 *November 1, 2020*

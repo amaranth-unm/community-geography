@@ -1,11 +1,13 @@
 /*****************************************************
 COMMUNITY GEOGRAPHY
 The Center's own site: masthead, home hero and bands, site nav, reading
-layout, project and news pages, and the site footer.
-Loads: every page. Used by: base-unm.html, project-unm.html,
-unm/footer-site.html, and community/ includes.
+layout, project, news, event, and people pages, the photo gallery, and the
+site footer.
+Loads: every page. Used by: the *-unm.html layouts, unm/footer-site.html,
+and community/ includes.
 Needs: Xanthan base.css and themes/unm.css.
-Not here: UNM's utility bar, wordmark, and official footer (unm.css), or
+Not here: UNM's utility bar, wordmark, and official footer
+(unm-header-footer.css), or
 navigation behavior (nav.css).
 
 Boundary with UNM: this file reads the theme's semantic tokens
@@ -661,12 +663,59 @@ is the one place UNM values are translated for the site.
   max-width: 48rem;
   margin-inline: auto;
 }
-/* Project listing cards: used by community/current-projects.html and
-   community/past-projects.html. Both are generic, data-driven includes that
-   read their content from each project page's front matter. Deliberately
-   overrides cards.css's generous defaults (large min-heights, big images,
-   1.5rem titles) with a tighter, flatter presentation so a dense list of
-   projects doesn't feel bulky. */
+/* Project cards: community/current-projects.html lists current projects as
+   rows (.project-list: picture beside the text), and
+   community/past-projects.html shows past projects as tiles (.project-grid:
+   picture above the text). The markup is the same; the container decides. */
+.project-card {
+  display: flex;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: transform var(--transition-normal), opacity var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+.project-card:hover { border-color: var(--card-hover-border); }
+/* Two classes, so the site's a:hover and a:visited colors and dotted
+   underline stay off the card. */
+.project-card .project-card-link {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0;
+}
+/* Xanthan pads paragraphs and headings on phones; card text sits on the
+   card's own padding instead. */
+.project-card :is(h3, p) { padding-inline: 0; }
+.project-card-image { overflow: hidden; }
+/* Project thumbnails are often logos or portrait photos rather than
+   landscape photography, so they are shown whole (contain), not cropped. */
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.project-card h3 {
+  color: var(--card-heading-color);
+  font-weight: bold;
+  line-height: 1.25;
+}
+.project-card-summary {
+  margin: 0;
+  color: var(--card-text-color);
+  font-size: var(--center-size-md);
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Current projects: one row per project, with a teal bar along the bottom. */
 .project-list {
   display: flex;
   flex-direction: column;
@@ -674,58 +723,57 @@ is the one place UNM values are translated for the site.
   max-width: 50rem;
   margin-inline: auto;
 }
-.project-list .project-card {
-  min-height: 0;
-  margin-bottom: 0;
-  opacity: 1;
-  border-radius: var(--radius-sm);
-}
-.project-list .project-card:hover { transform: none; box-shadow: var(--shadow-sm); }
-.project-list .project-card .card-img-left {
-  flex: 0 0 9rem;
-  width: 9rem;
-  height: auto;
-}
-
-/* Project thumbnails are often logos or portrait photos rather than
-   landscape photography, so object-fit: cover (cards.css's default) crops
-   off the parts that make them recognizable. The current-projects box has
-   no fixed height on desktop, so the image already shows in full at its
-   natural aspect ratio there; contain still matters on the mobile layout
-   below (where the box does get a fixed height) and for the past-projects
-   box, which is fixed-height on every screen size. */
-.project-list .project-card .card-img-left img,
-.project-grid .project-card--past .card-img-top img {
-  object-fit: contain;
-}
-.project-list .project-card .card-body {
-  gap: 0;
-  padding: .9rem 1.1rem;
+.project-list .project-card { border-radius: var(--radius-sm); }
+.project-list .project-card:hover { box-shadow: var(--shadow-sm); }
+.project-list .project-card-link { flex: 1; flex-wrap: wrap; }
+.project-list .project-card-image { flex: 0 0 9rem; width: 9rem; }
+.project-list .project-card-body {
+  flex: 1 1 0;
+  min-width: 0;
   justify-content: center;
+  padding: .9rem 1.1rem;
 }
-.project-list .project-card h3 {
-  margin: 0 0 .25rem;
-  font-size: 1.15rem;
-  line-height: 1.25;
-}
-.project-list .project-card .card-text {
-  margin: 0;
-  font-size: var(--center-size-md);
-  line-height: 1.45;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+.project-list .project-card h3 { margin: 0 0 .25rem; font-size: 1.15rem; }
+.project-list .project-card-summary { line-height: 1.45; }
 .project-dates {
   order: -1;
   margin: 0 0 .2rem;
-  color: var(--accent-primary);
+  color: var(--card-text-color);
   font-size: var(--center-size-xs);
   font-weight: 700;
   letter-spacing: .05em;
   text-transform: uppercase;
 }
+
+/* Past projects: tiles in up to three columns. */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+@media (min-width: 768px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .project-grid { grid-template-columns: repeat(3, 1fr); } }
+.project-grid .project-card {
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--radius-md);
+  opacity: .9;
+}
+.project-grid .project-card:hover {
+  opacity: 1;
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.03);
+}
+.project-grid .project-card-link { flex-direction: column; height: 100%; }
+.project-grid .project-card-image { width: 100%; height: 9rem; background: var(--card-bg); }
+.project-grid .project-card-body {
+  flex: 1 1 auto;
+  justify-content: space-between;
+  padding: .9rem 1rem;
+}
+.project-grid .project-card h3 { margin: 0 0 .3rem; font-size: 1.1rem; }
+.project-grid .project-card-summary { line-height: 1.4; }
 
 /* Shared, flat faculty/community-member row for both card types. Always a
    fixed two-column grid so every card lines up the same way regardless of
@@ -787,14 +835,11 @@ is the one place UNM values are translated for the site.
   text-transform: uppercase;
 }
 .project-card-cta-arrow { transition: transform var(--transition-fast); }
-.project-card:hover .project-card-cta-arrow,
-.project-grid .project-card--past:hover .project-card-cta-arrow {
+.project-card:hover .project-card-cta-arrow {
   transform: translateX(3px);
 }
 
 /* Current projects: full-width bar along the bottom of the card. */
-.project-list .project-card a.card-link { flex-wrap: wrap; }
-.project-list .project-card .card-body { flex: 1 1 0; min-width: 0; }
 .project-card-cta--bar {
   flex: 0 0 100%;
   justify-content: center;
@@ -811,31 +856,20 @@ is the one place UNM values are translated for the site.
   padding-top: 0;
   border-top: 0;
 }
-.project-grid .project-card--past {
-  min-height: 0;
-}
-.project-grid .project-card--past .card-body { gap: 0; padding: .9rem 1rem; }
-.project-grid .project-card--past .card-img-top { height: 9rem; background: var(--card-bg); }
-.project-grid .project-card--past h3 {
-  margin: 0 0 .3rem;
-  font-size: 1.1rem;
-  line-height: 1.25;
-}
-.project-grid .project-card--past .card-text {
-  margin: 0;
-  font-size: var(--center-size-md);
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-@media (max-width: 600px) {
+/* Narrow screens. Between 601 and 768px the current-project rows stack but
+   keep their small square picture; below 601px the picture spans the card.
+   On narrow screens the current projects' dates and summaries are body-text
+   color and the dates slightly larger. */
+@media (max-width: 768px) {
+  .project-card { margin-inline: var(--spacing-md); }
   .project-list .project-card,
-  .project-list .project-card .card-link { flex-direction: column; }
-  .project-list .project-card .card-img-left { width: 100%; height: 9rem; background: var(--card-bg); }
-  .project-list .project-card .card-body { flex: 1 1 auto; }
+  .project-list .project-card-link { flex-direction: column; }
+  .project-list :is(.project-dates, .project-card-summary) { color: var(--text-body); }
+  .project-list .project-dates { margin-bottom: var(--spacing-xs); font-size: .9rem; }
+}
+@media (max-width: 600px) {
+  .project-list .project-card-image { width: 100%; height: 9rem; background: var(--card-bg); }
+  .project-list .project-card-body { flex: 1 1 auto; }
   .project-card-cta--bar { flex: 0 0 auto; }
   .project-meta { grid-template-columns: 1fr; }
 }
@@ -948,4 +982,119 @@ is the one place UNM values are translated for the site.
   .project-photo { height: auto; aspect-ratio: 4 / 3; }
 }
 
-
+/* Records: event details and flyers, news and people profiles, and the photo
+   gallery (community/event-details.html, the event and news layouts,
+   community/people.html, community/gallery.html). */
+.record-event-details { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: .4rem 1rem; margin-block: 1.5rem; }
+.record-event-details dt { font-weight: bold; }
+.record-event-details dd { margin: 0; overflow-wrap: anywhere; }
+.record-flyer { margin: 2rem 0; max-width: 44rem; }
+.record-flyer img { display: block; width: 100%; height: auto; }
+.record-flyer figcaption { margin-top: .5rem; }
+.record-event-summary { margin-block: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-medium); }
+.record-profile { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.record-profile--text { grid-template-columns: minmax(0, 1fr); }
+.record-profile .record-portrait { display: block; width: 100%; height: auto; margin: 0; float: none; }
+.record-body { min-width: 0; }
+.record-body > :first-child { margin-top: 0; }
+.record-person { margin-bottom: 2.5rem; }
+.gallery-intro {
+  margin: .5rem 0 2.5rem;
+  padding: 1.5rem 0;
+  border-block: 1px solid var(--border-medium);
+}
+.gallery-intro__eyebrow {
+  margin: 0 0 .5rem;
+  color: var(--text-kicker);
+  font-size: var(--center-size-sm);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.gallery-intro__summary {
+  max-width: 38rem;
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.4;
+}
+.gallery-intro__details {
+  margin: 1rem 0 0;
+  color: var(--text-muted);
+  font-size: var(--center-size-md);
+}
+.record-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.record-gallery__item {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.record-gallery__link {
+  position: relative;
+  display: block;
+  color: inherit;
+  border: 0;
+  overflow: hidden;
+}
+.record-gallery__link:hover,
+.record-gallery__link:visited {
+  color: inherit;
+  border: 0;
+}
+.record-gallery__link img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+.record-gallery__expand {
+  position: absolute;
+  right: .75rem;
+  bottom: .75rem;
+  padding: .4rem .65rem;
+  color: var(--text-on-dark);
+  background: rgb(0 0 0 / .72);
+  border-radius: 999px;
+  font-size: var(--center-size-xs);
+  font-weight: 700;
+  letter-spacing: .03em;
+  opacity: 0;
+  transform: translateY(.35rem);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+.record-gallery__link:hover img,
+.record-gallery__link:focus-visible img {
+  transform: scale(1.035);
+}
+.record-gallery__link:hover .record-gallery__expand,
+.record-gallery__link:focus-visible .record-gallery__expand {
+  opacity: 1;
+  transform: translateY(0);
+}
+.record-gallery__link:focus-visible {
+  outline: 3px solid var(--interactive-hover);
+  outline-offset: -3px;
+}
+@media (hover: none) {
+  .record-gallery__expand {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 600px) {
+  .record-profile { grid-template-columns: minmax(0, 1fr); margin-inline: 1.5rem; }
+  .record-profile .record-body :is(p, h1, h2, h3) { padding-inline: 0; }
+  .record-profile .record-portrait { max-width: 16rem; }
+  .record-event-details { grid-template-columns: minmax(0, 1fr); gap: .2rem; margin-inline: 1.5rem; }
+  .record-event-details dd { margin-bottom: .8rem; }
+  .gallery-intro,
+  .record-gallery { margin-inline: 1.5rem; }
+  .record-gallery { grid-template-columns: minmax(0, 1fr); }
+}
