@@ -19,9 +19,9 @@ terms:
   - Intersectionality
   - Place-making
   - Compromise
-# Quotes, in order. A quote can have a photo beside it (photo, photo_alt,
-# photo_caption); photos alternate sides down the page.
-quotes:
+# The rest of the page, in order: quotes (text and source), passages (text,
+# with an optional heading and credit) and photos. See _layouts/lexicon-unm.html.
+story:
   - text: >-
       A leader is anyone who takes responsibility for finding the potential
       in people and processes, and who has the courage to develop that

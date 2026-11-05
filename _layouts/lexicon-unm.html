@@ -5,19 +5,24 @@ layout: base-unm
   Lexicon word pages (_lexicon/). The page is built from the word's front
   matter, top to bottom:
     - word, definition:  the heading and the sentence or two under it
+    - definition_source: (optional) who the definition is quoted from
     - image, image_alt, image_caption:
                          a wide photo across the window
     - terms_heading, terms:
-                         related ideas in a band (heading default:
+                         related ideas in a gold band (heading default:
                          "<word> engages…")
-    - quotes:            each with text and source, and optionally a photo
-                         beside it (photo, photo_alt, photo_caption); photos
-                         alternate sides
-  Any text below the front matter follows the quotes: explanations,
-  questions, references.
-
-  A word with no quotes or text yet shows its old Instagram posts (slides)
-  as a slideshow instead.
+    - story:             the rest of the page, in order. Each item is one of:
+        a quote      text and source; shown large, with a quotation mark
+        a passage    text (Markdown: paragraphs, lists, links), with an
+                     optional heading and credit (a line below it, shown
+                     as written, such as "Source: …" or "Credit: …")
+        a photo      photo only; shown across the text column
+      A quote or passage can also have a photo beside it (photo, photo_alt,
+      photo_caption); those photos alternate sides, and on a wide screen a
+      photo beside long text stays in view while the text scrolls.
+      `poem: true` keeps a quote's line breaks (a blank line starts a new
+      stanza).
+  Any text below the front matter comes last, such as references.
 {% endcomment %}
 {% assign body = content | strip %}
 <article class="lexicon-entry">
@@ -25,46 +30,65 @@ layout: base-unm
     <p class="lexicon-kicker"><a href="{{ '/community-geography/#community-geography-lexicon' | relative_url }}">Community Geography Lexicon</a></p>
     <h1 id="{{ page.title | slugify }}">{{ page.word | default: page.title | escape }}</h1>
     {% if page.definition %}<p class="lexicon-definition">{{ page.definition }}</p>{% endif %}
+    {% if page.definition_source %}<p class="lexicon-definition-source">{{ page.definition_source }}</p>{% endif %}
   </header>
 
-  {% if page.quotes == nil and body == "" %}
-    {% include community/lexicon-slideshow.html %}
-  {% else %}
-    {% if page.image %}
-    <figure class="lexicon-photo">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
-      {% if page.image_caption %}<figcaption>{{ page.image_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
-    </figure>
-    {% endif %}
+  {% if page.image %}
+  <figure class="lexicon-photo">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
+    {% if page.image_caption %}<figcaption>{{ page.image_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
 
-    {% if page.terms %}
-    <section class="lexicon-terms" aria-labelledby="lexicon-terms-heading">
-      <h2 id="lexicon-terms-heading">{% if page.terms_heading %}{{ page.terms_heading }}{% else %}{{ page.word }} engages…{% endif %}</h2>
-      <ul>
-        {% for term in page.terms %}<li>{{ term }}</li>{% endfor %}
-      </ul>
-    </section>
-    {% endif %}
+  {% if page.terms %}
+  <section class="lexicon-terms" aria-labelledby="lexicon-terms-heading">
+    <h2 id="lexicon-terms-heading">{% if page.terms_heading %}{{ page.terms_heading }}{% else %}{{ page.word }} engages…{% endif %}</h2>
+    <ul>
+      {% for term in page.terms %}<li>{{ term }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
-    {% assign photo_count = 0 %}
-    {% for quote in page.quotes %}
-      {% if quote.photo %}{% assign photo_count = photo_count | plus: 1 %}{% assign flip = photo_count | modulo: 2 %}{% endif %}
-      <div class="lexicon-beat{% if quote.photo %} lexicon-beat--photo{% if flip == 0 %} lexicon-beat--flip{% endif %}{% endif %}">
-        {% if quote.photo %}
+  {% assign photo_count = 0 %}
+  {% for item in page.story %}
+    {% if item.text == nil %}
+      {% comment %} A photo on its own, across the column. {% endcomment %}
+      <figure class="lexicon-figure">
+        <img src="{{ item.photo | relative_url }}" alt="{{ item.photo_alt | escape }}" loading="lazy" decoding="async">
+        {% if item.photo_caption %}<figcaption>{{ item.photo_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+      </figure>
+    {% else %}
+      {% if item.photo %}{% assign photo_count = photo_count | plus: 1 %}{% assign flip = photo_count | modulo: 2 %}{% endif %}
+      <div class="lexicon-beat{% if item.photo %} lexicon-beat--photo{% if flip == 0 %} lexicon-beat--flip{% endif %}{% endif %}{% if item.poem %} lexicon-beat--poem{% endif %}">
+        {% if item.photo %}
         <figure class="lexicon-beat-photo">
-          <img src="{{ quote.photo | relative_url }}" alt="{{ quote.photo_alt | escape }}" loading="lazy" decoding="async">
-          {% if quote.photo_caption %}<figcaption>{{ quote.photo_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+          <img src="{{ item.photo | relative_url }}" alt="{{ item.photo_alt | escape }}" loading="lazy" decoding="async">
+          {% if item.photo_caption %}<figcaption>{{ item.photo_caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
         </figure>
         {% endif %}
-        <blockquote class="lexicon-quote">
-          {{ quote.text | markdownify }}
-          {% if quote.source %}<footer>{{ quote.source | markdownify | remove: '<p>' | remove: '</p>' | strip }}</footer>{% endif %}
+        {% if item.source %}
+        <blockquote class="lexicon-quote{% if item.poem %} lexicon-quote--poem{% endif %}">
+          {% if item.poem %}
+          {% comment %} One line per span, so a line too long for the screen wraps with an indent. {% endcomment %}
+          {% assign lines = item.text | newline_to_br | split: '<br />' %}
+          <p>{% for line in lines %}{% assign line = line | strip %}{% if line == "" %}<span class="lexicon-poem-break"></span>{% else %}<span class="lexicon-poem-line">{{ line | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endif %}{% endfor %}</p>
+          {% else %}
+          {{ item.text | markdownify }}
+          {% endif %}
+          <footer>{{ item.source | markdownify | remove: '<p>' | remove: '</p>' | strip }}</footer>
         </blockquote>
+        {% else %}
+        <div class="lexicon-passage">
+          {% if item.heading %}<h2>{{ item.heading }}</h2>{% endif %}
+          {{ item.text | markdownify }}
+          {% if item.credit %}<p class="lexicon-credit">{{ item.credit | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+        </div>
+        {% endif %}
       </div>
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
 
-    {% if body != "" %}<div class="lexicon-body">{{ content }}</div>{% endif %}
-  {% endif %}
+  {% if body != "" %}<div class="lexicon-body">{{ content }}</div>{% endif %}
 
   {% comment %} Previous and next words, in card order. {% endcomment %}
   {% include helpers/sort-by-number.html items=site.lexicon field="display_order" %}

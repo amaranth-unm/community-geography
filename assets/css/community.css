@@ -396,7 +396,14 @@ figure a.image { border-bottom: 0; }
   gap: var(--spacing-xl);
   align-items: center;
 }
+.lexicon-beat--flip { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
 .lexicon-beat--flip .lexicon-beat-photo { order: 2; }
+/* A photo beside text taller than itself starts at the top and stays in view
+   while the text scrolls past. */
+.lexicon-beat-photo { align-self: start; position: sticky; top: var(--spacing-lg); }
+/* A poem gets a wider column so its lines fit whole. */
+.lexicon-beat--poem { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); }
+.lexicon-beat--poem.lexicon-beat--flip { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
 .lexicon-beat-photo { margin: 0; }
 .lexicon-beat-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: var(--spacing-xs); border-radius: var(--radius-sm); }
 .lexicon-entry .lexicon-quote {
@@ -430,7 +437,50 @@ figure a.image { border-bottom: 0; }
 }
 .lexicon-quote footer::before { content: '— '; }
 .lexicon-quote footer em { text-transform: none; }
-.lexicon-body { margin-top: var(--spacing-xl); }
+.lexicon-entry .lexicon-definition-source {
+  margin: var(--spacing-xs) 0 0;
+  color: var(--accent-primary);
+  font-size: var(--center-size-sm);
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.lexicon-definition-source::before { content: '— '; }
+/* Passages: explanations, questions and lists, a step smaller than quotes. */
+.lexicon-passage {
+  max-width: 44rem;
+  font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
+}
+.lexicon-beat:not(.lexicon-beat--photo) .lexicon-passage { margin-inline: auto; }
+.lexicon-entry .lexicon-passage h2 {
+  margin: 0 0 var(--spacing-sm);
+  padding: 0;
+  font-size: 1.5rem;
+}
+.lexicon-entry .lexicon-passage :is(p, ul, ol) { margin: 0 0 var(--spacing-sm); }
+.lexicon-entry .lexicon-passage :is(ul, ol) { font-size: inherit; }
+.lexicon-entry .lexicon-passage li { margin-bottom: var(--spacing-xs); line-height: 1.5; }
+.lexicon-entry .lexicon-credit {
+  color: var(--text-muted);
+  font-size: var(--center-size-md);
+}
+/* A poem keeps its line breaks, a size down from other quotes. */
+.lexicon-entry .lexicon-quote--poem p { font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.6; }
+.lexicon-poem-line { display: block; padding-left: 1.5em; text-indent: -1.5em; }
+.lexicon-poem-break { display: block; height: .8em; }
+/* A photo or diagram on its own, across the text column. */
+.lexicon-entry .lexicon-figure { margin: var(--spacing-xl) 0; }
+.lexicon-figure img { display: block; width: 100%; margin-bottom: var(--spacing-xs); }
+.lexicon-figure figcaption {
+  color: var(--text-muted);
+  font-size: var(--center-size-xs);
+  line-height: 1.5;
+  text-align: left;
+}
+.lexicon-entry .lexicon-body { max-width: 44rem; margin: var(--spacing-xl) auto 0; }
+.lexicon-entry .lexicon-body h2 { font-size: 1.35rem; }
+.lexicon-entry .lexicon-body li { font-size: var(--center-size-md); }
 .lexicon-pager {
   display: flex;
   flex-wrap: wrap;
@@ -463,8 +513,10 @@ figure a.image { border-bottom: 0; }
    instead, and a quote's photo sits above it. */
 @media (max-width: 768px) {
   .lexicon-entry { padding-inline: var(--spacing-md); }
-  .lexicon-entry :is(p, h1, h2, ul, blockquote) { padding-inline: 0; }
-  .lexicon-beat--photo { grid-template-columns: minmax(0, 1fr); gap: var(--spacing-md); }
+  .lexicon-entry :is(p, h1, h2, ul, ol, blockquote) { padding-inline: 0; }
+  .lexicon-entry :is(.lexicon-passage, .lexicon-body) :is(ul, ol) { padding-left: 1.25em; }
+  .lexicon-entry .lexicon-beat--photo { grid-template-columns: minmax(0, 1fr); gap: var(--spacing-md); }
+  .lexicon-beat-photo { position: static; }
   .lexicon-beat--flip .lexicon-beat-photo { order: 0; }
   /* base.css holds every figure to the column on phones, with !important. */
   .lexicon-entry .lexicon-photo { width: 100vw !important; max-width: none !important; }
