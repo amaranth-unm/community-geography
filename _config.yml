@@ -108,7 +108,7 @@ collections:
     output: true
     permalink: /projects/project/:name
   # The Community Geography lexicon: one file per word, shown as a card on the
-  # Community Geography page and as a slideshow page of its own.
+  # Community Geography page and as a page of its own (_layouts/lexicon-unm.html).
   lexicon:
     output: true
     permalink: /community-geography/:name-lexicon-word
