@@ -399,8 +399,9 @@ figure a.image { border-bottom: 0; }
 .lexicon-beat--flip { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
 .lexicon-beat--flip .lexicon-beat-photo { order: 2; }
 /* A photo beside text taller than itself starts at the top and stays in view
-   while the text scrolls past. */
-.lexicon-beat-photo { align-self: start; position: sticky; top: var(--spacing-lg); }
+   while the text scrolls past, below the menu bar (which also stays at the
+   top, and is about 2.75rem tall). */
+.lexicon-beat-photo { align-self: start; position: sticky; top: 4.5rem; }
 /* A poem gets a wider column so its lines fit whole. */
 .lexicon-beat--poem { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); }
 .lexicon-beat--poem.lexicon-beat--flip { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
