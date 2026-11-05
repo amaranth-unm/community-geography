@@ -378,15 +378,15 @@ figure a.image { border-bottom: 0; }
   max-width: 44rem;
   margin: var(--spacing-sm) 0 0;
 }
-/* The projects band is charcoal, the color of the nav bar, so the project
-   pictures stand out and the band reads differently from the pale ones
-   around it. Its text takes the same light colors as the teal Follow band. */
+/* The projects band is UNM's Deep Dusk (--bg-projects-band in the theme), a
+   deep color so the project pictures stand out and the band reads
+   differently from the pale ones around it, with white text. */
 .projects-carousel-section {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
-  background: var(--bg-nav);
+  background: var(--bg-projects-band, var(--bg-nav));
   color: var(--text-on-dark);
 }
-.projects-carousel-kicker { color: var(--text-feature-band-link); }
+.projects-carousel-kicker { color: var(--text-on-dark); }
 .projects-carousel-section h2 { color: var(--text-on-dark); }
 .projects-carousel-header,
 .home-news-header {
@@ -415,11 +415,11 @@ figure a.image { border-bottom: 0; }
 .projects-carousel-link:focus-visible,
 .home-news-link:hover,
 .home-news-link:focus-visible { color: var(--interactive-hover); }
-/* On the charcoal band: gold, turning white on hover. */
+/* On the purple band: white, turning gold on hover. */
 .projects-carousel-link,
-.projects-carousel-link:visited { color: var(--text-feature-band-link); }
+.projects-carousel-link:visited { color: var(--text-on-dark); }
 .projects-carousel-link:hover,
-.projects-carousel-link:focus-visible { color: var(--text-on-dark); }
+.projects-carousel-link:focus-visible { color: var(--accent-highlight); }
 
 /* Recent News on the home page: the News page's rows (see "News timeline"
    below), under a header like the projects carousel's. */
