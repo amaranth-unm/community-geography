@@ -378,9 +378,10 @@ figure a.image { border-bottom: 0; }
   max-width: 44rem;
   margin: var(--spacing-sm) 0 0;
 }
-/* The projects band is UNM's Deep Dusk (--bg-projects-band in the theme), a
-   deep color so the project pictures stand out and the band reads
-   differently from the pale ones around it, with white text. */
+/* The home page's two colored bands, Our work (--bg-projects-band, UNM
+   Turquoise) and Follow (--bg-follow-band, UNM Deep Dusk), run teal to purple
+   down the page toward UNM's cherry footer. Both have white text; their
+   links turn gold on hover. */
 .projects-carousel-section {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
   background: var(--bg-projects-band, var(--bg-nav));
@@ -415,7 +416,7 @@ figure a.image { border-bottom: 0; }
 .projects-carousel-link:focus-visible,
 .home-news-link:hover,
 .home-news-link:focus-visible { color: var(--interactive-hover); }
-/* On the purple band: white, turning gold on hover. */
+/* On the teal band: white, turning gold on hover. */
 .projects-carousel-link,
 .projects-carousel-link:visited { color: var(--text-on-dark); }
 .projects-carousel-link:hover,
@@ -541,7 +542,7 @@ figure a.image { border-bottom: 0; }
 }
 .community-follow {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
-  background: var(--bg-feature-band);
+  background: var(--bg-follow-band, var(--bg-feature-band));
   color: var(--text-on-dark);
 }
 .community-follow-inner {
@@ -552,14 +553,14 @@ figure a.image { border-bottom: 0; }
   max-width: var(--width-center);
   margin: 0 auto;
 }
-.community-follow-kicker { color: var(--text-feature-band-link); }
+.community-follow-kicker { color: var(--text-on-dark); }
 .community-follow h2 { color: var(--text-on-dark); }
 .community-follow p:not(.community-follow-kicker) {
   max-width: 40rem;
   margin: var(--spacing-sm) 0 0;
   color: var(--text-feature-band-muted);
 }
-/* Outline variant of the shared button for the teal band. */
+/* Outline variant of the shared button for the purple band. */
 .community-follow-link,
 .community-follow-link:visited {
   background: transparent;
