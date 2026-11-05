@@ -379,9 +379,9 @@ figure a.image { border-bottom: 0; }
   margin: var(--spacing-sm) 0 0;
 }
 /* The home page's two colored bands, Our work (--bg-projects-band, UNM
-   Turquoise) and Follow (--bg-follow-band, UNM Deep Dusk), run teal to purple
-   down the page toward UNM's cherry footer. Both have white text; their
-   links turn gold on hover. */
+   Deep Dusk) and Follow (--bg-follow-band, UNM Turquoise, beside UNM's
+   cherry footer), are set in the theme. Both have white text; their links
+   turn gold on hover. */
 .projects-carousel-section {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
   background: var(--bg-projects-band, var(--bg-nav));
@@ -416,7 +416,7 @@ figure a.image { border-bottom: 0; }
 .projects-carousel-link:focus-visible,
 .home-news-link:hover,
 .home-news-link:focus-visible { color: var(--interactive-hover); }
-/* On the teal band: white, turning gold on hover. */
+/* On the purple band: white, turning gold on hover. */
 .projects-carousel-link,
 .projects-carousel-link:visited { color: var(--text-on-dark); }
 .projects-carousel-link:hover,
@@ -560,7 +560,7 @@ figure a.image { border-bottom: 0; }
   margin: var(--spacing-sm) 0 0;
   color: var(--text-feature-band-muted);
 }
-/* Outline variant of the shared button for the purple band. */
+/* Outline variant of the shared button for the teal band. */
 .community-follow-link,
 .community-follow-link:visited {
   background: transparent;
