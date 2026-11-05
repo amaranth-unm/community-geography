@@ -153,6 +153,8 @@ is the one place UNM values are translated for the site.
 }
 .top-nav-inner { max-width: var(--width-center); }
 .top-nav-brand {
+  padding: .25rem .6rem;
+  border-radius: var(--radius-sm);
   font-size: var(--center-size-sm);
   font-weight: 700;
   letter-spacing: .12em;
@@ -164,9 +166,38 @@ is the one place UNM values are translated for the site.
   letter-spacing: .08em;
   text-transform: uppercase;
 }
-.top-nav-link:hover, .top-nav-link:focus, .top-nav a:visited:hover, .top-nav a:visited:focus {
+/* Everything in the menu bar, and each item in its dropdown menus, turns
+   turquoise when pointed at or tabbed to, as does a menu's name while its
+   dropdown is open. */
+.top-nav-link:hover, .top-nav-link:focus, .top-nav a:visited:hover, .top-nav a:visited:focus,
+.top-nav-brand:hover, .top-nav-brand:focus,
+.top-nav .search-toggle:hover, .top-nav .search-toggle:focus,
+.top-nav .repo-link:hover, .top-nav .repo-link:focus,
+.top-nav .top-nav-dropdown-item:hover, .top-nav .top-nav-dropdown-item:focus,
+.top-nav-link.top-nav-dropdown-toggle[aria-expanded="true"] {
   color: var(--text-on-dark);
   background: var(--accent-primary);
+}
+.top-nav .top-nav-dropdown-item:hover,
+.top-nav .top-nav-dropdown-item:focus { border-left-color: var(--accent-primary); }
+/* On a wide screen the bar's links fill its full height, so the turquoise
+   reaches the bar's top and bottom edges, and a dropdown hangs from the
+   bottom of the bar. */
+@media (min-width: 992px) {
+  .center-site .center-site-nav .top-nav { padding-block: 0; }
+  .top-nav-inner,
+  .top-nav-collapse { align-items: stretch; }
+  .top-nav-item { display: flex; }
+  .top-nav-brand,
+  .top-nav-link,
+  .top-nav .search-toggle,
+  .top-nav .repo-link {
+    display: flex;
+    align-items: center;
+    padding-block: .6rem;
+    border-radius: 0;
+  }
+  ul .top-nav-dropdown { top: 100%; }
 }
 /* The site nav sticks to the top of the window. nav.js adds .is-scrolled once
    the page moves, which deepens the bar and adds a shadow. */
