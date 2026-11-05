@@ -526,14 +526,21 @@ figure a.image { border-bottom: 0; }
   .lexicon-pager a { transition: color var(--transition-fast); }
 }
 .center-content--home { display: block; width: 100%; max-width: var(--width-center); margin-inline: auto; padding-block: 0; padding-inline: var(--page-gutter); }
+/* Each band of the home page (each section in home-unm.html) reaches the
+   window's edges, with its contents in the page's column. A new section
+   added to the home page does the same. */
+.center-content--home .center-article > section {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--page-gutter), calc(50vw - var(--width-center) / 2 + var(--page-gutter)));
+}
 .welcome-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .95fr);
   align-items: center;
   gap: clamp(var(--spacing-xl), 6vw, 6rem);
   min-height: min(48rem, calc(100vh - 10rem));
-  margin-inline: calc(var(--page-gutter) * -1);
-  padding: clamp(0.75rem, 1.5vw, 1.5rem) var(--page-gutter) clamp(3rem, 8vw, 7rem);
+  padding-block: clamp(0.75rem, 1.5vw, 1.5rem) clamp(3rem, 8vw, 7rem);
   background: var(--bg-section-alt);
   border-bottom: 0.35rem solid var(--accent-primary);
 }
@@ -576,8 +583,7 @@ figure a.image { border-bottom: 0; }
   line-height: 1.35;
 }
 .community-geography-intro {
-  margin: 0 calc(var(--page-gutter) * -1);
-  padding: clamp(2.5rem, 5vw, 4.5rem) var(--page-gutter);
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
   background: var(--bg-page);
   border-top: 1px solid var(--border-light);
 }
@@ -593,16 +599,16 @@ figure a.image { border-bottom: 0; }
   max-width: 44rem;
   margin: var(--spacing-sm) 0 0;
 }
-/* The projects band is charcoal, the color of the nav bar, so the project
-   pictures stand out and the band reads differently from the pale ones
-   around it. Its text takes the same light colors as the teal Follow band. */
+/* The home page's two colored bands, Our work (--bg-projects-band, UNM
+   Deep Dusk) and Follow (--bg-follow-band, UNM Turquoise, beside UNM's
+   cherry footer), are set in the theme. Both have white text; their links
+   turn gold on hover. */
 .projects-carousel-section {
-  margin: 0 calc(var(--page-gutter) * -1);
-  padding: clamp(2.5rem, 5vw, 4.5rem) var(--page-gutter);
-  background: var(--bg-nav);
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+  background: var(--bg-projects-band, var(--bg-nav));
   color: var(--text-on-dark);
 }
-.projects-carousel-kicker { color: var(--text-feature-band-link); }
+.projects-carousel-kicker { color: var(--text-on-dark); }
 .projects-carousel-section h2 { color: var(--text-on-dark); }
 .projects-carousel-header,
 .home-news-header {
@@ -631,17 +637,16 @@ figure a.image { border-bottom: 0; }
 .projects-carousel-link:focus-visible,
 .home-news-link:hover,
 .home-news-link:focus-visible { color: var(--interactive-hover); }
-/* On the charcoal band: gold, turning white on hover. */
+/* On the purple band: white, turning gold on hover. */
 .projects-carousel-link,
-.projects-carousel-link:visited { color: var(--text-feature-band-link); }
+.projects-carousel-link:visited { color: var(--text-on-dark); }
 .projects-carousel-link:hover,
-.projects-carousel-link:focus-visible { color: var(--text-on-dark); }
+.projects-carousel-link:focus-visible { color: var(--accent-highlight); }
 
 /* Recent News on the home page: the News page's rows (see "News timeline"
    below), under a header like the projects carousel's. */
 .home-news {
-  margin: 0 calc(var(--page-gutter) * -1);
-  padding: clamp(2.5rem, 5vw, 4.5rem) var(--page-gutter);
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
   background: var(--bg-page);
 }
 .home-news .news-list {
@@ -757,9 +762,8 @@ figure a.image { border-bottom: 0; }
   border-color: var(--text-feature-band-link);
 }
 .community-follow {
-  margin: 0 calc(var(--page-gutter) * -1);
-  padding: clamp(2.5rem, 5vw, 4.5rem) var(--page-gutter);
-  background: var(--bg-feature-band);
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+  background: var(--bg-follow-band, var(--bg-feature-band));
   color: var(--text-on-dark);
 }
 .community-follow-inner {
@@ -770,7 +774,7 @@ figure a.image { border-bottom: 0; }
   max-width: var(--width-center);
   margin: 0 auto;
 }
-.community-follow-kicker { color: var(--text-feature-band-link); }
+.community-follow-kicker { color: var(--text-on-dark); }
 .community-follow h2 { color: var(--text-on-dark); }
 .community-follow p:not(.community-follow-kicker) {
   max-width: 40rem;
@@ -849,11 +853,8 @@ figure a.image { border-bottom: 0; }
   .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-md) var(--spacing-xl); }
   .welcome-copy { max-width: none; }
   .welcome-image { max-width: 34rem; width: 100%; margin-inline: auto; aspect-ratio: 4 / 3; }
-  .community-geography-intro { margin-inline: calc(var(--page-gutter) * -1); }
   .community-geography-intro-inner { align-items: flex-start; flex-direction: column; }
-  .community-follow { margin-inline: calc(var(--page-gutter) * -1); }
   .community-follow-inner { align-items: flex-start; flex-direction: column; }
-  .projects-carousel-section { margin-inline: calc(var(--page-gutter) * -1); }
   .projects-carousel-header, .home-news-header { align-items: flex-start; flex-direction: column; }
   .projects-carousel { grid-template-columns: minmax(0, 1fr); }
   .projects-carousel-control { display: none; }
