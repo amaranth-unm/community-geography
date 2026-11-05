@@ -276,7 +276,7 @@ These notes are removed when the site is built, so they never reach the publishe
 ```
 ---
 title: Place Lexicon Word
-# The card on the Community Geography page
+# The word, as shown on its card and its page
 word: Place
 ---
 ```
@@ -462,6 +462,7 @@ A short biography goes here.
 - **Keep file names simple:** lowercase, dashes instead of spaces, no special characters.
 - **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. The technical notes are in `README.md` (how the site uses Xanthan) and `scripts/README.md` (the image tools).
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
+- **Lexicon words:** each word is one file in `_lexicon/`, and its front matter holds the whole page: the definition, the wide photo, the related ideas, and the `story` (its quotes, passages and photos, in order). To change a quote or swap a photo, edit those lines. To add a word, copy an existing word's file.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
 - **New year?** Start a new year folder in `_news/` and `_events/` (for example `_news/2027/`) to keep the files tidy. The folders don't change anything on the website, and nothing else needs setting up for a new year.
 - **Backups:** GitHub stores every version of every file. You can look at the history of any file by right-clicking it and choosing **Open Timeline**.
@@ -502,6 +503,7 @@ A short biography goes here.
 | Add a project | New file in `_projects/` |
 | Finish a project | Change its `end_date` from `Ongoing` to the end date |
 | Add a person | New file in `_people/` |
+| Edit a lexicon word | Its file in `_lexicon/` |
 | Add a picture | Drag into `assets/images/...`, then reference its path |
 | Add a box, quote, band, map, or photo story | Copy its example from Xanthan's [Component Library](https://xanthan-web.github.io/docs/reference/component-library) |
 | Change colors | `assets/css/themes/unm.css` |
