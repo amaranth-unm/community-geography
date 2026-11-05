@@ -1,0 +1,35 @@
+{% comment %}
+  The Events Archive: every event in _events/ as a wall of flyers grouped by
+  year, newest first. Each flyer links to its event's page. Pointing at a
+  flyer (or tabbing to it) shows the event's date and title; on phones and
+  tablets they show under the flyer. An event without a flyer (`image`)
+  shows its date and title in the flyer's place.
+
+  Usage:
+    {% include community/event-flyers.html %}
+
+  Front matter read from each event: title, start_date, image, and
+  archive_anchor (an older event's link target on this page; otherwise the
+  title is used).
+{% endcomment %}
+{% include helpers/sort-by-date.html items=site.events field="start_date" order="newest" %}
+{% assign event_years = sorted_by_date | group_by_exp: "e", "e.start_date | date: '%Y'" %}
+{% for year in event_years %}
+<section class="event-flyers-year" aria-labelledby="events-{{ year.name }}">
+  <h2 id="events-{{ year.name }}">{{ year.name }}</h2>
+  <ul class="event-flyers">
+    {% for event in year.items %}
+    {% assign anchor = event.archive_anchor | default: event.title | slugify %}
+    <li id="{{ anchor | escape }}">
+      <a class="event-flyer{% unless event.image %} event-flyer--text{% endunless %}" href="{{ event.url | relative_url }}">
+        {% if event.image %}<img src="{{ event.image | relative_url }}" alt="" loading="lazy" decoding="async">{% endif %}
+        <span class="event-flyer-caption">
+          <span class="event-flyer-date">{{ event.start_date | date: "%B %-d, %Y" }}</span>
+          <span class="event-flyer-title">{{ event.title }}</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

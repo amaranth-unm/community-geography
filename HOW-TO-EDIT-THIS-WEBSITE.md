@@ -360,7 +360,7 @@ how to register.
   image_alt: Flyer for the Community Mapping Workshop on March 12
   ```
 - **Upcoming Events** automatically lists events whose date hasn't passed yet. The site is rebuilt every morning, so a finished event drops off the next day.
-- Events are never deleted. They stay in the **Events Archive**.
+- Events are never deleted. They stay in the **Events Archive**, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
 
 **Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
 

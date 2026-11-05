@@ -1318,6 +1318,95 @@ figure a.image { border-bottom: 0; }
     transform: none;
   }
 }
+/* The Events Archive (community/event-flyers.html): a wall of whole flyers
+   by year. Pointing at a flyer slides its date and title up over it; on
+   touch screens, which can't point, they sit under the flyer instead. */
+.event-flyers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+  gap: var(--spacing-sm);
+  margin: 0 0 var(--spacing-lg);
+  padding: 0;
+  list-style: none;
+}
+.event-flyers > li { margin: 0; }
+.event-flyer,
+.event-flyer:visited {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: var(--text-body);
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+.event-flyer img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 17 / 22;
+  object-fit: contain;
+}
+.event-flyer-caption {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  padding: .6rem .75rem .75rem;
+}
+.event-flyer-date {
+  color: var(--accent-primary);
+  font-size: var(--center-size-xs);
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.event-flyer-title { font-size: var(--center-size-md); font-weight: 700; line-height: 1.3; }
+.event-flyer:hover,
+.event-flyer:focus-visible {
+  color: var(--text-body);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.event-flyer:focus-visible { outline: 3px solid var(--interactive-hover); outline-offset: 3px; }
+@media (hover: hover) {
+  .event-flyer-caption {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 2.5rem .85rem .85rem;
+    color: var(--text-on-dark);
+    background: linear-gradient(to top, rgb(48 51 53 / .96) 60%, rgb(48 51 53 / 0));
+    opacity: 0;
+    transform: translateY(.5rem);
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+  }
+  .event-flyer-date { color: var(--accent-highlight); }
+  .event-flyer:hover .event-flyer-caption,
+  .event-flyer:focus-visible .event-flyer-caption { opacity: 1; transform: none; }
+}
+/* An event without a flyer: its date and title fill the flyer's place. */
+.event-flyer--text .event-flyer-caption {
+  position: static;
+  flex: 1;
+  justify-content: center;
+  aspect-ratio: 17 / 22;
+  padding: var(--spacing-sm);
+  color: var(--text-body);
+  background: var(--bg-section-warm);
+  border-top: 6px solid var(--accent-highlight);
+  opacity: 1;
+  transform: none;
+}
+.event-flyer--text .event-flyer-date { color: var(--accent-primary); }
+.event-flyer--text .event-flyer-title { font-family: var(--font-heading); font-size: 1.15rem; }
+@media (prefers-reduced-motion: reduce) {
+  .event-flyer, .event-flyer-caption { transition: none; }
+  .event-flyer:hover, .event-flyer:focus-visible { transform: none; }
+}
 @media (max-width: 600px) {
   .record-profile { grid-template-columns: minmax(0, 1fr); margin-inline: 1.5rem; }
   .record-profile .record-body :is(p, h1, h2, h3) { padding-inline: 0; }
