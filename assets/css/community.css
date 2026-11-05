@@ -1097,8 +1097,8 @@ figure a.image { border-bottom: 0; }
     transform: none;
   }
 }
-/* Event flyers (community/event-flyers.html): a wall of whole flyers by
-   year. Pointing at a flyer slides its date and title up over it; on
+/* The Events Archive (community/event-flyers.html): a wall of whole flyers
+   by year. Pointing at a flyer slides its date and title up over it; on
    touch screens, which can't point, they sit under the flyer instead. */
 .event-flyers {
   display: grid;
@@ -1167,6 +1167,21 @@ figure a.image { border-bottom: 0; }
   .event-flyer:hover .event-flyer-caption,
   .event-flyer:focus-visible .event-flyer-caption { opacity: 1; transform: none; }
 }
+/* An event without a flyer: its date and title fill the flyer's place. */
+.event-flyer--text .event-flyer-caption {
+  position: static;
+  flex: 1;
+  justify-content: center;
+  aspect-ratio: 17 / 22;
+  padding: var(--spacing-sm);
+  color: var(--text-body);
+  background: var(--bg-section-warm);
+  border-top: 6px solid var(--accent-highlight);
+  opacity: 1;
+  transform: none;
+}
+.event-flyer--text .event-flyer-date { color: var(--accent-primary); }
+.event-flyer--text .event-flyer-title { font-family: var(--font-heading); font-size: 1.15rem; }
 @media (prefers-reduced-motion: reduce) {
   .event-flyer, .event-flyer-caption { transition: none; }
   .event-flyer:hover, .event-flyer:focus-visible { transform: none; }
