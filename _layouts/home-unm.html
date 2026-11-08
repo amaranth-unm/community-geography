@@ -2,28 +2,22 @@
 layout: base-unm
 ---
 {% comment %}
-  Home page, top to bottom: welcome band (two text columns: the page's `lede`
-  on the left, its body text on the right), projects carousel, What is
-  Community Geography, Instagram band.
+  Home page, top to bottom: the hero (in base-unm.html: the name and welcome
+  text over photos), the projects carousel, What is Community
+  Geography? as a strip of lexicon photos, and the Instagram band.
 {% endcomment %}
-<section class="welcome-hero" aria-label="Welcome">
-  <div class="welcome-lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-  <div class="welcome-copy">{{ content }}</div>
-</section>
-
 {% include community/projects-carousel.html %}
 
-<section class="community-geography-intro" aria-labelledby="community-geography-intro-title">
-  <div class="community-geography-intro-inner">
+<section class="home-lexicon" aria-labelledby="home-lexicon-title">
+  <div class="home-section-header">
     <div>
-      <p class="community-geography-intro-kicker">Learn together</p>
-      <h2 id="community-geography-intro-title">What is Community Geography?</h2>
-      <p>Community geography begins with the knowledge, questions, and experiences people bring from their own places. Explore how community members, students, and researchers learn with one another to create meaningful change.</p>
+      <p class="home-section-kicker">Learn together</p>
+      <h2 id="home-lexicon-title">What is Community Geography?</h2>
+      <p class="home-section-text">Community geography begins with the knowledge, questions, and experiences people bring from their own places. These are the words that guide our work.</p>
     </div>
-    <a class="community-geography-intro-link" href="{{ '/about/community-geography' | relative_url }}">
-      Discover community geography <span aria-hidden="true">→</span>
-    </a>
+    <a class="home-section-link" href="{{ '/about/community-geography' | relative_url }}">Discover community geography <span aria-hidden="true">→</span></a>
   </div>
+  {% include community/lexicon-strip.html %}
 </section>
 
 <section class="community-follow" aria-labelledby="community-follow-title">

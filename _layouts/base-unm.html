@@ -13,10 +13,15 @@
           <div class="center-hero-slide" style="background-image: url('{{ image | relative_url }}'); --slide-index: {{ forloop.index0 }};"></div>
           {% endfor %}
         </div>
-        <a class="center-hero-logo" href="{{ '/' | relative_url }}" style="--hero-logo: url('{{ site.center_logo.image | relative_url }}'); --logo-ratio: {{ site.center_logo.width }} / {{ site.center_logo.height }};">
-          <span class="center-hero-logo-art" aria-hidden="true"></span>
-          <span class="center-hero-sr">{{ site.center_logo.alt | escape }}</span>
-        </a>
+        <div class="center-hero-content">
+          <a class="center-hero-logo" href="{{ '/' | relative_url }}" style="--hero-logo: url('{{ site.center_logo.image | relative_url }}'); --logo-ratio: {{ site.center_logo.width }} / {{ site.center_logo.height }};">
+            <span class="center-hero-logo-art" aria-hidden="true"></span>
+            <span class="center-hero-sr">{{ site.center_logo.alt | escape }}</span>
+          </a>
+          {% if page.lede %}<p class="center-hero-lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+          {% if page.intro %}<p class="center-hero-intro">{{ page.intro | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+          {% if page.cta_text %}<a class="welcome-cta" href="{{ page.cta_url | relative_url }}">{{ page.cta_text }}</a>{% endif %}
+        </div>
       </header>
       {% else %}
       {% comment %}
