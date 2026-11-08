@@ -1,0 +1,19 @@
+{% comment %}
+  Lexicon Strip (home page)
+
+  The words from _lexicon/ as photo tiles in display_order, each linking to
+  the word's page. Reads each word's `word`, `image`, `definition` and
+  `display_order` front matter (see community/lexicon-cards.html).
+{% endcomment %}
+{% include helpers/sort-by-number.html items=site.lexicon field="display_order" %}
+{% assign words = sorted_by_number %}
+<ul class="home-lexicon-grid">
+  {% for entry in words %}
+  <li>
+    <a class="home-lexicon-tile" href="{{ entry.url | relative_url }}">
+      <img src="{{ entry.image | relative_url }}" alt="" loading="lazy" decoding="async">
+      <span class="home-lexicon-word">{{ entry.word }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

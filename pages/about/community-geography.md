@@ -19,7 +19,6 @@ masthead_position: 50% 45%
 
 This subfield of geography recognizes that community residents generate meaningful spatial knowledge through local experience, and it seeks to identify and value this knowledge. Typically using participatory methods, community geography is grounded in strong partnerships between community residents and university researchers who provide tools and technologies to support and sustain their work to achieve positive community change.
 
-*Please check back here to view updates on our ongoing efforts in community geography.*
 
 ## Community Geography Lexicon
 
