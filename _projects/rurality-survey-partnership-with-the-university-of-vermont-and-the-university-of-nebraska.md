@@ -1,11 +1,12 @@
 ---
 title: New Mexico Roots Migration Survey
 image: "/assets/images/projects/project/migration-survey_2.png"
+image_fit: contain
 start_date: 2025-01-21
 end_date: Ongoing
 faculty:
   - TBD
-community_member:
+community_organization:
   - University of Vermont
   - University of Nebraska-Lincoln
 summary: The Center is a new anchor partner on a multi-state rurality survey exploring place-based identity, migration, and landscape-human interactions. Graduate fellows Will Tatman and Eva Gemrich are helping bring the survey, previously run in Nebraska, Utah, Missouri, and Italy, to New Mexico for the first time.

@@ -1,5 +1,5 @@
 {% comment %}
-  The Events Archive: every event in _events/ as a wall of flyers grouped by
+  The past-events wall: every event in _events/ as a wall of flyers grouped by
   year, newest first. Each flyer links to its event's page. Pointing at a
   flyer (or tabbing to it) shows the event's date and title; on phones and
   tablets they show under the flyer. An event without a flyer (`image`)
@@ -7,12 +7,27 @@
 
   Usage:
     {% include community/event-flyers.html %}
+    {% include community/event-flyers.html skip-upcoming=true %}
+
+  Parameters:
+    skip-upcoming: true leaves out events that community/upcoming-events.html
+                   lists (last day today or later, not marked date_review),
+                   so a page showing both does not show an event twice.
 
   Front matter read from each event: title, start_date, image, and
   archive_anchor (an older event's link target on this page; otherwise the
   title is used).
 {% endcomment %}
-{% include helpers/sort-by-date.html items=site.events field="start_date" order="newest" %}
+{% assign flyer_events = site.events %}
+{% if include.skip-upcoming %}
+  {% assign flyer_today = site.time | date: '%Y-%m-%d' %}
+  {% assign flyer_events = '' | split: '' %}
+  {% for event in site.events %}
+    {% assign last_day = event.end_date | default: event.start_date | date: '%Y-%m-%d' %}
+    {% if last_day >= flyer_today and event.date_review != true %}{% else %}{% assign flyer_events = flyer_events | push: event %}{% endif %}
+  {% endfor %}
+{% endif %}
+{% include helpers/sort-by-date.html items=flyer_events field="start_date" order="newest" %}
 {% assign event_years = sorted_by_date | group_by_exp: "e", "e.start_date | date: '%Y'" %}
 {% for year in event_years %}
 <section class="event-flyers-year" aria-labelledby="events-{{ year.name }}">

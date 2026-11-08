@@ -1,11 +1,12 @@
 ---
 title: Campus coordinator for the 2021 City Nature Challenge
 image: "/assets/images/events/city-nature-challenge-log.png"
+image_fit: contain
 start_date: 2021-04-30
 end_date: 2021-05-03
 faculty:
   - TBD
-community_member:
+community_organization:
   - Albuquerque Backyard Refuge Program
 summary: The Center coordinated UNM's entry in the 2021 City Nature Challenge, a campus-wide bioblitz whose biodiversity data now supports the Albuquerque Backyard Refuge Program's habitat restoration planning.
 ---

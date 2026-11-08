@@ -109,13 +109,13 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | A news story | `_news/` (inside a year folder, like `_news/2026/`) |
 | An event | `_events/` (inside a year folder, like `_events/2026/`) |
 | A project, current or past | `_projects/` |
-| A person on the Team or Affiliates page | `_people/` |
+| A person on the People page | `_people/` |
 | A word in the Community Geography lexicon | `_lexicon/` (one file per word) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
 | Pictures | `assets/images/` |
 | PDFs and flyers | `assets/documents/` |
 | The menu at the top of the site | `_data/nav-top.yml` |
-| Site-wide settings (title, email, banner) | `_config.yml` |
+| Site-wide settings (title, email) | `_config.yml` |
 | Colors and fonts | `assets/css/themes/unm.css` |
 | Text sizes | top of `assets/css/community.css` |
 
@@ -152,7 +152,7 @@ To link to another page on this website, start the address with `{{ site.baseurl
 
 ```
 [See our projects]({{ site.baseurl }}/projects/)
-[Read about our mission]({{ site.baseurl }}/about/mission)
+[Read about our mission]({{ site.baseurl }}/about/)
 ```
 
 Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the website's address. Page addresses have no `.html` on the end; a section's main page ends in `/`.
@@ -285,6 +285,17 @@ word: Place
 
 Open `_data/nav-top.yml`. Each menu has a `title` (what visitors see) and a `url` (where it goes). Keep the spacing (indentation) and the dashes exactly as they are. Spaces matter in this file.
 
+### Changing the photo at the top of a page
+
+Every page except the home page has a band at the top with the Center's name and one photo of people fading in from the right. There are no defaults: a page with no `masthead_image` line shows the band with the name and no photo. To give a page one, add two lines to its top block:
+
+```
+masthead_image: /assets/images/masthead/my-photo.jpg
+masthead_position: 50% 40%
+```
+
+`masthead_position` is the part of the photo to keep in view when it is cropped to the band: the first number is left to right, the second top to bottom. It is optional. Choose a photo with the people right of center, because the left third fades out behind the name.
+
 ### Changing the contact email or site title
 
 Open `_config.yml`. Edit the `title`, `description`, or `email` lines. Do not change other lines unless you know what they do.
@@ -319,7 +330,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - If you only know the year, use `published_year: 2026` instead of `published_date`.
 - The news page updates by itself. You do not need to edit any list.
 - **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
-- **Homepage:** the three newest stories appear under **Recent news** on the homepage by themselves. To show more or fewer, change `home_news_count: 3` in `_config.yml`; `0` hides the section.
+- News is no longer shown on the homepage; it lives under **News & Events** in the menu.
 
 **Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
 
@@ -359,8 +370,9 @@ how to register.
   image: /assets/images/events/my-flyer.png
   image_alt: Flyer for the Community Mapping Workshop on March 12
   ```
-- **Upcoming Events** automatically lists events whose date hasn't passed yet. The site is rebuilt every morning, so a finished event drops off the next day.
-- Events are never deleted. They stay in the **Events Archive**, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
+- The **Events** page lists upcoming events at the top (those whose date hasn't passed yet) and every past event below by its flyer.
+The site is rebuilt every morning, so a finished event drops off the next day.
+- Events are never deleted. They stay on the **Events** page under Past events, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
 
 **Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
 
@@ -368,7 +380,7 @@ how to register.
 
 ## 7. Add a project
 
-Every project, current or past, is one file in `_projects/`. A project is listed on the **Projects** page until its `end_date` has passed, then moves to the **Past Projects** page by itself.
+Every project, current or past, is one file in `_projects/`. A project is listed at the top of the **Projects** page, as a large card, until its `end_date` has passed. It then moves to the **Past projects** section lower on the same page, as a small card, by itself.
 
 A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
@@ -384,8 +396,10 @@ start_date: 2027-01-15
 end_date: Ongoing
 faculty:
   - Dr. Jane Doe
-community_member:
+community_organization:
   - Example Community Group
+community_contact:
+  - Alex Rivera
 summary: Two or three sentences that describe the project. This shows on the project card.
 ---
 
@@ -399,7 +413,8 @@ Write the full description of the project here.
 - The web address comes from the file name: `my-new-project.md` is published at `/projects/project/my-new-project`.
 - `start_date` is written `YYYY-MM-DD`.
 - For a project that hasn't ended, write `end_date: Ongoing`. When it ends, change that to the end date (see [Section 8](#8-when-a-project-ends)).
-- Don't know the faculty or partner? Use `- TBD`.
+- Don't know the faculty or organization? Use `- TBD`. `community_contact` is the person to ask for at the organization; leave the lines out if there isn't one yet and the card simply omits that row.
+- A logo, map or flyer as the picture would be cropped on the large project cards. Add `image_fit: contain` under `image:` to show it whole.
 - The Projects page sorts current projects with the newest start date first.
 - Past projects are sorted alphabetically by title.
 
@@ -413,7 +428,7 @@ Write the full description of the project here.
 2. Change `end_date: Ongoing` to the real end date, such as `end_date: 2027-05-15`.
 3. **Commit & Push**.
 
-That's it. The project leaves the **Projects** page and appears on the **Past Projects** page by itself. If you give a date that hasn't come yet, it moves over the morning after that date. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
+That's it. The project moves from the large cards at the top of the **Projects** page to the **Past projects** section below by itself. If you give a date that hasn't come yet, it moves over the morning after that date. The project's web address does not change, so existing links still work. **Do not rename the file**, and if it has a `permalink` line, leave it alone.
 
 To move a project back, change its `end_date` back to `Ongoing`.
 
@@ -421,7 +436,7 @@ To move a project back, change its `end_date` back to `Ongoing`.
 
 ## 9. Add or edit a person
 
-People appear on the **Our Team** and **Affiliates** pages. Each person is one file in `_people/`.
+People appear on the **People** page, under **Our Team** and **Faculty Affiliates**. Each person is one file in `_people/`.
 
 Template:
 
@@ -481,7 +496,7 @@ A short biography goes here.
 | Error mentions "front matter" or "YAML" | Something in the top block between the `---` lines is off: a missing colon, a missing dash, or odd spacing. Compare with a working file. |
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. In a Xanthan element (an `{% include ... %}` line), start the path with `/assets/...` and leave out `{{ site.baseurl }}`. |
 | Error says "Could not locate the included file" | The page uses an element this site doesn't have, or the name after `include` is mistyped. Compare it with the list in [Adding other page elements](#adding-other-page-elements). |
-| My event isn't in "Upcoming Events" | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
+| My event isn't in the Upcoming list on the Events page | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
 | Nothing works | Stop, don't delete anything, and ask for help. All past versions can be restored. |

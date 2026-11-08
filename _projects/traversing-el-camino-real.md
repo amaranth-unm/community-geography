@@ -7,7 +7,7 @@ start_date: 2020-01-15
 end_date: 2021-08-15
 faculty:
   - TBD
-community_member:
+community_organization:
   - National Trails – National Park Service (NPS)
 summary: Critical Cartography (GEOG 413/515) students built a StoryMap of El Camino Real de Tierra Adentro centering Indigenous history at Petroglyph National Monument and Martineztown.
 ---

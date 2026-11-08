@@ -1,9 +1,15 @@
 ---
-title: Partnership
-permalink: /community-geography/partnership
+title: Partner with us
+permalink: /get-involved/partner
+# Old addresses that now land here. The Our Network page was removed.
+redirect_from:
+  - /community-geography/partnership
+  - /community-geography/our-network
+masthead_image: /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+masthead_position: 50% 62%
 ---
 
-# Partnership
+# Partner with us
 
 The Center for Community Geography’s goal is to put students and faculty to work addressing human-environment issues that matter to our community. We are willing to partner with any group, community, agency, school, person, or place in New Mexico that could benefit from the involvement of UNM students or researchers on any geographical or environmental issue.  
 

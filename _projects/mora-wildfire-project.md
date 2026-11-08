@@ -5,7 +5,7 @@ start_date: 2022-08-15
 end_date: 2023-08-15
 faculty:
   - Dr. Manuel Montoya
-community_member:
+community_organization:
   - Neighbors Helping Neighbors
   - New Mexico Forest & Watershed Restoration Institute
 summary: Center staff member Cassidy Tawse-Garcia studies post-wildfire community response to the Hermit's Peak and Calf Canyon fires, examining mutual aid with Mora local Dr. Manuel Montoya and Neighbors Helping Neighbors.

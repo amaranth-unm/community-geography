@@ -1,6 +1,9 @@
 ---
-title: Our History
+title: Mission
 permalink: /about/
+# Old addresses that now land here.
+redirect_from:
+  - /about/mission
 summary: The R.H. Mallory Center for Community Geography is affiliated with the Department
   of Geography & Environmental Studies (GES) at the University of New Mexico. It supports
   community-engaged research and learning in human-environment dynamics. It engages
@@ -10,13 +13,25 @@ summary: The R.H. Mallory Center for Community Geography is affiliated with the 
   university’s commitment to community engagement by providing direct support for
   learners, researchers, and community partners who work specifically on human-environment
   issues.
+masthead_image: /assets/images/masthead/classroom-talk.jpg
+masthead_position: 50% 45%
 ---
 
-# Our History
+# Mission
+
+The mission of the Mallory Center for Community Geography is to build partnerships between UNM and its surrounding communities that are effective in addressing critical human-environment issues. To achieve this mission, the Mallory Center will coordinate and fund community-engaged research and learning activities.
+
+{% include images/figure.html
+  image-path="/assets/images/about/prickly-pear-cropped.jpeg"
+  image-width="100%"
+  alt-text="Prickly pear cactus pads with red fruit."
+%}
+
+## Our History
 
 The Center for Community Geography launched in 2020 as an initiative of the Department of Geography & Environmental Studies (GES) at the University of New Mexico. We engage directly with community groups and partners in work ranging from community mapping and cultural preservation to environmental planning and management. Our staff also provide support for professors and students who want to use place-based methods and geospatial technology in support of community needs.
 
-Our Center begain with a generous gift from Robert H. Mallory, a Geography & Environmental Studies alumnus who wanted to attract more students to the field of geography and decided to help bring geography directly to students and community members by creating an organization where they could address human-environment issues together.
+Our Center began with a generous gift from Robert H. Mallory, a Geography & Environmental Studies alumnus who wanted to attract more students to the field of geography and decided to help bring geography directly to students and community members by creating an organization where they could address human-environment issues together.
 
 Born and raised in Albuquerque, Robert H. Mallory always appreciated the beauty and diversity of New Mexico and chose to stay in state for his university studies. He enrolled at the University of New Mexico, by chance enrolled in Geography 101 and discovered that the Department was where he wanted to complete his studies because he felt at home here. Eventually, Mallory started his own firm in Albuquerque providing design services throughout New Mexico as an acoustician. Though he calls himself an "accidental geographer" Mallory recognizes that the Geography Department helped him complete his degree and expand his worldview.
 

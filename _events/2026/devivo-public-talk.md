@@ -6,8 +6,6 @@ start_time: '15:00'
 end_time: '16:30'
 presenter: Michael DeVivo, PhD
 location: UNM Campus Bandelier East 105
-legacy_upcoming: true
-heading_id: 2026-public-talk---dr-michael-devivo
 date_review: true
 review_notes:
 - Original heading/details say April 2026; description says April 2025. Retained without choosing a corrected year.

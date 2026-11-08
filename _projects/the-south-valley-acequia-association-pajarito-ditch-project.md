@@ -5,7 +5,7 @@ start_date: 2022-01-18
 end_date: 2023-05-05
 faculty:
   - Dr. Maria Lane
-community_member:
+community_organization:
   - South Valley Regional Acequia Association
   - Bernalillo County Open Space
   - Middle Rio Grande Conservancy District

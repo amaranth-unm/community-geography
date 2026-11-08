@@ -5,7 +5,7 @@ start_date: 2022-05-02
 end_date: 2022-12-16
 faculty:
   - TBD
-community_member:
+community_organization:
   - TBD
 summary: Joshua Driscol built an interactive web map aggregating scattered geospatial data about Albuquerque, making social and environmental justice issues easier to explore for people without GIS experience.
 ---

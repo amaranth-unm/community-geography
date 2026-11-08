@@ -2,6 +2,8 @@
 title: 2025 G.I.S. Day
 permalink: /projects/gis-day-2025-gallery
 summary: A photo gallery from the University of New Mexico's 2025 GIS Day.
+masthead_image: /assets/images/masthead/field-visit.jpg
+masthead_position: 50% 38%
 ---
 
 # 2025 G.I.S. Day

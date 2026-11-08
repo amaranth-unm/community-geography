@@ -1,21 +1,27 @@
 {% comment %}
-  People directory for the Our Team and Affiliates pages. Lists everyone in
-  _people/ whose `groups` include the page's `people_group` (team or
-  affiliates), in `display_order`. The team list leads with each role; the
+  People directory. Lists everyone in _people/ whose `groups` include the
+  group asked for, in `display_order`. The team list leads with each role; the
   affiliates list leads with each name. helpers/sort-by-number.html does the
   ordering, so display_order works with or without quote marks.
+
+  Parameters:
+    group:         team or affiliates (default: the page's `people_group`)
+    heading-level: the heading level for each person, 2 to 6 (default: 2).
+                   Use 3 when the list sits under a section heading, as on
+                   the People page.
 {% endcomment %}
-{% assign group = page.people_group %}
+{% assign group = include.group | default: page.people_group %}
+{% assign level = include.heading-level | default: 2 %}
 {% include helpers/sort-by-number.html items=site.people field="display_order" %}
 {% assign people = sorted_by_number %}
 {% for person in people %}
 {% if person.groups contains group %}
 <section class="record-person">
   {% if group == 'team' %}
-  <h2 id="{{ person.anchor }}">{{ person.role | escape }}</h2>
+  <h{{ level }} id="{{ person.anchor }}">{{ person.role | escape }}</h{{ level }}>
   <p><em>{{ person.name | escape }}, {{ person.affiliation | escape }}</em></p>
   {% else %}
-  <h2 id="{{ person.anchor }}">{{ person.name | escape }}</h2>
+  <h{{ level }} id="{{ person.anchor }}">{{ person.name | escape }}</h{{ level }}>
   <p><em>{{ person.affiliation | escape }}</em></p>
   {% endif %}
   {% if person.expertise %}<p><em>{{ person.expertise | escape }}</em></p>{% endif %}

@@ -1,15 +1,17 @@
 ---
 layout: base-unm
 ---
+{% comment %}
+  Home page, top to bottom: welcome band (two text columns: the page's `lede`
+  on the left, its body text on the right), projects carousel, What is
+  Community Geography, Instagram band.
+{% endcomment %}
 <section class="welcome-hero" aria-label="Welcome">
+  <div class="welcome-lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' }}</div>
   <div class="welcome-copy">{{ content }}</div>
-  {% if page.image %}
-  <figure class="welcome-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
-    <figcaption>{{ page.image_caption }}</figcaption>
-  </figure>
-  {% endif %}
 </section>
+
+{% include community/projects-carousel.html %}
 
 <section class="community-geography-intro" aria-labelledby="community-geography-intro-title">
   <div class="community-geography-intro-inner">
@@ -18,30 +20,11 @@ layout: base-unm
       <h2 id="community-geography-intro-title">What is Community Geography?</h2>
       <p>Community geography begins with the knowledge, questions, and experiences people bring from their own places. Explore how community members, students, and researchers learn with one another to create meaningful change.</p>
     </div>
-    <a class="community-geography-intro-link" href="{{ '/community-geography/' | relative_url }}">
+    <a class="community-geography-intro-link" href="{{ '/about/community-geography' | relative_url }}">
       Discover community geography <span aria-hidden="true">→</span>
     </a>
   </div>
 </section>
-
-{% include community/projects-carousel.html %}
-
-{% comment %} The newest stories. home_news_count in _config.yml sets how many (3 if the line is missing); 0 hides the section. {% endcomment %}
-{% assign home_news_count = site.home_news_count | default: 3 | plus: 0 %}
-{% if home_news_count > 0 %}
-<section class="home-news" aria-labelledby="home-news-title">
-  <div class="home-news-header">
-    <div>
-      <p class="home-news-kicker">What's new</p>
-      <h2 id="home-news-title">Recent news</h2>
-    </div>
-    <a class="home-news-link" href="{{ '/news/' | relative_url }}">
-      See all news <span aria-hidden="true">→</span>
-    </a>
-  </div>
-  {% include community/news-list.html limit=home_news_count %}
-</section>
-{% endif %}
 
 <section class="community-follow" aria-labelledby="community-follow-title">
   <div class="community-follow-inner">

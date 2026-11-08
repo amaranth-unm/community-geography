@@ -1,11 +1,12 @@
 ---
 title: Food Access in the International District with Bernalillo County Open Space
 image: "/assets/images/projects/project/berncoopenspace.png"
+image_fit: contain
 start_date: 2023-08-21
 end_date: Ongoing
 faculty:
   - TBD
-community_member:
+community_organization:
   - Bernalillo County Open Space
   - Cultivating Bernalillo County Grow the Growers Program
 summary: Since fall 2023, a rotating team of Center fellows has partnered with Bernalillo County Open Space to support food access in Albuquerque's International District. Fellows have mapped community gardens, food distribution sites, and vacant lots, and built public-facing resources on local food systems and urban agriculture.

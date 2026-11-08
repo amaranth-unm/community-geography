@@ -1,11 +1,12 @@
 ---
 title: Food and Housing Resources Map for UNM Students
 image: "/assets/images/shared/food-and-resources-map.png"
+image_fit: contain
 start_date: 2021-08-16
 end_date: 2022-12-16
 faculty:
   - TBD
-community_member:
+community_organization:
   - UNM Basic Needs Project
 summary: Ramona Malczynski created a map of food and housing resources for UNM students, sorted into on-campus, immediate, long-term, and family categories, for the UNM Basic Needs Project.
 ---

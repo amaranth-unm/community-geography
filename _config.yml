@@ -32,15 +32,10 @@ defaults:
     section: About
     section_url: /about/
 - scope:
-    path: pages/community-geography
+    path: pages/get-involved
   values:
-    section: Community
-    section_url: /community-geography/
-- scope:
-    path: pages/funding
-  values:
-    section: Funding
-    section_url: /funding/
+    section: Get Involved
+    section_url: /get-involved/
 - scope:
     path: pages/news
   values:
@@ -50,7 +45,7 @@ defaults:
     path: pages/events
   values:
     section: Events
-    section_url: /events/archive
+    section_url: /events/
 - scope:
     path: pages/projects
   values:
@@ -69,7 +64,7 @@ defaults:
   values:
     layout: event-unm
     section: Events
-    section_url: /events/archive
+    section_url: /events/
 - scope:
     path: ''
     type: news
@@ -82,8 +77,8 @@ defaults:
     type: lexicon
   values:
     layout: lexicon-unm
-    section: Community
-    section_url: /community-geography/
+    section: Community Geography
+    section_url: /about/community-geography
 exclude:
 - README.md
 - HOW-TO-EDIT-THIS-WEBSITE.md
@@ -112,21 +107,19 @@ collections:
   lexicon:
     output: true
     permalink: /community-geography/:name-lexicon-word
-center_banner:
-  image: /assets/images/shared/center-logo-.png
-  width: 1920
-  height: 300
-  alt: R.H. Mallory Center for Community Geography, University of New Mexico
-# Home page photos, shown in turn behind the Center's logo. Keep exactly four:
-# the fade timing in assets/css/community.css (.center-hero) is set for four.
-# To change a photo, replace one line with the path of the new picture.
+# The Center's name as a transparent image (text only; the UNM mark is not
+# part of it). It is drawn in white over the home photos and on the masthead.
+center_logo:
+  image: /assets/images/hero/center-name-text.png
+  width: 1059
+  height: 113
+  alt: R.H. Mallory Center for Community Geography
+# The photo in the band at the top of every page but the home page is set per
+# page, with `masthead_image:` (and optionally `masthead_position:`) in its
+# front matter. There are no defaults: a page without the line has no photo.
 home_hero:
-  logo: /assets/images/hero/center-logo-text-transparent.png
   images:
   - /assets/images/hero/hero-badlands.jpg
   - /assets/images/hero/hero-organ-mountains.jpg
   - /assets/images/hero/hero-sandia-bosque.jpg
   - /assets/images/hero/hero-lava-field.jpg
-# Recent News on the home page: how many of the newest stories to show.
-# Use 0 to hide the section.
-home_news_count: 3
