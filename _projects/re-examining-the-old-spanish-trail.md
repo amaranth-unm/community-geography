@@ -2,11 +2,12 @@
 title: Re-Examining the Old Spanish Trail, storymap and class project in Critical
   Cartography 
 image: "/assets/images/projects/project/oldspanishtrail.png"
+image_fit: contain
 start_date: 2023-01-16
 end_date: 2023-05-13
 faculty:
   - Dr. Maria Lane
-community_member:
+community_organization:
   - National Trails – National Park Service (NPS)
   - Bernalillo County
 summary: Students in Dr. Maria Lane's Critical Cartography course created StoryMaps surfacing missing Indigenous histories along the Old Spanish Trail, partnering with NPS-National Trails and Bernalillo County.

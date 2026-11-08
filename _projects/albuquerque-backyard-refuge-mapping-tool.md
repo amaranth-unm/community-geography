@@ -7,7 +7,7 @@ start_date: 2021-04-06
 end_date: 2021-11-09
 faculty:
   - TBD
-community_member:
+community_organization:
   - Friends of Valle de Oro National Wildlife Refuge
 summary: Project Assistant Joe Scala built a multi-layer ArcGIS mapping tool with Friends of Valle de Oro to identify priority habitat areas for people, wildlife, and migratory species around Albuquerque.
 ---

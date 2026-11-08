@@ -7,7 +7,7 @@ start_date: 2021-01-15
 end_date: 2021-08-15
 faculty:
   - TBD
-community_member:
+community_organization:
   - New Mexico State Forestry Division
 summary: Project Assistant Joe Scala built an ArcMap model for the New Mexico State Forestry Division ranking which Census Designated Places would benefit most from increased tree canopy.
 ---

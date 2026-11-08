@@ -5,7 +5,7 @@ start_date: 2021-01-15
 end_date: 2021-05-15
 faculty:
   - TBD
-community_member:
+community_organization:
   - The Nature Conservancy
   - Rio Grande Water Fund
 summary: Graduate student Kelsey Varisco worked with The Nature Conservancy on a political-ecology story-collection proposal to surface the diverse perspectives behind the Rio Grande Water Fund's supporters.

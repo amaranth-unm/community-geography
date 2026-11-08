@@ -1,6 +1,11 @@
 ---
 title: Donate to the Center for Community Geography
-permalink: /donate/
+permalink: /get-involved/donate
+# Old address that now lands here.
+redirect_from:
+  - /donate/
+masthead_image: /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+masthead_position: 50% 62%
 ---
 
 # Donate to the Center for Community Geography

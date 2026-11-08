@@ -1,0 +1,38 @@
+{% comment %}
+  Project People (internal)
+
+  The Faculty / Community organization / Community contact rows shared by the
+  project cards (community/current-projects.html) and the project page's
+  facts box (community/project-meta.html). Not meant to be used in a page.
+
+  Parameters:
+    project: the project (a page's front matter, or an item of site.projects)
+
+  Front matter read:
+    - faculty:                faculty involved (string or list)
+    - community_organization: the community group(s) or agencies the project
+                              is done with (string or list). Older project
+                              files used `community_member` for this; it
+                              still works when community_organization is
+                              missing.
+    - community_contact:      the person or people to ask for at that
+                              organization (string or list). The row is left
+                              out when a project has none.
+{% endcomment %}
+{% assign people_faculty = include.project.faculty | join: ", " %}
+{% assign people_org = include.project.community_organization | default: include.project.community_member | join: ", " %}
+{% assign people_contact = include.project.community_contact | join: ", " %}
+<div class="project-meta-row">
+  <dt>Faculty</dt>
+  <dd>{{ people_faculty | default: "TBD" }}</dd>
+</div>
+<div class="project-meta-row">
+  <dt>Community organization</dt>
+  <dd>{{ people_org | default: "TBD" }}</dd>
+</div>
+{% if people_contact != "" %}
+<div class="project-meta-row">
+  <dt>Community contact</dt>
+  <dd>{{ people_contact }}</dd>
+</div>
+{% endif %}

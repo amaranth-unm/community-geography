@@ -13,16 +13,28 @@
           <div class="center-hero-slide" style="background-image: url('{{ image | relative_url }}'); --slide-index: {{ forloop.index0 }};"></div>
           {% endfor %}
         </div>
-        <a class="center-hero-logo" href="{{ '/' | relative_url }}" style="--hero-logo: url('{{ site.home_hero.logo | relative_url }}');">
+        <a class="center-hero-logo" href="{{ '/' | relative_url }}" style="--hero-logo: url('{{ site.center_logo.image | relative_url }}'); --logo-ratio: {{ site.center_logo.width }} / {{ site.center_logo.height }};">
           <span class="center-hero-logo-art" aria-hidden="true"></span>
-          <span class="center-hero-sr">{{ site.center_banner.alt | escape }}</span>
+          <span class="center-hero-sr">{{ site.center_logo.alt | escape }}</span>
         </a>
       </header>
       {% else %}
+      {% comment %}
+        Every other page: one photo of people fading in from the right, the
+        Center's name in white over the dark left side. The photo is the page's
+        `masthead_image:` front matter (with `masthead_position:` for the crop);
+        the folder defaults in _config.yml give each section one.
+      {% endcomment %}
       <header class="center-masthead">
-        <a href="{{ '/' | relative_url }}" aria-label="{{ site.name }} home">
-          <img src="{{ site.center_banner.image | relative_url }}" width="{{ site.center_banner.width }}" height="{{ site.center_banner.height }}" alt="{{ site.center_banner.alt | escape }}">
-        </a>
+        <div class="center-masthead-inner">
+          {% if page.masthead_image %}
+          <img class="center-masthead-photo" src="{{ page.masthead_image | relative_url }}" alt="" decoding="async"{% if page.masthead_position %} style="object-position: {{ page.masthead_position }};"{% endif %}>
+          {% endif %}
+          <a class="center-masthead-title" href="{{ '/' | relative_url }}" style="--masthead-logo: url('{{ site.center_logo.image | relative_url }}'); --logo-ratio: {{ site.center_logo.width }} / {{ site.center_logo.height }};">
+            <span class="center-masthead-title-art" aria-hidden="true"></span>
+            <span class="center-hero-sr">{{ site.center_logo.alt | escape }}</span>
+          </a>
+        </div>
       </header>
       {% endif %}
       <div class="center-site-nav">{% include nav/nav-top.html %}</div>

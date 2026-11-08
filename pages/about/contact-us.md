@@ -1,6 +1,8 @@
 ---
 title: Keep in touch
 permalink: /about/contact-us
+masthead_image: /assets/images/masthead/classroom-talk.jpg
+masthead_position: 50% 45%
 ---
 
 # Keep in touch

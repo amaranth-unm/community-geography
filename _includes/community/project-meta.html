@@ -1,16 +1,16 @@
 {% comment %}
   Project Meta (detail page)
 
-  Renders a project's Start Date / End Date and Faculty / Community Member
-  front matter as a compact meta block, below the photo. Used by the
-  project-unm layout, so project pages never call it themselves.
+  Renders a project's Start Date / End Date, Faculty, Community organization,
+  and Community contact front matter as a compact facts block, below the
+  photo. Used by the project-unm layout, so project pages never call it
+  themselves. The people rows come from community/project-people.html.
 
   Reads from the current page's front matter:
     - start_date, end_date (end_date may be the literal "Ongoing")
-    - faculty, community_member (string or list; people or organizations)
+    - faculty, community_organization, community_contact (see
+      community/project-people.html)
 {% endcomment %}
-{% assign faculty = page.faculty | join: ", " %}
-{% assign community_member = page.community_member | join: ", " %}
 <dl class="project-meta project-meta--detail">
   {% if page.start_date %}
   <div class="project-meta-row">
@@ -22,12 +22,5 @@
     <dd>{% if page.end_date == "Ongoing" or page.end_date == nil %}Ongoing{% else %}{{ page.end_date | date: "%b %-d, %Y" }}{% endif %}</dd>
   </div>
   {% endif %}
-  <div class="project-meta-row">
-    <dt>Faculty</dt>
-    <dd>{{ faculty | default: "TBD" }}</dd>
-  </div>
-  <div class="project-meta-row">
-    <dt>Community Member</dt>
-    <dd>{{ community_member | default: "TBD" }}</dd>
-  </div>
+  {% include community/project-people.html project=page %}
 </dl>

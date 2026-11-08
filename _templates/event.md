@@ -12,6 +12,9 @@ presenter: Jane Doe
 # Optional flyer: upload it to assets/images/events/, then remove the # from both lines.
 # image: /assets/images/events/my-flyer.png
 # image_alt: Flyer for the Community Mapping Workshop on March 12
+# The photo in the band at the top of the page. Without it the band has no photo.
+masthead_image: /assets/images/community-geography/lexicon/community-gis-day-2025.jpg
+masthead_position: 50% 12%
 ---
 
 Describe the event here. Include who it is for, what will happen, and

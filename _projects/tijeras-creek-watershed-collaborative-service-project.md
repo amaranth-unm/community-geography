@@ -1,11 +1,12 @@
 ---
 title: Service project for the Tijeras Creek Watershed Collaborative
 image: "/assets/images/projects/tcwc-logo.png"
+image_fit: contain
 start_date: 2021-02-02
 end_date: 2022-02-02
 faculty:
   - TBD
-community_member:
+community_organization:
   - Tijeras Creek Watershed Collaborative
   - Bernalillo County Open Space
 summary: The Center partnered with the Tijeras Creek Watershed Collaborative on a mapping tool documenting conservation projects to help prioritize new work and strengthen the watershed action plan.

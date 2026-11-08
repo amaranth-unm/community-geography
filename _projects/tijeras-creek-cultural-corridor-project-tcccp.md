@@ -5,7 +5,7 @@ start_date: 2022-08-22
 end_date: 2023-08-22
 faculty:
   - TBD
-community_member:
+community_organization:
   - City of Albuquerque Open Space
   - Bernalillo County
   - Village of Tijeras

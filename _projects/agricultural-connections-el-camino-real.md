@@ -7,7 +7,7 @@ start_date: 2021-01-15
 end_date: 2021-05-15
 faculty:
   - TBD
-community_member:
+community_organization:
   - National Trails – National Park Service (NPS)
 summary: Critical Cartography (GEOG 413/515) students partnered with National Trails-NPS to design a StoryMap tracing agricultural and cultural exchange along El Camino Real de Tierra Adentro.
 ---

@@ -1,12 +1,15 @@
 ---
 title: Albuquerque Backyard Refuge - Fellowship - Katie Slack
 image: "/assets/images/projects/byr_per_nbr_slack.png"
+image_fit: contain
 start_date: 2026-01-01
 end_date: Ongoing
 faculty:
   - TBD
-community_member:
-  - Laurel Ladwig, New Mexico Backyard Refuge (NM BYR) Program
+community_organization:
+  - New Mexico Backyard Refuge (NM BYR) Program
+community_contact:
+  - Laurel Ladwig
 summary: UNM Fellow Katie Slack is building an interactive web map for the New Mexico Backyard Refuge Program, pairing iNaturalist observations with other program data layers. The project turns a prior semester's buffer map into a public-facing tool that highlights urban habitat restoration across Albuquerque.
 ---
 

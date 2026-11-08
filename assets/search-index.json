@@ -11,7 +11,7 @@ layout: null
     {% capture search_content %}
       {{ page.content }}
       {% if page.collection == 'events' %}{{ page.title }} {{ page.start_date }} {{ page.end_date }} {{ page.presenter }} {{ page.location }}{% endif %}
-      {% if page.people_group %}{% assign members = site.people | where: 'groups', page.people_group %}{% for person in members %} {{ person.name }} {{ person.role }} {{ person.affiliation }} {{ person.expertise }} {{ person.content }}{% endfor %}{% endif %}
+      {% if page.people_groups %}{% for group in page.people_groups %}{% assign members = site.people | where: 'groups', group %}{% for person in members %} {{ person.name }} {{ person.role }} {{ person.affiliation }} {{ person.expertise }} {{ person.content }}{% endfor %}{% endfor %}{% endif %}
     {% endcapture %}
     {{ separator }}{
       "title": {{ page.title | jsonify }},

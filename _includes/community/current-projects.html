@@ -1,7 +1,8 @@
 {% comment %}
   Current Projects List
 
-  A generic, data-driven list for active projects. Reads each project page's
+  A generic, data-driven list of feature cards for active projects: a large
+  picture beside the title, summary, and the people involved. Reads each project page's
   front matter so that adding a project only requires a new Markdown file —
   no hand-built card markup.
 
@@ -16,9 +17,10 @@
     - image:              image path (required for the image to appear)
     - start_date:         date the project began (required for the date line)
     - end_date:           date the project ended, or the literal "Ongoing"
-    - faculty:            faculty involved (string or list)
-    - community_member:   community partner(s) involved — people or
-                           organizations (string or list)
+    - image_fit:          "contain" shows the picture whole, for logos, maps
+                           and flyers; the default fills the frame (cropping)
+    - faculty, community_organization, community_contact: the people
+                           involved (see community/project-people.html)
     - summary:            a short two-to-three sentence description
 {% endcomment %}
 
@@ -31,8 +33,6 @@
   <div class="project-list">
     {% for project in sorted_projects %}
     {% if project.title %}
-      {% assign faculty = project.faculty | join: ", " %}
-      {% assign community_member = project.community_member | join: ", " %}
       <article class="project-card">
         <a class="project-card-link" href="{{ project.url | relative_url }}">
           {% if project.image %}
@@ -49,23 +49,16 @@
             <h3>{{ project.title }}</h3>
             <p class="project-card-summary">{{ project.summary }}</p>
             <dl class="project-meta">
-              <div class="project-meta-row">
-                <dt>Faculty</dt>
-                <dd>{{ faculty | default: "TBD" }}</dd>
-              </div>
-              <div class="project-meta-row">
-                <dt>Community Member</dt>
-                <dd>{{ community_member | default: "TBD" }}</dd>
-              </div>
+              {% include community/project-people.html project=project %}
             </dl>
+            <span class="project-card-cta">View project <span class="project-card-cta-arrow" aria-hidden="true">&rarr;</span></span>
           </div>
-          <span class="project-card-cta project-card-cta--bar">View project <span class="project-card-cta-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </article>
     {% endif %}
     {% endfor %}
   </div>
 {% else %}
-  <p>There are no current projects right now. See our <a href="{{ '/projects/past-projects/' | relative_url }}">past projects</a>.</p>
+  <p>There are no current projects right now. See our <a href="#past-projects">past projects</a>.</p>
 {% endif %}
 {:/nomarkdown}

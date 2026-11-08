@@ -8,8 +8,6 @@ presenter: Michael DeVivo, PhD
 location: UNM Campus Bandelier West 106
 image: /assets/images/events/new-flyer.jpg
 image_alt: Flyer for the Community Geography Social with Michael DeVivo, PhD, Wednesday, April 8, 2:00 to 3:30 PM, Bandelier West 106, catered by Sahara.
-legacy_upcoming: true
-heading_id: 2026-coffee-social---dr-michael-devivo
 date_review: false
 ---
 

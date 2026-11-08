@@ -5,7 +5,7 @@ start_date: 2023-01-24
 end_date: 2023-05-12
 faculty:
   - Dr. Yolanda C. Lin
-community_member:
+community_organization:
   - Albuquerque City Nature Challenge (ABQ CNC)
 summary: In GEOG 2115, Dr. Yolanda C. Lin's students designed data-driven infographics for the Albuquerque City Nature Challenge, shared on social media and featured at two campus outreach booths.
 ---
