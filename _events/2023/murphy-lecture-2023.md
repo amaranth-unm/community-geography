@@ -8,7 +8,7 @@ end_time: '16:00'
 presenter: Dr. Lesley-Ann Dupigny-Giroux
 location: KIVA Lecture Hall
 image: /assets/images/events/murphy-lecture_2023_dupigny-giroux-1.png
-image_alt: 'Photo: Murphy Lecture 2023'
+image_alt: 'Flyer for the 2023 Murphy Lecture, Intentional Intersectionality: Exploring Climate Change Through the Lenses of Vulnerability and Inclusion, by Lesley-Ann L. Dupigny-Giroux, Ph.D., University of Vermont, Friday, November 17, 3:00 to 4:00 PM, Mitchell Hall 122; refreshments at 2:30 in the Bandelier East lobby.'
 ---
 
 The Department of Geography and Environmental Studies will be hosting Dr. Lesley-Ann Dupigny-Giroux as the 2023 Murphy Lecturer. Dr. Dupigny-Giroux is a professor of Geography at the University of Vermont and also serves as the Vermont State Climatologist. 

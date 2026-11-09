@@ -8,14 +8,14 @@ end_time: '19:30'
 presenter: Robin Wall Kimmerer
 location: Indian Pueblo Cultural Center 2401 12th St NW Albuquerque 87104
 image: /assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg
-image_alt: 'Photo: 2023 Annual Leopold Lecture - Robin Wall Kimmerer'
+image_alt: 'Portrait of Robin Wall Kimmerer standing beside a white birch trunk in a wooded setting.'
 heading_id: 2023-annual-leopold-lecture---robin-wall-kimmerer
 ---
 
 {% include images/figure.html
   image-path="/assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg"
   image-width="75%"
-  alt-text="Photo: 2023 Annual Leopold Lecture - Robin Wall Kimmerer"
+  alt-text="Portrait of Robin Wall Kimmerer standing beside a white birch trunk in a wooded setting."
 %}
 
 The Center for Community Geography is proud to be a sponsor of the 2023 Annual Leopold Lecture organized by the Leopold Writing Program. This year the Lecture will be given by Robin Wall Kimmerer, Powatami scientist and storyteller, decorated professor and author of *Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants* and *Gathering Moss: A Natural and Cultural History of Mosses*.

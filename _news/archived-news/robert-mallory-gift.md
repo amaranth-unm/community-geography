@@ -8,7 +8,7 @@ published_date: '2020-12-24'
 {% include images/figure.html
   image-path="/assets/images/news/rm.jpg"
   image-width="65%"
-  alt-text="rm.jpg"
+  alt-text="Portrait of Robert H. Mallory smiling, seated at an outdoor table at a sidewalk cafe with parked cars behind."
 %}
 
 The Center for Community Geography’s first benefactor wanted to help attract more students to the field of geography. Instead, his idea blossomed into something he believes is bigger and better – bringing geography directly to students and community members by addressing human-environment issues together.
@@ -20,7 +20,7 @@ Albuquerque native Robert H. Mallory has always appreciated the beauty and diver
 {% include images/figure.html
   image-path="/assets/images/news/nopal-by-maria-lane.jpeg"
   image-width="70%"
-  alt-text="nopal-by-maria-lane.jpeg"
+  alt-text="Close-up of prickly pear cactus pads covered in long spines, with red fruit at the tips, in warm low sunlight against a pale wall."
 %}
 
 Mallory calls himself an “accidental geographer”, a term for students who stumbled across the field by scheduling fluke or other means. This not-so-small group benefited greatly from being empowered to think spatially or study human-environment connections. Mallory knows the feeling and recognizes that the Geography Department kept him in school while also expanding his world. He seeks to help more students discover geography with intention and anticipates his bequest will expand awareness of geographical thinking more than he could alone. “My knowledge \[of geography\] is constantly building, and it has been an incredible gift…Geography stole my heart and I want to provide that opportunity to others.”

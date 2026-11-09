@@ -15,7 +15,7 @@ summary: Critical Cartography (GEOG 413/515) students built a StoryMap of El Cam
 {% include images/figure.html
   image-path="/assets/images/projects/traversing-el-camilo-real-de-tierra-adentro.png"
   image-width="55%"
-  alt-text="traversing-el-camilo-real-de-tierra-adentro.png"
+  alt-text="Title screen of the StoryMap 'Traversing El Camino Real de Tierra Adentro: Transportation in New Mexico from Indigenous Trails to U.S. Railways', by Sarigai Sarigai, Ramona Malczynski, Will Mehle and Kendyl Key, April 1, 2021, over rust-colored metal sculptures of people and oxen on a hillside."
   link="https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df"
 %}
 

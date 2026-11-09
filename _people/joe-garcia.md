@@ -9,7 +9,7 @@ groups:
 display_order: 1
 anchor: joe-garcia
 image: /assets/images/people/joegarcia.jpg
-image_alt: joegarcia.jpg
+image_alt: 'Portrait of Joe Garcia outdoors on a campus lawn, with trees, a bench and a building in the background.'
 ---
 
 Joe is also a Community Capacity Builder at the UNM Community Engagement Center and facilitates Community Based Learning for the UNM School of Engineering National Science Foundation STEM Scholars program.

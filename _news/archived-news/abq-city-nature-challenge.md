@@ -8,7 +8,7 @@ published_date: '2021-03-22'
   image-path="/assets/images/projects/city-nature-challenge-log.png"
   image-position="right"
   image-width="35%"
-  alt-text="city-nature-challenge-log.png"
+  alt-text="Logo for City Nature Challenge ABQ 2021 showing a greater roadrunner's head inside a circle edged with plant and city skyline silhouettes."
 %}
 
 Would you like to participate in a citizen science project? With just your phone, you can join other UNM students in the 2021 Albuquerque City Nature Challenge. Help us collect data about wild plants and animals right here in UNM’s backyard!
@@ -24,7 +24,7 @@ The City Nature Challenge is a worldwide event, and Albuquerque will be competin
   image-path="/assets/images/news/inatualist-.png"
   image-position="left"
   image-width="20%"
-  alt-text="inatualist-.png"
+  alt-text="iNaturalist logo: a green stylized bird in flight beside the word iNaturalist, the citizen science app used in the City Nature Challenge."
 %}
 
 Monday, Apr 5, 2021 4:00 PM Mountain Time  

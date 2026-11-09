@@ -8,7 +8,7 @@ published_date: '2023-03-14'
   image-path="/assets/images/news/img-7673.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="img-7673.jpg"
+  alt-text="A presenter gestures while speaking in front of a projected slide titled STARS AS MAPS, which shows two woven textiles with star patterns, as an audience member looks on."
 %}
 
 Indigenous cartographers and communities have been at the forefront of recent innovations in critical cartography. We created the public panel event on February 27th so that UNM students, faculty, and partners could learn and take inspiration from thinkers and practitioners working in this exciting domain. Panelists discussed projects and ideas relevant to research and teaching across campus, and especially for community engagement. The public panel drew dozens of attendees from different departments across campus as well as many community members from off campus.
@@ -21,7 +21,7 @@ The Center for Community Geography would like to thank our amazing Indigenous Ca
   image-path="/assets/images/news/img-6601.jpg"
   image-position="right"
   image-width="40%"
-  alt-text="img-6601.jpg"
+  alt-text="Four panelists sit at long tables with water bottles in front of a chalkboard, while a fifth participant joins by video on a wall-mounted screen showing a Zoom meeting."
 %}
 
 We believe that bringing together our five panelists from diverse professional backgrounds and mapping approaches made our public panel and open classroom events especially unique and enriching. We would like to briefly illustrate some key takeaways from our public panel event and demonstrate the variety of approaches of our panelists.
@@ -36,7 +36,7 @@ Reuben Rose-Redwood, a Professor of Geography at the University of British Colum
   image-path="/assets/images/news/img-7685.jpg"
   image-position="right"
   image-width="40%"
-  alt-text="img-7685.jpg"
+  alt-text="Three panelists sit at a table in a classroom beneath a projection screen showing a Zoom call with remote panelists labeled Reuben Rose-Redwood, Ramona Malczynski and Dr. Deana Dartt."
 %}
 
 Christine Ami poignantly explained while discussing her return to her ancestral homelands, “When we take a look at cartography, through maps, we have to keep in mind just because you have the information doesn’t mean that everybody else does. You have to be really conscious of what you put down in publishing, why you put it down, and most importantly, for whom you’re doing it.”
@@ -47,7 +47,7 @@ Annita Lucchesi ended our public panel on a powerful note stating, “It’s not
   image-path="/assets/images/news/img-6598.jpg"
   image-position="right"
   image-width="40%"
-  alt-text="img-6598.jpg"
+  alt-text="A speaker stands at left reading from papers to a large seated audience, many taking notes, in a meeting room with white block walls and windows."
 %}
 
 We hope you learn more about the work of these cartographers and you can watch a recording of the February 27th, 2023 public panel on our YouTube channel here: <https://www.youtube.com/watch?v=Lm91G2PPLyw>.

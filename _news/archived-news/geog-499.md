@@ -6,7 +6,7 @@ published_date: '2023-10-23'
 {% include images/figure.html
   image-path="/assets/images/news/oil-and-gas-leasing-protest.jpeg"
   image-width="85%"
-  alt-text="oil and gas leasing protest"
+  alt-text="A crowd with raised fists stands outdoors in front of an adobe-style office building holding banners that read Protect Chaco, No New Leases!, Frack Off and #AllEyesOnChaco."
 %}
 
   (*Greater Chaco Coalition protesting an oil and gas lease sale in March 2018)*
@@ -19,7 +19,7 @@ The course will focus on the complex histories and lived realities of extraction
   image-path="/assets/images/news/well-greater-chaco.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="well greater chaco"
+  alt-text="Oil and gas well site with green storage tanks and pipework on a hilltop, beside a curving gravel road, with juniper trees and a clear blue sky in Greater Chaco."
 %}
 
 Students taking this class can expect to gain hands-on experience in field methods and community geography:

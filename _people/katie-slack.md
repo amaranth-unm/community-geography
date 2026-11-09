@@ -7,7 +7,7 @@ groups:
 display_order: 4
 anchor: graduate-fellows
 image: /assets/images/people/ks_headshot.png
-image_alt: ks_headshot.png
+image_alt: 'Portrait of Katie Slack in front of a plain light wall.'
 review_notes:
 - Identity says Master's Student; biography says doctoral student. Preserved as published.
 ---

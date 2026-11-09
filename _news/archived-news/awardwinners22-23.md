@@ -8,7 +8,7 @@ published_date: '2022-11-02'
   image-path="/assets/images/news/daffodils_unm.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="daffodils_unm"
+  alt-text="Yellow daffodils in bloom in a garden bed beside a curved brick wall, with a tan adobe-style wall and white campus buildings under a blue sky behind them."
 %}
 
 The R.H. Mallory Center for Community Geography is pleased to announce the awardees for the Graduate Fellowship for Community Engagement and Seed Funding for Community Engaged Classrooms for 2022-2023. Each year our Center awards funding to students and faculty to explore community-engaged research and teaching. Our awardees will use their \$1,000 awards for the following projects:

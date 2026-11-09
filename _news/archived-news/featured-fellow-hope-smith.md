@@ -3,7 +3,7 @@ title: 'Featured Spring 2025 Fellow: Hope Smith'
 heading_id: null
 published_date: '2025-04-04'
 image: /assets/images/news/hopesmith.jpg
-image_alt: Hope Smith
+image_alt: 'Portrait of Hope Smith outdoors in a cream knit hat, red scarf and brown shearling jacket, standing in front of a historic brick castle with green spires.'
 ---
 
 ***Project: District 6 Food Access in Partnership with Sustainability Studies and Bernalillo County Openspace***

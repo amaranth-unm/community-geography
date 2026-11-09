@@ -8,7 +8,7 @@ presenter: Laurel Ladwig
 location: Smith Plaza South of Zimmerman Library, International District Library (7601 Central Ave. NE), Erna Fergusson Library
   (3700 San Mateo Dr. NE)
 image: /assets/images/events/ccg_cnc2025_.png
-image_alt: 'Photo: City Nature Challenge In Partnership with the Center for Community Geography'
+image_alt: 'Flyer for City Nature Challenge ABQ, April 25-28, with the Center for Community Geography: Friday April 25, 9:30 am-2:30 pm, Smith Plaza south of Zimmerman Library, iNaturalist tutorials and guided walks at 11am and 2pm; Sunday April 27, 11am, Geographers Mapping Urban Nature, International District Library.'
 ---
 
 ## **Friday, April 25th:** 

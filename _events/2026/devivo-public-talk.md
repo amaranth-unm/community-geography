@@ -13,7 +13,7 @@ Mike DeVivo, Director of the Geography Program at Grand Rapids Community College
 {% include images/figure.html
   image-path="/assets/images/events/dr-devivo.jpg"
   image-width="35%"
-  alt-text="dr-devivo.jpg"
+  alt-text="Portrait of Michael DeVivo, PhD, wearing a cap and sunglasses outdoors on a grassy plain with a herd of grazing animals in the distance."
 %}
 
 DeVivo is also the author of Leadership in American Academic Geography: The Twentieth Century and the creator of the “Conversations with a Geographer” interview series. A military veteran and accomplished photographer, he brings a broad perspective on leadership, service, and the discipline of geography.

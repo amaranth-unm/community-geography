@@ -8,7 +8,7 @@ end_time: '17:00'
 presenter: 'Keynote: Lt. Governor Howie Morales'
 location: George Pearl Hall
 image: /assets/images/events/thumbnail_unm-ce-23-banner.jpg
-image_alt: 'Photo: Community Engagement Symposium'
+image_alt: 'Flyer for the Community Engagement Symposium 2023, University of New Mexico, November 3, 2023, 1:00 to 5:00 pm with a reception 5:30 to 6:30, at George Pearl Hall (Architecture + Planning). Keynote by Lt. Governor Howie Morales, plus a panel of eight speakers.'
 ---
 
 UNM is hosting a Community Engagement Symposium Friday November 3rd, 2023 to be held at George Pearl Hall from 1:00-5:00 pm (Reception 5:30-6:30).  

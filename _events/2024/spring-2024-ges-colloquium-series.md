@@ -7,7 +7,7 @@ end_time: '16:00'
 presenter: Multiple
 location: TBD
 image: /assets/images/events/spring-colloquium-series_updated.png
-image_alt: 'Photo: Spring 2024 GES Colloquium Series'
+image_alt: 'Flyer for the Department of Geography & Environmental Studies Spring 2024 Colloquium Series: Subhankar Banerjee, February 16; Bob Wilson, March 8; Alyosha Goldstein, April 5; Ana de Luca, May 9. Talks at 3:00 PM in Mitchell Hall 102 (May 9 location TBD).'
 ---
 
 Check out our lineup of speakers for colloquium events this semester! 

@@ -6,7 +6,7 @@ end_date: '2024-04-05'
 end_time: '17:00'
 location: Student Union Building
 image: /assets/images/events/ctlconference2024.png
-image_alt: 'Photo: Community Engagement Week '
+image_alt: 'Poster for 2024 Community Engagement Week at the University of New Mexico, April 1 to 5: April 1 and 2 Office of Community Engagement; April 3 and 4 Spring Teaching Conference on Community-Engaged Teaching and Learning; April 5 Community Engagement Center Annual Symposium.'
 ---
 
 #  

@@ -7,7 +7,7 @@ end_date: '2024-04-25'
 end_time: '14:30'
 location: Cornell Mall
 image: /assets/images/events/expo2024.png
-image_alt: 'Photo: Sustainability Expo'
+image_alt: 'Poster for the 14th Annual Sustainability Expo, presented by the UNM Sustainability Studies Program, April 25, 10:30 AM to 2:30 PM, Cornell Mall (east of the SUB), with food, music, art, vendors and education. Illustrated with paper banners and people planting a tree.'
 ---
 
 

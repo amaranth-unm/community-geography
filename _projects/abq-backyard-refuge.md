@@ -20,7 +20,7 @@ Building upon a buffer map developed in a previous semester, Katie is refining a
 {% include images/figure.html
   image-path="/assets/images/people/ks_headshot_02.jpg"
   image-width="20%"
-  alt-text="ks_headshot_02.jpg"
+  alt-text="Portrait of Katie Slack against a plain light wall."
 %}
 
 The resulting interactive web map will be publicly accessible, allowing community members, educators, and program participants to explore the reach and influence of the NM BYR initiative. Through this fellowship, Katie has been able to apply her Geographic Information Systems (GIS) expertise in direct service to the community, translating technical skills into meaningful civic engagement and environmental stewardship. 

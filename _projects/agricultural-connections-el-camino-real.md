@@ -25,6 +25,6 @@ By using agriculture as a lens, we can understand the impact and history of Indi
 {% include images/figure.html
   image-path="/assets/images/projects/agricultural-connections-along-el-camino-real.png"
   image-width="55%"
-  alt-text="agricultural-connections-along-el-camino-real.png"
+  alt-text="Title screen of the StoryMap 'Agricultural Connections Along El Camino Real: Crops that link people and ecosystems, past and present', beside an old photo of red chile strings hanging from an adobe building."
   link="https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df"
 %}

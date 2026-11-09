@@ -8,7 +8,7 @@ published_date: '2021-05-18'
   image-path="/assets/images/news/maria-sunset-.jpeg"
   image-position="left"
   image-width="35%"
-  alt-text="maria-sunset-.jpeg"
+  alt-text="Pink and lavender clouds fill the sky at sunset above dark silhouettes of trees along the bottom edge."
 %}
 
 The R.H. Mallory Center for Community Geography is pleased to announce the awardees for the Graduate Fellowship for Community Engagement for 2021-2022! We were impressed with the applications and delighted to learn about UNM’s students’ efforts at addressing New Mexico’s environmental challenges and their involvement and commitment to work with community partners to develop positive and relevant results. Below are the funded projects:

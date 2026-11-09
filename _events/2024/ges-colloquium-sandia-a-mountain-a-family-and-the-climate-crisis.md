@@ -8,7 +8,7 @@ end_time: '16:00'
 presenter: Dr. Bob Wilson, Associate Professor of Geography, Syracuse University
 location: Mitchell Hall 102
 image: /assets/images/events/wilson-flyer.png
-image_alt: 'Photo: GES Colloquium- Sandia: A Mountain, a Family, and the Climate Crisis'
+image_alt: 'Flyer for the GES Colloquium ''Sandia: A Mountain, a Family, and the Climate Crisis'' by Dr. Bob Wilson, Associate Professor of Geography, Syracuse University, Friday, March 8, 3:00 to 4:00 PM, Mitchell Hall 102. Free and open to the public; refreshments in Bandelier East at 2:30 PM.'
 heading_id: ges-colloquium--sandia-a-mountain-a-family-and-the-climate-crisis
 ---
 

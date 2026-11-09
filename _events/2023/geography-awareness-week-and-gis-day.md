@@ -6,7 +6,7 @@ end_date: '2023-11-17'
 end_time: '17:00'
 location: SUB Atrium/ Fiesta A and B
 image: /assets/images/events/gisday2023.png
-image_alt: 'Photo: Geography Awareness Week and GIS Day'
+image_alt: 'Banner for GIS Day, November 15, with the GIS day logo in white over an aerial view of a turquoise lake ringed by colorful rock.'
 ---
 
 November 13-17 is Geography Awareness Week!

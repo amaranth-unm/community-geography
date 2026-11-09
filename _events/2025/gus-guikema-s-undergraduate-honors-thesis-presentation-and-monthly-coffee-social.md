@@ -7,7 +7,7 @@ end_date: '2025-05-07'
 end_time: '13:00'
 location: BAND W 104 and 106
 image: /assets/images/events/ccg_social_gus_5.7.png
-image_alt: 'Photo: Gus Guikema''s Undergraduate Honors Thesis Presentation and Monthly Coffee Social'
+image_alt: 'Flyer for Augustus Guikema''s Undergraduate Honors Thesis Presentation, ''Invasive Species and Engineered Landscapes: Rethinking Oryx Management in the Tularosa Basin,'' with the Monthly Coffee Social, Wednesday, May 7, 12 to 1 PM; talk in Bandelier West 104, social in Band West 106.'
 heading_id: gus-guikemas-undergraduate-honors-thesis-presentation-and-monthly-coffee-social
 archive_anchor: gus-guikemas-undergraduate-honors-thesis-presentation-and-monthly-coffee-social
 ---

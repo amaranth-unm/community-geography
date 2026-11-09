@@ -8,7 +8,7 @@ published_date: '2023-03-14'
   image-path="/assets/images/events/robin-wall-kimmerer-2023-lecture_orig.jpeg"
   image-position="left"
   image-width="25%"
-  alt-text="robin-wall-kimmerer-2023-lecture_orig.jpeg"
+  alt-text="Portrait of Robin Wall Kimmerer standing beside a white birch trunk in a wooded setting."
 %}
 
 The Center for Community Geography is proud to be a sponsor of the 2023 Annual Leopold Lecture organized by the Leopold Writing Program. This year the Lecture will be given by Robin Wall Kimmerer, Powatami scientist and storyteller, decorated professor and author of *Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants* and *Gathering Moss: A Natural and Cultural History of Mosses*.
@@ -21,5 +21,5 @@ For more information and to purchase tickets: <https://www.leopoldwritingprogra
   image-path="/assets/images/news/leopold-writing-program-logo-color.jpg"
   image-position="left"
   image-width="25%"
-  alt-text="leopold-writing-program-logo-color.jpg"
+  alt-text="Logo of The Leopold Writing Program, showing a white pine cone with pine needles on a gray-green square beside the program name in stacked capital letters."
 %}

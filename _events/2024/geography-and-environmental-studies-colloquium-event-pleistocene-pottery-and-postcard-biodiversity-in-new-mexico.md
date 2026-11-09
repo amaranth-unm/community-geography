@@ -8,8 +8,7 @@ end_time: '16:00'
 presenter: Dr. Subhankar Banerjee, Professor of Art and Ecology, University of New Mexico
 location: Mitchell Hall 102
 image: /assets/images/events/subhankar-banerjee-flyer.png
-image_alt: 'Photo: Geography and Environmental Studies Colloquium Event: Pleistocene, Pottery, and Postcard: BIOdiversity
-  in New Mexico'
+image_alt: 'Flyer for the Geography & Environmental Studies Colloquium talk ''Pleistocene, Pottery, and Postcard: BIOdiversity in New Mexico'' by Dr. Subhankar Banerjee, Professor of Art and Ecology, UNM, Friday, February 16, 3:00 to 4:00 PM, Mitchell Hall 102. Free and open to the public; refreshments in Bandelier East at 2:30 PM.'
 ---
 
 Pleistocene, Pottery, and Postcard: BIOdiversity in New Mexico

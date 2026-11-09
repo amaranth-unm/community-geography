@@ -9,7 +9,7 @@ published_date: '2020-10-01'
 {% include images/figure.html
   image-path="/assets/images/news/critcartography-poster4866.jpg"
   image-width="75%"
-  alt-text="critcartography-poster4866.jpg"
+  alt-text="Flyer for the new class Critical Cartography, GEOG 413/513, Spring 2021, taught by Dr. Maria Lane. Tuesdays remote, Thursdays in person, 12:30 to 1:45 PM. No cartography experience required. Inquiries: mdlane@unm.edu."
 %}
 
 The Center for Community Geography is excited to announce support for a new UNM course in spring 2021. The Department of Geography & Environmental Studies will offer “Critical Cartography” for upper-level undergraduates and graduate students for the first time this spring.
