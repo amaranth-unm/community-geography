@@ -1,10 +1,6 @@
 ---
 title: People
 permalink: /about/people
-# Old addresses that now land here.
-redirect_from:
-  - /about/our-team
-  - /about/affiliates
 people_groups: [team, affiliates]
 summary: The staff, graduate assistants, and UNM faculty affiliates of the R.H. Mallory Center for Community Geography.
 masthead_image: /assets/images/masthead/classroom-talk.jpg

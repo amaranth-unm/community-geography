@@ -9,6 +9,6 @@ We would also like to congratulate Gwyneth Doland, Joe Garcia, and Dr. Claudia P
 
 For the spring 2024 semester, Dr. Miriam Gay-Antaki will be the center’s Interim Director. *Miriam is an Assistant Professor of Geography and Environmental Studies at UNM.*  Her work focuses on human-environment relations in the era of anthropogenic global climate change. She draws from political ecology and decolonial feminist geography to amplify voices that are not regularly part of the debate on climate change to make research on the topic more effective for vulnerable and underrepresented communities.
 
-To find out more about our new [staff members]({{ site.baseurl }}/about/our-team) and [affiliates]({{ site.baseurl }}/about/affiliates), check out their bios on our website!
+To find out more about our new [staff members]({{ site.baseurl }}/about/people#our-team) and [affiliates]({{ site.baseurl }}/about/people#faculty-affiliates-at-unm), check out their bios on our website!
 
 We are excited for all of the new additions to the community geography team, and look forward to a busy an exciting spring semester!

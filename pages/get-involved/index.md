@@ -1,9 +1,6 @@
 ---
 title: Get involved
 permalink: /get-involved/
-# Old address that now lands here.
-redirect_from:
-  - /funding/
 summary: Ways to work with the Mallory Center for Community Geography - partner with us, apply for student and faculty funding, or support the Center with a gift.
 masthead_image: /assets/images/masthead/human-geography-gis-day-2023.jpg
 masthead_position: 50% 62%

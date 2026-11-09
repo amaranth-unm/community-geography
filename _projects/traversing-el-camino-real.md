@@ -1,7 +1,5 @@
 ---
 title: 'StoryMap: Traversing El Camino Real de Tierra Adentro'
-# Address used by the old website; visitors there are sent to this page.
-redirect_from: /projects/project/test-project-2
 image: "/assets/images/projects/mexican-carreta---chihuahua-loc.jpg"
 start_date: 2020-01-15
 end_date: 2021-08-15

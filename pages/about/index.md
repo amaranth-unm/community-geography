@@ -1,9 +1,6 @@
 ---
 title: Mission
 permalink: /about/
-# Old addresses that now land here.
-redirect_from:
-  - /about/mission
 summary: The R.H. Mallory Center for Community Geography is affiliated with the Department
   of Geography & Environmental Studies (GES) at the University of New Mexico. It supports
   community-engaged research and learning in human-environment dynamics. It engages

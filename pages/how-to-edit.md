@@ -406,7 +406,7 @@ how to register.
 The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay on the **Events** page under Past events, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
 
-**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `heading_id`, `redirect_from` and `archive_anchor`) that keep old links working; don't copy those into new events.
+**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `heading_id` and `archive_anchor`) that keep old links working; don't copy those into new events.
 
 ---
 

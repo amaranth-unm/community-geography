@@ -1,6 +1,5 @@
 ---
 title: Undergraduate Pizza Social
-redirect_from: /events/9.18-undergraduate-pizza-social.html
 start_date: '2024-09-18'
 start_time: '12:00'
 end_date: '2024-09-18'

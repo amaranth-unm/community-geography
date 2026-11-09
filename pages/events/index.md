@@ -1,12 +1,6 @@
 ---
 title: Events
 permalink: /events/
-# Old addresses that now land here.
-redirect_from:
-  - /events/upcoming
-  - /events/archive
-  - /events/index1.html
-  - /events/index2.html
 summary: Upcoming Mallory Center events, and every past event by its flyer, newest first.
 masthead_image: /assets/images/masthead/community-gis-day-2025.jpg
 masthead_position: 50% 12%

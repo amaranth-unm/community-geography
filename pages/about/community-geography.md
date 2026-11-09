@@ -1,9 +1,6 @@
 ---
 title: What is Community Geography?
 permalink: /about/community-geography
-# Old address that now lands here.
-redirect_from:
-  - /community-geography/
 masthead_image: /assets/images/masthead/classroom-talk.jpg
 masthead_position: 50% 45%
 ---
