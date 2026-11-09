@@ -164,10 +164,6 @@
     "to": "assets/images/events/dr-devivo.jpg"
   },
   {
-    "from": "donate/picture1.png",
-    "to": "assets/images/donate/picture1.png"
-  },
-  {
     "from": "projects/byr_per_nbr_slack.png",
     "to": "assets/images/projects/byr_per_nbr_slack.png"
   },

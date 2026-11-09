@@ -4,7 +4,7 @@ layout: base-unm
 {% comment %}
   Home page, top to bottom: the hero (in base-unm.html: the name and welcome
   text over photos), the projects carousel, What is Community
-  Geography? as a strip of lexicon photos, and the Instagram band.
+  Geography? as a scrolling list of lexicon words, and the Instagram band.
 {% endcomment %}
 {% include community/projects-carousel.html %}
 
@@ -17,7 +17,7 @@ layout: base-unm
     </div>
     <a class="home-section-link" href="{{ '/about/community-geography' | relative_url }}">Discover community geography <span aria-hidden="true">→</span></a>
   </div>
-  {% include community/lexicon-strip.html %}
+  {% include community/lexicon-scroll.html %}
 </section>
 
 <section class="community-follow" aria-labelledby="community-follow-title">
