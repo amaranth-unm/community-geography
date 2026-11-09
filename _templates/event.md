@@ -12,7 +12,7 @@ presenter: Jane Doe
 # Optional flyer: upload it to assets/images/events/, then remove the # from both lines.
 # image: /assets/images/events/my-flyer.png
 # image_alt: Flyer for the Community Mapping Workshop on March 12
-# The photo in the band at the top of the page. Without it the band has no photo.
+# The photo in the band at the top of the page. Without these lines the page uses the placeholder photo for its kind of page.
 masthead_image: /assets/images/masthead/community-gis-day-2025.jpg
 # masthead_position says which part of the photo to keep when the band crops
 # it: horizontal then vertical, 0% to 100%. 50% 50% is the middle. Raise the
