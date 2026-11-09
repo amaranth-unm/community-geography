@@ -1,7 +1,6 @@
 ---
 title: 'Guest Speaker Visit: Dr. Michael DeVivo'
 published_year: '2026'
-section_url: /news/2026
 ---
 
 R.H. Mallory Center for Community Geography \| April 8–10, 2026

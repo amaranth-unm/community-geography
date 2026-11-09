@@ -360,7 +360,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - The web address comes from the file name: `new-fellows-announced.md` is published at `/news/new-fellows-announced`. Choose the file name carefully, because renaming the file later changes the address.
 - `published_date` is the date written `YYYY-MM-DD`.
 - If you only know the year, use `published_year: 2026` instead of `published_date`.
-- The news page updates by itself. You do not need to edit any list.
+- The news page updates by itself. You do not need to edit any list. Its year buttons come from the stories' dates, so a new year gets a button when its first story is added.
 - **Optional picture beside the story:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - News is not shown on the homepage; it lives under **News & Events** in the menu.
 
