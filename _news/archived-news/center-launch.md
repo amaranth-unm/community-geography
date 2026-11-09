@@ -1,6 +1,5 @@
 ---
 title: Department Launches New Center Focused on Community Geography
-permalink: /news/august-10-2020
 published_date: '2020-08-10'
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Announcement: Our Center''s Affiliate Applications are Now Open!'
-permalink: /news/announcement-2023-affiliates-application-now-open1
 summary: The R.H. Center for Community Geography is excited to announce that it is now accepting applications for faculty
   affiliation. Any UNM faculty member with an interest in community-engaged teaching, research, or mapping is encouraged to
   review the affiliation criteria and apply.

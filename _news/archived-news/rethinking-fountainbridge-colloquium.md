@@ -1,6 +1,5 @@
 ---
 title: 'Rethinking Fountainbridge: Honoring the Past and Greening the Future in an Edinburgh Neighborhood'
-permalink: /news/fall-colloquium
 published_date: '2021-10-21'
 ---
 

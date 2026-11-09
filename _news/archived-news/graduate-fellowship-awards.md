@@ -1,6 +1,5 @@
 ---
 title: Congratulations Students! 2021-2022 Graduate Fellowships Announced
-permalink: /news/may-18,-2021
 published_date: '2021-05-18'
 ---
 

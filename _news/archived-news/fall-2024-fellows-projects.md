@@ -1,6 +1,5 @@
 ---
 title: Fall 2024 Community Geography Fellows' Projects
-permalink: /fall-2024-fellows-projects
 heading_id: fall-2024-fellows-projects
 published_date: '2024-12-06'
 ---
