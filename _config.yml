@@ -51,6 +51,18 @@ defaults:
   values:
     section: Projects
     section_url: /projects/
+# Placeholder photos for the band at the top of each kind of page, until a page
+# sets its own `masthead_image:`. All four are free to use without credit; their
+# sources are kept here. Each is cropped to a wide strip and compressed, and is
+# otherwise unchanged. All are on Wikimedia Commons.
+#   projects  placeholder-sandia-panorama.jpg  BrandonStephenson, CC0
+#             File:Sandia_Peak_dramatic_angle_(9399721497).jpg
+#   events    placeholder-sandia-bosque.jpg    BrandonStephenson, public domain
+#             File:Sandia_Mountains_(49952516771).jpg
+#   news      placeholder-hands-on-map.jpg     Joshua Tree National Park (NPS), public domain
+#             File:Looking_at_a_Map_(17301857542).jpg
+#   lexicon   placeholder-bosque-river.jpg     BrandonStephenson, CC0
+#             File:Sunset_Sandias_Bosque_(31865031022).jpg
 - scope:
     path: ''
     type: projects
@@ -58,6 +70,8 @@ defaults:
     layout: project-unm
     section: Projects
     section_url: /projects/
+    masthead_image: /assets/images/masthead/placeholder-sandia-panorama.jpg
+    masthead_position: 50% 50%
 - scope:
     path: ''
     type: events
@@ -65,6 +79,8 @@ defaults:
     layout: event-unm
     section: Events
     section_url: /events/
+    masthead_image: /assets/images/masthead/placeholder-sandia-bosque.jpg
+    masthead_position: 50% 50%
 - scope:
     path: ''
     type: news
@@ -72,6 +88,8 @@ defaults:
     layout: news-unm
     section: News
     section_url: /news/
+    masthead_image: /assets/images/masthead/placeholder-hands-on-map.jpg
+    masthead_position: 50% 50%
 - scope:
     path: ''
     type: lexicon
@@ -79,6 +97,8 @@ defaults:
     layout: lexicon-unm
     section: Community Geography
     section_url: /about/community-geography
+    masthead_image: /assets/images/masthead/placeholder-bosque-river.jpg
+    masthead_position: 50% 50%
 exclude:
 - README.md
 - LICENSE
@@ -115,7 +135,9 @@ center_logo:
   alt: R.H. Mallory Center for Community Geography
 # The photo in the band at the top of every page but the home page is set per
 # page, with `masthead_image:` (and optionally `masthead_position:`) in its
-# front matter. There are no defaults: a page without the line has no photo.
+# front matter. News stories, events, projects and lexicon words start with the
+# placeholder set in the defaults above; any other page without the line has no
+# photo.
 home_hero:
   images:
   - /assets/images/masthead/hero-badlands.jpg

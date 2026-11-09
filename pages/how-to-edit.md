@@ -319,7 +319,7 @@ Open `_data/nav-top.yml`. Each menu has a `title` (what visitors see) and a `url
 
 ### Changing the photo at the top of a page
 
-Every page except the home page has a band at the top with the Center's name. A page also shows one photo of people fading in from the right if it has a `masthead_image` line. There are no defaults: a page without the line shows the band with the name and no photo. The files in `_templates/` include the line. To give any other page a photo, upload it to `assets/images/masthead/` and add two lines to its top block:
+Every page except the home page has a band at the top with the Center's name. It also shows one photo fading in from the right: the page's own, if it has a `masthead_image` line, and otherwise a placeholder. News stories, events, projects and lexicon words each have a placeholder, chosen in `_config.yml`; other pages show the band with the name and no photo. The files in `_templates/` include the line. To give a page a photo of its own, upload it to `assets/images/masthead/` and add two lines to its top block:
 
 ```
 masthead_image: /assets/images/masthead/my-photo.jpg

@@ -14,7 +14,7 @@ community_organization:
 community_contact:
   - Alex Rivera
 summary: Two or three sentences that describe the project. This shows on the project card.
-# The photo in the band at the top of the page. Without it the band has no photo.
+# The photo in the band at the top of the page. Without these lines the page uses the placeholder photo for its kind of page.
 masthead_image: /assets/images/masthead/field-visit.jpg
 # masthead_position says which part of the photo to keep when the band crops
 # it: horizontal then vertical, 0% to 100%. 50% 50% is the middle. Raise the
