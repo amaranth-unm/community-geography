@@ -4,7 +4,7 @@ The website of the R.H. Mallory Center for Community Geography at the University
 
 It is a Jekyll site built with [Xanthan](https://amaranth.unm.edu/public-scholarship/xanthan), Amaranth's framework for academic websites, and UNM branding. GitHub Pages builds and publishes the site from the `main` branch every time it changes. There are no custom plugins or build workflows.
 
-- **Editing the site:** [HOW-TO-EDIT-THIS-WEBSITE.md](HOW-TO-EDIT-THIS-WEBSITE.md)
+- **Editing the site:** [How to edit this website](https://amaranth.unm.edu/community-geography/how-to-edit) (the page's source is `pages/how-to-edit.md`)
 - **Page elements (images, alerts, bands, maps, photo stories):** [Xanthan's documentation](https://xanthan-web.github.io/docs/)
 - **Image optimizer:** [scripts/README.md](scripts/README.md)
 

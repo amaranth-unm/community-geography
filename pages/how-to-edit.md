@@ -1,3 +1,15 @@
+---
+title: How to Edit the Community Geography Website
+permalink: /how-to-edit
+# An unlisted page: no menu link, kept out of the site's search, the sitemap
+# and search engines (noindex). Anyone with the address can still read it.
+noindex: true
+searchable: false
+sitemap: false
+masthead_image: /assets/images/masthead/classroom-talk.jpg
+masthead_position: 50% 45%
+---
+{% raw %}
 # How to Edit the Community Geography Website
 
 **No coding experience needed.** This guide walks you through everything step by step.
@@ -524,4 +536,5 @@ A short biography goes here.
 | Change colors | `assets/css/themes/unm.css` |
 | Change the menu | `_data/nav-top.yml` |
 
-*Last updated: November 2026. If something in this guide is out of date, please fix it. This file is `HOW-TO-EDIT-THIS-WEBSITE.md` in the main folder of the repository.*
+*Last updated: November 2026. If something in this guide is out of date, please fix it. This page is the file `pages/how-to-edit.md` in the repository; it isn't linked from the website's menus or search.*
+{% endraw %}
