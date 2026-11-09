@@ -30,7 +30,6 @@ tokens, which keeps UNM's chrome (unm.css) separate from the Center's site.
   --bg-feature-band: #007a86;
   /* The home page's two colored bands. Follow sits just above UNM's cherry
      footer, and turquoise and cherry are UNM's own pair. */
-  --bg-projects-band: #8a387c; /* UNM Deep Dusk: "Our work" */
   --bg-follow-band: #007a86; /* UNM Turquoise: "Follow our community" */
   --bg-page-header: #303335;
   --bg-editorial-note: #edf4f3;

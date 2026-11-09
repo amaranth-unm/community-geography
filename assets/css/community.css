@@ -30,7 +30,6 @@ is the one place UNM values are translated for the site.
 /* Shared patterns: the kicker label, section title, and button-style link
    used by the home bands and the site footer. Each component below only
    overrides what differs. */
-.community-geography-intro-kicker,
 .projects-carousel-kicker,
 .community-follow-kicker,
 .lexicon-kicker,
@@ -43,7 +42,6 @@ is the one place UNM values are translated for the site.
   line-height: 1.3;
   text-transform: uppercase;
 }
-.community-geography-intro h2,
 .projects-carousel-section h2,
 .community-follow h2,
 .center-footer h2 {
@@ -53,7 +51,6 @@ is the one place UNM values are translated for the site.
   line-height: 1.1;
 }
 .welcome-cta, .welcome-cta:visited,
-.community-geography-intro-link, .community-geography-intro-link:visited,
 .community-follow-link, .community-follow-link:visited,
 .center-footer-cta, .center-footer-cta:visited {
   flex: 0 0 auto;
@@ -73,7 +70,6 @@ is the one place UNM values are translated for the site.
   transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 .welcome-cta:hover, .welcome-cta:focus-visible,
-.community-geography-intro-link:hover, .community-geography-intro-link:focus-visible,
 .center-footer-cta:hover, .center-footer-cta:focus-visible {
   color: var(--text-on-dark);
   background: var(--interactive-hover);
@@ -642,58 +638,19 @@ figure a.image { border-bottom: 0; }
   margin-inline: calc(50% - 50vw);
   padding-inline: max(var(--page-gutter), calc(50vw - var(--width-center) / 2 + var(--page-gutter)));
 }
-.welcome-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  align-items: center;
-  gap: clamp(var(--spacing-xl), 6vw, 6rem);
-  padding-block: clamp(2.5rem, 6vw, 5.5rem);
-  background: var(--bg-section-alt);
-  border-bottom: 0.35rem solid var(--accent-primary);
-}
-/* Left column: the page's `lede`, set large. Right column: the page's text. */
-.welcome-lede {
-  margin: 0;
-  color: var(--accent-primary-dark);
-  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
-  font-weight: 700;
-  line-height: 1.22;
-  text-wrap: balance;
-}
-.welcome-copy { max-width: 36rem; }
-.welcome-copy > :first-child { margin-top: 0; }
-.welcome-copy p { font-size: clamp(1.05rem, 1.35vw, 1.2rem); line-height: 1.6; }
 .welcome-cta { margin-top: var(--spacing-sm); }
-/* The arrow after "Explore the Center"; the empty alt keeps screen readers quiet. */
+/* The arrow after the optional home button (`cta_text`); the empty alt keeps screen readers quiet. */
 .welcome-cta::after { content: "\2192"; content: "\2192" / ""; }
-.community-geography-intro {
-  padding-block: clamp(2.5rem, 5vw, 4.5rem);
-  background: var(--bg-page);
-  border-top: 1px solid var(--border-light);
-}
-.community-geography-intro-inner {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: var(--spacing-md);
-  max-width: var(--width-center);
-  margin: 0 auto;
-}
-.community-geography-intro p:not(.community-geography-intro-kicker) {
-  max-width: 44rem;
-  margin: var(--spacing-sm) 0 0;
-}
-/* The home page's two colored bands, Our work (--bg-projects-band, UNM
-   Deep Dusk) and Follow (--bg-follow-band, UNM Turquoise, beside UNM's
-   cherry footer), are set in the theme. Both have white text; their links
-   turn gold on hover. */
+/* The home page's Our work band is the plain page color, set apart from the
+   tinted lexicon section below it by a hairline. The Follow band
+   (--bg-follow-band, UNM Turquoise, beside UNM's cherry footer) is set in
+   the theme and has white text. */
 .projects-carousel-section {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
-  background: var(--bg-projects-band, var(--bg-nav));
-  color: var(--text-on-dark);
+  background: var(--bg-page);
+  border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, .1));
 }
-.projects-carousel-kicker { color: var(--text-on-dark); }
-.projects-carousel-section h2 { color: var(--text-on-dark); }
+.projects-carousel-section h2 { color: var(--text-h2); }
 .projects-carousel-header {
   display: flex;
   align-items: end;
@@ -716,11 +673,6 @@ figure a.image { border-bottom: 0; }
 }
 .projects-carousel-link:hover,
 .projects-carousel-link:focus-visible { color: var(--interactive-hover); }
-/* On the purple band: white, turning gold on hover. */
-.projects-carousel-link,
-.projects-carousel-link:visited { color: var(--text-on-dark); }
-.projects-carousel-link:hover,
-.projects-carousel-link:focus-visible { color: var(--accent-highlight); }
 
 .projects-carousel {
   display: grid;
@@ -814,9 +766,9 @@ figure a.image { border-bottom: 0; }
   width: 2.25rem;
   height: 2.25rem;
   padding: 0;
-  color: var(--text-on-dark);
+  color: var(--accent-primary);
   background: transparent;
-  border: 1px solid var(--text-feature-band-muted);
+  border: 1px solid currentColor;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.1rem;
@@ -825,9 +777,9 @@ figure a.image { border-bottom: 0; }
 }
 .projects-carousel-control:hover,
 .projects-carousel-control:focus-visible {
-  color: var(--text-body);
-  background: var(--text-feature-band-link);
-  border-color: var(--text-feature-band-link);
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
 }
 .community-follow {
   padding-block: clamp(2.5rem, 5vw, 4.5rem);
@@ -857,9 +809,9 @@ figure a.image { border-bottom: 0; }
 }
 .community-follow-link:hover,
 .community-follow-link:focus-visible {
-  color: var(--text-body);
-  background: var(--text-feature-band-link);
-  border-color: var(--text-feature-band-link);
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
   transform: translateY(-2px);
 }
 /* margin-top: auto keeps both footers at the bottom of short pages. */
@@ -917,9 +869,6 @@ figure a.image { border-bottom: 0; }
   .center-content :is(figure.left, figure.right) { float: none; margin: var(--spacing-md) 0; }
   .center-content--home { padding-inline: var(--page-gutter); }
   .center-content--home :is(p, h1, h2, h3, ul, ol) { padding-inline: 0; }
-  .welcome-hero { grid-template-columns: 1fr; gap: var(--spacing-lg); padding-block: var(--spacing-xl); }
-  .welcome-copy { max-width: none; }
-  .community-geography-intro-inner { align-items: flex-start; flex-direction: column; }
   .community-follow-inner { align-items: flex-start; flex-direction: column; }
   .projects-carousel-header { align-items: flex-start; flex-direction: column; }
   .projects-carousel { grid-template-columns: minmax(0, 1fr); }
@@ -1530,55 +1479,60 @@ figure a.image { border-bottom: 0; }
   transition: color var(--transition-fast);
 }
 .home-section-link:hover, .home-section-link:focus-visible { color: var(--interactive-hover); }
-.home-lexicon-grid {
+/* Lexicon rows: photo and text side by side, alternating. With JS and motion
+   allowed, each row starts offset and slides together once scrolled into view
+   (.is-animated is added by community/lexicon-scroll.html). */
+.lexicon-scroll { max-width: var(--width-center); margin: 0 auto; overflow-x: clip; }
+.lexicon-scroll-row {
   display: grid;
-  gap: var(--spacing-sm);
-  max-width: var(--width-center);
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-.home-lexicon-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.home-lexicon-grid li { margin: 0; padding: 0; }
-.home-lexicon-tile {
-  position: relative;
-  display: block;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: stretch;
+  margin-block: clamp(1.5rem, 3vw, 2.5rem);
   overflow: hidden;
-  border: 0;
+  background: var(--bg-card);
   border-radius: var(--radius-md);
-  background: var(--bg-nav);
-  color: var(--text-on-photo);
-  text-decoration: none;
+  box-shadow: var(--shadow-sm);
 }
-.home-lexicon-tile { aspect-ratio: 3 / 2; }
-.home-lexicon-tile img {
-  position: absolute;
-  inset: 0;
+.lexicon-scroll-row:nth-child(even) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+.lexicon-scroll-row:nth-child(even) .lexicon-scroll-photo { order: 2; }
+.lexicon-scroll-photo { display: block; overflow: hidden; background: var(--bg-nav); }
+.lexicon-scroll-photo img {
+  display: block;
   width: 100%;
   height: 100%;
+  min-height: 16rem;
   object-fit: cover;
-  transition: transform .4s ease;
 }
-.home-lexicon-tile:hover img, .home-lexicon-tile:focus-visible img { transform: scale(1.05); }
-.home-lexicon-tile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(20, 22, 24, .78), rgba(20, 22, 24, 0) 60%);
+.lexicon-scroll-text {
+  align-self: center;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
 }
-.home-lexicon-word {
-  position: absolute;
-  z-index: 1;
-  inset: auto var(--spacing-md) var(--spacing-md);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+.lexicon-scroll-text h3 {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--text-h2);
+  font-size: var(--center-size-section);
+  line-height: 1.1;
 }
-.home-lexicon-word { font-size: 1.3rem; }
-.home-lexicon-tile:focus-visible { outline: 3px solid var(--interactive-hover); outline-offset: 3px; }
+.lexicon-scroll-text p { margin: 0 0 var(--spacing-md); }
+.is-animated .lexicon-scroll-photo,
+.is-animated .lexicon-scroll-text {
+  opacity: 0;
+  transition: opacity .7s ease, transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+.is-animated .lexicon-scroll-photo { transform: translateX(-4rem); }
+.is-animated .lexicon-scroll-text { transform: translateX(4rem); }
+.is-animated .lexicon-scroll-row:nth-child(even) .lexicon-scroll-photo { transform: translateX(4rem); }
+.is-animated .lexicon-scroll-row:nth-child(even) .lexicon-scroll-text { transform: translateX(-4rem); }
+.is-animated .lexicon-scroll-row.is-visible .lexicon-scroll-photo,
+.is-animated .lexicon-scroll-row.is-visible .lexicon-scroll-text,
+.is-animated .lexicon-scroll-row.is-visible:nth-child(even) .lexicon-scroll-photo,
+.is-animated .lexicon-scroll-row.is-visible:nth-child(even) .lexicon-scroll-text { opacity: 1; transform: none; }
 @media (max-width: 899px) {
-  .home-lexicon-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lexicon-scroll-row, .lexicon-scroll-row:nth-child(even) { grid-template-columns: minmax(0, 1fr); }
+  .lexicon-scroll-row:nth-child(even) .lexicon-scroll-photo { order: 0; }
+  .is-animated .lexicon-scroll-photo, .is-animated .lexicon-scroll-text,
+  .is-animated .lexicon-scroll-row:nth-child(even) .lexicon-scroll-photo,
+  .is-animated .lexicon-scroll-row:nth-child(even) .lexicon-scroll-text { transform: translateY(2rem); }
   .home-section-header { align-items: flex-start; flex-direction: column; }
 }
 @media (max-width: 767px) {
