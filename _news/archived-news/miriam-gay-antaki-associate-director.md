@@ -5,7 +5,7 @@ published_date: '2021-03-28'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/about/miriam-profile-picture-.jpg"
+  image-path="/assets/images/news/miriam-profile-picture-.jpg"
   image-position="left"
   image-width="35%"
   alt-text="miriam-profile-picture-.jpg"
@@ -16,7 +16,7 @@ The Center for Community Geography welcomes [Associate Director Dr. Miriam Gay-A
 Dr. Gay-Antaki believes Geography is a discipline uniquely suited to pursue intersections between knowledge, environment, and power. She has worked to clarify the networked connections between international climate policy and science, the exclusions, and inclusions of diverse voices in the climate debate, and the consequent differential effects on people’s livelihoods in Oaxaca, Mexico. Applying this lens to New Mexico brings exciting possibilities for community work and a wealth of resources from Dr. Gay-Antaki’s experience as a researcher. “New Mexico has fascinating human environment dynamics. While it is a place that will be extremely vulnerable to climate change, it is also a place that has shown extreme resilience. There is so much to learn about the barriers and opportunities in the ways different New Mexican groups negotiate and manage their environment.” Says Dr. Gay-Antaki.
 
 {% include images/figure.html
-  image-path="/assets/images/about/pic-of-field-work-29097.jpg"
+  image-path="/assets/images/news/pic-of-field-work-29097.jpg"
   image-position="right"
   image-width="40%"
   alt-text="pic-of-field-work-29097.jpg"
@@ -27,7 +27,7 @@ Dr. Gay-Antaki is drawn to community engaged work because, “Community engaged 
 Dr. Gay-Antaki is excited about the opportunity to work with New Mexican residents and UNM students and faculty to solve pressing socioenvironmental problems. [Students and faculty are encouraged to join a discussion Dr. Gay-Antaki is facilitating between Dr. McEvoy and Dr. Warner on climate change and adapting to flood risk and drought on April 8th at 4:00pm to see how Associate Director Dr. Miriam Gay-Antaki is strengthening the Center’s work and mission.](https://communitygeography.unm.edu/events/event/climate-change-and-adapting-to-flood-risk-and-drought.html)
 
 {% include images/figure.html
-  image-path="/assets/images/about/pic-of-field-work9098.png"
+  image-path="/assets/images/news/pic-of-field-work9098.png"
   image-width="60%"
   alt-text="pic-of-field-work9098.png"
 %}

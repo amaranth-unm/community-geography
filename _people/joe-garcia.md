@@ -8,7 +8,7 @@ groups:
 - affiliates
 display_order: 1
 anchor: joe-garcia
-image: /assets/images/about/joegarcia.jpg
+image: /assets/images/people/joegarcia.jpg
 image_alt: joegarcia.jpg
 ---
 

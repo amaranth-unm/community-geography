@@ -4,7 +4,7 @@ permalink: /get-involved/donate
 # Old address that now lands here.
 redirect_from:
   - /donate/
-masthead_image: /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+masthead_image: /assets/images/masthead/human-geography-gis-day-2023.jpg
 masthead_position: 50% 62%
 ---
 

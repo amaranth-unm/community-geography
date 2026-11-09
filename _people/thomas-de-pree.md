@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 4
 anchor: dr-thomas-de-pree
-image: /assets/images/about/thomas-de-pree
+image: /assets/images/people/thomas-de-pree
 image_alt: thomas-de-pree
 ---
 

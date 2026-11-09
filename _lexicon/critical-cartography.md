@@ -5,7 +5,7 @@ display_order: 7
 # One or two sentences: shown on the word's card and at the top of its page.
 definition: "Maps as tools of communication, action, and power. It combines critical thinking about the ethical and philosophical dimensions of cartography with technical skills in mapping practice."
 # The wide photo under the definition (also the picture when the page is shared).
-image: /assets/images/community-geography/lexicon/critical-cartography-indigenous-cartographies.jpg
+image: /assets/images/lexicon/critical-cartography-indigenous-cartographies.jpg
 image_alt: A speaker presents in front of a projected slide titled “Stars as Maps.”
 image_caption: Indigenous Cartographies @ UNM, February 2023.
 # The rest of the page, in order: quotes (text and source), passages (text,
@@ -19,7 +19,7 @@ story:
     source: Crampton, 2010
   - text: Map or be mapped.
     source: Bryan, 2009
-    photo: /assets/images/community-geography/lexicon/critical-cartography-pajarito-open-space.jpg
+    photo: /assets/images/lexicon/critical-cartography-pajarito-open-space.jpg
     photo_alt: A view between a horse's ears down a dirt road beside a cornfield.
     photo_caption: Pajarito Open Space.
   - heading: Critical cartography…

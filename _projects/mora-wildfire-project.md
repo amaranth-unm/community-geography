@@ -1,6 +1,6 @@
 ---
 title: Mora Wildfire Project
-image: "/assets/images/projects/project/mora_hs_students.png"
+image: "/assets/images/projects/mora_hs_students.png"
 start_date: 2022-08-15
 end_date: 2023-08-15
 faculty:

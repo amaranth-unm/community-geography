@@ -7,7 +7,7 @@ end_date: '2025-02-14'
 end_time: '16:00'
 presenter: D. Molly Miranker
 location: BAND E 105
-image: /assets/images/shared/02-14-25-molly-miranker-ges-colloquium.jpg
+image: /assets/images/events/02-14-25-molly-miranker-ges-colloquium.jpg
 image_alt: 'Photo: GES Colloquium: Towards Humanitarian Geographic Information Science: Migrant Deaths at the Texas-Mexico
   Border'
 ---

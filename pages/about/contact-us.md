@@ -25,7 +25,7 @@ Albuquerque, NM 87131-0001
 
 **Melinda Morgan J.D.**  
 Director  
-[mhbenson@unm.edu](mailto:mldland@unm.edu)
+[mhbenson@unm.edu](mailto:mhbenson@unm.edu)
 
 **Dr. Fred Gibbs**  
 Associate Director  

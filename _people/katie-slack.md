@@ -6,7 +6,7 @@ groups:
 - team
 display_order: 4
 anchor: graduate-fellows
-image: /assets/images/about/ks_headshot.png
+image: /assets/images/people/ks_headshot.png
 image_alt: ks_headshot.png
 review_notes:
 - Identity says Master's Student; biography says doctoral student. Preserved as published.

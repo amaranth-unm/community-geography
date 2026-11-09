@@ -109,7 +109,7 @@ collections:
 # The Center's name as a transparent image (text only; the UNM mark is not
 # part of it). It is drawn in white over the home photos and on the masthead.
 center_logo:
-  image: /assets/images/hero/center-name-text.png
+  image: /assets/images/site/center-name-text.png
   width: 1059
   height: 113
   alt: R.H. Mallory Center for Community Geography
@@ -118,7 +118,7 @@ center_logo:
 # front matter. There are no defaults: a page without the line has no photo.
 home_hero:
   images:
-  - /assets/images/hero/hero-badlands.jpg
-  - /assets/images/community-geography/lexicon/community-gis-day-2025.jpg
-  - /assets/images/hero/hero-sandia-bosque.jpg
-  - /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+  - /assets/images/masthead/hero-badlands.jpg
+  - /assets/images/masthead/community-gis-day-2025.jpg
+  - /assets/images/masthead/hero-sandia-bosque.jpg
+  - /assets/images/masthead/human-geography-gis-day-2023.jpg

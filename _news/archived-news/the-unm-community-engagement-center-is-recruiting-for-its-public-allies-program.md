@@ -4,7 +4,7 @@ published_date: '2024-04-17'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/shared/publicallies.png"
+  image-path="/assets/images/news/publicallies.png"
   image-width="65%"
   alt-text="publicallies.png"
 %}

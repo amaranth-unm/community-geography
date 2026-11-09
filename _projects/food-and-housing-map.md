@@ -1,6 +1,6 @@
 ---
 title: Food and Housing Resources Map for UNM Students
-image: "/assets/images/shared/food-and-resources-map.png"
+image: "/assets/images/projects/food-and-resources-map.png"
 image_fit: contain
 start_date: 2021-08-16
 end_date: 2022-12-16

@@ -5,7 +5,7 @@ permalink: /get-involved/partner
 redirect_from:
   - /community-geography/partnership
   - /community-geography/our-network
-masthead_image: /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+masthead_image: /assets/images/masthead/human-geography-gis-day-2023.jpg
 masthead_position: 50% 62%
 ---
 

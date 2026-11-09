@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 9
 anchor: dr-liping-yang
-image: /assets/images/about/liping-yang.jpg
+image: /assets/images/people/liping-yang.jpg
 image_alt: Photo of Dr. Yang
 ---
 

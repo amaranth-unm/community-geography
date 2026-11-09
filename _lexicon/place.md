@@ -5,7 +5,7 @@ display_order: 6
 # One or two sentences: shown on the word's card and at the top of its page.
 definition: "Spaces become places when people invest them with meaning."
 # The wide photo under the definition (also the picture when the page is shared).
-image: /assets/images/community-geography/lexicon/place-tijeras-pueblo.jpg
+image: /assets/images/lexicon/place-tijeras-pueblo.jpg
 image_alt: A footpath and a small wooden bridge cross a green meadow below wooded hills.
 image_caption: Tijeras Pueblo Archaeological Site, Tijeras, New Mexico. From the Tijeras Creek Cultural Corridor Project.
 # Related ideas, shown in a band under the photo.
@@ -41,7 +41,7 @@ story:
       woodstove of the sanctified and untamed holy spirit
     source: Excerpt from *Woodstove* by Levi Romero, New Mexico Poet Laureate
     poem: true
-    photo: /assets/images/community-geography/lexicon/place-casa-san-ysidro.jpg
+    photo: /assets/images/lexicon/place-casa-san-ysidro.jpg
     photo_alt: An adobe courtyard with a wooden ladder, a covered porch and a large tree.
     photo_caption: Casa San Ysidro. Photo by Ramona M.
 ---

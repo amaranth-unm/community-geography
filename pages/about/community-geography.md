@@ -11,7 +11,7 @@ masthead_position: 50% 45%
 # What is Community Geography?
 
 {% include images/figure.html
-  image-path="/assets/images/community-geography/picture2.png"
+  image-path="/assets/images/about/picture2.png"
   image-position="left"
   image-width="35%"
   alt-text="Community members working together outdoors."

@@ -7,7 +7,7 @@ definition: "A social-ecological system where humans and ecosystems depend upon 
 # Where the definition comes from (optional).
 definition_source: Alex Fremier, Washington State University
 # The wide photo under the definition (also the picture when the page is shared).
-image: /assets/images/community-geography/lexicon/headwaters-rio-grande-water-fund.jpg
+image: /assets/images/lexicon/headwaters-rio-grande-water-fund.jpg
 image_alt: Golden aspen leaves and white trunks against a deep blue sky.
 image_caption: From the Story Collection Proposal for the Rio Grande Water Fund.
 # The rest of the page, in order: quotes (text and source), passages (text,
@@ -20,7 +20,7 @@ story:
       explore the human-environment connection in a truly unique (and
       important) way. Let's explore Headwater Dependent Systems (HDS) as a
       case study to understand the human-natural system relationship further.
-  - photo: /assets/images/community-geography/lexicon/headwaters-diagram.png
+  - photo: /assets/images/lexicon/headwaters-diagram.png
     photo_alt: A hand-drawn diagram of a watershed, from high mountain headwaters through the upper reach, mountain valley and lowlands to the ocean, with the atmosphere above and groundwater below.
     photo_caption: "From the headwaters to the ocean. Credit: Alex Fremier, Washington State University."
   - text: >-
@@ -40,7 +40,7 @@ story:
       4. the view that **stationary approaches to management are incompatible** given climate change and need to be replaced with dynamic approaches (e.g., resilience)
       5. the view that humans and the environment are inseparable, so **water is life and not simply a commodity**
     credit: "Credit: Alex Fremier, Washington State University"
-    photo: /assets/images/hero/hero-sandia-bosque.jpg
+    photo: /assets/images/masthead/hero-sandia-bosque.jpg
     photo_alt: The Sandia Mountains rise above the cottonwoods of the Rio Grande bosque.
     photo_caption: The Sandia Mountains and the Rio Grande bosque.
 ---

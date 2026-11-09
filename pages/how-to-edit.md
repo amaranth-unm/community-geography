@@ -36,7 +36,7 @@ Everything is done in your web browser. You do not need to install anything.
 
 ## 1. The 5-minute version
 
-1. Go to the repository on GitHub and press the **period key (`.`)** on your keyboard. This opens the editor in your browser. (Or see Section 2 for other ways.)
+1. Go to the repository on GitHub, <https://github.com/amaranth-unm/community-geography>, and press the **period key (`.`)** on your keyboard. This opens the editor in your browser. (Or see Section 2 for other ways.)
 2. Find the file you want in the left-hand list and click it.
 3. Make your change and save with **Ctrl+S** (Mac: **Cmd+S**).
 4. Click the **Source Control** icon on the left (it looks like a branch with dots).
@@ -124,7 +124,10 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | A person on the People page | `_people/` |
 | A word in the Community Geography lexicon | `_lexicon/` (one file per word) |
 | Other pages (About, Funding, Donate, etc.) | `pages/` |
-| Pictures | `assets/images/` |
+| The home page's welcome text | `pages/index.md` (the `lede` and `intro` lines) |
+| The photos at the top of the home page | `_config.yml` (the `home_hero` list) |
+| The Center's address in the footer | `_includes/unm/footer-site.html` |
+| Pictures | `assets/images/` (the folders are listed in Section 4, under Adding an image) |
 | PDFs and flyers | `assets/documents/` |
 | The menu at the top of the site | `_data/nav-top.yml` |
 | Site-wide settings (title, email) | `_config.yml` |
@@ -176,8 +179,25 @@ Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the we
 - Keep files reasonably small (under about 1 MB if you can). Photos are best as `.jpg`; logos and flyers as `.png`.
 
 **Step 2: Upload it.**
-1. In the Explorer, open the right folder under `assets/images/` (for example `assets/images/news/` for news pictures, `assets/images/events/` for event flyers, `assets/images/projects/project/` for project pictures).
+1. In the Explorer, open the right folder under `assets/images/` (the table below lists them).
 2. **Drag and drop** the image from your computer into that folder in the Explorer. (Or right-click the folder and choose **Upload**.)
+
+Pick the folder for the thing the picture belongs to:
+
+| The picture is for... | Folder under `assets/images/` |
+| --- | --- |
+| A news story | `news/` |
+| An event flyer | `events/` |
+| A project, current or past | `projects/` |
+| A person | `people/` |
+| A word in the lexicon | `lexicon/` |
+| The About pages | `about/` |
+| The Get Involved pages | `get-involved/` |
+| A photo gallery | `galleries/`, in a folder of its own (for example `galleries/gis-day-2025/`) |
+| The photo band at the top of a page, or the home page | `masthead/` |
+| The Center's logo and other design pictures | `site/` |
+
+Folders are named for the thing a picture belongs to, not for when it was added. A project's picture stays in `projects/` after the project ends, so finishing a project is still only a date change (Section 8). Other pages may use a picture from any folder. `archive/` holds old pictures that no page uses any more; leave it alone.
 
 **Step 3: Show it on the page.** Every picture on the site uses the same block. Put it where you want the picture, with a blank line above and below:
 
@@ -202,7 +222,7 @@ Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the we
 
 **Step 4:** Commit and push as usual (the uploaded image counts as a change).
 
-The site has an **Optimize Images** tool that shrinks large pictures. On GitHub go to **Actions → Optimize Images → Run workflow**.
+The site has an **Optimize Images** tool that shrinks large pictures. On GitHub go to **Actions → Optimize Images → Run workflow**. The first run only reports how much space it would save and changes nothing. If the numbers look right, run it again with **Actually change the files** ticked.
 
 ### Adding a PDF or document
 
@@ -299,7 +319,7 @@ Open `_data/nav-top.yml`. Each menu has a `title` (what visitors see) and a `url
 
 ### Changing the photo at the top of a page
 
-Every page except the home page has a band at the top with the Center's name and one photo of people fading in from the right. There are no defaults: a page with no `masthead_image` line shows the band with the name and no photo. To give a page one, add two lines to its top block:
+Every page except the home page has a band at the top with the Center's name. A page also shows one photo of people fading in from the right if it has a `masthead_image` line. There are no defaults: a page without the line shows the band with the name and no photo. The files in `_templates/` include the line. To give any other page a photo, upload it to `assets/images/masthead/` and add two lines to its top block:
 
 ```
 masthead_image: /assets/images/masthead/my-photo.jpg
@@ -310,7 +330,7 @@ masthead_position: 50% 40%
 
 ### Changing the contact email or site title
 
-Open `_config.yml`. Edit the `title`, `description`, or `email` lines. Do not change other lines unless you know what they do.
+Open `_config.yml`. Edit the `title` (the name in browser tabs and link previews), `name` (the full name in the footer), `description`, or `email` lines. Do not change other lines unless you know what they do.
 
 ---
 
@@ -341,8 +361,8 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - `published_date` is the date written `YYYY-MM-DD`.
 - If you only know the year, use `published_year: 2026` instead of `published_date`.
 - The news page updates by itself. You do not need to edit any list.
-- **Optional lead picture:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
-- News is no longer shown on the homepage; it lives under **News & Events** in the menu.
+- **Optional picture beside the story:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
+- News is not shown on the homepage; it lives under **News & Events** in the menu.
 
 **Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
 
@@ -396,14 +416,14 @@ Every project, current or past, is one file in `_projects/`. A project is listed
 
 A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
-1. Upload the project's picture to `assets/images/projects/project/` (see Section 4).
+1. Upload the project's picture to `assets/images/projects/` (see Section 4).
 2. Open `_projects/`, create a new file named like `my-new-project.md`.
 3. Paste and fill in this template:
 
 ```
 ---
 title: My New Project
-image: /assets/images/projects/project/my-new-project.jpg
+image: /assets/images/projects/my-new-project.jpg
 start_date: 2027-01-15
 end_date: Ongoing
 faculty:
@@ -460,18 +480,20 @@ affiliation: Department of Geography and Environmental Studies
 groups: [team]
 display_order: 20
 anchor: jane-doe
-image: /assets/images/about/jane-doe.jpg
+image: /assets/images/people/jane-doe.jpg
 image_alt: Portrait of Jane Doe
 ---
 
 A short biography goes here.
 ```
 
-- Use `groups: [team]` for staff or `groups: [affiliates]` for affiliates.
+- Use `groups: [team]` for staff or `groups: [affiliates]` for faculty affiliates. On the team list each entry's heading is the `role` and the name sits beneath it; for affiliates the heading is the name.
 - `display_order` is a number that decides the order on the page. Smaller numbers come first. To fit someone between 2 and 3, use 2.5. People with the same number appear in file-name order, and someone with no number goes at the end.
-- `anchor` must be unique. Use the person's name with dashes.
-- The photo is optional. Upload it to `assets/images/about/`.
+- `anchor` must be unique: the person's name with dashes. The existing team entries use their role instead (`director`, `graduate-fellows`), because that is their heading. Either works as long as no two match.
+- `expertise` is an optional extra line shown under the name, for example `expertise: 'Areas of Expertise: legal geography'`.
+- The photo is optional. Upload it to `assets/images/people/`.
 - To remove someone, delete their file (right-click it → **Delete**).
+- Two lists that name people are typed by hand, not built from `_people/`. When someone joins or leaves the team, also update the **Past Team Members** list in `pages/about/people.md` and the **Our Team** list in `pages/about/contact-us.md`.
 
 **Easiest way:** copy `_templates/person.md` into `_people/`, name the copy after the person (for example `jane-doe.md`), and fill it in.
 
@@ -488,12 +510,13 @@ A short biography goes here.
 - **Photos of people:** get permission before posting.
 - **Keep file names simple:** lowercase, dashes instead of spaces, no special characters.
 - **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. The technical notes are in `README.md` (how the site uses Xanthan) and `scripts/README.md` (the image tools).
-- **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first.
+- **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first. The exception is `footer-site.html`, which is the Center's own footer with its address.
 - **Lexicon words:** each word is one file in `_lexicon/`, and its front matter holds the whole page: the definition, the wide photo, the related ideas, and the `story` (its quotes, passages and photos, in order). To change a quote or swap a photo, edit those lines. To add a word, copy an existing word's file.
+- **Notes left in files:** a `review_notes` line in a file's top block is a reminder, left when pages were moved over from the old website, that something in that file needs checking. It doesn't show on the site. Delete it once the question is settled. A `date_review: true` line is different: it keeps an event out of the Upcoming list and adds a notice to the event's page that its dates conflict.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
 - **New year?** Start a new year folder in `_news/` and `_events/` (for example `_news/2027/`) to keep the files tidy. The folders don't change anything on the website, and nothing else needs setting up for a new year.
 - **Backups:** GitHub stores every version of every file. You can look at the history of any file by right-clicking it and choosing **Open Timeline**.
-- **Handing over the site?** Add the new editor as a collaborator on the GitHub repository (Settings → Collaborators) and point them to this guide.
+- **Handing over the site?** Add the new editor as a collaborator on the GitHub repository (**Settings → Collaborators and teams → Add people**; only a repository admin can do this) and point them to this guide.
 
 ---
 
@@ -509,6 +532,7 @@ A short biography goes here.
 | My picture doesn't show | Check the file name, the folder, and capital letters. `Photo.JPG` and `photo.jpg` are different. In a Xanthan element (an `{% include ... %}` line), start the path with `/assets/...` and leave out `{{ site.baseurl }}`. |
 | Error says "Could not locate the included file" | The page uses an element this site doesn't have, or the name after `include` is mistyped. Compare it with the list in [Adding other page elements](#adding-other-page-elements). |
 | My event isn't in the Upcoming list on the Events page | The date might be in the past, or the file has `date_review: true`. Delete that line. (The list is refreshed every morning, so a finished event can linger until the next day.) |
+| Finished events or projects still show as current for days | GitHub pauses the Daily Rebuild after 60 days with no edits to the site. Open **Actions → Daily Rebuild** and click **Enable workflow**, then **Run workflow** to rebuild now. |
 | My text looks like one big paragraph | Add a blank line between paragraphs. |
 | I can't push my changes | You may not have permission. Ask the website owner to add you as a collaborator. |
 | Nothing works | Stop, don't delete anything, and ask for help. All past versions can be restored. |

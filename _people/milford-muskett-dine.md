@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 10
 anchor: dr-milford-muskett-dine
-image: /assets/images/about/milfordmuskett.jpg
+image: /assets/images/people/milfordmuskett.jpg
 image_alt: MilfordMuskett
 ---
 

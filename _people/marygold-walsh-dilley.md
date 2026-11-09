@@ -8,7 +8,7 @@ groups:
 - affiliates
 display_order: 8
 anchor: dr-marygold-walsh-dilley
-image: /assets/images/about/marygold.webp
+image: /assets/images/people/marygold.webp
 image_alt: marygold.webp
 ---
 

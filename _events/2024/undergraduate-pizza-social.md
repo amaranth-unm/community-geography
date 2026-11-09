@@ -6,7 +6,7 @@ start_time: '12:00'
 end_date: '2024-09-18'
 end_time: '13:00'
 location: Bandelier West 106
-image: /assets/images/shared/ccg_undergradsocial9.18.png
+image: /assets/images/events/ccg_undergradsocial9.18.png
 image_alt: 'Photo: Undergraduate Pizza Social '
 ---
 
