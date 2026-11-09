@@ -1,6 +1,6 @@
 # Publishing and the image optimizer
 
-For editing content, use the [editing guide](../HOW-TO-EDIT-THIS-WEBSITE.md).
+For editing content, use the [editing guide](https://amaranth.unm.edu/community-geography/how-to-edit).
 
 ## Publishing
 

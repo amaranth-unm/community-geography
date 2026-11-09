@@ -81,7 +81,6 @@ defaults:
     section_url: /about/community-geography
 exclude:
 - README.md
-- HOW-TO-EDIT-THIS-WEBSITE.md
 - LICENSE
 - Gemfile
 - Gemfile.lock

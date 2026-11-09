@@ -11,4 +11,4 @@ Start a new page by copying one of these files. Nothing in this folder appears o
 
 Rename the copy with lowercase words and dashes, such as `spring-seed-workshop.md`. For news, events, and projects, the file name becomes the page's web address.
 
-Lines that start with `#` are notes and never appear on the site; delete them or leave them. The [editing guide](../HOW-TO-EDIT-THIS-WEBSITE.md) explains every line.
+Lines that start with `#` are notes and never appear on the site; delete them or leave them. The [editing guide](https://amaranth.unm.edu/community-geography/how-to-edit) explains every line.
