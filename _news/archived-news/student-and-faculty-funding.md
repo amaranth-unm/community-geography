@@ -5,7 +5,7 @@ published_date: '2021-04-16'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/news/criticalcartographylospoblanos"
+  image-path="/assets/images/news/criticalcartographylospoblanos.jpg"
   image-position="left"
   image-width="35%"
   alt-text="criticalcartographylospoblanos"

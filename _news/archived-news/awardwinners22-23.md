@@ -5,7 +5,7 @@ published_date: '2022-11-02'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/news/daffodils_unm"
+  image-path="/assets/images/news/daffodils_unm.jpg"
   image-position="left"
   image-width="35%"
   alt-text="daffodils_unm"

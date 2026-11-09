@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 3
 anchor: dr-claudia-b-pratesi
-image: /assets/images/people/claudia
+image: /assets/images/people/claudia.png
 image_alt: claudia
 ---
 

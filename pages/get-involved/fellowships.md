@@ -26,7 +26,7 @@ The resulting interactive web map will be publicly accessible, allowing communit
 “*Being a U.N.M. R.H. Mallory Center for Community Geography Fellow has allowed me to use my GIS skills to benefit the community, which is valuable and fulfilling*.” - Katie Slack
 
 {% include images/figure.html
-  image-path="/assets/images/get-involved/criticalcartographyshannonandmicheal"
+  image-path="/assets/images/get-involved/criticalcartographyshannonandmicheal.jpg"
   image-width="60%"
   alt-text="criticalcartographyshannonandmicheal"
 %}

@@ -5,7 +5,7 @@ published_date: '2021-10-21'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/news/jeffbuckleytalkposter"
+  image-path="/assets/images/news/jeffbuckleytalkposter.png"
   image-position="left"
   image-width="35%"
   alt-text="jeffbuckleytalkposter"
