@@ -1,6 +1,5 @@
 ---
 title: GES Colloquium
-redirect_from: /events/9.13-ges-colloquium.html
 start_date: '2024-09-13'
 start_time: '15:00'
 end_date: '2024-09-13'

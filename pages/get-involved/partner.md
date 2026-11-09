@@ -1,10 +1,6 @@
 ---
 title: Partner with us
 permalink: /get-involved/partner
-# Old addresses that now land here. The Our Network page was removed.
-redirect_from:
-  - /community-geography/partnership
-  - /community-geography/our-network
 masthead_image: /assets/images/masthead/human-geography-gis-day-2023.jpg
 masthead_position: 50% 62%
 ---

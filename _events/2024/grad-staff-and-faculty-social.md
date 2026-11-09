@@ -1,6 +1,5 @@
 ---
 title: Grad, Staff, and Faculty Social
-redirect_from: /events/9.27-grad-staff-and-faculty-social.html
 start_date: '2024-09-27'
 start_time: '12:00'
 end_date: '2024-09-27'

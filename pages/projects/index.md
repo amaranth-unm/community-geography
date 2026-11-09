@@ -1,9 +1,6 @@
 ---
 title: Projects
 permalink: /projects/
-# Old address that now lands here.
-redirect_from:
-  - /projects/past-projects/
 summary: Community geography projects led by students and faculty with community partners, current and past.
 masthead_image: /assets/images/masthead/field-visit.jpg
 masthead_position: 50% 38%
