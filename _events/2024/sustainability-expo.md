@@ -1,6 +1,5 @@
 ---
 title: Sustainability Expo
-permalink: /sustainability-expo
 start_date: '2024-04-25'
 start_time: '10:30'
 end_date: '2024-04-25'

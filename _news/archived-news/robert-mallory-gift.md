@@ -1,6 +1,5 @@
 ---
 title: The Center for Community Geography is Robert H. Mallory’s gift back to the department that transformed his life
-permalink: /december-22,-2020
 heading_id: the-center-for-community-geography-is-robert-h-mallorys-gift-back-to-the-department-that-transformed-his-life
 published_date: '2020-12-24'
 ---

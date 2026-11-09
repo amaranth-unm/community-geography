@@ -1,6 +1,5 @@
 ---
 title: 'Polycentricity and "State" Reinforced Self Governance: The Case of the New York City Watersheds'
-permalink: /polycentricity-and-state-reinforced-self-governance-the-case-of-the-new-york-city-watersheds
 start_date: '2025-04-07'
 start_time: '12:00'
 end_date: '2025-04-07'

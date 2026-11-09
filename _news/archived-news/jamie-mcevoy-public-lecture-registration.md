@@ -1,6 +1,5 @@
 ---
 title: Registration now open for Dr. Jamie McEvoy's public lecture and Q&A March 29th
-permalink: /news/march-29,-2021
 summary: Public Presentation community perspectives on drought planning and adaptation in a more-than-human world
 heading_id: registration-now-open-for-dr-jamie-mcevoys-public-lecture-and-qa-march-29th
 published_date: '2021-03-11'

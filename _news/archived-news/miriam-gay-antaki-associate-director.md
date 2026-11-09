@@ -1,6 +1,5 @@
 ---
 title: Welcome Associate Director Dr. Miriam Gay-Antaki to the Center for Community Geography Team!
-permalink: /news/march-28,-2021
 published_date: '2021-03-28'
 ---
 

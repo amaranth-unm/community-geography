@@ -1,6 +1,5 @@
 ---
 title: Lobo Garden Fall Party
-permalink: /events/-display-name
 start_date: '2023-10-19'
 start_time: '16:00'
 end_date: '2023-10-19'

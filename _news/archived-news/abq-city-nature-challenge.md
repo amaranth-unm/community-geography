@@ -1,6 +1,5 @@
 ---
 title: Help us do citizen science! ABQ City Nature Challenge 2021
-permalink: /news/march-22,-2021
 published_date: '2021-03-22'
 ---
 

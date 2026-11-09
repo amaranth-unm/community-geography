@@ -1,6 +1,5 @@
 ---
 title: Community Engagement Symposium
-permalink: /events/symposium23
 start_date: '2023-11-03'
 start_time: '13:00'
 end_date: '2023-11-03'

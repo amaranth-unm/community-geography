@@ -1,6 +1,5 @@
 ---
 title: Congratulations Faculty! 2021-2022 Seed Funding Awards for Community Engaged Classrooms Announced
-permalink: /news/july-12,-2021
 published_date: '2021-07-12'
 ---
 

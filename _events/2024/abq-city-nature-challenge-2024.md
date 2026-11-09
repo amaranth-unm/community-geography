@@ -1,6 +1,5 @@
 ---
 title: City Nature Challenge
-permalink: /events/city-nature-challenge
 start_date: '2024-04-26'
 start_time: '00:00'
 end_date: '2024-05-05'

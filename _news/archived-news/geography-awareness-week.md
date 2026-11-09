@@ -1,6 +1,5 @@
 ---
 title: Geography Awareness Week
-permalink: /news/november-1-2020
 published_date: '2020-11-01'
 ---
 
@@ -31,7 +30,7 @@ On Friday, November 20, the Center for Communitiy Geography will join UNM’s De
 [**We are happy to welcome Laurel Ladwig as the Center's new Associate Director!**]({{ site.baseurl }}/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director)  
 *February 17, 2025*
 
-[**Fall 2024 Community Geography Fellows' Projects**]({{ site.baseurl }}/fall-2024-fellows-projects)
+[**Fall 2024 Community Geography Fellows' Projects**]({{ site.baseurl }}/news/fall-2024-fellows-projects)
 
 *December 06, 2024*
 

@@ -1,6 +1,5 @@
 ---
 title: Join the 2022 City Nature Challenge!
-permalink: /news/april-11-2022
 summary: 2022 City Nature Challenge
 published_date: '2022-04-11'
 ---

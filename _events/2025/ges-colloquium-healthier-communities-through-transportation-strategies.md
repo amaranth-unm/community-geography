@@ -1,6 +1,5 @@
 ---
 title: 'GES Colloquium: Healthier Communities Through Transportation Strategies'
-permalink: /events/ges-colloquium
 start_date: '2025-04-04'
 start_time: '15:00'
 end_date: '2025-04-04'

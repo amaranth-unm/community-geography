@@ -1,6 +1,5 @@
 ---
 title: ABQ City Nature Challenge
-permalink: /events/city-nature-challenge1
 start_date: '2025-04-25'
 start_time: '08:00'
 end_date: '2025-04-28'

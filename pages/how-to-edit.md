@@ -364,7 +364,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - **Optional picture beside the story:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - News is not shown on the homepage; it lives under **News & Events** in the menu.
 
-**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
+**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have an extra `heading_id` line; leave it in the old files, and don't copy it into new ones.
 
 ---
 
@@ -406,7 +406,7 @@ how to register.
 The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay on the **Events** page under Past events, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
 
-**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
+**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `heading_id`, `redirect_from` and `archive_anchor`) that keep old links working; don't copy those into new events.
 
 ---
 
@@ -504,7 +504,7 @@ A short biography goes here.
 - **Nothing is live until it is committed and pushed.** The Actions tab shows progress.
 - **Check the live site after every change.** Open the page and make sure it looks right.
 - **Search updates itself.** New events, news, and people become searchable automatically.
-- **Two pages cannot have the same address.** If two files have the same name in the same kind of folder, or the same `permalink`, one silently replaces the other.
+- **Two pages cannot have the same address.** Two events, stories or projects with the same file name get the same address even when they sit in different year folders, and one silently replaces the other. A `permalink` line on a page can clash the same way.
 - **Never delete the dashes (`---`) that surround the top block** of a page.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.
@@ -512,7 +512,7 @@ A short biography goes here.
 - **Folders starting with `_`, and the `scripts/` and `.github/` folders:** leave them alone unless you know what you're doing. The technical notes are in `README.md` (how the site uses Xanthan) and `scripts/README.md` (the image tools).
 - **Analytics and UNM footer/header:** these are managed by UNM. Do not edit files inside `_includes/unm/` without checking first. The exception is `footer-site.html`, which is the Center's own footer with its address.
 - **Lexicon words:** each word is one file in `_lexicon/`, and its front matter holds the whole page: the definition, the wide photo, the related ideas, and the `story` (its quotes, passages and photos, in order). To change a quote or swap a photo, edit those lines. To add a word, copy an existing word's file.
-- **Notes left in files:** a `review_notes` line in a file's top block is a reminder, left when pages were moved over from the old website, that something in that file needs checking. It doesn't show on the site. Delete it once the question is settled. A `date_review: true` line is different: it keeps an event out of the Upcoming list and adds a notice to the event's page that its dates conflict.
+- **Dates that conflict:** if an event's dates can't be settled yet, add `date_review: true` to its top block. That keeps the event out of the Upcoming list and adds a notice to its page that the dates conflict. Delete the line once the dates are fixed.
 - **Old pages are kept.** Instead of deleting an old story, event, or project, leave it. Events move to the archive on their own, and projects move to "past."
 - **New year?** Start a new year folder in `_news/` and `_events/` (for example `_news/2027/`) to keep the files tidy. The folders don't change anything on the website, and nothing else needs setting up for a new year.
 - **Backups:** GitHub stores every version of every file. You can look at the history of any file by right-clicking it and choosing **Open Timeline**.
