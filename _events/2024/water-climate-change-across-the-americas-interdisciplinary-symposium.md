@@ -5,8 +5,8 @@ start_time: '20:30'
 end_date: '2024-05-03'
 end_time: '15:30'
 location: Bobo Room at Hodgin Hall
-image: /assets/images/events/watersymposium24
-image_alt: 'Photo: Water & Climate Change Across the Americas: Interdisciplinary Symposium'
+image: /assets/images/events/watersymposium24.png
+image_alt: 'Flyer for Water & Climate Change Across the Americas, May 2 and 3, 2024, Albuquerque. Day 1, 8:30 AM to 5:00 PM, Bobo Room at Hodgin Hall, with a keynote by Maria Lane at 11:00 AM. Day 2, 7:50 AM to 3:30 PM, a mobile symposium on the Middle Rio Grande. Advance registration required.'
 heading_id: water--climate-change-across-the-americas-interdisciplinary-symposium
 ---
 

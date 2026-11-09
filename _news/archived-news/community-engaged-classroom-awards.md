@@ -7,7 +7,7 @@ published_date: '2021-07-12'
   image-path="/assets/images/news/casa-san-ysidro-by-ramona-m.png"
   image-position="left"
   image-width="35%"
-  alt-text="casa-san-ysidro-by-ramona-m."
+  alt-text="The courtyard at Casa San Ysidro: a shaded brick courtyard enclosed by adobe walls, with a wooden ladder, rustic wooden benches, dark lava rocks and a large old tree beside a leafy green tree."
 %}
 
 The R.H. Mallory Center for Community Geography is pleased to announce two faculty awardees who will receive \$1,000 in Seed Funding for Community Engaged Classrooms in 2021-2022! Faculty were invited to submit proposals for projects to improve community engagement in classes addressing human-environment issues, and two projects were selected for funding in the Department of Geography & Environmental Studies.

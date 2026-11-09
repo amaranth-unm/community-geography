@@ -9,7 +9,7 @@ The R.H. Mallory Center for Community Geography just announced a slate of paneli
 {% include images/figure.html
   image-path="/assets/images/news/christine.jpeg"
   image-width="20%"
-  alt-text="christine.jpeg"
+  alt-text="Portrait of Christine Ami, smiling in a black sweater and a long turquoise and coral necklace, in front of framed artwork."
 %}
 
 **[Christine Ami](http://www.christineami.com/) (Diné): Associate Professor, Diné College** 
@@ -19,7 +19,7 @@ Dr. Ami teaches courses on Indigenous Research Methodologies and Methods, Tradit
 {% include images/figure.html
   image-path="/assets/images/news/deana.jpg"
   image-width="20%"
-  alt-text="deana.jpg"
+  alt-text="Portrait of Deana Dartt holding a large abalone shell in both hands against a dark background."
 %}
 
 **[Deana Dartt](http://www.liveoaknative.com/), PhD (Coastal Band Chumash): Principal, Live Oak Consulting** 
@@ -29,7 +29,7 @@ Deana Dartt, PhD is Coastal Band Chumash and Mestiza, descending from the indig
 {% include images/figure.html
   image-path="/assets/images/news/rudo.jpg"
   image-width="20%"
-  alt-text="rudo.jpg"
+  alt-text="Portrait of Rudo Kemper in a dark baseball cap and gray T-shirt, looking off to the side, with red rock canyon walls and a blue sky behind."
 %}
 
 **Rudo Kemper: Founder,** **[Terrastories](https://terrastories.app/)** **and Director of Technology,** **[Native Land Digital](https://native-land.ca/)** 
@@ -39,7 +39,7 @@ Rudo is a geographer and technologist who supports Indigenous and other communit
 {% include images/figure.html
   image-path="/assets/images/news/annita.jpg"
   image-width="20%"
-  alt-text="annita.jpg"
+  alt-text="Portrait of Annita Lucchesi, smiling and wearing long orange tassel earrings and a beaded necklace."
 %}
 
 **Annita Lucchesi (Cheyenne descendant): PhD candidate, University of Arizona School of Geography, Development & Environment** 
@@ -49,7 +49,7 @@ Annita is a Cheyenne geographer, cartographer, and community-based researcher. S
 {% include images/figure.html
   image-path="/assets/images/news/reuben.jpg"
   image-width="20%"
-  alt-text="reuben.jpg"
+  alt-text="Portrait of Reuben Rose-Redwood, smiling in a maroon button-up shirt over a black T-shirt, in front of a white stucco wall with red roses."
 %}
 
 **[Reuben Rose-Redwood](https://critical.geog.uvic.ca/section/reuben-rose-redwood): Professor of Geography and Associate Dean Academic, Faculty of Social Sciences, University of Victoria** 

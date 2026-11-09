@@ -7,8 +7,8 @@ groups:
 - affiliates
 display_order: 3
 anchor: dr-claudia-b-pratesi
-image: /assets/images/people/claudia
-image_alt: claudia
+image: /assets/images/people/claudia.png
+image_alt: 'Portrait of Dr. Claudia B. Pratesi, smiling indoors.'
 ---
 
 Dr. Pratesi is an assistant professor in Environmental and Occupational Health and Fundamentals of One Health at the College of Population Health (COPH). Currently, Dr. Pratesi is spearheading the development of an Environmental Health Equity concentration for the Master’s in Public Health program at COPH while also pioneering dual-degree programs in collaboration with the Pharmacy and Water Resources departments.

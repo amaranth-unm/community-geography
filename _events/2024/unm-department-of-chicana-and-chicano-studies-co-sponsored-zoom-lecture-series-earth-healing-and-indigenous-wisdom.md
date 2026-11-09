@@ -6,8 +6,7 @@ end_date: '2024-02-23'
 end_time: '15:00'
 presenter: Dr. Christina Castro (Taos Pueblo/Jemez Pueblo/Xicana), Three Sisters Collective
 location: Virtual
-image: /assets/images/events/gila_christina_castro
-image_alt: 'Photo: UNM Department of Chicana and Chicano Studies Co-Sponsored Zoom Lecture Series: Earth Healing and Indigenous
-  Wisdom'
+image: /assets/images/events/gila_christina_castro.png
+image_alt: 'Flyer for the Earth Healing and Indigenous Wisdom Zoom lecture by Dr. Christina M. Castro of the Three Sisters Collective, Friday, February 23, 2024, 3 PM MT, with Gila Ancestral Homelands. Join by Zoom.'
 ---
 

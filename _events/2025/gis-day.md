@@ -7,7 +7,7 @@ end_time: '14:00'
 presenter: Center for Community Geography, Student Association of Geography and Environmental Studies (SAGES)
 location: 'UNM SUB: (3rd Floor) Navajo Lounge and Lobo A/B'
 image: /assets/images/events/gis-day.png
-image_alt: 'Photo: GIS Day 2025'
+image_alt: 'Flyer for GIS Day, Wednesday, Nov. 19, UNM SUB 3rd Floor, Navajo Lounge and Lobo A+B: film screening of Our Story, The Indigenous Led Fight to Protect Greater Chaco at 10:15, geography showcase at 11:15, lunch, and campus tour at 1:15, from the R.H. Mallory Center for Community Geography.'
 ---
 
 Join the Student Association of Geography & Environmental Studies (SAGES) and the Center for Community Geography for our GIS Day Celebration! 

@@ -13,7 +13,7 @@ Three departments and schools at the University of New Mexico (UNM) will be goin
   image-path="/assets/images/news/abq-city-nature-challenge---updated-logo.png"
   image-position="right"
   image-width="40%"
-  alt-text="abq-city-nature-challenge---updated-logo.png"
+  alt-text="Flyer announcing the ABQ City Nature Challenge, April 28 to May 1, 2023: join the GES team on iNaturalist and get your citizen science on, from the R.H. Mallory Center for Community Geography."
 %}
 
 UNM students, faculty, and staff are encouraged to join one of the three teams, even if they come from a different department. If you would like to form your own team, though, follow the instructions [here](https://abqcitynature.org/).

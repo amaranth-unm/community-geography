@@ -7,7 +7,7 @@ published_date: '2021-03-28'
   image-path="/assets/images/news/miriam-profile-picture-.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="miriam-profile-picture-.jpg"
+  alt-text="Portrait of Miriam Gay-Antaki, smiling in a knit hat and winter coat and pointing at a metal globe sculpture marked The Geographical Centre of Europe."
 %}
 
 The Center for Community Geography welcomes [Associate Director Dr. Miriam Gay-Antaki]({{ site.baseurl }}/about/contact-us) to the team. Dr. Gay-Antaki will manage funding competitions for the Center, provide direct project support, and assist with public events, trainings, and workshops. As a feminist geographer, Dr. Gay-Antaki is interested in better understanding contested environmental discourses and practices and what people in New Mexico – especially the most silenced – do to maintain access and control over decisions that concern them. Center Director Dr. Maria Lane is looking forward to having Dr. Gay-Antaki aboard as the Center grows, “Miriam is new to UNM, so I’m delighted that she is enthusiastic about getting involved right away with community organizations. Her experience with fieldwork and with climate issues will be a great asset to the center, where students and faculty are looking for ways to support community partners as they face critical environmental issues in our home state.”
@@ -18,7 +18,7 @@ Dr. Gay-Antaki believes Geography is a discipline uniquely suited to pursue inte
   image-path="/assets/images/news/pic-of-field-work-29097.jpg"
   image-position="right"
   image-width="40%"
-  alt-text="pic-of-field-work-29097.jpg"
+  alt-text="An adult and a child hold hands and walk across a sunny dirt yard past an open-sided roofed shelter with a block counter, a pile of brush and pine trees behind."
 %}
 
 Dr. Gay-Antaki is drawn to community engaged work because, “Community engaged work shies away from what Feminist Scholar Donna Haraway has called “The God Trick” of seeing everything from nowhere. This approach, advertised as impartial and objective, silences voices on the ground that have an immense repository of knowledge. Qualitative methods, interviews, field notes, participant observation, informed by feminist insights pushes me to actively seek out different perspectives to resolve complex socioenvironmental problems such as climate change.” With a focus on these methods, Dr. Gay-Antaki envisions that the Center will be the hub for students, academics and professionals looking for community engaged work. This hub will be the go-to-place for internships, study opportunities, and a contact point for communities looking to work with UNM to answer pressing questions.
@@ -28,5 +28,5 @@ Dr. Gay-Antaki is excited about the opportunity to work with New Mexican residen
 {% include images/figure.html
   image-path="/assets/images/news/pic-of-field-work9098.png"
   image-width="60%"
-  alt-text="pic-of-field-work9098.png"
+  alt-text="Four people stand among pine trees in a forest; one writes in a notebook while the others listen, one holding a hand to his face."
 %}

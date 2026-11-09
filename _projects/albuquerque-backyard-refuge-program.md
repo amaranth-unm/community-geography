@@ -26,7 +26,7 @@ A common landscaping practice is to cut down flowers when the petals fall; our g
 {% include images/figure.html
   image-path="/assets/images/projects/abq_backyard_refugee_support_campus_critters.jpg"
   image-width="90%"
-  alt-text="abq_backyard_refugee_support_campus_critters.jpg"
+  alt-text="Two people draw with colored chalk on a sunlit campus sidewalk beside tall green plants; large green and orange letters read 'Support Campus Critters'."
 %}
 
 If, as Barbara Kingsolver says, “it takes a superlative mind to appreciate a plant”, it takes a receptive mind to appreciate a dried plant that does not conform to our usual definition of beauty. We want people to learn to see drying sunflowers as free dried flower arrangements that provide bountiful food for our beautiful goldfinch neighbors! 
@@ -38,7 +38,7 @@ Students are also contributing to community science by documenting wildlife sigh
 {% include images/figure.html
   image-path="/assets/images/projects/abq_backyard_refugee_program_finchart.jpg"
   image-width="90%"
-  alt-text="abq_backyard_refugee_program_finchart.jpg"
+  alt-text="A person in a bright room holds up a colorful painting of a white finch and sunflowers lettered 'Let your flowers keep giving, feed the finches'."
 %}
 
 This is part of an effort is to enhance habitat for pollinators and other wildlife on campus. The Center for Community Geography and ABQ Backyard Refuge Program are collaborating with the UNM Office of Sustainability, Facility Services Grounds & Landscaping Department, and the Landscape Architecture program. We welcome participation from other departments!

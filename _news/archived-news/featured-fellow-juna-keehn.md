@@ -3,7 +3,7 @@ title: 'Featured Spring 2025 Fellow: Juna Keehn'
 heading_id: featured-fellow-juna-keehn
 published_date: '2025-03-12'
 image: /assets/images/news/juna.jpg
-image_alt: Juna Keehn
+image_alt: 'Portrait of Juna Keehn outdoors in autumn light, standing in front of tall golden shrubs and a river.'
 ---
 
 ***Project: Albuquerque Backyard Refuge Program***

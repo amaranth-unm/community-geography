@@ -9,7 +9,7 @@ groups:
 display_order: 8
 anchor: dr-marygold-walsh-dilley
 image: /assets/images/people/marygold.webp
-image_alt: marygold.webp
+image_alt: 'Portrait of Dr. Marygold Walsh-Dilley smiling outdoors in front of green leaves.'
 ---
 
 Dr. Marygold Walsh-Dilley is an interdisciplinary social scientist, often working at the intersection of geography, sociology, and anthropology. She draws on political ecological frameworks to connect the social and ecological worlds of food, agriculture, climate change and rural development.

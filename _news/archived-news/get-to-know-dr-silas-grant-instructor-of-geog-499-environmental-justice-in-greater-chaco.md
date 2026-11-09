@@ -6,6 +6,7 @@ published_date: '2023-11-07'
 {% include images/figure.html
   image-path="/assets/images/news/thumbnail_20230702_dsc1266_small.jpg"
   image-width="100%"
+  alt-text="Dr. Silas Grant, smiling and kneeling beside a dog on a rocky overlook, with snow-dusted mountain peaks and evergreen trees behind."
   caption="Photo: Dr. Silas Grant"
 %}
 
@@ -24,6 +25,7 @@ A: The people I organize and do research with in the Greater Chaco Landscape tau
 {% include images/figure.html
   image-path="/assets/images/news/kendra-pinto-earthworks.jpg"
   image-width="100%"
+  alt-text="Kendra Pinto holds an optical gas imaging camera near oil and gas facilities."
   caption="Photo: Kendra Pinto, Four Corners Indigenous Community Field Advocate with Earthworks, frontline community member in Eastern Navajo Agency, and community instructor for GEOG 499. During the course, Kendra will lead a field trip and teach participants about using optical gas imaging technology to make invisible pollution visible. Photo courtesy of Earthworks."
 %}
 

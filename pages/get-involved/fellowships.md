@@ -14,7 +14,7 @@ masthead_position: 50% 62%
 {% include images/figure.html
   image-path="/assets/images/people/ks_headshot_02.jpg"
   image-width="60%"
-  alt-text="ks_headshot_02.jpg"
+  alt-text="Portrait of Katie Slack against a plain light wall."
 %}
 
 As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributing to the advancement of community-engaged environmental mapping through her work with the New Mexico Backyard Refuge (NM BYR) Program. In collaboration with Laurel Ladwig, Katie is leading the development of a digital mapping component designed to strengthen public access to ecological data and program outcomes.
@@ -26,9 +26,9 @@ The resulting interactive web map will be publicly accessible, allowing communit
 “*Being a U.N.M. R.H. Mallory Center for Community Geography Fellow has allowed me to use my GIS skills to benefit the community, which is valuable and fulfilling*.” - Katie Slack
 
 {% include images/figure.html
-  image-path="/assets/images/get-involved/criticalcartographyshannonandmicheal"
+  image-path="/assets/images/get-involved/criticalcartographyshannonandmicheal.jpg"
   image-width="60%"
-  alt-text="criticalcartographyshannonandmicheal"
+  alt-text="Three masked people stand on a dirt path beside a garden plot with drip irrigation lines, one taking notes and one holding a clipboard, with blossoming trees and parked trucks behind."
 %}
 
 *2024-2025 Applications are now closed. *

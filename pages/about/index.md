@@ -40,7 +40,7 @@ Wanting to give back as much as he received, Mallory joined the advisory board o
 Through helping start the Center, he sought to help more students discover geography with intention and anticipates his bequest will expand awareness of geographical thinking more than he could alone. When talking to Center staff about this project, he said, “My knowledge \[of geography\] is constantly building, and it has been an incredible gift…Geography stole my heart and I want to provide that opportunity to others.”
 
 {% include images/figure.html
-  image-path="/assets/images/projects/full-group-pajarito-acequia-sp2022"
+  image-path="/assets/images/projects/full-group-pajarito-acequia-sp2022.jpg"
   image-width="55%"
   caption="Students from Dr. Lane's Critical Cartography course with community partner, Jorge Garcia, at the Pajarito Acequia. Photo by Desiree Loggins."
 %}

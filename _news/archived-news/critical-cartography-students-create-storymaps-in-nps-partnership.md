@@ -7,7 +7,7 @@ published_date: '2022-02-02'
   image-path="/assets/images/news/pajarito-open-space-shannon.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="pajarito-open-space-shannon.jpg"
+  alt-text="View over a horse's ears down a gravel path beside a tall green cornfield, with trees, a fence and a road ahead under a blue sky."
 %}
 
 We are happy to announce that a student mapping project from 2021's Critical Cartography (GEOG 413/515) class was just published to the National Parks - National Trails (NPS) website. This service learning project was supported by the Center for Community Geography. Students worked closely with NPS to create twoStoryMaps to improve awareness of and access to [El Camino Real de Tierra Adentro National Historic Trail](https://www.nps.gov/elca/index.htm). Their cartographic contributions illustrate the important cultural and spatial connections made along El Camino Real that continue to make echoes today.

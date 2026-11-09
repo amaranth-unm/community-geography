@@ -35,7 +35,7 @@ story:
       and depend on, their place in the global network of research
       collaboration.
     source: Olechnicka et al., 2018
-    photo: /assets/images/projects/full-group-pajarito-acequia-sp2022
+    photo: /assets/images/projects/full-group-pajarito-acequia-sp2022.jpg
     photo_alt: Students and a community partner stand among cottonwoods beside the Pajarito Acequia.
     photo_caption: Students from Dr. Lane's Critical Cartography course with community partner Jorge Garcia at the Pajarito Acequia. Photo by Desiree Loggins.
   - text: >-

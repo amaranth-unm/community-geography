@@ -14,7 +14,7 @@ Two key departments at the University of New Mexico (UNM) will be going head to 
   image-path="/assets/images/news/cnc-updated-image.png"
   image-position="right"
   image-width="45%"
-  alt-text="cnc-updated-image.png"
+  alt-text="Flyer for the 2022 GES-BIO Showdown, part of City Nature Challenge ABQ 2022, April 29 to May 2: choose your team and join a community science challenge. QR code to sign up; follow @NMCOMMUNITYGEOG for updates."
 %}
 
 UNM students, faculty, and staff are encouraged to join one of the two teams, even if they come from a totally different department.

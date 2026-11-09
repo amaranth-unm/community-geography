@@ -6,8 +6,8 @@ end_date: '2024-03-08'
 end_time: '16:30'
 presenter: Roseanne Rosenthal (Tewa & Apache ‘iyanet’eesh Ch’ogaat), University of California, Riverside
 location: ABQ BioPark Botanic Gaden 2601 Central Ave NW Albuquerque, NM 87104
-image: /assets/images/events/rosenthal
-image_alt: 'Photo: Gila Centennial: Looking to the Mountain: Sacred Lands, Healing Cultures'
+image: /assets/images/events/rosenthal.png
+image_alt: 'Flyer for the Land Is Medicine Zoom lecture by Roseanne Rosenthal, University of California, Riverside, Friday, March 8, 2024, 10 AM, with Gila Ancestral Homelands. Join by Zoom.'
 ---
 
 The year 2024 marks the 100th Anniversary of the designation Gila Wilderness by Aldo Leopold, representing a landmark opportunity to re-affirm and re-imagine our relationships to New Mexico and these remarkable landscapes.

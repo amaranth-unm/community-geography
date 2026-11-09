@@ -6,7 +6,7 @@ end_date: '2024-04-28'
 end_time: '16:00'
 location: Rio Grande Nature Center State Park,
 image: /assets/images/events/ges_bioblitzbikeride.jpg
-image_alt: 'Photo: GES BioBlitz Bike and Brews'
+image_alt: 'Flyer for the Geography and Environmental Studies Alumni Chapter BioBlitz Bike Ride, Sunday 4/28, 1 to 4 PM: photo observations for the City Nature Challenge at Rio Grande Nature Center State Park at 1, a ride on the Paseo del Bosque Trail at 2, and drinks at Boxing Bear Brewing in Corrales at 3. Family and friends welcome.'
 ---
 
 You’re invited! 

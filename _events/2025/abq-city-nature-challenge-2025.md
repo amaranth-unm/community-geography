@@ -5,7 +5,7 @@ start_time: '08:00'
 end_date: '2025-04-28'
 end_time: '17:00'
 image: /assets/images/events/cnc_2025_flyer_double-sided_letter_page_1.png
-image_alt: 'Photo: ABQ City Nature Challenge'
+image_alt: 'Flyer for the ABQ City Nature Challenge, observe April 25 to 28, 2025: find wildlife in Bernalillo, Valencia and Sandoval Counties, photograph it and upload to the iNaturalist project ''City Nature Challenge 2025: ABQ''; identify April 29 to May 4, results May 5. More at abqCityNature.org.'
 ---
 
 [City Nature Challenge](https://citynaturechallenge.org/) is an annual global collaborative effort to document wild plants and animals in and around urban areas. The 2025 event takes place from April 25 to May 3, 2025. The observation period is Friday through Monday (4/25 - 4/28), followed by the identification period (4/29 - 5/3.) **Join us in making observations of plants and wildlife in the Middle Rio Grande Valley (Sandoval, Bernalillo, and Valencia Counties.)**

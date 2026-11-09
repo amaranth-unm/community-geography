@@ -7,7 +7,7 @@ published_date: '2021-04-22'
   image-path="/assets/images/news/cnc2021-gesvbio.jpg"
   image-position="left"
   image-width="35%"
-  alt-text="cnc2021-gesvbio.jpg"
+  alt-text="Flyer for the GES vs BIO Showdown, a UNM team contest in the 2021 City Nature Challenge ABQ: photograph wild plants and animals with the iNaturalist app in the Middle Rio Grande Valley, April 30 to May 3; the team with the most photos wins."
   link="/assets/documents/news/cnc2021-gesvbio.pdf"
 %}
 

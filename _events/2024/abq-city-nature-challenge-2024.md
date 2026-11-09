@@ -6,7 +6,7 @@ end_date: '2024-05-05'
 end_time: '00:00'
 location: Albuquerque, NM
 image: /assets/images/events/cnc-ges-group.png
-image_alt: 'Photo: City Nature Challenge'
+image_alt: 'Poster for the ABQ City Nature Challenge, April 26 to April 29, 2024: join the GES team on iNaturalist and get your citizen science on. Shows the R.H. Mallory Center for Community Geography and the challenge organizers'' logos.'
 ---
 
 The **[City Nature Challenge](https://citynaturechallenge.org/)** is an annual global collaborative effort to find and document wildlife observations in and around urban areas. Join nature enthusiasts worldwide in discovering the biodiversity in your area. The 2024 City Nature Challenge takes place from Friday, April 26 to Sunday, May 5, 2023.

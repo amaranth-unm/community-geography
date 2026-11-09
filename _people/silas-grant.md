@@ -9,7 +9,7 @@ groups:
 display_order: 6
 anchor: dr-silas-grant
 image: /assets/images/people/soni-taylorshead-july-2022.jpg
-image_alt: soni-taylorshead-july-2022.jpg
+image_alt: 'Portrait of Dr. Silas Grant outdoors, smiling in a gray cap and glasses, in front of a green meadow and blue sky.'
 ---
 
 Dr. Silas Grant is an organizer, educator, and researcher working on climate change and just transition in New Mexico. As a cultural anthropologist and geographer, they are interested in questions of jurisdiction, knowledge production, coloniality, and affect. Grant's current research projects focus on understanding and addressing the impacts of fracking across the Greater Chaco Landscape of northwestern New Mexico, and on examining the intersections of struggles for environmental justice and queer and trans liberation.
