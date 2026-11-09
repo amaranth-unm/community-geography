@@ -2,7 +2,7 @@
 name: Jane Doe
 role: Graduate Fellow
 affiliation: Department of Geography and Environmental Studies
-# [team] for the Our Team page, [affiliates] for the Affiliates page.
+# [team] for Our Team on the People page, [affiliates] for Faculty Affiliates.
 groups: [team]
 # Position on the page: smaller numbers come first.
 display_order: 20
