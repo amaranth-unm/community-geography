@@ -1495,7 +1495,7 @@ figure a.image { border-bottom: 0; }
 }
 .lexicon-scroll-row:nth-child(even) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
 .lexicon-scroll-row:nth-child(even) .lexicon-scroll-photo { order: 2; }
-.lexicon-scroll-photo { display: block; overflow: hidden; background: var(--bg-nav); }
+.lexicon-scroll-photo { display: block; overflow: hidden; background: var(--bg-card); }
 .lexicon-scroll-photo img {
   display: block;
   width: 100%;
