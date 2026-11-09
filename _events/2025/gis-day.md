@@ -9,8 +9,6 @@ presenter: Center for Community Geography, Student Association of Geography and 
 location: 'UNM SUB: (3rd Floor) Navajo Lounge and Lobo A/B'
 image: /assets/images/events/gis-day.png
 image_alt: 'Photo: GIS Day 2025'
-review_notes:
-- Original Geography Showcase time says 11:15 PM–1:15 PM within a 10am–2pm event; preserved pending editorial review.
 ---
 
 Join the Student Association of Geography & Environmental Studies (SAGES) and the Center for Community Geography for our GIS Day Celebration! 
@@ -20,6 +18,6 @@ Geography Awareness Week and GIS Day are annual celebrations that aim to raise a
 It also highlights the role geography plays in solving global challenges like climate change, urban planning, and resource management. Geographical Information Systems (GIS) Day, celebrated during this week, focuses on the value of GIS technology in collecting, analyzing, and visualizing spatial data. Both events encourage individuals to explore the intersection of geography, technology, and global issues, promoting greater geographical understanding.  
 
 - Film Screening: *Our Story - The Indigenous Led Fight to Protect Greater Chaco (2022)  (Documentary): *10:15 AM - 11:15 AM
-- Geography Showcase (Geography and GIS-Themed talks, Poster Competition, Graduate Student Panel: 11:15 PM - 1:15 PM
+- Geography Showcase (Geography and GIS-Themed talks, Poster Competition, Graduate Student Panel: 11:15 AM - 1:15 PM
 -  Lunch: 11:15 AM - 12:15 PM
 - Campus Tour 1:15 PM - 1:45 PM

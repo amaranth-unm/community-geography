@@ -1,8 +1,6 @@
 ---
 title: Recap of Fall 2023 Center for Community Geography Events and Plans for Spring 2024
-published_date: '2023-01-19'
-review_notes:
-- Archive displays January 19, 2023 for a fall-2023 recap and spring-2024 plans. Date retained pending review.
+published_date: '2024-01-19'
 ---
 
 {% include images/figure.html

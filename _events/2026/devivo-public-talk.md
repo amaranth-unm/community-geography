@@ -6,12 +6,9 @@ start_time: '15:00'
 end_time: '16:30'
 presenter: Michael DeVivo, PhD
 location: UNM Campus Bandelier East 105
-date_review: true
-review_notes:
-- Original heading/details say April 2026; description says April 2025. Retained without choosing a corrected year.
 ---
 
-Mike DeVivo, Director of the Geography Program at Grand Rapids Community College and recipient of the AAG Presidential Achievement Award, will visit the University of New Mexico’s Department of Geography and Environmental Studies from April 8–10, 2025. As part of his visit, he will present a public lecture on geographic leadership and pedagogy on April 10, 2025. The lecture will draw on his experience developing a nationally recognized community college geography program. In addition to his public talk, DeVivo will meet with undergraduate and graduate students and engage faculty in conversations about best practices in geography education and community-engaged scholarship.
+Mike DeVivo, Director of the Geography Program at Grand Rapids Community College and recipient of the AAG Presidential Achievement Award, will visit the University of New Mexico’s Department of Geography and Environmental Studies from April 8–10, 2026. As part of his visit, he will present a public lecture on geographic leadership and pedagogy on April 10, 2026. The lecture will draw on his experience developing a nationally recognized community college geography program. In addition to his public talk, DeVivo will meet with undergraduate and graduate students and engage faculty in conversations about best practices in geography education and community-engaged scholarship.
 
 {% include images/figure.html
   image-path="/assets/images/events/dr-devivo.jpg"
