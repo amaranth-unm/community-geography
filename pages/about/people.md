@@ -50,8 +50,6 @@ Alexandra Mirabal
 
 Al-Ekram Elahee Hridoy
 
-Desiree Loggins
-
 Juna Keehn
 
 Meira Williamson
