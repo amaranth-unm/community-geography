@@ -1,6 +1,5 @@
 ---
 title: 'Water & Climate Change Across the Americas: Interdisciplinary Symposium'
-permalink: /water-climate-change-across-the-americas-interdisciplinary-symposium
 start_date: '2024-05-02'
 start_time: '20:30'
 end_date: '2024-05-03'

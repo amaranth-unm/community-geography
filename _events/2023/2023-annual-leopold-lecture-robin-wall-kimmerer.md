@@ -1,6 +1,5 @@
 ---
 title: 2023 Annual Leopold Lecture - Robin Wall Kimmerer
-permalink: /events/2023-annual-leopold-lecture---robin-wall-kimmerer
 start_date: '2023-04-22'
 start_time: '17:30'
 end_date: '2023-04-22'

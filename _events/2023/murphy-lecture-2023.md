@@ -1,6 +1,5 @@
 ---
 title: Murphy Lecture 2023
-permalink: /events/2023-murphy-lecture
 start_date: '2023-11-17'
 start_time: '15:00'
 end_date: '2023-11-17'

@@ -1,7 +1,6 @@
 ---
 title: 'GES Colloquium: Transforming Civil Infrastructure and Environmental Management  with GIScience & Geospatial Technologies
   to Foster Innovative and Resilient Solutions  '
-permalink: /events/ges-colloquium-mapping-absenteeism-visualizing-the-multi-scalar-and-relational-geographies-of-absentee-housing-ownership-in-atlanta-georgia
 start_date: '2025-02-21'
 start_time: '15:00'
 end_date: '2025-02-21'

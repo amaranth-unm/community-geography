@@ -406,7 +406,7 @@ how to register.
 The site is rebuilt every morning, so a finished event drops off the next day.
 - Events are never deleted. They stay on the **Events** page under Past events, which shows each event's flyer (its `image`). An event without a flyer shows its date and title there instead.
 
-**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `permalink` and `heading_id`) that keep old links working; don't copy those into new events.
+**Easiest way:** copy `_templates/event.md` into the year folder, rename the copy, and edit it. Older events have extra lines (like `heading_id`, `redirect_from` and `archive_anchor`) that keep old links working; don't copy those into new events.
 
 ---
 
@@ -504,7 +504,7 @@ A short biography goes here.
 - **Nothing is live until it is committed and pushed.** The Actions tab shows progress.
 - **Check the live site after every change.** Open the page and make sure it looks right.
 - **Search updates itself.** New events, news, and people become searchable automatically.
-- **Two pages cannot have the same address.** If two files have the same name in the same kind of folder, or the same `permalink`, one silently replaces the other.
+- **Two pages cannot have the same address.** Two events, stories or projects with the same file name get the same address even when they sit in different year folders, and one silently replaces the other. A `permalink` line on a page can clash the same way.
 - **Never delete the dashes (`---`) that surround the top block** of a page.
 - **Do not put passwords or private information** in any file. This repository and website may be public.
 - **Photos of people:** get permission before posting.

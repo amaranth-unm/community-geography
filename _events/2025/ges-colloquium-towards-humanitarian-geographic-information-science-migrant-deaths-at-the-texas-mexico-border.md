@@ -1,6 +1,5 @@
 ---
 title: 'GES Colloquium: Towards Humanitarian Geographic Information Science: Migrant Deaths at the Texas-Mexico Border'
-permalink: /faculty-search-colloquium-dr-molly-miranker
 start_date: '2025-02-14'
 start_time: '15:00'
 end_date: '2025-02-14'

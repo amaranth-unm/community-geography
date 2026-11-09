@@ -1,6 +1,5 @@
 ---
 title: GES BioBlitz Bike and Brews
-permalink: /ges-bioblitz-bike-and-brews
 start_date: '2024-04-28'
 start_time: '13:00'
 end_date: '2024-04-28'

@@ -1,6 +1,5 @@
 ---
 title: 'GES Colloquium- Sandia: A Mountain, a Family,  and the Climate Crisis'
-permalink: /ges-colloquium-sandia-a-mountain-a-family-and-the-climate-crisis
 start_date: '2024-03-08'
 start_time: '15:00'
 end_date: '2024-03-08'
