@@ -364,7 +364,7 @@ You can add a [link](https://example.com), **bold text**, and pictures
 - **Optional picture beside the story:** add two lines to the top block: `image: /assets/images/news/my-photo.jpg` and `image_alt: A short description`.
 - News is not shown on the homepage; it lives under **News & Events** in the menu.
 
-**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have extra lines such as `permalink` that keep their addresses from the old website working; leave those in the old files, and don't copy them into new ones.
+**Easiest way:** copy `_templates/news-story.md` into the year folder (right-click it → **Copy**, then right-click the year folder → **Paste**), rename the copy, and replace the text. Older stories have an extra `heading_id` line; leave it in the old files, and don't copy it into new ones.
 
 ---
 

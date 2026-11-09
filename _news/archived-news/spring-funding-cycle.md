@@ -1,6 +1,5 @@
 ---
 title: The Center for Community Geography Spring Funding Cycle is Open!
-permalink: /news/funding-announcement
 published_date: '2022-03-07'
 ---
 

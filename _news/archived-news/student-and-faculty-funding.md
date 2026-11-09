@@ -1,6 +1,5 @@
 ---
 title: 'Apply Now: Funding opportunities for UNM students and faculty'
-permalink: /news/april-12,-2021
 published_date: '2021-04-16'
 ---
 

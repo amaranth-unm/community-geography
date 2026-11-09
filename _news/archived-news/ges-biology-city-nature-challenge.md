@@ -1,6 +1,5 @@
 ---
 title: GES challenges Biology Department in 2021 City Nature Challenge
-permalink: /news/april-22,-2021
 published_date: '2021-04-22'
 ---
 
