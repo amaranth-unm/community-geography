@@ -5,7 +5,7 @@ display_order: 3
 # One or two sentences: shown on the word's card and at the top of its page.
 definition: "The study of diverse environments, places, and spaces of Earth's surface and their interactions."
 # The wide photo under the definition (also the picture when the page is shared).
-image: /assets/images/hero/hero-badlands.jpg
+image: /assets/images/masthead/hero-badlands.jpg
 image_alt: Eroded gray and tan badlands formations stretching to the horizon.
 image_caption: Badlands in New Mexico.
 # The rest of the page, in order: quotes (text and source), passages (text,
@@ -20,7 +20,7 @@ story:
   - text: >-
       We now understand that “place” has meaning. How can geography help us
       understand those meanings and how they came to be?
-    photo: /assets/images/projects/project/satellite-image-abq-cropped.jpg
+    photo: /assets/images/projects/satellite-image-abq-cropped.jpg
     photo_alt: A satellite image of Albuquerque and the Rio Grande valley.
     photo_caption: From the Geospatial Data Aggregator and Visualizer for Albuquerque project.
   - text: >-
@@ -28,7 +28,7 @@ story:
       presented by the powerful, often to serve an imperial agenda. How can we
       use a critical form of geography to address this past and improve how
       we think about spatial connections today?
-    photo: /assets/images/projects/project/mexican-carreta---chihuahua-loc.jpg
+    photo: /assets/images/projects/mexican-carreta---chihuahua-loc.jpg
     photo_alt: A historical photograph of a wooden ox cart with large solid wheels.
     photo_caption: From the StoryMap *Traversing El Camino Real de Tierra Adentro*.
 ---

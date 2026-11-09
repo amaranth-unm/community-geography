@@ -1,6 +1,6 @@
 ---
 title: Food Access in the International District with Bernalillo County Open Space
-image: "/assets/images/projects/project/berncoopenspace.png"
+image: "/assets/images/projects/berncoopenspace.png"
 image_fit: contain
 start_date: 2023-08-21
 end_date: Ongoing

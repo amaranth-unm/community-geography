@@ -8,7 +8,7 @@ redirect_from:
   - /events/index1.html
   - /events/index2.html
 summary: Upcoming Mallory Center events, and every past event by its flyer, newest first.
-masthead_image: /assets/images/community-geography/lexicon/community-gis-day-2025.jpg
+masthead_image: /assets/images/masthead/community-gis-day-2025.jpg
 masthead_position: 50% 12%
 ---
 

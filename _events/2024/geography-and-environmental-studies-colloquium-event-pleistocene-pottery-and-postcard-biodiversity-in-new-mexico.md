@@ -7,7 +7,7 @@ end_date: '2024-02-16'
 end_time: '16:00'
 presenter: Dr. Subhankar Banerjee, Professor of Art and Ecology, University of New Mexico
 location: Mitchell Hall 102
-image: /assets/images/shared/subhankar-banerjee-flyer.png
+image: /assets/images/events/subhankar-banerjee-flyer.png
 image_alt: 'Photo: Geography and Environmental Studies Colloquium Event: Pleistocene, Pottery, and Postcard: BIOdiversity
   in New Mexico'
 ---

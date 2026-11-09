@@ -1,6 +1,6 @@
 ---
 title: The South Valley Acequia Association Pajarito Ditch Project
-image: "/assets/images/about/full-group-pajarito-acequia-sp2022"
+image: "/assets/images/projects/full-group-pajarito-acequia-sp2022"
 start_date: 2022-01-18
 end_date: 2023-05-05
 faculty:

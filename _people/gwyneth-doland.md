@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 2
 anchor: gwyneth-doland
-image: /assets/images/about/gwyneth-doland.jpg
+image: /assets/images/people/gwyneth-doland.jpg
 image_alt: gwyneth-doland.jpg
 ---
 

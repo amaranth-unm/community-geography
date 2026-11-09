@@ -6,7 +6,7 @@ end_date: '2024-05-09'
 end_time: '16:00'
 presenter: Dr. Ana De Luca, Professor, Faculty of Sciences, Universidad Autonoma de Baja California
 location: Bandelier West 104
-image: /assets/images/shared/ges-may-9-colloquium.png
+image: /assets/images/events/ges-may-9-colloquium.png
 image_alt: 'Photo: Final Spring Colloquium'
 ---
 

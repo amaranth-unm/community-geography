@@ -6,7 +6,7 @@ groups:
 - team
 display_order: 3
 anchor: graduate-assistant
-image: /assets/images/about/desiree-photo.jpeg
+image: /assets/images/people/desiree-photo.jpeg
 image_alt: 'Desiree Loggins Headshot '
 ---
 

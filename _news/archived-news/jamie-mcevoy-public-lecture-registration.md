@@ -7,7 +7,7 @@ published_date: '2021-03-11'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/events/march-29-2021-event.jpg"
+  image-path="/assets/images/news/march-29-2021-event.jpg"
   image-position="left"
   image-width="35%"
   alt-text="march-29-2021-event.jpg"

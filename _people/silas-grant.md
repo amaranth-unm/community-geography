@@ -8,7 +8,7 @@ groups:
 - affiliates
 display_order: 6
 anchor: dr-silas-grant
-image: /assets/images/about/soni-taylorshead-july-2022.jpg
+image: /assets/images/people/soni-taylorshead-july-2022.jpg
 image_alt: soni-taylorshead-july-2022.jpg
 ---
 

@@ -6,7 +6,7 @@ start_time: '10:30'
 end_date: '2024-04-25'
 end_time: '14:30'
 location: Cornell Mall
-image: /assets/images/shared/expo2024.png
+image: /assets/images/events/expo2024.png
 image_alt: 'Photo: Sustainability Expo'
 ---
 

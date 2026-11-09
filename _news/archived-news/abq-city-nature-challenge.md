@@ -5,7 +5,7 @@ published_date: '2021-03-22'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/events/city-nature-challenge-log.png"
+  image-path="/assets/images/projects/city-nature-challenge-log.png"
   image-position="right"
   image-width="35%"
   alt-text="city-nature-challenge-log.png"

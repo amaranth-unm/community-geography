@@ -18,7 +18,7 @@ As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributi
 Building upon a buffer map developed in a previous semester, Katie is refining and formatting the dataset for integration into an interactive web mapping application. This platform will display iNaturalist observations alongside additional spatial data layers generated through the NM BYR Program. By combining community-sourced biodiversity data with structured program information, the project enhances the visibility of urban habitat restoration efforts and promotes broader public understanding of local ecological impact.
 
 {% include images/figure.html
-  image-path="/assets/images/funding/ks_headshot_02.jpg"
+  image-path="/assets/images/people/ks_headshot_02.jpg"
   image-width="20%"
   alt-text="ks_headshot_02.jpg"
 %}

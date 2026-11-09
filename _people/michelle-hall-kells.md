@@ -7,7 +7,7 @@ groups:
 - affiliates
 display_order: 5
 anchor: dr-michelle-hall-kells
-image: /assets/images/about/kells-bio-pix.jpg
+image: /assets/images/people/kells-bio-pix.jpg
 image_alt: kells-bio-pix.jpg
 ---
 

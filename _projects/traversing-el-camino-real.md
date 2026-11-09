@@ -2,7 +2,7 @@
 title: 'StoryMap: Traversing El Camino Real de Tierra Adentro'
 # Address used by the old website; visitors there are sent to this page.
 redirect_from: /projects/project/test-project-2
-image: "/assets/images/projects/project/mexican-carreta---chihuahua-loc.jpg"
+image: "/assets/images/projects/mexican-carreta---chihuahua-loc.jpg"
 start_date: 2020-01-15
 end_date: 2021-08-15
 faculty:
@@ -13,7 +13,7 @@ summary: Critical Cartography (GEOG 413/515) students built a StoryMap of El Cam
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/projects/project/traversing-el-camilo-real-de-tierra-adentro.png"
+  image-path="/assets/images/projects/traversing-el-camilo-real-de-tierra-adentro.png"
   image-width="55%"
   alt-text="traversing-el-camilo-real-de-tierra-adentro.png"
   link="https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df"

@@ -6,7 +6,7 @@ groups:
 - team
 display_order: 2
 anchor: associate-director
-image: /assets/images/about/gibbs-photo.jpg
+image: /assets/images/people/gibbs-photo.jpg
 image_alt: Fred Gibbs Headshot
 ---
 

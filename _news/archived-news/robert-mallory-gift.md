@@ -6,7 +6,7 @@ published_date: '2020-12-24'
 ---
 
 {% include images/figure.html
-  image-path="/assets/images/shared/rm.jpg"
+  image-path="/assets/images/news/rm.jpg"
   image-width="65%"
   alt-text="rm.jpg"
 %}
@@ -18,7 +18,7 @@ Albuquerque native Robert H. Mallory has always appreciated the beauty and diver
  “I did not have an idea of what I wanted to do with the degree at the time,” Mallory mused thinking about how geography has informed his life, “but I quickly found that I use it every day.”  Today, Mallory is an acoustician who started his own firm in Albuquerque that provides design services throughout New Mexico. Beyond his professional work, he also sees geography awareness as part of being an informed citizen. A person who is skilled at finding connections and orienting the world is a powerful community member.
 
 {% include images/figure.html
-  image-path="/assets/images/shared/nopal-by-maria-lane.jpeg"
+  image-path="/assets/images/news/nopal-by-maria-lane.jpeg"
   image-width="70%"
   alt-text="nopal-by-maria-lane.jpeg"
 %}

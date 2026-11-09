@@ -127,7 +127,7 @@ This is "front matter." It is information the website uses (title, dates, pictur
 | The home page's welcome text | `pages/index.md` (the `lede` and `intro` lines) |
 | The photos at the top of the home page | `_config.yml` (the `home_hero` list) |
 | The Center's address in the footer | `_includes/unm/footer-site.html` |
-| Pictures | `assets/images/` |
+| Pictures | `assets/images/` (the folders are listed in Section 4, under Adding an image) |
 | PDFs and flyers | `assets/documents/` |
 | The menu at the top of the site | `_data/nav-top.yml` |
 | Site-wide settings (title, email) | `_config.yml` |
@@ -179,8 +179,25 @@ Keep `{{ site.baseurl }}` exactly as shown. It fills in the first part of the we
 - Keep files reasonably small (under about 1 MB if you can). Photos are best as `.jpg`; logos and flyers as `.png`.
 
 **Step 2: Upload it.**
-1. In the Explorer, open the right folder under `assets/images/` (for example `assets/images/news/` for news pictures, `assets/images/events/` for event flyers, `assets/images/projects/project/` for project pictures).
+1. In the Explorer, open the right folder under `assets/images/` (the table below lists them).
 2. **Drag and drop** the image from your computer into that folder in the Explorer. (Or right-click the folder and choose **Upload**.)
+
+Pick the folder for the thing the picture belongs to:
+
+| The picture is for... | Folder under `assets/images/` |
+| --- | --- |
+| A news story | `news/` |
+| An event flyer | `events/` |
+| A project, current or past | `projects/` |
+| A person | `people/` |
+| A word in the lexicon | `lexicon/` |
+| The About pages | `about/` |
+| The Get Involved pages | `get-involved/` |
+| A photo gallery | `galleries/`, in a folder of its own (for example `galleries/gis-day-2025/`) |
+| The photo band at the top of a page, or the home page | `masthead/` |
+| The Center's logo and other design pictures | `site/` |
+
+Folders are named for the thing a picture belongs to, not for when it was added. A project's picture stays in `projects/` after the project ends, so finishing a project is still only a date change (Section 8). Other pages may use a picture from any folder. `archive/` holds old pictures that no page uses any more; leave it alone.
 
 **Step 3: Show it on the page.** Every picture on the site uses the same block. Put it where you want the picture, with a blank line above and below:
 
@@ -302,7 +319,7 @@ Open `_data/nav-top.yml`. Each menu has a `title` (what visitors see) and a `url
 
 ### Changing the photo at the top of a page
 
-Every page except the home page has a band at the top with the Center's name. A page also shows one photo of people fading in from the right if it has a `masthead_image` line. There are no defaults: a page without the line shows the band with the name and no photo. The files in `_templates/` include the line. To give any other page a photo, add two lines to its top block:
+Every page except the home page has a band at the top with the Center's name. A page also shows one photo of people fading in from the right if it has a `masthead_image` line. There are no defaults: a page without the line shows the band with the name and no photo. The files in `_templates/` include the line. To give any other page a photo, upload it to `assets/images/masthead/` and add two lines to its top block:
 
 ```
 masthead_image: /assets/images/masthead/my-photo.jpg
@@ -399,14 +416,14 @@ Every project, current or past, is one file in `_projects/`. A project is listed
 
 A new project is added by creating one file. The cards on the Projects page, and the project page's title, picture, and dates/faculty/partners box, are all built from the information at the top of the file.
 
-1. Upload the project's picture to `assets/images/projects/project/` (see Section 4).
+1. Upload the project's picture to `assets/images/projects/` (see Section 4).
 2. Open `_projects/`, create a new file named like `my-new-project.md`.
 3. Paste and fill in this template:
 
 ```
 ---
 title: My New Project
-image: /assets/images/projects/project/my-new-project.jpg
+image: /assets/images/projects/my-new-project.jpg
 start_date: 2027-01-15
 end_date: Ongoing
 faculty:
@@ -463,7 +480,7 @@ affiliation: Department of Geography and Environmental Studies
 groups: [team]
 display_order: 20
 anchor: jane-doe
-image: /assets/images/about/jane-doe.jpg
+image: /assets/images/people/jane-doe.jpg
 image_alt: Portrait of Jane Doe
 ---
 
@@ -474,7 +491,7 @@ A short biography goes here.
 - `display_order` is a number that decides the order on the page. Smaller numbers come first. To fit someone between 2 and 3, use 2.5. People with the same number appear in file-name order, and someone with no number goes at the end.
 - `anchor` must be unique: the person's name with dashes. The existing team entries use their role instead (`director`, `graduate-fellows`), because that is their heading. Either works as long as no two match.
 - `expertise` is an optional extra line shown under the name, for example `expertise: 'Areas of Expertise: legal geography'`.
-- The photo is optional. Upload it to `assets/images/about/`.
+- The photo is optional. Upload it to `assets/images/people/`.
 - To remove someone, delete their file (right-click it → **Delete**).
 - Two lists that name people are typed by hand, not built from `_people/`. When someone joins or leaves the team, also update the **Past Team Members** list in `pages/about/people.md` and the **Our Team** list in `pages/about/contact-us.md`.
 

@@ -13,7 +13,7 @@ presenter: Jane Doe
 # image: /assets/images/events/my-flyer.png
 # image_alt: Flyer for the Community Mapping Workshop on March 12
 # The photo in the band at the top of the page. Without it the band has no photo.
-masthead_image: /assets/images/community-geography/lexicon/community-gis-day-2025.jpg
+masthead_image: /assets/images/masthead/community-gis-day-2025.jpg
 # masthead_position says which part of the photo to keep when the band crops
 # it: horizontal then vertical, 0% to 100%. 50% 50% is the middle. Raise the
 # second number to show more of the bottom of the photo, lower it to show

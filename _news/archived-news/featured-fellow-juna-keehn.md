@@ -2,7 +2,7 @@
 title: 'Featured Spring 2025 Fellow: Juna Keehn'
 heading_id: featured-fellow-juna-keehn
 published_date: '2025-03-12'
-image: /assets/images/about/juna.jpg
+image: /assets/images/news/juna.jpg
 image_alt: Juna Keehn
 ---
 

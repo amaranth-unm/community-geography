@@ -5,7 +5,7 @@ display_order: 2
 # One or two sentences: shown on the word's card and at the top of its page.
 definition: "An elastic construct gathering people, ideas and places; holding diverse and contradictory meanings around social practice(s)."
 # The wide photo under the definition (also the picture when the page is shared).
-image: /assets/images/community-geography/lexicon/community-gis-day-2025.jpg
+image: /assets/images/masthead/community-gis-day-2025.jpg
 image_alt: A group of students and presenters stand together on a terrace in front of fall trees.
 image_caption: GIS Day 2025 at UNM.
 # Related ideas, shown in a band under the photo.
@@ -24,7 +24,7 @@ story:
       To ensure human survival everywhere in the world, (people) organize
       themselves into communities.
     source: bell hooks, 2000
-    photo: /assets/images/community-geography/lexicon/community-backyard-refuge-mural.jpg
+    photo: /assets/images/lexicon/community-backyard-refuge-mural.jpg
     photo_alt: A mural of a hummingbird, butterflies and sunflowers painted on an outside wall.
     photo_caption: From the mapping tool project for the Albuquerque Backyard Refuge Program.
   - text: >-
@@ -43,7 +43,7 @@ story:
       look no further than an old-growth forest. Or the old-growth cultures
       they raised in symbiosis with them.
     source: Robin Wall Kimmerer
-    photo: /assets/images/community-geography/lexicon/community-bosque.jpg
+    photo: /assets/images/lexicon/community-bosque.jpg
     photo_alt: A tall cottonwood with golden leaves beside a path through the bosque.
     photo_caption: The bosque. Photo by Maria Lane.
 ---

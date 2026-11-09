@@ -5,14 +5,14 @@ permalink: /get-involved/fellowships
 # Old address that now lands here.
 redirect_from:
   - /funding/grad-fellowships
-masthead_image: /assets/images/community-geography/lexicon/human-geography-gis-day-2023.jpg
+masthead_image: /assets/images/masthead/human-geography-gis-day-2023.jpg
 masthead_position: 50% 62%
 ---
 
 # R.H. Mallory Center for Community Geography 2024-2025 Applications for Community Geography Fellows Program
 
 {% include images/figure.html
-  image-path="/assets/images/funding/ks_headshot_02.jpg"
+  image-path="/assets/images/people/ks_headshot_02.jpg"
   image-width="60%"
   alt-text="ks_headshot_02.jpg"
 %}
@@ -26,7 +26,7 @@ The resulting interactive web map will be publicly accessible, allowing communit
 “*Being a U.N.M. R.H. Mallory Center for Community Geography Fellow has allowed me to use my GIS skills to benefit the community, which is valuable and fulfilling*.” - Katie Slack
 
 {% include images/figure.html
-  image-path="/assets/images/funding/criticalcartographyshannonandmicheal"
+  image-path="/assets/images/get-involved/criticalcartographyshannonandmicheal"
   image-width="60%"
   alt-text="criticalcartographyshannonandmicheal"
 %}

@@ -1,6 +1,6 @@
 ---
 title: Albuquerque Backyard Refuge Program
-image: "/assets/images/projects/project/abq-backyard-refuge-logo.jpg"
+image: "/assets/images/projects/abq-backyard-refuge-logo.jpg"
 image_fit: contain
 start_date: 2025-01-13
 end_date: Ongoing
@@ -24,7 +24,7 @@ Students in the Sustainability Studies Program and Department of Geography & Env
 A common landscaping practice is to cut down flowers when the petals fall; our goal is to preserve the dried sunflowers over the winter instead. When left over winter, the large patches of sunflowers support the more-than-human members of the campus community by providing both food and shelter. 
 
 {% include images/figure.html
-  image-path="/assets/images/projects/project/abq_backyard_refugee_support_campus_critters.jpg"
+  image-path="/assets/images/projects/abq_backyard_refugee_support_campus_critters.jpg"
   image-width="90%"
   alt-text="abq_backyard_refugee_support_campus_critters.jpg"
 %}
@@ -36,7 +36,7 @@ ABQ Backyard Refuge Program partner Corva Rose of Tree School New Mexico, led an
 Students are also contributing to community science by documenting wildlife sightings and making phenological observations with the iNaturalist and Nature’s Notebook apps. Over 200 species have been observed in the area since 2018. The phenological data recorded in Nature's Notebook will aid in tracking the responses of the plants and wildlife to our changing climate.
 
 {% include images/figure.html
-  image-path="/assets/images/projects/project/abq_backyard_refugee_program_finchart.jpg"
+  image-path="/assets/images/projects/abq_backyard_refugee_program_finchart.jpg"
   image-width="90%"
   alt-text="abq_backyard_refugee_program_finchart.jpg"
 %}
