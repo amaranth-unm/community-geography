@@ -7,6 +7,13 @@
                        list (the homepage's Recent News)
     include.full     - render full article body instead of a teaser excerpt
 
+  The News page uses none of these: it shows every story, grouped by year,
+  under a row of year buttons. The buttons come from the stories' dates, so a
+  new year gets one when its first story is added. With JavaScript
+  (assets/js/news-year-filter.js) a button shows only that year, and
+  /news/#year-2024 opens the page already filtered. Without JavaScript the
+  buttons jump to the year's heading and every year stays on the page.
+
   Stories without a published_date give a published_year instead. Dates and
   years work with or without quote marks: the list is put in date order by
   helpers/sort-by-date.html, and each story's year is compared as text
@@ -42,12 +49,14 @@
 <div class="news-list">
   {% if group_by_year %}
     {% if years.size > 1 %}
-    <nav class="news-year-nav" aria-label="Jump to year">
-      {% for year in years %}<a href="#year-{{ year }}">{{ year }}</a>{% endfor %}
+    <nav class="news-year-nav" aria-label="Filter news by year">
+      <a href="{{ page.url | relative_url }}" data-news-year="all" hidden>All years</a>
+      {% for year in years %}<a href="#year-{{ year }}" data-news-year="{{ year }}">{{ year }}</a>{% endfor %}
     </nav>
+    <p class="visually-hidden news-filter-status" role="status"></p>
     {% endif %}
     {% for year in years %}
-    <section id="year-{{ year }}" class="news-year-group">
+    <section id="year-{{ year }}" class="news-year-group" data-year="{{ year }}">
       <h2 class="news-year-heading">{{ year }}</h2>
       {% for story in stories %}
         {% assign story_year = story.published_date | date: '%Y' %}
@@ -68,3 +77,4 @@
     {% endfor %}
   {% endif %}
 </div>
+{% if group_by_year and years.size > 1 %}<script src="{{ '/assets/js/news-year-filter.js' | relative_url }}" defer></script>{% endif %}

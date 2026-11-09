@@ -1154,7 +1154,8 @@ figure a.image { border-bottom: 0; }
   line-height: 1.7;
 }
 /* News timeline: grouped-by-year, dated rows used by community/news-list.html
-   and community/news-row.html (pages/news/*). */
+   and community/news-row.html (pages/news.md). The year buttons filter the
+   list through assets/js/news-year-filter.js. */
 .news-list { display: flex; flex-direction: column; gap: var(--spacing-lg); }
 .news-year-nav {
   display: flex;
@@ -1173,7 +1174,9 @@ figure a.image { border-bottom: 0; }
   text-decoration: none;
 }
 .news-year-nav a:hover, .news-year-nav a:focus-visible { background: var(--accent-border); color: var(--interactive-hover); }
+.news-year-nav a[aria-current="true"] { background: var(--accent-primary); border-color: var(--accent-primary); color: var(--text-on-dark); }
 .news-year-group { display: flex; flex-direction: column; gap: var(--spacing-xs); scroll-margin-top: var(--spacing-lg); }
+.news-year-group[hidden] { display: none; }
 .news-year-heading {
   margin: 0;
   padding-bottom: calc(var(--spacing-xs) * 0.5);

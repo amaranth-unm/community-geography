@@ -7,5 +7,5 @@ masthead_position: 50% 12%
 
 # News
 
-{% comment %} Lists every story in _news/, newest first, grouped by year. {% endcomment %}
+{% comment %} Lists every story in _news/, newest first, grouped by year, under year buttons that filter the list. {% endcomment %}
 {% include community/news-list.html %}
