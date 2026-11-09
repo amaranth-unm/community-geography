@@ -1,6 +1,5 @@
 ---
 title: 'GES Colloquium: Set the Earth on Fire: The Great Anthracite Coal Strike of 1902 and the Birth of the Police'
-permalink: /events/ges-colloquium-dr-david-correia
 start_date: '2025-01-24'
 start_time: '15:00'
 end_date: '2025-01-24'

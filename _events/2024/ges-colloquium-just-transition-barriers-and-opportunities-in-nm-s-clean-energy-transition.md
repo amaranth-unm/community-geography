@@ -1,6 +1,5 @@
 ---
 title: 'GES Colloquium- Just Transition: Barriers and Opportunities in NM''s Clean Energy Transition'
-permalink: /ges-colloquium-just-transition-barriers-and-opportunities-in-nms-clean-energy-transition
 start_date: '2024-04-05'
 start_time: '15:00'
 end_date: '2024-04-05'
